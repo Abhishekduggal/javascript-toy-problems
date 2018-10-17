@@ -56,3 +56,17 @@ function employeeUpdater() {
   });
   return remove;
 }
+
+var cat = {
+  name: "Fluffy",
+  catFriends: [
+    {
+      name: "Grumpy",
+      activities: ["be grumpy", "eat food"]
+    },
+    {
+      name: "Lazy Bones",
+      activities: ["sleep", "pre-sleep naps"]
+    }
+  ]
+};
