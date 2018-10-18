@@ -21,3 +21,19 @@ const orders = [
 */
 
 let ordersTotal = orders.map(order => (order.price += order.price * order.tax));
+
+let numbers = [5, "9", 16, 19, "25", "34", 48];
+
+/*
+  Write a function called addTen that is given 'numbers' as it's only argument.
+  Return a new array after adding ten to each item in numbers. 
+  *Verify your answer is correct. --> [15, 19, 26, 29, 35, 44, 58]
+*/
+
+//Code Here
+function addTen(numbers) {
+  let array = numbers.map(elem => {
+    return parseInt(elem) + 10;
+  });
+  return array;
+}
