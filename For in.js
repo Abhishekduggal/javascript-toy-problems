@@ -15,3 +15,13 @@ function greaterThan10(obj) {
   }
   return obj;
 }
+
+function showValues(obj) {
+  //Code Here
+  var str = "";
+
+  for (var prop in obj) {
+    str = str + obj[prop];
+  }
+  return str;
+}
