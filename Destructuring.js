@@ -87,3 +87,22 @@ function largeNumbers({ first, second, third }) {
   //console.log(first);
   return Math.min(first, second, third);
 }
+
+////////// PROBLEM 6 //////////
+
+/*
+  Write a function called numberGroups that will take a destructured object as it's parameter.
+  The object properties will be named a, b, and c and their values will be arrays of numbers.
+  Find the longest array and return that array.
+*/
+
+//Code Here
+function numberGroups({ a, b, c }) {
+  if (a.length > b.length && a.length > c.length) {
+    return a;
+  } else if (b.length > a.length && b.length > c.length) {
+    return b;
+  } else if (c.length > b.length && c.length > b.length) {
+    return c;
+  }
+}
