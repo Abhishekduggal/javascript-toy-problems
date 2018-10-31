@@ -29,3 +29,24 @@ console.log(check.previousSibling);
 
 console.log(check.nextElementSibling); // Preferred grabs the next sibling element in the DOM
 console.log(check.previousElementSibling); // Preferred grabs the previous sibling element in the DOM
+
+// create element
+
+let create = document.createElement("div");
+
+create.className = "Hello";
+create.id = "hi";
+create.setAttribute("Title", "Hello Div");
+
+let newDivText = document.createTextNode("Hello World");
+create.appendChild(newDivText);
+
+let container = document.querySelector("header .container");
+
+let h1 = document.querySelector("header h1");
+
+console.log(create);
+
+container.insertBefore(create, h1);
+
+create.style.fontSize = "30px";
