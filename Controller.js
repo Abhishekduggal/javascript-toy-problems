@@ -104,3 +104,9 @@ const createSpec = (req, res, next) => {
       res.status(500).send(err);
     });
 };
+
+module.exports = {
+  readSpecs,
+  createProduct,
+  createSpec
+};
