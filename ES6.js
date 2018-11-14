@@ -48,3 +48,10 @@ var totalDistance;
 totalDistance = trips.reduce(function(sum, trip) {
   return sum + trip.distance;
 }, 0);
+
+function unique(array) {
+  let output = new Set(array);
+  console.log(output);
+}
+
+unique([1, 1, 2, 3, 4, 4]);
