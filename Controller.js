@@ -151,3 +151,41 @@ const emailForm = (req, res, next) => {
 module.exports = {
   emailForm
 };
+
+
+// Many Data type conversions practice
+
+const db = req.app.get("db");
+  // console.log(req.body);
+  db.forms
+    .create_form([
+      machinetype,
+      shift,
+      parseInt(shopordernumber, 10),
+      parseInt(productid, 10),
+      workstation,
+      parseInt(temp, 10),
+      parseInt(productspeed, 10),
+      parseInt(hrid, 10),
+      parseInt(productdensity, 10),
+      parseInt(rejects),
+      parseInt(waterpressure),
+      parseFloat(drylevel).toFixed(2),
+      issuelog,
+      Boolean(machineoperating),
+      comments,
+      issuecategory,
+      issueresolution,
+      Boolean(packagingissue),
+      Boolean(training),
+      trainingcategory,
+      imgurl
+    ])
+    .then(response => {
+      res.status(200).send(response);
+    })
+    .catch(err => {
+      // console.log(err);
+      res.status(500).send(err);
+    });
+};
