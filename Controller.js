@@ -152,40 +152,63 @@ module.exports = {
   emailForm
 };
 
-
 // Many Data type conversions practice
 
 const db = req.app.get("db");
-  // console.log(req.body);
-  db.forms
-    .create_form([
-      machinetype,
-      shift,
-      parseInt(shopordernumber, 10),
-      parseInt(productid, 10),
-      workstation,
-      parseInt(temp, 10),
-      parseInt(productspeed, 10),
-      parseInt(hrid, 10),
-      parseInt(productdensity, 10),
-      parseInt(rejects),
-      parseInt(waterpressure),
-      parseFloat(drylevel).toFixed(2),
-      issuelog,
-      Boolean(machineoperating),
-      comments,
-      issuecategory,
-      issueresolution,
-      Boolean(packagingissue),
-      Boolean(training),
-      trainingcategory,
-      imgurl
-    ])
+// console.log(req.body);
+db.forms
+  .create_form([
+    machinetype,
+    shift,
+    parseInt(shopordernumber, 10),
+    parseInt(productid, 10),
+    workstation,
+    parseInt(temp, 10),
+    parseInt(productspeed, 10),
+    parseInt(hrid, 10),
+    parseInt(productdensity, 10),
+    parseInt(rejects),
+    parseInt(waterpressure),
+    parseFloat(drylevel).toFixed(2),
+    issuelog,
+    Boolean(machineoperating),
+    comments,
+    issuecategory,
+    issueresolution,
+    Boolean(packagingissue),
+    Boolean(training),
+    trainingcategory,
+    imgurl
+  ])
+  .then(response => {
+    res.status(200).send(response);
+  })
+  .catch(err => {
+    // console.log(err);
+    res.status(500).send(err);
+  });
+
+// Making an axios call to an API instead of using front end to make the call.
+
+const youtubesearch = (req, res, next) => {
+  //   let data = [];
+
+  const baseUrl = `https://www.googleapis.com/youtube/v3/search?part=snippet&q=qualitytraining&type=video&key=${
+    process.env.YOUTUBE_KEY
+  }`;
+
+  axios
+    .get(baseUrl)
     .then(response => {
-      res.status(200).send(response);
+      // console.log(response.data.items);
+      res.status(200).send(response.data.items);
+      //   data = res.data.items;
     })
     .catch(err => {
-      // console.log(err);
       res.status(500).send(err);
     });
+};
+
+module.exports = {
+  youtubesearch
 };
