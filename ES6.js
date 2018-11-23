@@ -118,3 +118,24 @@ const toLeetSpeak = str =>
     .join("");
 
 toLeetSpeak("LEET");
+
+// Write a function to square every digit of an integer.
+
+function squareEveryNum(int) {
+  let arr = (int + "").split("");
+  // console.log(arr)
+
+  let squareArr = arr.map(num => num * num);
+  // console.log(squareArr);
+
+  return parseInt(squareArr.join(""), 10);
+
+  // (return +squareArr.join(''),10)
+  // +converts string into number!!!!!
+}
+
+// For example:
+// squareEveryNum(9119) // ==> 811181
+squareEveryNum(4232); //==> 16494
+
+// Note: The function should accept an integer and return an integer
