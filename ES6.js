@@ -55,3 +55,66 @@ function unique(array) {
 }
 
 unique([1, 1, 2, 3, 4, 4]);
+
+// Your task is to write function toLeetSpeak that converts a regular english sentence to Leetspeak.
+
+// More about LeetSpeak You can read at wiki -> https://en.wikipedia.org/wiki/Leet
+
+// Consider only uppercase letters (no lowercase letters, no numbers) and spaces.
+
+// For example:
+
+// toLeetSpeak("LEET") returns "1337"
+// In this kata we use a simple LeetSpeak dialect. Use this alphabet:
+
+// {
+//   A : '@',  B : '8',  C : '(',  D : 'D',  E : '3',  F : 'F',  G : '6',  H : '#',
+//   I : '!',  J : 'J',  K : 'K',  L : '1',  M : 'M',  N : 'N',  O : '0',  P : 'P',
+//   Q : 'Q',  R : 'R',  S : '$',  T : '7',  U : 'U',  V : 'V',  W : 'W',  X : 'X',
+//   Y : 'Y',  Z : '2'
+// }
+//http://www.codewars.com/kata/toleetspeak
+
+// function toLeetSpeak(str){
+// let arrStr = str.split('');
+const leet = {
+  A: "@",
+  B: "8",
+  C: "(",
+  D: "D",
+  E: "3",
+  F: "F",
+  G: "6",
+  H: "#",
+  I: "!",
+  J: "J",
+  K: "K",
+  L: "1",
+  M: "M",
+  N: "N",
+  O: "0",
+  P: "P",
+  Q: "Q",
+  R: "R",
+  S: "$",
+  T: "7",
+  U: "U",
+  V: "V",
+  W: "W",
+  X: "X",
+  Y: "Y",
+  Z: "2"
+};
+// console.log(arrStr)
+// const arrLeet = Object.entries(leet);
+// console.log(arrLeet)
+// console.log(arrLeet.find(a => arrStr))
+// }
+
+const toLeetSpeak = str =>
+  str
+    .split("")
+    .map(e => leet[e])
+    .join("");
+
+toLeetSpeak("LEET");
