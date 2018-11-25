@@ -139,3 +139,24 @@ function squareEveryNum(int) {
 squareEveryNum(4232); //==> 16494
 
 // Note: The function should accept an integer and return an integer
+
+// Count down 3 times to an positive integer n, return these 3 numbers as a string, separated by exclamation marks.
+// Code Limit: 30 Characters
+
+// Example
+// n = 1  // ==>  "3!2!1"
+//n = 10  //==>  "12!11!10"
+// n = 100 //==>  "102!101!100"
+
+function countdown(n) {
+  //30 Character solution goes here
+  let arrN = [n];
+  // let addN = [n+1, n+2];
+  arrN.push(n + 1, n + 2);
+  // arrN.push(...addN);
+  console.log(arrN);
+
+  return arrN.reverse().join("!");
+}
+
+countdown(10);
