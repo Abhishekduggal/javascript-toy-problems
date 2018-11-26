@@ -160,3 +160,23 @@ function countdown(n) {
 }
 
 countdown(10);
+
+var dolly = ["Dolly", "sheep", []];
+var dollyClone = cloneAnimal(dolly);
+
+function cloneAnimal(animal) {
+  var animalClone = animal.slice();
+
+  animal[0] += "Clone";
+  animalClone[2] = animal[0];
+  return animalClone;
+}
+
+//console.log(dollyClone);
+
+// dolly[0] = "Dolly";
+// dolly[2].push("DollyClone");
+
+console.log(dollyClone);
+
+console.log(dolly);
