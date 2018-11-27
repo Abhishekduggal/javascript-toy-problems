@@ -198,3 +198,18 @@ function unformatted() {
 }
 
 unformatted();
+
+// practice
+
+function aFunction(num) {
+  for (var i = 0; i < num; i++) {
+    if (i % 2 === 0) {
+      console.log("is even!");
+    } else {
+      console.log("is odd!");
+    }
+    console.log("current number is ", i);
+  }
+}
+
+aFunction(3);
