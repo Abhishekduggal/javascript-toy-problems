@@ -213,3 +213,58 @@ function aFunction(num) {
 }
 
 aFunction(3);
+
+// practice
+
+function lifeChangingMagic(
+  inspirationalQuote,
+  thingsIWillNeverDo,
+  limerickLines
+) {
+  // prints a line break
+  function printLineBreak() {
+    console.log();
+    console.log();
+    console.log("---");
+    console.log();
+    console.log();
+  }
+  console.log();
+  {
+    console.log("/*");
+    for (var i = 0; i < 5; i++) {
+      console.log(inspirationalQuote);
+    }
+
+    printLineBreak();
+
+    for (var k = 0; k < limerickLines.length; k++) {
+      console.log(limerickLines[k]);
+    }
+  }
+
+  printLineBreak();
+
+  var iWillNeverDoOutput =
+    "I would sooner drive a nail through my computer than";
+  iWillNeverDoOutput += " " + thingsIWillNeverDo.join(" or ") + ".";
+  console.log(iWillNeverDoOutput);
+  console.log("/*");
+}
+
+var inspirationalQuote = "My code is tidy code, and it is beautiful.";
+
+var thingsIWillNeverDo = [
+  "not indent my code properly",
+  'use unhelpful variable names, like "x" or "a"'
+];
+
+var limerickLines = [
+  "I always indent as I'm typing",
+  "To do otherwise would be frightening!",
+  "  Only then can this ode",
+  "  to beautiful code",
+  "apply to the lines I am writing!"
+];
+
+lifeChangingMagic(inspirationalQuote, thingsIWillNeverDo, limerickLines);
