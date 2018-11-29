@@ -268,3 +268,14 @@ var limerickLines = [
 ];
 
 lifeChangingMagic(inspirationalQuote, thingsIWillNeverDo, limerickLines);
+
+// Practice
+
+function mostVowels(str) {
+  var newStr = str.split(" ");
+  console.log(newStr);
+
+  for (var i = 0; i < newStr.length; i++) {}
+}
+mostVowels("I am a keeper with some real rhythms");
+// => "keeper"
