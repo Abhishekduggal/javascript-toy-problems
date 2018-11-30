@@ -279,3 +279,161 @@ function mostVowels(str) {
 }
 mostVowels("I am a keeper with some real rhythms");
 // => "keeper"
+
+// Practice
+
+// groupBy takes an array and splits it into sets, grouped by the
+// result of running each value through the predicate. If the
+// predicate is a string instead of a function, it groups by the
+// property named by predicate on each of the values.
+
+// function groupBy(collection, predicate){
+//   // pseudocode begins here:
+//     // Depending on the second parameter function / string /
+//     // what are we doing here?
+//     // function - call the function and pass each item
+//       // store it in a variable
+//       // They will will be key for the object
+//       // Value will be the item that we are at the iteration of the loop
+
+//       // check the key alreay exist in the object
+//         // If it does we have to add,
+
+//   // Key
+//   //& value (array)
+
+//   // return the new object
+
+//   //var temp = [];
+
+//   var key = [];
+//   var result = {};
+//   // Iterate over the array, using forEach
+
+//       //console.log('Iterate Item', item);
+
+//     if(typeof predicate === 'function'){
+//         collection.forEach(function(item){
+//           if(result[predicate(item)]){
+//             result[predicate(item)].push(item);
+//           }else{
+//             result[predicate(item)] = item;
+//           }
+//         });
+
+//     }else if(typeof predicate === 'string'){
+//         collection.forEach(function(item){
+
+//         });
+//       }
+
+//   return result;
+//   //console.log('output', result);
+// }
+
+//   // if (typeof(predicate) === "function") {
+//   //   for(let i = 0; i<collection.length; i++){
+//   //     if (output[predicate(collection[i])]){
+//   //       output[predicate(collection[i])].push(collection[i])
+
+//   //     } else {
+//   //       output[predicate(collection[i])] = [collection[i]]
+//   //     }
+//   //   }
+
+function groupBy(collection, predicate) {
+  // pseudocode begins here:
+  // Depending on the second parameter function / string /
+  // what are we doing here?
+  // function - call the function and pass each item
+  // store it in a variable
+  // They will will be key for the object
+  // Value will be the item that we are at the iteration of the loop
+
+  // check the key alreay exist in the object
+  // If it does we have to add,
+
+  // Key
+  //& value (array)
+
+  // return the new object
+  // function groupBy(collection, predicate){
+  var result = {};
+  //var temp = [];
+  //var key = [];
+
+  if (typeof predicate === "function") {
+    // Iterate over the array, using forEach
+    //console.log(predicate);
+    collection.forEach(function(item) {
+      if (result[predicate(item)]) {
+        result[predicate(item)].push(item);
+      } else {
+        result[predicate(item)] = [item];
+      }
+    });
+  }
+
+  if (typeof predicate === "string") {
+    collection.forEach(function(item) {
+      if (result[item[predicate]]) {
+        result[item[predicate]].push(item);
+      } else {
+        result[item[predicate]] = [item];
+      }
+    });
+  }
+  //console.log('output', output);
+  return result;
+
+  //   collection.forEach(function(item){
+  //     //console.log('Iterate Item', item);
+
+  //     if(typeof predicate === 'function'){
+
+  //       if(typeof item === 'string'){
+  //
+
+  //           //console.log(key);
+  //           key = firstLetter(item);
+  //           output[key] = item;
+  //
+
+  //       } else if (typeof item === 'number'){
+  //           //console.log('hello world');
+  //           key = mathValue(item);
+  //           //console.log(key);
+  //           output[key] = item;
+  //           //console.log('output', output);
+  //         }
+  //     }else if(typeof predicate === 'string'){
+  //       //console.log(item.length);
+  //       //console.log(key);
+  //       key = item.length;
+  //       output[key] = item;
+  //       //console.log('output', output);
+  //     }
+  //   });
+
+  // return output;
+  // // //console.log('output', output);
+}
+var firstLetter = function(word) {
+  return word.charAt(0);
+};
+
+var mathValue = function(val) {
+  return Math.floor(val);
+};
+
+console.log(groupBy(["apple", "cat", "boat", "card", "bond"], firstLetter));
+// returns { 'a': ['apple'], 'c': ['cat', 'card'], 'b': ['boat', 'bond'] }
+
+console.log(groupBy(["apple", "cat", "boat", "card", "bond"], "length"));
+// returns { '5': ['apple'], '4': ['boat', 'card', 'bond'], '3': ['cat'] }
+
+console.log(
+  groupBy([1.4, 5.6, 3.6, 1.8, 3.4], function(val) {
+    return Math.floor(val);
+  })
+);
