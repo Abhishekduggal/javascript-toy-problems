@@ -527,3 +527,60 @@ squareEveryNum(4232); //==> 16494
 // cakes({flour: 500, sugar: 200, eggs: 1}, {flour: 1200, sugar: 1200, eggs: 5, milk: 200});
 // // must return 0
 // cakes({apples: 3, flour: 300, sugar: 150, milk: 100, oil: 100}, {sugar: 500, flour: 2000, milk: 2000});
+
+// Practice
+
+var classRoom = [
+  {
+    Marnie: [
+      { Monday: true },
+      { Tuesday: true },
+      { Wednesday: true },
+      { Thursday: true },
+      { Friday: true }
+    ]
+  },
+  {
+    Lena: [
+      { Monday: false },
+      { Tuesday: false },
+      { Wednesday: true },
+      { Thursday: false },
+      { Friday: true }
+    ]
+  },
+  {
+    Shoshanna: [
+      { Monday: true },
+      { Tuesday: true },
+      { Wednesday: false },
+      { Thursday: true },
+      { Friday: false }
+    ]
+  },
+  {
+    Jessa: [
+      { Monday: false },
+      { Tuesday: false },
+      { Wednesday: false },
+      { Thursday: false },
+      { Friday: true }
+    ]
+  }
+];
+
+function classCheck(day) {
+  for (var i = 0; i < classRoom.length; i++) {
+    for (var name in classRoom[i]) {
+      //console.log(classRoom[i][name]);
+
+      for (value in classRoom[i][name]) {
+        if (classRoom[i][name][value][day] === true) {
+          console.log([name]);
+        }
+      }
+    }
+  }
+}
+
+classCheck("Friday"); // => ['Marnie', 'Shoshanna']
