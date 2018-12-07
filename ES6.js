@@ -584,3 +584,60 @@ function classCheck(day) {
 }
 
 classCheck("Friday"); // => ['Marnie', 'Shoshanna']
+
+// Practice
+
+var classRoom = [
+  {
+    Marnie: [
+      { Monday: true },
+      { Tuesday: true },
+      { Wednesday: true },
+      { Thursday: true },
+      { Friday: true }
+    ]
+  },
+  {
+    Lena: [
+      { Monday: false },
+      { Tuesday: false },
+      { Wednesday: true },
+      { Thursday: false },
+      { Friday: true }
+    ]
+  },
+  {
+    Shoshanna: [
+      { Monday: true },
+      { Tuesday: true },
+      { Wednesday: false },
+      { Thursday: true },
+      { Friday: false }
+    ]
+  },
+  {
+    Jessa: [
+      { Monday: false },
+      { Tuesday: false },
+      { Wednesday: false },
+      { Thursday: false },
+      { Friday: true }
+    ]
+  }
+];
+
+function classCheck(day) {
+  for (var i = 0; i < classRoom.length; i++) {
+    for (var name in classRoom[i]) {
+      //console.log(classRoom[i][name]);
+
+      for (value in classRoom[i][name]) {
+        if (classRoom[i][name][value][day] === true) {
+          console.log([name]);
+        }
+      }
+    }
+  }
+}
+
+classCheck("Friday"); // => ['Marnie', 'Shoshanna']
