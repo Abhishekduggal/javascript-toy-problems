@@ -1019,3 +1019,49 @@ function isIsogram(str) {
 
 console.log(isIsogram("algorithm"));
 console.log(isIsogram("do the max"));
+
+// Practice
+
+// Your task is to create an array of size n with the values of the Fibonnaci sequence, and reverse the order in which the sequence is displayed.
+
+// For example: [1, 1, 2, 3, 5] would become [5, 3, 2, 1, 1]
+
+// You can assume that n will always be a positive integer between and including, 1 and 64.
+
+// pseduo code!
+// define a function that takes in a number
+// looping through
+// Create an array and loop through it
+// check the number before and two numbers before and add them
+// reverse my array
+
+function fibonnaci(n) {
+  //let newNum - n-1;
+  let newArr = [];
+
+  for (let i = 0; i < n; i++) {
+    console.log(newArr, newArr[i - 1], newArr[i - 2]);
+
+    newArr.push((newArr[i - 1] || 1) + (newArr[i - 2] || 0));
+  }
+
+  console.log(newArr);
+
+  return newArr.reverse();
+}
+
+fibonnaci(10);
+
+//     console.log(n);
+//     //result.push(n, );
+//   if(n < 65) {
+//     //console.log(n);
+//     return n
+//   }
+//     return (sequence(n-1)+sequence(n-2))
+
+//   //return result//.reverse();
+
+// }
+
+// sequence(5);
