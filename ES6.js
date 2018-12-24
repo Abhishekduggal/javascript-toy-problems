@@ -1283,4 +1283,17 @@ foldsToTheMoon(384400000);
 // console.log(result);
 // }
 
-// distanceToMoon(0.0001);
+// distanceToMoon(
+
+// Hash Table Practice
+
+function HashTable(size) {
+  this.buckets = Array(size);
+  this.numBuckets = this.buckets.length;
+}
+
+function HashNode(key, value, next) {
+  this.key = key;
+  this.value = value;
+  this.next = next || null;
+}
