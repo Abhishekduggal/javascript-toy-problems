@@ -1346,3 +1346,17 @@ HashTable.prototype.insert = function(key, value) {
     currentNode.next = new HashNode(key, value);
   }
 };
+
+HashTable.prototype.retrieveAll = function() {
+  var allNodes = [];
+
+  for (var i = 0; i < this.numBuckets; i++) {
+    var currentNode = this.buckets[i];
+
+    while (currentNode) {
+      allNodes.push(currentNode);
+      currentNode = currentNode.next;
+    }
+  }
+  return allNodes;
+};
