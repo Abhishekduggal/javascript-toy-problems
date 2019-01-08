@@ -1379,3 +1379,37 @@ myHT.insert("Samantha", "sami@twitter.com");
 // console.log(myHT.get('Megan'));
 
 console.log(myHT.retrieveAll());
+
+// Practice
+
+// return the two oldest/oldest ages within the array of ages passed in.
+function twoOldestAges(ages) {
+  var copy = ages;
+
+  //console.log(copy);
+
+  var output = [];
+
+  copy.sort(function(a, b) {
+    return a - b;
+  });
+
+  console.log(copy);
+
+  output = copy.slice(copy.length - 2, copy.length);
+
+  console.log(output);
+}
+
+// var oldest1 = ages[0];
+// var oldest2 = ages[1];
+
+// ages.forEach(function(age){
+//   if(age > oldest1){
+//     oldest1 = age
+//   }
+//   console.log(age);
+
+// });
+
+twoOldestAges([1, 2, 10, 8, 32, 44, 45, 66]); // should return [8, 10];
