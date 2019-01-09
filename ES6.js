@@ -1413,3 +1413,24 @@ function twoOldestAges(ages) {
 // });
 
 twoOldestAges([1, 2, 10, 8, 32, 44, 45, 66]); // should return [8, 10];
+
+// Problem
+
+function assignEvenAndOdds(userInput) {
+  // var arr = userInput.split(',');
+  var arr = [];
+  console.log(arr);
+  var evens = [];
+  var odds = [];
+
+  userInput.filter(num => {
+    if (parseInt(num) % 2 === 0) {
+      evens.push(num);
+    } else if (parseInt(num) % 2 !== 0) {
+      odds.push(num);
+    }
+  });
+  console.log(evens);
+  console.log(odds);
+}
+assignEvenAndOdds(["1", "2", "3", "4"]);
