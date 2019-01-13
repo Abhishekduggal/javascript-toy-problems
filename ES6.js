@@ -1696,3 +1696,52 @@ function inAscOrder(arr) {
     }, false);
   };
 
+ // Determine whether all of the elements match a truth test.
+ _.every = function(collection, iterator) {
+  // TIP: Try re-using reduce() here.
+  
+  iterator = iterator || _.identity();
+  return !!_.reduce(collection, function (trueSoFar, value){
+    return trueSoFar && iterator(value);
+  }, true);
+};
+
+// Determine whether any of the elements pass a truth test. If no iterator is
+// provided, provide a default one
+_.some = function(collection, iterator) {
+  // TIP: There's a very clever way to re-use every() here.
+iterator = iterator || _.identity();
+  return !!_.reduce(collection, function (trueSoFar, value){
+    return trueSoFar || iterator(value);
+  }, false);
+};
+
+/**
+ * OBJECTS
+ * =======
+ *
+ * In this section, we'll look at a couple of helpers for merging objects.
+ */
+
+// Extend a given object with all the properties of the passed in
+// object(s).
+//
+// Example:
+//   var obj1 = {key1: "something"};
+//   _.extend(obj1, {
+//     key2: "something new",
+//     key3: "something else new"
+//   }, {
+//     bla: "even more stuff"
+//   }); // obj1 now contains key1, key2, key3 and bla
+_.extend = function(obj) {
+  
+  //arguments[0] = obj; Lookup "arguments"
+  
+  _.each(arguments, function(source){
+    _.each(source, function(value, key){
+      obj[key] = value;
+    })
+  });
+  return obj;
+};
