@@ -1787,4 +1787,43 @@ _.extend = function(obj) {
         return result;
       };
     };
+
+// Memorize an expensive function's results by storing them. You may assume
+  // that the function only takes primitives as arguments.
+  // memoize could be renamed to oncePerUniqueArgumentList; memoize does the
+  // same thing as once, but based on many sets of unique arguments.
+  //
+  // _.memoize should return a function that, when called, will check if it has
+  // already computed the result for the given argument and return that value
+  // instead if possible.
+  _.memoize = function(func) {
+    
+    var results = {};
+    
+    return (function()){
+      
+      var arg = JSON.stringify(arguments);  
+      if(!results[arg] ) {
+        
+        results[arg] = func.call(this,arguments);
+      }
+      return results[arg];
+    };
+  }
+  // return a function when called, is going to wait for wait amount
+  // of time and then invoke func. 
   
+  _.delay = function(func, wait) {
+  
+  var args1 = [].slice.call(arguments,2);
+  
+  return function(){
+    var args2 = [].slice.call(arguments);
+    setTimeout(function(){
+   func.apply(this, args1.concat(args2)); 
+  }, wait);
+    };
+  }())
+    
+    
+    
