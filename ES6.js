@@ -1824,6 +1824,33 @@ _.extend = function(obj) {
   }, wait);
     };
   }())
-    
+
+
+// Problem
+
+class Puppy {
+
+  constructor(happiness, energy, behavior) {
+    this.happiness = happiness;
+    this.energy = energy;
+    this.behavior = behavior;
+  }
+
+  // code here
+  getsTreat(parm){
+    return this.happiness+20;
+  }
+  
+  takesNap(parm){
+    var energy = this.energy - 45;
+    var beh = this.behavior + 15;
+    var happy = this.happiness;
+    return [happy, energy, beh];
+  }
+
+}
+
+var Charles = new Puppy(75, 25, 30)
+Charles.takesNap()
     
     
