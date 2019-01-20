@@ -1888,4 +1888,63 @@ function sort (arr){
 }
 
 sort([23,2,3,4,5])
+
+//Practice
+
+// // let arr = [1,2,3,4,5,4,3,2,1];
+
+// // let product = arr.reduce(function(total, elem){
+// // console.log(total, elem)
+// //   return total * elem
+// // })
+
+// // product
+
+// let customers = [
+//   {name: "Shea", total: 150, message: 'This '},
+//   {name: 'Jarid', total: 1, message: 'is '},
+//   {name: 'Joe', total: 10000, message: 'a new '},
+//   {name: 'Erik', total: -100, message: 'message.'}
+// ]
+
+// // let total = customers.reduce( function(total, elem){
+// //   return total + elem.total; 
+// // }, 0)
+
+// let sentence = customers.reduce(function(total, elem){
+//   return total + elem.message;
+// }, '')
+
+// sentence
+
+
+// let dog = {
+//   name: 'Rufus',
+//   isBad: false,
+//   bark: function(){
+//     console.log('woof')
+//   },
+//   age: 77,
+//   color: 'Brindle'
+// };
+
+// let extension = {
+//   isFed: true,
+//   size: 'Big',
+//   isBad : true
+// }
+// let newDog = Object.assign({}, dog, extension);
+// console.log(dog === newDog);
+// console.log(newDog)
+
+// for ( let key in dog ){
+//   if (!dog[key]){
+//     delete dog[key]
+//   }
+// }
+// for (key in extension){
+//   dog[key] = extension[key];
+// }
+// dog
+
     
