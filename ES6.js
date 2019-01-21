@@ -1947,4 +1947,142 @@ sort([23,2,3,4,5])
 // }
 // dog
 
+// let person = {name: "Shea", total: 150, message: 'This '}
+
+// let name = person.name;
+// let total = person.total
+// let message = person.message;
+
+// let {name, total, message, age} = person;
+// console.log(name, total, message, age)
+
+// let  req = {
+//   body: {
+//     user: {
+//       location: {
+//         city:
+//         state:
+//         zip:
+//         address:
+//       }
+//     }
+//   }
+// }
+
+// let {city, address, zip, state} = req.body.user.location;
+
+// let arr = [1,2,3,4,5];
+
+// let [one, blah, , ,five] = arr;
+
+// console.log(one, blah, five)
+
+// function destructObj ({name}){
+//   return name;
+// }
+
+// destructObj({name:'Shea'})
+
+
+// function destructArr([first]){
+//   return first;
+// }
+
+// destructArr([{name:'Shea'}])
+
+// function addTwo (x, y){
+//   return x + y;
+// }
+
+// let addTwo2 = (x, y) =>  x + y;  
+
+// let addTwo3 = (x) => x + 2;
+
+// addTwo3(10)
+
+// let arr = [1,2,3,4,5]
+
+// arr.map(elem => {
+
+//   return elem + 2
+// }); 
+
+// let person = {
+//   name: "Shea",
+//   sayName: () => {
+//     return this.name;
+//   }
+// }
+
+// person.sayName()
+
+
+// function car (make, model, year){
+//   return {
+//     make, model, year, go: function(){console.log('vroom')}
+//   }
+// }
+
+// let myCar = car ('Nissan', 'xTerra', 2008)
+// // myCar
+
+// function Car (make, model, year){
+//   // let this = {make: make, model:model};
+//   this.make = make;
+//   this.model = model;
+//   this.year = year;
+//   // return this;
+// }
+
+// Car.prototype.go = function(){
+//   console.log("vroom")
+// }
+
+// let myToyCar = new Car('Triumph', 'Spitfire', 1976);
+// console.log(myToyCar)
+// console.log(myCar)
+// myToyCar.go();
+
+
+
+
+
+
+class Car {
+  constructor(make, model, year){
+    this.make = make;
+    this.model = model;
+    this.year = year;
+  }
+  go(){
+    console.log('vroom')
+  }
+  stop(){
+    console.log('Squeal!!')
+  }
+}
+
+class SUV extends Car {
+  constructor(make, model, year, offRoad){
+    super(make, model, year)
+    this.offRoad = offRoad;
+  }
+  tipOver(){
+    console.log('OH NO!!!!')
+  }
+}
+let myCar = new SUV('Nissan', 'xTerra', 2008, true)
+myCar.tipOver()
+let myToyCar = new Car('Triumph', 'Spitfire', 1976);
+
+ 
+
+
+
+
+
+
+
+
+
     
