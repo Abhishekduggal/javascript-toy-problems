@@ -2075,7 +2075,13 @@ let myCar = new SUV('Nissan', 'xTerra', 2008, true)
 myCar.tipOver()
 let myToyCar = new Car('Triumph', 'Spitfire', 1976);
 
- 
+ // Spread Operator
+
+ let arr1 = [1,2,3,4,5];
+let arr2 = [6,7,8,9];
+
+let both = [...arr1, ...arr2];
+console.log(both);
 
 
 
