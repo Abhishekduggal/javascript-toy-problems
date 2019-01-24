@@ -2083,6 +2083,62 @@ let arr2 = [6,7,8,9];
 let both = [...arr1, ...arr2];
 console.log(both);
 
+// Practice
+
+// /*
+//   First we'll look at the difference between accessing property values in a for in loop and accessing the property name in a for in loop.
+//   In the example below, we are accessing the property values. Uncomment the code below, run it and look at what prints in the console.
+// */
+
+// var values = {
+//   one: 'These',
+//   two: ' are',
+//   three: ' the',
+//   four: ' property',
+//   five: ' values.'
+// } 
+
+// for(var key in values) {
+//   console.log(values[key])
+// }
+
+// /*
+//   In this next example, we are accessing the property names themselves. Uncomment the code below, run it and look at what prints in the console.
+// */
+
+// for(var key in values) {
+//   console.log(key)
+// }
+
+// function showValues( obj ) {
+//   //Code Here
+//   var str = '';
+
+//   for(var prop in obj){
+//     str = str + obj[prop]; 
+//   }
+//   return str;
+// }
+
+// // function greaterThan10(obj){
+// //   for (var prop in obj){
+// //     if(obj[prop] > 10){
+// //       console.log(obj[prop])
+// //       obj[prop] = 0;
+// //     }
+// //   }
+// //   return obj;
+// // }
+// // var values = {
+// //   one: 5,
+// //   two: 12,
+// //   three: ' the',
+// //   four: ' property',
+// //   five: ' values.'
+// // }
+// // greaterThan10(values);
+// // //showValues(values);
+
 
 
 
