@@ -2139,6 +2139,137 @@ console.log(both);
 // // greaterThan10(values);
 // // //showValues(values);
 
+// Practice
+
+  // /*
+  //   First we'll look at the difference between accessing property values in a for in loop and accessing the property name in a for in loop.
+  //   In the example below, we are accessing the property values. Uncomment the code below, run it and look at what prints in the console.
+  // */
+
+  // var values = {
+  //   one: 'These',
+  //   two: ' are',
+  //   three: ' the',
+  //   four: ' property',
+  //   five: ' values.'
+  // } 
+
+  // for(var key in values) {
+  //   console.log(values[key])
+  // }
+
+  // /*
+  //   In this next example, we are accessing the property names themselves. Uncomment the code below, run it and look at what prints in the console.
+  // */
+
+  // for(var key in values) {
+  //   console.log(key)
+  // }
+
+  // function showValues( obj ) {
+  //   //Code Here
+  //   var str = '';
+
+  //   for(var prop in obj){
+  //     str = str + obj[prop]; 
+  //   }
+  //   return str;
+  // }
+
+  // // function greaterThan10(obj){
+  // //   for (var prop in obj){
+  // //     if(obj[prop] > 10){
+  // //       console.log(obj[prop])
+  // //       obj[prop] = 0;
+  // //     }
+  // //   }
+  // //   return obj;
+  // // }
+  // // var values = {
+  // //   one: 5,
+  // //   two: 12,
+  // //   three: ' the',
+  // //   four: ' property',
+  // //   five: ' values.'
+  // // }
+  // // greaterThan10(values);
+  // // //showValues(values);
+
+// // function totalPopulation(obj){
+
+// //   var{utah, california, texas, arizona} = obj;
+// //   console.log(utah);
+// //   //return (utah.val + california.val + )
+// // }
+
+// // var obj = {utah: 10, california: 29087, texas: 82937, arizona: 28347}
+
+// // totalPopulation(obj);
+
+// // Do not edit the code below.
+// var employees = [
+//   {
+//     "firstName": "Von",
+//     "lastName": "Budibent",
+//     "email": "vbudibent0@163.com",
+//     "department": "Sales"
+//   },
+//   {
+//     "firstName": "Catherina",
+//     "lastName": "Swalowe",
+//     "email": "cswalowe1@example.com",
+//     "department": "Engineering"
+//   },
+//   {
+//     "firstName": "Theo",
+//     "lastName": "Trill",
+//     "email": "ttrill2@sina.com.cn",
+//     "department": "Services"
+//   },
+//   {
+//     "firstName": "Elsy",
+//     "lastName": "McCrorie",
+//     "email": "emccrorie3@netscape.com",
+//     "department": "Legal"
+//   },
+//   {
+//     "firstName": "Lorie",
+//     "lastName": "Handsheart",
+//     "email": "lhandsheart4@fotki.com",
+//     "department": "Research and Development"
+//   }
+// ];
+// // Do not edit the code above.
+
+// /*
+//   Create a function called 'employeeUpdater' that takes no parameters. employeeUpdater will loop over the array above and perform the following:
+//     1. If employee's first name is Theo, remove that employee because he just got fired.
+//     2. If the employee's first name is Lorie, change her department to 'HR'.
+//     3. Return the updated employee array.
+// */
+
+// //Code Here
+
+// // function employeeUpdater() {
+// //   // employees.forEach(function(emp) {
+// //   //   console.log(emp);
+// //   // });
+// // var remove = employees.filter(function(employee){
+// //   console.log(employee.firstName);
+  
+// //   if(employee.firstName === 'Lorie'){
+// //     employee.department = 'HR';
+// //   }
+// //   return employee.firstName !== 'Theo';
+// //   //console.log(employee);
+// // });
+// // return remove;
+// // }
+
+// // employeeUpdater(employees);
+
+
+
 
 
 
