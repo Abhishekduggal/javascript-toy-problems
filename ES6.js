@@ -2470,6 +2470,33 @@ console.log(both);
 //     3. Return the updated array.
 // */
 
+// Practice
+
+function binaryToString(binary){
+
+
+  var newBin = binary.split(" ");
+  console.log(newBin);
+  var binCode = [];
+  
+  for (i = 0; i < newBin.length; i++) {
+      binCode.push(String.fromCharCode(newBin[i]);
+    }
+  return binCode.join("");
+  
+      // // split string into an array so we can loop through it
+      // var newStr=binary.split(" ");
+      // // declare a new array to later push "translated" values into
+      // var sArr=[];
+      // // loop through binary array, translate and push translated values into the new array
+      // newStr.forEach(function(item){
+      // sArr.push(String.fromCharCode(parseInt(item,2)));
+      // })
+  
+      // // join the array back into a string
+      // return sArr.join("");
+      }
+  binaryToString('0b10000110b11000010b1110100'); //== 'Cat'
 
 
 
