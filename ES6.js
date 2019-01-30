@@ -2498,6 +2498,44 @@ function binaryToString(binary){
       }
   binaryToString('0b10000110b11000010b1110100'); //== 'Cat'
 
+  // Practice
+
+  // A printer prints colors represented by the letters "a" through "m". At the end of the print, it puts out a control string to show what colors were printed.  A "good" control string output example might be "aaabbbbhaijjjm" due to the fact that only the letters a through m were used, and no errors (other letters) were used.
+
+// When the printer has a malfunction, the control string marks it with a letter that isn't a through m, for example: "aaaxbbbbyyhwawiwjjjwwm".
+
+// Write a function, printer_error, which will output the error rate of the printer as a string whose numerator is the number of errors and the denominator the length of the control string. Do not reduce the fraction.
+
+
+function printer_error (str){
+  //console.log(str.length);
+  //console.log(str.includes('a'))
+  //
+  // console.log(str.match(/nopqrstuvwxyz/g));
+  // var output = (str.match(/nopqrstuvwxyz/g) || []).length;
+  // console.log(output);
+  // if(output === false ){
+  //   return `0/${str.length}`
+  // }else {
+  //   return `${output}/${str.length}`
+  // }
+// charCodeAt ===== 97-109 are ok
+
+  let denom = str.length;
+  let errorsLength = str.split('').filter(elem => {
+    return elem.charCodeAt() > 109 || elem.charCodeAt() < 97
+  }).length
+
+//console.log(errorsLength)
+
+return `${errorsLength}/${denom}`
+}
+
+
+// For example:
+//printer_error("aaabbbbhaijjjm") //==> "0/14"
+printer_error("aaaxbbbbyyhwawiwjjjwwm") //==> "8/22"
+
 
 
 
