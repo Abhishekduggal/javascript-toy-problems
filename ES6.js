@@ -2891,6 +2891,21 @@ og(obj);
 
 // removeDuplicates();
 
+// Practice
+
+// String.prototype.grammarPolice = function(str) {
+//   var splitStr = str.toLowerCase().split(" ");
+//   for (var i = 0; i < this.splitStr.length; i++) {
+//     split[i] =
+//       splitStr[i].charAt(0).toUpperCase() + this.splitStr[i].substring(1);
+//   }
+//   return splitStr.join(" ");
+// };
+
+// String.grammarPolice('OH HELLO THERE')
+
+
+
 
 
 
