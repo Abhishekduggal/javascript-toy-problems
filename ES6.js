@@ -2904,7 +2904,70 @@ og(obj);
 
 // String.grammarPolice('OH HELLO THERE')
 
+// Practice
 
+// let date = new Date().toLocaleDateString()
+// let time = new Date().toTimeString().slice(0,8)
+
+// let a = new Date().getFullYear()
+
+// console.log(date)
+// console.log(time)
+// console.log(a)
+
+// parseFloat('3443.44444').toFixed(2)
+
+// var name= "Joe";
+// var age=22;
+
+// var person = Object.assign({name, age})
+// person
+
+// "woobie".toUpperCase()
+
+// let lower = 'hello world'
+// let upper = lower.charAt(0).toUpperCase() + lower.substr(1);
+// console.log(upper)
+
+
+
+// class Rectangle {
+//   constructor(height, width) {
+//     this.height = height;
+//     this.width = width;
+//   }
+//   // Getter
+//   get area() {
+//     return this.calcArea();
+//   }
+//   // Method
+//   calcArea() {
+//     return this.height * this.width;
+//   }
+// }
+
+// const square = new Rectangle(10, 10);
+
+// console.log(square.area); // 100
+
+// class User {
+
+//   constructor(name) {
+//     this.name = name;
+//   }
+
+//   sayHi() {
+//     alert(this.name);
+//   }
+
+// }
+
+// // let user = new User("John");
+// // user.sayHi();
+
+// let abhi = new User('Abhi');
+
+// console.log(abhi)
 
 
 
