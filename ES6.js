@@ -2969,6 +2969,36 @@ og(obj);
 
 // console.log(abhi)
 
+// Practice 
+// function counter() {
+//   let num = 0;
+//   return function () {
+//     return num += 1;
+//   }
+// }
+
+// const counterOne = counter();
+// counterOne();
+// console.log(counterOne());
+// const counterTwo = counter();
+// console.log(counterTwo());
+
+const stevensRegularOrder = ['Ham', 'BP', 'BananaPeps', 'Ranch', 'Spinach'];
+
+// function createOrder(regular = []) {
+//   return function(ingredient) {
+//     regular.push(ingredient);
+//     return regular;
+//   }
+// }
+
+// const stevensSandwich = createOrder(stevensRegularOrder);
+// console.log(stevensSandwich('Lettuce'));
+
+// const robsSandwich = createOrder();
+// console.log(robsSandwich('Tuna'));
+
+
 
 
 
