@@ -2998,6 +2998,92 @@ const stevensRegularOrder = ['Ham', 'BP', 'BananaPeps', 'Ranch', 'Spinach'];
 // const robsSandwich = createOrder();
 // console.log(robsSandwich('Tuna'));
 
+function createOrder(regular = []) {
+	return {
+		addIngredient(ingredient) {
+			regular.push(ingredient);
+		},
+		deleteIngredient(ingredient) {
+			for (let i = 0; i < regular.length; i++) {
+				if (regular[i] === ingredient) {
+					regular.splice(i, 1);
+					i--;
+				}
+			}
+		},
+		readIngredients() {
+			console.log(regular);
+		},
+	};
+}
+
+// FUNCTION bankAccount -> startingBalance
+// return function => Deposit or Withdraw
+
+// function bankAccount(balance) {
+// 	return function(action, amt) {
+// 		if (action === 'deposit') {
+// 			return (balance += amt);
+// 		} else if (action === 'withdraw') {
+// 			if (balance - amt < -50) {
+// 				return 'No Go';
+// 			}
+// 			return (balance -= amt);
+// 		}
+// 	};
+// }
+
+// const stevensAccount = bankAccount(20);
+// stevensAccount('deposit', 80);
+// stevensAccount('withdraw', 1000);
+
+// Calculator
+// Add, subtract, multiply, divide
+// number = 0
+
+// function calculator() {
+//   let num = 0;
+//   return {
+//     add(val) {
+//       return num += val;
+//     },
+//     subtract(val) {
+//       return num -= val;
+//     },
+//     multiply(val) {
+//       return num *= val;
+//     },
+//     divide(val) {
+//       return num /= val;
+//     },
+//     reset() {
+//       num = 0;
+//     }
+//   }
+// }
+
+// const calcOne = calculator();
+
+// calcOne.add(10);
+// calcOne.subtract(5);
+
+// function sayName() {
+//   return this.name;
+// }
+
+// const user = {
+//   name: 'steven',
+//   sayName: sayName
+// }
+
+// const user2 = {
+//   name: 'Jeff',
+//   sayJeff: sayName
+// }
+
+// user.sayName();
+// user2.sayJeff();
+// sayName();
 
 
 
