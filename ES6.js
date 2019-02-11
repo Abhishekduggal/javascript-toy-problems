@@ -3085,6 +3085,45 @@ function createOrder(regular = []) {
 // user2.sayJeff();
 // sayName();
 
+function drive() {
+  return this.miles += 1;
+}
+
+const grandNational = {
+  make: 'Buick',
+  model: 'Grand National',
+  year: "'87",
+  miles: 0
+}
+
+const x5m = {
+  make: 'BMW',
+  model: 'X5 M',
+  year: '2018',
+  miles: -400
+}
+
+// drive.call(x5m, , , ,);
+// drive.apply(x5m, [, , ,]);
+
+// const driveNational = drive.bind(grandNational);
+// const driveBeemer = drive.bind(x5m);
+// driveNational();
+// console.log(driveNational());
+// console.log(driveBeemer());
+
+// Object factory (like action creators);
+// function createCar(make, model, year) {
+//   return {
+//     make: make,
+//     model: model,
+//     year: year
+//   }
+// }
+
+// const myCar = createCar('Ford', 'Mustang', 2001);
+
+
 
 
 
