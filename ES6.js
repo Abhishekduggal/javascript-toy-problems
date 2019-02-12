@@ -3123,6 +3123,72 @@ const x5m = {
 
 // const myCar = createCar('Ford', 'Mustang', 2001);
 
+// let obj = {}
+// obj.name = 'Steven';
+
+// function Car(make, model, year) {
+//   this.make = make;
+//   this.model = model;
+//   this.year = year;
+//   this.miles = 0;
+// }
+
+// Car.prototype.drive = function() {
+//     return this.miles += 1;
+//   }
+
+// const mustang = new Car('Ford', 'Mustang', 2001);
+// console.log(mustang);
+// console.log(mustang.drive);
+
+// Array
+// String
+// Object
+// Number
+// Symbol
+// Map
+// Set
+// Math
+
+// Array.prototype.doTheThing = function() {
+//   return 'Thing done';
+// }
+
+// const myArray = [];
+
+// myArray.doTheThing();
+
+// const user = {
+//   name: 'Steven',
+//   sayName() {
+//     //
+//     setInterval(() => {
+//       console.log(this.name);
+//     }, 1000);
+//     //
+//   }
+// }
+
+// user.sayName();
+
+// class Car {
+//   constructor(make, year) {
+//     this.state = {
+//       make,
+//       year,
+//       miles: 0
+//     }
+//   }
+//   tellMake() {
+//     return this.state.make;
+//   }
+// }
+
+// const mustang = new Car('Ford', 2001);
+
+// console.log(mustang);
+// console.log(mustang.tellMake());
+
 
 
 
