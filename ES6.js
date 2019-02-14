@@ -3211,6 +3211,45 @@ class Dog extends Animal {
 const rocky = new Dog('Rocky', 'Woofs');
 rocky.speak();
 
+// Practice
+
+/* 
+
+An isogram is a word that has no repeating letters, consecutive or nonconsecutive. Create a function that takes a string and returns either true or false depending on whether or not it's an "isogram". Assume all inputs will be lowercase.
+
+For example:
+console.log(isIsogram('algorithm')); // returns true
+console.log(isIsogram('do the max')); // returns false (multiple spaces)
+console.log(isIsogram('hello there')); // returns false (multiple l's)
+
+*/
+
+function isIsogram( str ) {
+  // split the alphabets
+  // for loop
+  // if / else
+
+var split = str.split('');
+
+var track = [];
+//console.log(split);
+
+  for(var i = 0; i < split.length; i++){
+    //str.indexOf(searchValue[, fromIndex])]
+    
+    //console.log(track);
+    //console.log(track.indexOf(split[i]));
+    if(track.indexOf(split[i]) > -1){
+      return false;
+    }
+    track.push(split[i]);
+  }
+  return true;
+}
+
+console.log(isIsogram('algorithm'));
+console.log(isIsogram('do the max'));
+
 
 
 
