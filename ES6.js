@@ -3283,6 +3283,74 @@ function assignEvenAndOdds(userInput){
 assignEvenAndOdds(['1','2','3','4'])
 
 
+// Write a function, which takes a non-negative integer (seconds) as input and returns the time in a human-readable format (HH:MM:SS)
+
+// HH = hours, padded to 2 digits, range: 00 - 99
+// MM = minutes, padded to 2 digits, range: 00 - 59
+// SS = seconds, padded to 2 digits, range: 00 - 59
+// The maximum time never exceeds 359999 (99:59:59)
+
+// You can find some examples in the test fixtures.
+
+function tellMeTime(seconds){
+  
+  let hours = checkLength(Math.floor(seconds/3600);
+  let minutes = checkLength(Math.floor((sconds%3600)/60);
+  let seconds = checkLength(seconds-(hours*3600)-(minutes/60));
+  
+  return `${hours}:${minutes}:${seconds}`
+}
+
+function checkLength(digit){
+  if(('+digit').legth < 2) {return '0'+digit}
+  return digit;
+}
+
+tellMeTime(3599);
+// function tellMeTime(secondsVal){
+// // var minutes = Math.floor(time / 60); And to get the remaining seconds, multiply the full minutes with 60 and subtract from the total seconds: var seconds = time - minutes * 60; Now if you also want to get the full hours too, divide the number of total seconds by 3600 (60 minutes/hour.Sep 17, 2010
+
+// var secondsNum = parseInt(secondsVal, 10);
+
+// var hours = secondsNum/3600 < 1 ? 00 : (secondsNum/3600);
+// console.log(hours);
+
+// var minutes = Math.floor(secondsNum/60);
+// console.log(minutes);
+
+// var seconds = (seconds-minutes)*60 || 00;
+// console.log(seconds);
+
+// return (`${hours}:${minutes}:${seconds}`); 
+
+// }
+
+// tellMeTime(359999) // 00:01:00
+
+
+// function nameIt(seconds) {
+
+// let min = 0,
+//     hour = 0,
+//     sec = 0;
+
+// if(seconds){
+//   if(seconds>=60){
+//     min = Math.floor(seconds/60)
+//     sec = seconds%60
+//   }else {
+//     sec = seconds;
+//   }
+//   if(min>=60){
+//     hour = Math.floor(min/60)
+//     min = min-hour * 60
+//   }
+// }
+// return `${hour}:${min}:${sec}`
+// }
+
+// nameIt(5999);
+
 
 
     
