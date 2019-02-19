@@ -3351,6 +3351,15 @@ tellMeTime(3599);
 
 // nameIt(5999);
 
+Operator
+
+!!5
+!!(4 % 2)
+!!(undefined)
+!!("a".length - 1)
+!!([false])
+!!([])22
+
 
 
     
