@@ -3385,6 +3385,25 @@ var reversedArr = reverseArray(arr);
 console.log(reversedArr)    // [4,3,2,1]
 // console.log(arr)    // [1,2,3,4]
 
+// Practice
+
+/ Times Tables
+// Write a function that generates a "Times Tables" function for any number passed in. The function should accept a single parameter (a number) and return a function that itself returns the product of that number and any number passed in.
+
+function timesTable(num1){
+var multiply = function(num2){
+ return num1 * num2;
+ };
+ return multiply;
+}
+
+// var ninesTable = timesTable(9);
+// ninesTable(8)    // => 72
+
+var twelvesTable = timesTable(12);
+twelvesTable(15)    // => 180
+twelvesTable(100)    // => 1200
+
 
 
     
