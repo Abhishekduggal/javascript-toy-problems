@@ -3404,6 +3404,49 @@ var twelvesTable = timesTable(12);
 twelvesTable(15)    // => 180
 twelvesTable(100)    // => 1200
 
+// Biller Builder
+// You work for an e-commerce company that does business in New York and New Jersey. Due to differences in tax and shipping rates, the final bill for the same product is different for customers in the different states.
+
+// The company has asked you to write a function that accepts a single parameter indicating a customer's state ('NY' or 'NJ') and returns a function that calculates the final bill for a customer in that state given the total list price of their items.
+
+// The calculation of final bills are as follows:
+
+// In New York, the final bill is calculated as the price of the item, plus a 3% shipping fee, plus a 9% sales tax assessed on the price of the item together with shipping costs.
+// In New Jersey, the final bill is calculated as the price of an item, plus a 5% shipping fee, plus a 7% sales tax assessed on the price of the item together with shipping costs.
+// So the final bill for a $100 item in New York would be: (100*1.03)*1.09 = 112.27 And in New Jersey: (100*1.05)*1.07 = 112.35
+
+
+// function NY(){
+//   return 1.03 * 1.09;
+// }
+
+// function NJ(){
+//   return 1.05* 1.07;
+// }
+
+function biller(state){
+  var bill = function(num){
+  // return num * state();
+  // }
+    if(state === "NY"){
+    return (num * 1.03) * 1.09;
+    } else if(state === "NJ"){
+    return (num * 1.05) * 1.07;
+    } else {
+    return "invalid State";
+    }
+  }
+ return bill;
+ }
+ 
+ 
+ 
+ 
+ var newYorkBiller = biller('NY');
+ newYorkBiller(100)   // => 112.27
+ 
+ var newJersBiller = biller('NJ');
+ newJersBiller(100)    // => 112.35
 
 
     
