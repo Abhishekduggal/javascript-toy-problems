@@ -3497,4 +3497,23 @@ function inAscOrder (arr){
 //inAscOrder([9,8,7,6,5,4,3,2,1]); // returns false because the numbers are in DESCENDING order
 
 // Extra Challenge: If time, try to optimise and shorten your code as much as possible.
+
+// Practice
+
+function unformatted() {
+  function innerFunction(count) {
+    while(count > 0) {
+      count--;
+        if(count===2) {
+          console.log("count is two!");
+        }
+    }
+    console.log("are we still in the inner func?");
+  } 
+  innerFunction(5);
+  return "end of the func";
+}
+
+
+unformatted();
     
