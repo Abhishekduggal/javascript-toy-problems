@@ -3683,5 +3683,30 @@ unformatted();
 // let evenNumbers = mixedNumbers.filter(even => even % 2 === 0);// = mixedNumbers.filter(/* Provide Your Callback Here */)
 
 
+// // Do not edit the code below.
+// const prices = [15.00, 23.00, 78.00, 34.00, 12.00, 86.00, 12.00, 79.00, 32.00];
+// // // Do not edit the code above.
+
+// // /*
+// //   Use the map method on the prices array to calculate a new array of post-tax prices.
+// //   Use a 7% tax rate.
+
+// //   Math reminder! To calculate the price after tax, multiply the price by 1 plus the taxRate as a decimal.
+// //   Example: if tax is 7%, the price afterTax could be calculated like this: afterTax = price * 1.07) 
+
+// //   The map function also takes a callback with the parameters
+// //   function(element, index, wholeArray){}  Function Form
+// //   (element, index, wholeArray)=>{}    Arrow Form
+// // */
+
+
+
+// var tax = prices.map(price => price * 1.07);
+
+// console.log(tax);
+
+
+// //Code Here
+// let postTaxPrices = prices.map(price => price*1.07);// = prices.map(/* Provide Your Callback Here );
 
     
