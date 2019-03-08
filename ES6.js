@@ -3709,4 +3709,29 @@ unformatted();
 // //Code Here
 // let postTaxPrices = prices.map(price => price*1.07);// = prices.map(/* Provide Your Callback Here );
 
+
+// ////////// PROBLEM 3 //////////
+
+// // Do not edit the code below.
+// const populations = [8175133, 3792621, 2695598, 2100263];
+// // // Do not edit the code above.
+
+// // /*
+// //   Use the reduce method to calculate the sum of all the populations in the array.
+
+// //   The reduce function has a slightly different setup for it's callback.
+// //   function(runningTotal, curElement, curIndex, wholeArray){} Function Form
+// //   (runningTotal, curElement, curIndex, wholeArray)=>{} Arrow Form
+// // */
+
+
+
+// var pops = populations.reduce(((total,pop) => total += pop),0);
+
+// console.log(pops);
+
+// //Code Here
+// let totalPopulation = populations.reduce((total,pop) => total+pop);
+
+
     
