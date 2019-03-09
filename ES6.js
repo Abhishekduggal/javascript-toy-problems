@@ -3733,5 +3733,28 @@ unformatted();
 // //Code Here
 // let totalPopulation = populations.reduce((total,pop) => total+pop);
 
+const _ = require('lodash');
+
+// function addToArray(arr, input) {
+// 	arr.push(input);
+// 	return arr;
+// }
+
+// const arrayWithVal = addToArray([], 'Hello');
+
+// const addedVal = addToArray(arrayWithVal, 'world');
+
+// console.log(addToArray(addToArray(addToArray([], 'World'), 'Hello'), 'Messy'))
+
+// console.log(addedVal);
+
+// const myArr = [1, 2, 3];
+
+// const total = myArr
+// 	.map(val => val * 2)
+// 	.filter(val => val > 4)
+// 	.reduce((acc, cur) => acc + cur);
+
+// console.log(total);
 
     
