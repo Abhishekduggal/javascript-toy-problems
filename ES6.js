@@ -3804,4 +3804,43 @@ const nums = { a: 2, b: 3 };
 
 // console.log(Object.entries(grouped));
 
+
+// async/await
+// const axios = require('axios');
+
+// async function getThePeople() {
+//   try {
+//   const data1 = axios.get('https://www.swapi.co/api/people');
+//   const data2 = axios.get(`https://www.swapi.co/api/people`);
+//   const data3 = axios.get('https://www.swapi.co/api/people');
+//   return await Promise.all([data1, data2, data3]);
+//   } catch(e) {
+//     console.log(e);
+//   }
+// }
+// (async function() {
+//   const response = await getThePeople();
+//   console.log(response);
+// })()
+// try {
+//   doSomethingBroken();
+// } catch (err) {
+//   console.log(err);
+// }
+// function promiseGen() {
+//   return new Promise((resolve, reject) => {
+//     if (true) {
+//       resolve('True');
+//     } else {
+//       reject('False');
+//     }
+//   });
+// }
+
+// promiseGen().then(res => console.log(res)).catch(err => console.log('err', err));
+
+// throw new Error('You broke the things');
+
+let arr =[]
+console.log(arr.length)
     
