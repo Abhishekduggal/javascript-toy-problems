@@ -3860,4 +3860,24 @@ function insertion(arr){
 }
 
 insertion([3,2,1])
+
+// const user = {
+//   name: 'abhishek',
+//   sayName() {
+//     return this.name;
+//   }
+// }
+
+// // Implicit Binding 
+// user.sayName();
+
+
+// function sayName(){
+//   return this.name;
+// }
+// const user = {
+//   name: 'abhishek',
+//   sayName: sayName
+// }
+
     
