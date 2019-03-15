@@ -3879,5 +3879,15 @@ insertion([3,2,1])
 //   name: 'abhishek',
 //   sayName: sayName
 // }
+// const user2 = {
+//   name: 'Jeff',
+//   sayJeff: sayName
+// }
+// // user.sayName();
+
+// user2.sayJeff();
+
+//Implicit Binding 
+
 
     
