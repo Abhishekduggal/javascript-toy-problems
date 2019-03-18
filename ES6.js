@@ -3948,6 +3948,21 @@ insertion([3,2,1])
 
 
 
+function unformatted() {
+  function innerFunction(count) {
+    while(count > 0) {
+      count--;
+        if(count===2) {
+          console.log("count is two!");
+        }
+    }
+    console.log("are we still in the inner func?");
+  } 
+  innerFunction(5);
+  return "end of the func";
+}
 
+
+unformatted();
 
     
