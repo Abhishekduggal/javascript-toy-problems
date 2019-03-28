@@ -4165,4 +4165,10 @@ tellMeTime(3599);
 
 // nameIt(5999);
 
+let arr1 = [1,2,3,4,5];
+let arr2 = [6,7,8,9];
+
+let both = [...arr1, ...arr2];
+console.log(both);
+
     
