@@ -4171,4 +4171,25 @@ let arr2 = [6,7,8,9];
 let both = [...arr1, ...arr2];
 console.log(both);
 
+// forEach helper array Function
+
+//Below code to refactor using forEach();
+
+function handlePosts() {
+  var posts = [
+    { id: 23, title: 'Daily JS News' },
+    { id: 52, title: 'Code Refactor City' },
+    { id: 105, title: 'The Brightest Ruby' }
+  ];
+  
+  // for (var i = 0; i < posts.length; i++) {
+  //   savePost(posts[i]);
+  // }
+  
+  posts.forEach(function(post){
+    savePost(post);
+  });
+}
+
+
     
