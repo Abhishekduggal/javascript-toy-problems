@@ -4251,5 +4251,24 @@ sort([23,2,3,4,5])
 
 // sentence
 
+// let dog = {
+//   name: 'Rufus',
+//   isBad: false,
+//   bark: function(){
+//     console.log('woof')
+//   },
+//   age: 77,
+//   color: 'Brindle'
+// };
+
+// let extension = {
+//   isFed: true,
+//   size: 'Big',
+//   isBad : true
+// }
+// let newDog = Object.assign({}, dog, extension);
+// console.log(dog === newDog);
+// console.log(newDog)
+
 
     
