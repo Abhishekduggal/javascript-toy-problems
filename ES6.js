@@ -4270,5 +4270,28 @@ sort([23,2,3,4,5])
 // console.log(dog === newDog);
 // console.log(newDog)
 
+// let newDog = Object.assign({}, dog, extension);
+// console.log(dog === newDog);
+// console.log(newDog)
+
+// for ( let key in dog ){
+//   if (!dog[key]){
+//     delete dog[key]
+//   }
+// }
+// for (key in extension){
+//   dog[key] = extension[key];
+// }
+// dog
+
+
+// let person = {name: "Shea", total: 150, message: 'This '}
+
+// let name = person.name;
+// let total = person.total
+// let message = person.message;
+
+// let {name, total, message, age} = person;
+// console.log(name, total, message, age)
 
     
