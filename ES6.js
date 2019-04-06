@@ -4294,4 +4294,6 @@ sort([23,2,3,4,5])
 // let {name, total, message, age} = person;
 // console.log(name, total, message, age)
 
+
+
     
