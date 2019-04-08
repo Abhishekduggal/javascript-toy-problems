@@ -4294,6 +4294,32 @@ sort([23,2,3,4,5])
 // let {name, total, message, age} = person;
 // console.log(name, total, message, age)
 
+// destructArr([{name:'Shea'}])
 
+// function addTwo (x, y){
+//   return x + y;
+// }
+
+// let addTwo2 = (x, y) =>  x + y;  
+
+// let addTwo3 = (x) => x + 2;
+
+// addTwo3(10)
+
+// let arr = [1,2,3,4,5]
+
+// arr.map(elem => {
+
+//   return elem + 2
+// }); 
+
+// let person = {
+//   name: "Shea",
+//   sayName: () => {
+//     return this.name;
+//   }
+// }
+
+// person.sayName()
 
     
