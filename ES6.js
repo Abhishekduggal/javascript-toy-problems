@@ -4322,4 +4322,25 @@ sort([23,2,3,4,5])
 
 // person.sayName()
 
+// function car (make, model, year){
+//   return {
+//     make, model, year, go: function(){console.log('vroom')}
+//   }
+// }
+
+// let myCar = car ('Nissan', 'xTerra', 2008)
+// // myCar
+
+// function Car (make, model, year){
+//   // let this = {make: make, model:model};
+//   this.make = make;
+//   this.model = model;
+//   this.year = year;
+//   // return this;
+// }
+
+// Car.prototype.go = function(){
+//   console.log("vroom")
+// }
+
     
