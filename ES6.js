@@ -4343,4 +4343,29 @@ sort([23,2,3,4,5])
 //   console.log("vroom")
 // }
 
+// let myToyCar = new Car('Triumph', 'Spitfire', 1976);
+// console.log(myToyCar)
+// console.log(myCar)
+// myToyCar.go();
+
+
+
+
+
+
+class Car {
+  constructor(make, model, year){
+    this.make = make;
+    this.model = model;
+    this.year = year;
+  }
+  go(){
+    console.log('vroom')
+  }
+  stop(){
+    console.log('Squeal!!')
+  }
+}
+
+
     
