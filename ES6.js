@@ -4366,6 +4366,20 @@ class Car {
     console.log('Squeal!!')
   }
 }
+class SUV extends Car {
+  constructor(make, model, year, offRoad){
+    super(make, model, year)
+    this.offRoad = offRoad;
+  }
+  tipOver(){
+    console.log('OH NO!!!!')
+  }
+}
+let myCar = new SUV('Nissan', 'xTerra', 2008, true)
+myCar.tipOver()
+let myToyCar = new Car('Triumph', 'Spitfire', 1976);
+
+ 
 
 
     
