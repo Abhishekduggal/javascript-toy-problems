@@ -4410,4 +4410,24 @@ let myToyCar = new Car('Triumph', 'Spitfire', 1976);
     
 //       //console.log('Iterate Item', item);
 
+//     if(typeof predicate === 'function'){
+//         collection.forEach(function(item){
+//           if(result[predicate(item)]){
+//             result[predicate(item)].push(item);
+//           }else{
+//             result[predicate(item)] = item;
+//           }
+//         });  
+      
+//     }else if(typeof predicate === 'string'){
+//         collection.forEach(function(item){
+          
+//         });
+//       }
+    
+//   return result;
+//   //console.log('output', result);
+// }
+
+
     
