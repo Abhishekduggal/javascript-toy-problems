@@ -4428,6 +4428,14 @@ let myToyCar = new Car('Triumph', 'Spitfire', 1976);
 //   return result;
 //   //console.log('output', result);
 // }
-
+//   // if (typeof(predicate) === "function") {
+//   //   for(let i = 0; i<collection.length; i++){
+//   //     if (output[predicate(collection[i])]){
+//   //       output[predicate(collection[i])].push(collection[i])
+        
+//   //     } else {
+//   //       output[predicate(collection[i])] = [collection[i]]
+//   //     }
+//   //   }
 
     
