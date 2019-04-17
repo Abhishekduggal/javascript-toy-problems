@@ -4472,6 +4472,25 @@ function groupBy(collection, predicate){
             output[key] = item;
             //console.log('output', output);
         
-        } else if 
+        } else if (typeof item === 'number'){
+          //console.log('hello world');
+          key = mathValue(item);
+          //console.log(key);
+          output[key] = item;
+          //console.log('output', output);
+        }
+    }else if(typeof predicate === 'string'){
+      //console.log(item.length);
+      //console.log(key);
+      key = item.length;
+      output[key] = item;
+      //console.log('output', output);
+    }
+  });
+
+return output;
+// //console.log('output', output);
+
+}
 
     
