@@ -4509,4 +4509,22 @@ console.log(groupBy([1.4, 5.6, 3.6, 1.8, 3.4], function(val) {
 // what would this return?
 // returns { '5': [5.6], '3':[3.6, 3.4], '1':[1.4,1.8]};
 
+const _ = require('lodash');
+
+// function addToArray(arr, input) {
+// 	arr.push(input);
+// 	return arr;
+// }
+
+// const arrayWithVal = addToArray([], 'Hello');
+
+// const addedVal = addToArray(arrayWithVal, 'world');
+
+// console.log(addToArray(addToArray(addToArray([], 'World'), 'Hello'), 'Messy'))
+
+// console.log(addedVal);
+
+// const myArr = [1, 2, 3];
+
+
     
