@@ -4542,6 +4542,29 @@ const _ = require('lodash');
 
 // const x = () => 7;
 // const y = someVal => someVal + 2;
+// y(x());
 
+// const _ = {
+// 	map() {},
+// 	filter() {},
+// 	chain() {},
+// };
+
+const arr = [1, 2, 3];
+const users = [
+	{ name: 'Steven', age: 26 },
+	{ name: 'Jeff', age: 35 },
+	{ name: 'Steven', age: 234 },
+];
+
+const nums = { a: 2, b: 3 };
+
+// Object.values(nums).map(val => val * 2);
+
+// const exponent = _.map(arr, val => val * val)
+// const userNames = _.map(users, 'age');
+// const mapped = _.map(nums, (num) => num + num)
+
+// console.log(mapped);
 
     
