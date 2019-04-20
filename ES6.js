@@ -4525,6 +4525,23 @@ const _ = require('lodash');
 // console.log(addedVal);
 
 // const myArr = [1, 2, 3];
+// const total = myArr
+// 	.map(val => val * 2)
+// 	.filter(val => val > 4)
+// 	.reduce((acc, cur) => acc + cur);
+
+// console.log(total);
+
+// // const myVar = if (name === 'Steven') {
+// //   'Steven'
+// // } else {
+// //   'John'
+// // }
+
+// const myVar = name === 'Steven' ? 'Steven' : 'John';
+
+// const x = () => 7;
+// const y = someVal => someVal + 2;
 
 
     
