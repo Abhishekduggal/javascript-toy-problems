@@ -4567,4 +4567,16 @@ const nums = { a: 2, b: 3 };
 
 // console.log(mapped);
 
-    
+// console.log(mapped);
+
+// const collect = _.union([1, 2, 3], [2, 4, 6], [1, 5, 6]).sort();
+
+// console.log(collect);
+
+// const intersect = _.intersection([1, 2, 3, 5], [1, 4, 5, 6], [1, 2, 5]);
+
+// console.log(intersect);
+
+// const grouped = _.groupBy(users, 'name');
+
+// console.log(Object.entries(grouped));    
