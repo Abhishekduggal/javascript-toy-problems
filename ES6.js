@@ -4579,4 +4579,20 @@ const nums = { a: 2, b: 3 };
 
 // const grouped = _.groupBy(users, 'name');
 
-// console.log(Object.entries(grouped));    
+// console.log(Object.entries(grouped));
+
+// var names = ['Alexandria', 'Matthew', 'Joe']
+
+// names.every(function (name){
+//   return name.length >4 
+// })
+
+// names.some(function (name){
+//   return name.length >4 
+// })
+
+// var requests = [
+//   { url: '/photos', status: 'complete' },
+//   { url: '/albums', status: 'pending' },
+//   { url: '/users', status: 'failed' }
+// ];
