@@ -4596,3 +4596,25 @@ const nums = { a: 2, b: 3 };
 //   { url: '/albums', status: 'pending' },
 //   { url: '/users', status: 'failed' }
 // ];
+// var inProgress;
+
+// inProgress = requests.some(function(request){
+//     return request.status === 'pending';
+// });
+
+// // ------- 
+
+// // Balance parnethesis using Reduce Helper function
+
+// function checkPattern(str) {
+
+// return !str.split('').reduce(function(acc, char){
+
+//   if(acc < 0 ) {return acc};
+//   if(acc === '(') {return ++acc};
+//   if(acc === ')') {return --acc};
+
+//   return acc
+// }, 0)
+
+// }
