@@ -4618,3 +4618,12 @@ const nums = { a: 2, b: 3 };
 // }, 0)
 
 // }
+// checkPattern('(()((())))');
+
+var desks = [
+  { type: 'sitting' },
+  { type: 'standing' },
+  { type: 'sitting' },
+  { type: 'sitting' },
+  { type: 'standing' }
+];
