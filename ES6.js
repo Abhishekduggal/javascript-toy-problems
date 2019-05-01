@@ -4748,3 +4748,26 @@ purchases.map(e => e.price)
 
 // console.log(purchasesByMonth.price)  
 // const totalByMonth = _.reduce(purchasesByMonth, )
+
+// async/await
+// const axios = require('axios');
+
+// async function getThePeople() {
+//   try {
+//   const data1 = axios.get('https://www.swapi.co/api/people');
+//   const data2 = axios.get(`https://www.swapi.co/api/people`);
+//   const data3 = axios.get('https://www.swapi.co/api/people');
+//   return await Promise.all([data1, data2, data3]);
+//   } catch(e) {
+//     console.log(e);
+//   }
+// }
+// (async function() {
+//   const response = await getThePeople();
+//   console.log(response);
+// })()
+// try {
+//   doSomethingBroken();
+// } catch (err) {
+//   console.log(err);
+// }
