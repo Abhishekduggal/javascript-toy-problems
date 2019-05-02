@@ -4770,4 +4770,21 @@ purchases.map(e => e.price)
 //   doSomethingBroken();
 // } catch (err) {
 //   console.log(err);
+// }// (async function() {
+//   const response = await getThePeople();
+//   console.log(response);
+// })()
+// try {
+//   doSomethingBroken();
+// } catch (err) {
+//   console.log(err);
+// }
+// function promiseGen() {
+//   return new Promise((resolve, reject) => {
+//     if (true) {
+//       resolve('True');
+//     } else {
+//       reject('False');
+//     }
+//   });
 // }
