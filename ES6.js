@@ -4853,3 +4853,17 @@ accum('cwAt')
   // return result.join('-')
 //   let count = 1
 //   let newStr = '';
+// function counter() {
+//   let num = 0;
+//   return function () {
+//     return num += 1;
+//   }
+// }
+
+// const counterOne = counter();
+// counterOne();
+// console.log(counterOne());
+// const counterTwo = counter();
+// console.log(counterTwo());
+
+const stevensRegularOrder = ['Ham', 'BP', 'BananaPeps', 'Ranch', 'Spinach'];
