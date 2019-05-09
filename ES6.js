@@ -4867,3 +4867,15 @@ accum('cwAt')
 // console.log(counterTwo());
 
 const stevensRegularOrder = ['Ham', 'BP', 'BananaPeps', 'Ranch', 'Spinach'];
+// function createOrder(regular = []) {
+//   return function(ingredient) {
+//     regular.push(ingredient);
+//     return regular;
+//   }
+// }
+
+// const stevensSandwich = createOrder(stevensRegularOrder);
+// console.log(stevensSandwich('Lettuce'));
+
+// const robsSandwich = createOrder();
+// console.log(robsSandwich('Tuna'));
