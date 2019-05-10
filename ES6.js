@@ -4879,3 +4879,9 @@ const stevensRegularOrder = ['Ham', 'BP', 'BananaPeps', 'Ranch', 'Spinach'];
 
 // const robsSandwich = createOrder();
 // console.log(robsSandwich('Tuna'));
+function createOrder(regular = []) {  return {    addIngredient(ingredient) 
+  {      regular.push(ingredient);    },    deleteIngredient(ingredient) 
+  {      for (let i = 0; i < regular.length; i++) {        if (regular[i] === ingredient) 
+    {          regular.splice(i, 1); 
+           i--;        }      }    },    
+           readIngredients() {      console.log(regular);    },  };}
