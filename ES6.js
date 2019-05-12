@@ -4901,3 +4901,10 @@ function createOrder(regular = []) {  return {    addIngredient(ingredient)
 // 		}
 // 	};
 // }
+// const stevensAccount = bankAccount(20);
+// stevensAccount('deposit', 80);
+// stevensAccount('withdraw', 1000);
+
+// Calculator
+// Add, subtract, multiply, divide
+// number = 0
