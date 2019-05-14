@@ -4928,3 +4928,16 @@ function createOrder(regular = []) {  return {    addIngredient(ingredient)
 //     }
 //   }
 // }
+// const calcOne = calculator();
+
+// calcOne.add(10);
+// calcOne.subtract(5);
+
+// function sayName() {
+//   return this.name;
+// }
+
+// const user = {
+//   name: 'steven',
+//   sayName: sayName
+// }
