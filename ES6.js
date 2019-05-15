@@ -4941,3 +4941,15 @@ function createOrder(regular = []) {  return {    addIngredient(ingredient)
 //   name: 'steven',
 //   sayName: sayName
 // }
+// const user2 = {
+//   name: 'Jeff',
+//   sayJeff: sayName
+// }
+
+// user.sayName();
+// user2.sayJeff();
+// sayName();
+
+function drive() {
+  return this.miles += 1;
+}
