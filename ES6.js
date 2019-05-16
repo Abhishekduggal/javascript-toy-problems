@@ -4953,3 +4953,19 @@ function createOrder(regular = []) {  return {    addIngredient(ingredient)
 function drive() {
   return this.miles += 1;
 }
+const grandNational = {
+  make: 'Buick',
+  model: 'Grand National',
+  year: "'87",
+  miles: 0
+}
+
+const x5m = {
+  make: 'BMW',
+  model: 'X5 M',
+  year: '2018',
+  miles: -400
+}
+
+// drive.call(x5m, , , ,);
+// drive.apply(x5m, [, , ,]);
