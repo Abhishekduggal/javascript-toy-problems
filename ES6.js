@@ -4969,3 +4969,17 @@ const x5m = {
 
 // drive.call(x5m, , , ,);
 // drive.apply(x5m, [, , ,]);
+// const driveNational = drive.bind(grandNational);
+// const driveBeemer = drive.bind(x5m);
+// driveNational();
+// console.log(driveNational());
+// console.log(driveBeemer());
+
+// Object factory (like action creators);
+// function createCar(make, model, year) {
+//   return {
+//     make: make,
+//     model: model,
+//     year: year
+//   }
+// }
