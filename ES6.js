@@ -4994,3 +4994,19 @@ const x5m = {
 //   this.year = year;
 //   this.miles = 0;
 // }
+// Car.prototype.drive = function() {
+//     return this.miles += 1;
+//   }
+
+// const mustang = new Car('Ford', 'Mustang', 2001);
+// console.log(mustang);
+// console.log(mustang.drive);
+
+// Array
+// String
+// Object
+// Number
+// Symbol
+// Map
+// Set
+// Math
