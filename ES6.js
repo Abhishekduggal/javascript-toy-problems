@@ -5010,3 +5010,21 @@ const x5m = {
 // Map
 // Set
 // Math
+// Array.prototype.doTheThing = function() {
+//   return 'Thing done';
+// }
+
+// const myArray = [];
+
+// myArray.doTheThing();
+
+// const user = {
+//   name: 'Steven',
+//   sayName() {
+//     //
+//     setInterval(() => {
+//       console.log(this.name);
+//     }, 1000);
+//     //
+//   }
+// }
