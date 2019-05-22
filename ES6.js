@@ -5028,3 +5028,17 @@ const x5m = {
 //     //
 //   }
 // }
+// user.sayName();
+
+// class Car {
+//   constructor(make, year) {
+//     this.state = {
+//       make,
+//       year,
+//       miles: 0
+//     }
+//   }
+//   tellMake() {
+//     return this.state.make;
+//   }
+// }
