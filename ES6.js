@@ -5042,3 +5042,18 @@ const x5m = {
 //     return this.state.make;
 //   }
 // }
+
+// const mustang = new Car('Ford', 2001);
+
+// console.log(mustang);
+// console.log(mustang.tellMake());
+
+class Animal {
+  constructor(name, noise) {
+    this.name = name;
+    this.noise = noise;
+  }
+  speak() {
+    console.log(this.name + ' makes a noise.');
+  }
+}
