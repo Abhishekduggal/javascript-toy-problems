@@ -5057,3 +5057,11 @@ class Animal {
     console.log(this.name + ' makes a noise.');
   }
 }
+class Dog extends Animal {
+  constructor(noise, name) {
+    super(noise, name);
+  }
+  speak() {
+    console.log(this.name + ' ' + this.noise);
+  }
+}
