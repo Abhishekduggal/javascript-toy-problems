@@ -5065,3 +5065,6 @@ class Dog extends Animal {
     console.log(this.name + ' ' + this.noise);
   }
 }
+
+const rocky = new Dog('Rocky', 'Woofs');
+rocky.speak();
