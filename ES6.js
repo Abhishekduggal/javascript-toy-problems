@@ -5089,3 +5089,16 @@ rocky.speak();
 // check if number is positive else return null
 // increment counter as we make folds
 // return our counter
+function foldsToTheMoon(distance){
+  let counter = 0;
+  if(distance <=0){
+    return null
+  }
+
+  for(let i = .0001; i < distance; i+=i){
+    counter++;
+  }
+  return counter;
+}
+
+foldsToTheMoon(384400000);
