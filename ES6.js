@@ -5102,3 +5102,12 @@ function foldsToTheMoon(distance){
 }
 
 foldsToTheMoon(384400000);
+// function distanceToMoon(thickness){
+// // let paperThickness = thickness*0.001
+// // console.log(paperThickness)
+// let moon = 384400 * 1000
+// let result = 0;
+
+// if(thickness < 0){
+//   return 'NULL';
+// }else
