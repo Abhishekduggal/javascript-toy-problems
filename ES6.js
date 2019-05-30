@@ -5110,4 +5110,9 @@ foldsToTheMoon(384400000);
 
 // if(thickness < 0){
 //   return 'NULL';
-// }else
+// }else//   result = moon/(thickness)*2
+// }
+// console.log(result);
+// }
+
+// distanceToMoon(0.0001);
