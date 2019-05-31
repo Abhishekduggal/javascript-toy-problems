@@ -5116,3 +5116,9 @@ foldsToTheMoon(384400000);
 // }
 
 // distanceToMoon(0.0001);
+var array1 = [5, 12, 8, 130, 44];
+var array2 = ['hi','hello','abhi']
+
+function findFirstLargeNumber(element) {
+  return element === 'abhi';
+}
