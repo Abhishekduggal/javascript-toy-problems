@@ -5132,3 +5132,20 @@ var found = array1.find(function(element) {
 
 console.log(found);
 // expected output: 12
+var array1 = [5, 12, 8, 130, 44];
+var array2 = ['hi','hello','abhi']
+
+function findFirstLargeNumber(element) {
+  return element === 'abhi';
+}
+
+console.log(array2.findIndex(findFirstLargeNumber))
+
+var array1 = [5, 12, 8, 130, 44];
+
+var found = array1.find(function(element) {
+  return element > 10;
+});
+
+console.log(found);
+// expected output: 12
