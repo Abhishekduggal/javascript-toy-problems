@@ -5149,3 +5149,24 @@ var found = array1.find(function(element) {
 
 console.log(found);
 // expected output: 12
+// In DNA strings, symbols "A" and "T" are complements of each other, as are "C" and "G". Given one side of the DNA, you need to find the complementary side.
+
+// DNAStrand("ATTGC") ==>  "TAACG"
+// DNAStrand("GTAT")  ==>  "CATA"
+
+function dna (str){
+  
+  let arr = [];
+  
+  for(let i = 0; i < str.length; i++){
+    if(str[i] === 'A'){
+      arr.push('T');
+    } else if(str[i] === 'T'){
+      arr.push('A');
+    }else if(str[i] === 'G'){
+      arr.push('C');
+    }else if(str[i] === 'C'){
+      arr.push('G');
+    }
+  }
+  return arr.join('');
