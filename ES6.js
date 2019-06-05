@@ -5191,3 +5191,13 @@ function dna (str){
       arr[i] === 'C'
     }
   }
+    console.log(arr);
+  return arr.join('');
+  // console.log(arr);
+  // var newStr;
+
+  // str.replace('A')
+  */
+}
+
+dna('ATTGC');
