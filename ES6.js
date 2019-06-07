@@ -5210,3 +5210,8 @@ dna('ATTGC');
 // names.some(function (name){
 //   return name.length >4 
 // })
+// var requests = [
+//   { url: '/photos', status: 'complete' },
+//   { url: '/albums', status: 'pending' },
+//   { url: '/users', status: 'failed' }
+// ];
