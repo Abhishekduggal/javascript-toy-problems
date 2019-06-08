@@ -5215,3 +5215,10 @@ dna('ATTGC');
 //   { url: '/albums', status: 'pending' },
 //   { url: '/users', status: 'failed' }
 // ];
+x// var inProgress;
+
+// inProgress = requests.some(function(request){
+//     return request.status === 'pending';
+// });
+
+// // ------- 
