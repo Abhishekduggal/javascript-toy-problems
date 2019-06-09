@@ -5222,3 +5222,19 @@ x// var inProgress;
 // });
 
 // // ------- 
+// // Balance parnethesis using Reduce Helper function
+
+// function checkPattern(str) {
+
+// return !str.split('').reduce(function(acc, char){
+
+//   if(acc < 0 ) {return acc};
+//   if(acc === '(') {return ++acc};
+//   if(acc === ')') {return --acc};
+
+//   return acc
+// }, 0)
+
+// }
+
+// checkPattern('(()((())))');
