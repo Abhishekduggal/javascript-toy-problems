@@ -5238,3 +5238,10 @@ x// var inProgress;
 // }
 
 // checkPattern('(()((())))');
+var desks = [
+  { type: 'sitting' },
+  { type: 'standing' },
+  { type: 'sitting' },
+  { type: 'sitting' },
+  { type: 'standing' }
+];
