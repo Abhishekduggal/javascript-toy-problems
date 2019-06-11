@@ -5245,3 +5245,10 @@ var desks = [
   { type: 'sitting' },
   { type: 'standing' }
 ];
+var deskTypes = desks.reduce(function(acc, desk) {
+    
+  console.log(desk.type)
+  acc.sitting++
+  acc.standing++
+  console.log(acc.sitting)
+  console.log(acc.standing)
