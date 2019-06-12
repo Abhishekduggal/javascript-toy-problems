@@ -5252,3 +5252,8 @@ var deskTypes = desks.reduce(function(acc, desk) {
   acc.standing++
   console.log(acc.sitting)
   console.log(acc.standing)
+  if(desk.type === 'sitting'){ ++acc.sitting}
+  if(desk.type === 'standing'){ ++acc.standing}
+
+  return acc;
+}, { sitting: 0, standing: 0 });
