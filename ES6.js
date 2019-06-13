@@ -5257,3 +5257,8 @@ var deskTypes = desks.reduce(function(acc, desk) {
 
   return acc;
 }, { sitting: 0, standing: 0 });
+function countGrade(scores){
+  //coding here...
+  var S = scores.filter(function (x) { return x === 100}).length;
+  
+  var A = scores.filter(function (x) { return x < 100 && x >=90}).length;
