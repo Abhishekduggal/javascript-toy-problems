@@ -5273,3 +5273,18 @@ function countGrade(scores){
 console.log('S: ' + S);  
 }
 countGrade([50,60,70,80,90,100]); //should return {S:1, A:1, B:1, C:2, D:1, X:0}
+// // let arr = [1,2,3,4,5,4,3,2,1];
+
+// // let product = arr.reduce(function(total, elem){
+// // console.log(total, elem)
+// //   return total * elem
+// // })
+
+// // product
+
+// let customers = [
+//   {name: "Shea", total: 150, message: 'This '},
+//   {name: 'Jarid', total: 1, message: 'is '},
+//   {name: 'Joe', total: 10000, message: 'a new '},
+//   {name: 'Erik', total: -100, message: 'message.'}
+// ]
