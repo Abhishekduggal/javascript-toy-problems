@@ -5272,3 +5272,4 @@ function countGrade(scores){
 
 console.log('S: ' + S);  
 }
+countGrade([50,60,70,80,90,100]); //should return {S:1, A:1, B:1, C:2, D:1, X:0}
