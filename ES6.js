@@ -5297,3 +5297,12 @@ countGrade([50,60,70,80,90,100]); //should return {S:1, A:1, B:1, C:2, D:1, X:0}
 // }, '')
 
 // sentence
+// let dog = {
+//   name: 'Rufus',
+//   isBad: false,
+//   bark: function(){
+//     console.log('woof')
+//   },
+//   age: 77,
+//   color: 'Brindle'
+// };
