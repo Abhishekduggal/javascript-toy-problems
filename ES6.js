@@ -5306,3 +5306,12 @@ countGrade([50,60,70,80,90,100]); //should return {S:1, A:1, B:1, C:2, D:1, X:0}
 //   age: 77,
 //   color: 'Brindle'
 // };
+
+// let extension = {
+//   isFed: true,
+//   size: 'Big',
+//   isBad : true
+// }
+// let newDog = Object.assign({}, dog, extension);
+// console.log(dog === newDog);
+// console.log(newDog)
