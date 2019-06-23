@@ -5345,3 +5345,16 @@ countGrade([50,60,70,80,90,100]); //should return {S:1, A:1, B:1, C:2, D:1, X:0}
 //     }
 //   }
 // }
+// let {city, address, zip, state} = req.body.user.location;
+
+// let arr = [1,2,3,4,5];
+
+// let [one, blah, , ,five] = arr;
+
+// console.log(one, blah, five)
+
+// function destructObj ({name}){
+//   return name;
+// }
+
+// destructObj({name:'Shea'})
