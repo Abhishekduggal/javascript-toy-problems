@@ -5368,3 +5368,15 @@ countGrade([50,60,70,80,90,100]); //should return {S:1, A:1, B:1, C:2, D:1, X:0}
 // function addTwo (x, y){
 //   return x + y;
 // }
+// let addTwo2 = (x, y) =>  x + y;  
+
+// let addTwo3 = (x) => x + 2;
+
+// addTwo3(10)
+
+// let arr = [1,2,3,4,5]
+
+// arr.map(elem => {
+
+//   return elem + 2
+// }); 
