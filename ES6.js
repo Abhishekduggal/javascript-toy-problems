@@ -5389,3 +5389,11 @@ countGrade([50,60,70,80,90,100]); //should return {S:1, A:1, B:1, C:2, D:1, X:0}
 // }
 
 // person.sayName()
+// function car (make, model, year){
+//   return {
+//     make, model, year, go: function(){console.log('vroom')}
+//   }
+// }
+
+// let myCar = car ('Nissan', 'xTerra', 2008)
+// // myCar
