@@ -5397,3 +5397,10 @@ countGrade([50,60,70,80,90,100]); //should return {S:1, A:1, B:1, C:2, D:1, X:0}
 
 // let myCar = car ('Nissan', 'xTerra', 2008)
 // // myCar
+// function Car (make, model, year){
+//   // let this = {make: make, model:model};
+//   this.make = make;
+//   this.model = model;
+//   this.year = year;
+//   // return this;
+// }
