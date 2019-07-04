@@ -5443,3 +5443,6 @@ class SUV extends Car {
     console.log('OH NO!!!!')
   }
 }
+let myCar = new SUV('Nissan', 'xTerra', 2008, true)
+myCar.tipOver()
+let myToyCar = new Car('Triumph', 'Spitfire', 1976);
