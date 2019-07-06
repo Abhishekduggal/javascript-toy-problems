@@ -5472,3 +5472,10 @@ function foldsToTheMoon(distance){
   if(distance <=0){
     return null
   }
+  for(let i = .0001; i < distance; i+=i){
+    counter++;
+  }
+  return counter;
+}
+
+foldsToTheMoon(384400000);
