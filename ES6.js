@@ -5495,3 +5495,9 @@ foldsToTheMoon(384400000);
 // }
 
 // distanceToMoon(0.0001);
+// function counter() {
+//   let num = 0;
+//   return function(){
+//     return num += 1;
+//   }
+// }
