@@ -5501,3 +5501,19 @@ foldsToTheMoon(384400000);
 //     return num += 1;
 //   }
 // }
+// const counterOne = counter();
+// counterOne();
+// counterOne();
+
+// const counterTwo = counter();
+// counterTwo();
+
+// const abhishekRegularOrder = ['Mustard', 'Spinach']
+// function createOrder(regular = []) {
+//   // let sandwichOrder = [];
+
+//   return function (ingredient){
+//     regular.push(ingredient);
+//     return regular;
+//   }
+// }
