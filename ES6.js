@@ -5529,3 +5529,17 @@ foldsToTheMoon(384400000);
 //       regular.push(ingredient){
 //         regular.push(ingredient)
 //       },
+//     deleteIngredient(ingredient){
+//       for(let i = 0; i<regular.length; i++){
+//         if(regular[i] === ingredient){
+//           regular.splice(i,1);
+//           i--;
+//         }
+//       }
+//     },
+//     readIngredients(){
+//       console.log(regular);
+//     }
+//     }
+//   }
+// }
