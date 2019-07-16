@@ -5591,3 +5591,37 @@ foldsToTheMoon(384400000);
 //     }
 //   }
 // }
+// function bankAccount -> starting balance 
+// // return function => deposit or withdraw 
+
+// function bankAccount(balance){
+// // let balance = 0;
+//   return function(action, amt){
+//     if(action === 'deposit'){
+//       return balance += amt;
+//     }else if (action === 'withdraw'){
+//       if(balance - amt < -50){
+//         return 'No Go';
+//       }
+//       return (balance -= amt);
+//     }
+//   }
+// }// function bankAccount -> starting balance 
+// // return function => deposit or withdraw 
+
+// function bankAccount(balance){
+// // let balance = 0;
+//   return function(action, amt){
+//     if(action === 'deposit'){
+//       return balance += amt;
+//     }else if (action === 'withdraw'){
+//       if(balance - amt < -50){
+//         return 'No Go';
+//       }
+//       return (balance -= amt);
+//     }
+//   }
+// }
+// let abhishekAccount = bankAccount(20);
+// abhishekAccount('deposit', 80);
+// abhishekAccount('withdraw', 1000);
