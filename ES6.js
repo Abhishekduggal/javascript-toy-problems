@@ -5625,3 +5625,15 @@ foldsToTheMoon(384400000);
 // let abhishekAccount = bankAccount(20);
 // abhishekAccount('deposit', 80);
 // abhishekAccount('withdraw', 1000);
+//calculator Add / Subtract / Multiply / Divide 
+// number = 0
+
+// function calculator(){
+//   let num = 0;
+//   return {
+//     add(val) {
+//       return num+= val;
+//     },
+//     subtract(val) {
+//       return num-= val;
+//     },
