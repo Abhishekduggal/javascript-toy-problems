@@ -5637,3 +5637,39 @@ foldsToTheMoon(384400000);
 //     subtract(val) {
 //       return num-= val;
 //     },
+//calculator Add / Subtract / Multiply / Divide 
+// number = 0
+
+// function calculator(){
+//   let num = 0;
+//   return {
+//     add(val) {
+//       return num+= val;
+//     },
+//     subtract(val) {
+//       return num-= val;
+//     },
+//     multiply(val){
+//       return num*= val;
+//     },
+
+//     divide(val){
+//       return num/= val;
+//     },
+//     reset() {
+//       num = 0;
+//     }
+//   }
+// } 
+//     multiply(val){
+//       return num*= val;
+//     },
+
+//     divide(val){
+//       return num/= val;
+//     },
+//     reset() {
+//       num = 0;
+//     }
+//   }
+// } 
