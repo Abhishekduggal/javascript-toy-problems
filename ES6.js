@@ -5673,3 +5673,8 @@ foldsToTheMoon(384400000);
 //     }
 //   }
 // } 
+// const calcOne = calculator();
+
+// calcOne.add(10);
+// calcOne.subtract(5);
+
