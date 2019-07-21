@@ -5696,3 +5696,16 @@ foldsToTheMoon(384400000);
 //       return `${welcomeText} ${firstname} ${lastname}.`;
 //   };
 // }
+/*
+  Write a function called getUserById that takes in three parameters: an array of objects (users), an id and a callback, and searches for the user with a matching id.
+  When the correct user object is found, invoke the callback with the user object as an argument.
+*/
+
+// Code here
+var users = [
+  {
+    id: '12d',
+    email: 'tyler@gmail.com',
+    name: 'Tyler',
+    address: '167 East 500 North'
+  },
