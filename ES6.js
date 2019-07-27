@@ -5752,4 +5752,10 @@ function dna (str){
       arr.push('T');
     } else if(str[i] === 'T'){
       arr.push('A');
-    }else if
+    }else if(str[i] === 'G'){
+      arr.push('C');
+    }else if(str[i] === 'C'){
+      arr.push('G');
+    }
+  }
+  return arr.join('');
