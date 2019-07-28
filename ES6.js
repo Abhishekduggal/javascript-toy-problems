@@ -5771,3 +5771,16 @@ function dna (str){
 
   for(var i = 0; i < arr.length; i++){
     if(arr[i] === 'A'){
+            arr[i] = 'T'
+    }else if (arr[i] === 'T'){
+      arr[i] === 'A'
+    }else if (arr[i] === 'C'){
+      arr[i] === 'G'
+    }else if (arr[i] === 'G'){
+      arr[i] === 'C'
+    }
+  }
+  console.log(arr);
+  return arr.join('');
+  // console.log(arr);
+  // var newStr;
