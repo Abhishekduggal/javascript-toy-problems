@@ -5784,3 +5784,8 @@ function dna (str){
   return arr.join('');
   // console.log(arr);
   // var newStr;
+    // str.replace('A')
+  */
+}
+
+dna('ATTGC');
