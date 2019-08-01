@@ -5808,3 +5808,13 @@ function fibonnaci(n) {
   let newArr = [];
 
   for(let i = 0; i < n; i++){
+
+    console.log(newArr, newArr[i-1], newArr[i-2]);
+
+    newArr.push((newArr[i-1] || 1) + (newArr[i-2] || 0))
+  }
+
+  console.log(newArr);
+
+  return newArr.reverse();
+}
