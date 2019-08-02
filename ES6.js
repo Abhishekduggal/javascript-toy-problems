@@ -5830,3 +5830,8 @@ fibonnaci(10);
 
   
 //   //return result//.reverse();
+//   //return result//.reverse();
+
+// }
+
+// sequence(5);
