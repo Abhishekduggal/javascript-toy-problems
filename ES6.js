@@ -5818,3 +5818,15 @@ function fibonnaci(n) {
 
   return newArr.reverse();
 }
+fibonnaci(10);
+
+//     console.log(n);
+//     //result.push(n, );
+//   if(n < 65) {
+//     //console.log(n);
+//     return n
+//   } 
+//     return (sequence(n-1)+sequence(n-2))
+
+  
+//   //return result//.reverse();
