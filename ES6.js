@@ -5893,3 +5893,4 @@ fibonnaci(10);
 //   //       output[predicate(collection[i])] = [collection[i]]
 //   //     }
 //   //   }
+function groupBy(collection, predicate){   // pseudocode begins here:    // Depending on the second parameter function / string /    // what are we doing here?    // function - call the function and pass each item       // store it in a variable      // They will will be key for the object      // Value will be the item that we are at the iteration of the loop            // check the key alreay exist in the object         // If it does we have to add,       // Key    //& value (array)    // return the new object// function groupBy(collection, predicate){  var result = {};
