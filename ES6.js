@@ -5912,4 +5912,15 @@ function groupBy(collection, predicate){   // pseudocode begins here:
          }
        });
      }
+     if (typeof(predicate) === "string"){
+      collection.forEach(function(item){
+        if (result[item[predicate]]){
+        result[item[predicate]].push(item);
+      } else {
+      result[item[predicate]] = [item];
+      }
+    });
+  }  
+  //console.log('output', output);
+  return result;
      
