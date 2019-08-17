@@ -5992,3 +5992,16 @@ function checkLength(digit){
 }
 
 tellMeTime(3599);
+// function tellMeTime(secondsVal){
+// // var minutes = Math.floor(time / 60); And to get the remaining seconds, multiply the full minutes with 60 and subtract from the total seconds: var seconds = time - minutes * 60; Now if you also want to get the full hours too, divide the number of total seconds by 3600 (60 minutes/hour.Sep 17, 2010
+
+// var secondsNum = parseInt(secondsVal, 10);
+
+// var hours = secondsNum/3600 < 1 ? 00 : (secondsNum/3600);
+// console.log(hours);
+
+// var minutes = Math.floor(secondsNum/60);
+// console.log(minutes);
+
+// var seconds = (seconds-minutes)*60 || 00;
+// console.log(seconds);
