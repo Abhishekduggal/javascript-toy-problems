@@ -5986,3 +5986,9 @@ function tellMeTime(seconds){
   
   return `${hours}:${minutes}:${seconds}`
 }
+function checkLength(digit){
+  if(('+digit').legth < 2) {return '0'+digit}
+  return digit;
+}
+
+tellMeTime(3599);
