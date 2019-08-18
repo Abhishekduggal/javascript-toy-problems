@@ -6005,3 +6005,15 @@ tellMeTime(3599);
 
 // var seconds = (seconds-minutes)*60 || 00;
 // console.log(seconds);
+// return (`${hours}:${minutes}:${seconds}`); 
+
+// }
+
+// tellMeTime(359999) // 00:01:00
+
+
+// function nameIt(seconds) {
+
+// let min = 0,
+//     hour = 0,
+//     sec = 0;
