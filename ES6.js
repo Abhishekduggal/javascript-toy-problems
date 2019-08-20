@@ -6017,3 +6017,15 @@ tellMeTime(3599);
 // let min = 0,
 //     hour = 0,
 //     sec = 0;
+// if(seconds){
+//   if(seconds>=60){
+//     min = Math.floor(seconds/60)
+//     sec = seconds%60
+//   }else {
+//     sec = seconds;
+//   }
+//   if(min>=60){
+//     hour = Math.floor(min/60)
+//     min = min-hour * 60
+//   }
+// }
