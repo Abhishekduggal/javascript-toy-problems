@@ -6029,3 +6029,8 @@ tellMeTime(3599);
 //     min = min-hour * 60
 //   }
 // }
+// }
+// return `${hour}:${min}:${sec}`
+// }
+
+// nameIt(5999);
