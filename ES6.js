@@ -6034,3 +6034,13 @@ tellMeTime(3599);
 // }
 
 // nameIt(5999);
+function sumTransactions(array1) {
+  var sum = 0;
+  var max = (array1[0].amount);
+  
+  //console.log (array1[0]);
+  
+  for (var i = 1; i < array1.length; i++ ) {
+    //console.log(array1[0].amount);
+    
+  
