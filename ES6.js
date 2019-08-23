@@ -6043,4 +6043,15 @@ function sumTransactions(array1) {
   for (var i = 1; i < array1.length; i++ ) {
     //console.log(array1[0].amount);
     
+    if (max < array1[i].amount) {
+      console.log('max', max)
+      console.log('amount', array1[i].amount);
+      
+      max = array1[i].amount;
+    } 
+    //console.log(array1[i]);
+    //console.log(array1[i].amount);
+    //console.log([i]);
+    //sum += array1[i].amount;
   
+  }  
