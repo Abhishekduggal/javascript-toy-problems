@@ -6084,3 +6084,19 @@ function sumTransactions(array1) {
     
     }
     return max;
+  }
+
+  var transactions = [
+    {
+      name: "Tons of glitter",
+      amount: 70
+    },
+    {
+      name: "Porcelain Pink Flamingos",
+      amount: 92
+    },
+    {
+      name: "Chandelier replacement",
+      amount: 10000,
+    },
+    {
