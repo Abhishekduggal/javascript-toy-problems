@@ -6099,4 +6099,26 @@ function sumTransactions(array1) {
       name: "Chandelier replacement",
       amount: 10000,
     },
-    {
+    {}
+
+    var transactions = [
+      {
+        name: "Tons of glitter",
+        amount: 70
+      },
+      {
+        name: "Porcelain Pink Flamingos",
+        amount: 92
+      },
+      {
+        name: "Chandelier replacement",
+        amount: 10000,
+      },
+      {},
+      {
+        name: "Dinner at TGIF x6",
+        amount: 350
+      }
+    ];
+    
+    sumTransactions(transactions); // => 10512
