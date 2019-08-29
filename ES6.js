@@ -6132,3 +6132,10 @@ function sumTransactions(array1) {
 // In New Jersey, the final bill is calculated as the price of an item, plus a 5% shipping fee, plus a 7% sales tax assessed on the price of the item together with shipping costs.
 // So the final bill for a $100 item in New York would be: (100*1.03)*1.09 = 112.27 And in New Jersey: (100*1.05)*1.07 = 112.35
 
+// function NY(){
+//   return 1.03 * 1.09;
+// }
+
+// function NJ(){
+//   return 1.05* 1.07;
+// }
