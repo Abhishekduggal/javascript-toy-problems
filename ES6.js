@@ -6139,3 +6139,17 @@ function sumTransactions(array1) {
 // function NJ(){
 //   return 1.05* 1.07;
 // }
+function biller(state){
+  var bill = function(num){
+  // return num * state();
+  // }
+    if(state === "NY"){
+    return (num * 1.03) * 1.09;
+    } else if(state === "NJ"){
+    return (num * 1.05) * 1.07;
+    } else {
+    return "invalid State";
+    }
+  }
+ return bill;
+ }
