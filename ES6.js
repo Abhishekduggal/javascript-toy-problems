@@ -6192,3 +6192,10 @@ const purchases = [
   { month: "March", price: 60.8 },
   { month: "February", price: 23.65 }
 ];
+const purchasesByMonth = _.groupBy(purchases, "month");
+console.log(purchasesByMonth);
+
+// for (key in purchasesByMonth) {
+//   console.log(typeof key)
+// }
+
