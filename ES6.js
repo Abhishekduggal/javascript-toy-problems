@@ -6233,3 +6233,12 @@ purchases.map(e => e.price)
 // } catch (err) {
 //   console.log(err);
 // }
+// function promiseGen() {
+//   return new Promise((resolve, reject) => {
+//     if (true) {
+//       resolve('True');
+//     } else {
+//       reject('False');
+//     }
+//   });
+// }
