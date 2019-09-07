@@ -6242,3 +6242,9 @@ purchases.map(e => e.price)
 //     }
 //   });
 // }
+// promiseGen().then(res => console.log(res)).catch(err => console.log('err', err));
+
+// throw new Error('You broke the things');
+
+let arr =[]
+console.log(arr.length)
