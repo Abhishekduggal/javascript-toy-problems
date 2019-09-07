@@ -6248,3 +6248,10 @@ purchases.map(e => e.price)
 
 let arr =[]
 console.log(arr.length)
+
+var array1 = [5, 12, 8, 130, 44];
+var array2 = ['hi','hello','abhi']
+
+function findFirstLargeNumber(element) {
+  return element === 'abhi';
+}
