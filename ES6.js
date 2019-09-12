@@ -6281,3 +6281,13 @@ var found = array1.find(function(element) {
 
 console.log(found);
 // expected output: 12
+
+// const user = {
+//   name: 'abhishek',
+//   sayName() {
+//     return this.name;
+//   }
+// }
+
+// // Implicit Binding 
+// user.sayName();
