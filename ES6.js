@@ -6291,3 +6291,14 @@ console.log(found);
 
 // // Implicit Binding 
 // user.sayName();
+// // Implicit Binding 
+// user.sayName();
+
+
+// function sayName(){
+//   return this.name;
+// }
+// const user = {
+//   name: 'abhishek',
+//   sayName: sayName
+// }
