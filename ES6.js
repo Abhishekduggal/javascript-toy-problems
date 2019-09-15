@@ -6321,3 +6321,35 @@ console.log(found);
 //   name: 'abhishek',
 //   sayName: sayName
 // }
+// const user2 = {
+//   name: 'Jeff',
+//   sayJeff: sayName
+// }
+// // user.sayName();
+
+// user2.sayJeff();
+
+//Implicit Binding 
+
+
+
+//Explicit Binding
+
+// function drive(){
+//   return this.miles += 1;
+// }
+
+// const grandNational = {
+//   make: 'Buick',
+//   model: 'Grand National',
+//   year: "'87",
+//   miles: 0
+// }
+
+// const x5m = {
+//   make: 'BMW',
+//   model: 'X5M',
+//   year: "2018",
+//   miles: 0
+// }
+
