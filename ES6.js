@@ -6353,3 +6353,13 @@ console.log(found);
 //   miles: 0
 // }
 
+// drive.call(x5m,,,,);
+// drive.apply(x5m, [,,,,]);
+
+// const driveNational = drive.bind(grandNational);
+
+// const driveBeemer = drive.bind(x5m);
+
+// driveNational();
+// driveNational();
+// driveBeemer();
