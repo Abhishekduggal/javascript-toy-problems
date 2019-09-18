@@ -6363,3 +6363,20 @@ console.log(found);
 // driveNational();
 // driveNational();
 // driveBeemer();
+
+
+//Constructor functions 
+// function Car(make, model, year){
+//   this.make = make;
+//   this.model = model;
+//   this.year = year;
+//   this.miles = 0;
+//   this.drive = function () {
+//     return this.miles += 1;
+//   }
+// }
+
+// const mustang = new Car('Ford', 'Mustang', 2001);
+
+// console.log(mustang)
+
