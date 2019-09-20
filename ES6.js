@@ -6395,3 +6395,90 @@ console.log(found);
 // const mustang = new Car('Ford', 'Mustang', 2001);
 
 // console.log(mustang)
+
+
+// const user = {
+//   name: 'abhishek',
+//   sayName() {
+//     return this.name;
+//   }
+// }
+
+// // Implicit Binding 
+// user.sayName();
+
+
+// function sayName(){
+//   return this.name;
+// }
+// const user = {
+//   name: 'abhishek',
+//   sayName: sayName
+// }
+
+// const user2 = {
+//   name: 'Jeff',
+//   sayJeff: sayName
+// }
+// // user.sayName();
+
+// user2.sayJeff();
+
+//Implicit Binding 
+
+
+
+//Explicit Binding
+
+// function drive(){
+//   return this.miles += 1;
+// }
+
+// const grandNational = {
+//   make: 'Buick',
+//   model: 'Grand National',
+//   year: "'87",
+//   miles: 0
+// }
+
+// const x5m = {
+//   make: 'BMW',
+//   model: 'X5M',
+//   year: "2018",
+//   miles: 0
+// }
+
+// drive.call(x5m,,,,);
+// drive.apply(x5m, [,,,,]);
+
+// const driveNational = drive.bind(grandNational);
+
+// const driveBeemer = drive.bind(x5m);
+
+// driveNational();
+// driveNational();
+// driveBeemer();
+
+// Object Factory (Like action creators)
+// function createCar(make, model, year){
+//   return {
+//     make: make,
+//     model: model,
+//     year: year
+//   }
+// }
+
+//Constructor functions 
+// function Car(make, model, year){
+//   this.make = make;
+//   this.model = model;
+//   this.year = year;
+//   this.miles = 0;
+//   this.drive = function () {
+//     return this.miles += 1;
+//   }
+// }
+
+// const mustang = new Car('Ford', 'Mustang', 2001);
+
+// console.log(mustang)
