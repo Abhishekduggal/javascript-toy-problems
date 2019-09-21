@@ -6482,3 +6482,52 @@ console.log(found);
 // const mustang = new Car('Ford', 'Mustang', 2001);
 
 // console.log(mustang)
+
+// const allParks = [new Park('Green Park', 1987, 0.2, 215), 
+// 					new Park('National Park', 1894, 2.9, 3541), 
+// 					new Park('Oak Park', 1953, 0.4, 949)];
+
+// const allStreets = [new Street('Ocean Avenue', 1999, 1.1, 4),
+// 					new Street('Evergreen Street', 2008, 2.7, 2), 
+// 					new Street('4th Street', 2015, 2.5),
+// 					new Street('Sunset Boulevard', 1982, 2.5, 5)];
+
+
+// function calc(arr){
+// 	const sum = arr.reduce((prev, curr, index) => prev + curr, 0);
+
+// 	return [sum, sum / arr.length];
+// }
+
+// function reportParks (p){
+// 	console.log('------ Park Reports ------')
+
+// 	//density
+// 	p.forEach(el => el.treeDensity());
+
+// 	// average age
+// 	const ages = p.map(el => new Date().getFullYear() - el.buildYear);
+// 	const [totalAge, avgAge] = calc(ages);
+
+// 	console.log(`Our ${p.length} parks have an average of ${avgAge} years`)
+
+// 	//which park hsa more than 1,000
+
+// 	const i = p.map(el => el.numTrees).findIndex(el => el >= 1000);
+// 	console.log(`${p[i].name} has more than 1000 trees`)
+
+// }
+
+// function reportStreets (s){
+// 	console.log('------ Streets Reports ------')
+
+// 	// Total and average length of the towns streets
+// 	const [totalLength, avgLength] = calc(s.map(el => el.length));
+// 	console.log(`Our ${s.length} streets have a total length of ${totalLength} km, with an average of ${avgLength} km.`);
+
+// 	// Classify Sizes
+// 	s.forEach(el => el.classifystreet());
+// }
+
+// reportParks(allParks);
+// reportStreets(allStreets);
