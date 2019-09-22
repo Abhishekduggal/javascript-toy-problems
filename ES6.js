@@ -6546,3 +6546,21 @@ function validParentheses(str){
   let result = 0;
   
   // console.log(str.search('()'))
+
+
+  for(let i = 0; i<str.length; i++){
+    // console.log(str[i])
+    if(str[i] === '('){
+      // console.log(str[i]);
+      result++;
+    }else if( str[i] === ')' ){
+      result--;
+      // console.log(str[i]);
+    }
+    if(result<0){
+      return false;
+    }
+  }
+  return !result;
+  }
+  
