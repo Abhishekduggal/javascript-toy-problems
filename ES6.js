@@ -6563,4 +6563,15 @@ function validParentheses(str){
   }
   return !result;
   }
-  
+}
+if(result<0){
+  return false;
+}
+}
+return !result;
+}
+
+// validParentheses( "()" )
+// validParentheses( ")(()))" )
+validParentheses( "(())((()())())" )
+// validParentheses( "(" )  
