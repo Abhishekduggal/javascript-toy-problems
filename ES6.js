@@ -6574,4 +6574,11 @@ return !result;
 // validParentheses( "()" )
 // validParentheses( ")(()))" )
 validParentheses( "(())((()())())" )
-// validParentheses( "(" )  
+// validParentheses( "(" )
+const _ = require('lodash');
+
+// function addToArray(arr, input) {
+// 	arr.push(input);
+// 	return arr;
+// }
+  
