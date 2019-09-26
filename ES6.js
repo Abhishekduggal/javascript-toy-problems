@@ -6581,4 +6581,12 @@ const _ = require('lodash');
 // 	arr.push(input);
 // 	return arr;
 // }
-  
+// const arrayWithVal = addToArray([], 'Hello');
+
+// const addedVal = addToArray(arrayWithVal, 'world');
+
+// console.log(addToArray(addToArray(addToArray([], 'World'), 'Hello'), 'Messy'))
+
+// console.log(addedVal);
+
+// const myArr = [1, 2, 3];  
