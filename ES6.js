@@ -6589,4 +6589,19 @@ const _ = require('lodash');
 
 // console.log(addedVal);
 
-// const myArr = [1, 2, 3];  
+// const myArr = [1, 2, 3];
+
+// console.log(total);
+
+// // const myVar = if (name === 'Steven') {
+// //   'Steven'
+// // } else {
+// //   'John'
+// // }
+
+// const myVar = name === 'Steven' ? 'Steven' : 'John';
+
+// const x = () => 7;
+// const y = someVal => someVal + 2;
+
+// y(x());
