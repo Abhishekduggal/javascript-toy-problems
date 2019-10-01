@@ -6642,3 +6642,11 @@ const nums = { a: 2, b: 3 };
 // const intersect = _.intersection([1, 2, 3, 5], [1, 4, 5, 6], [1, 2, 5]);
 
 // console.log(intersect);
+
+// const intersect = _.intersection([1, 2, 3, 5], [1, 4, 5, 6], [1, 2, 5]);
+
+// console.log(intersect);
+
+// const grouped = _.groupBy(users, 'name');
+
+// console.log(Object.entries(grouped));
