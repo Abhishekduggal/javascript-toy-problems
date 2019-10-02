@@ -6650,3 +6650,12 @@ const nums = { a: 2, b: 3 };
 // const grouped = _.groupBy(users, 'name');
 
 // console.log(Object.entries(grouped));
+
+ 
+for(let i = .0001; i < distance; i+=i){
+  counter++;
+}
+return counter;
+}
+
+foldsToTheMoon(384400000);
