@@ -6690,3 +6690,13 @@ foldsToTheMoon(384400000);
 // Create an array and loop through it 
 // check the number before and two numbers before and add them 
 // reverse my array 
+function fibonnaci(n) {
+  //let newNum - n-1;
+  let newArr = [];
+
+  for(let i = 0; i < n; i++){
+
+    console.log(newArr, newArr[i-1], newArr[i-2]);
+
+    newArr.push((newArr[i-1] || 1) + (newArr[i-2] || 0))
+  }
