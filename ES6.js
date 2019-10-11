@@ -6741,3 +6741,11 @@ twelvesTable(100)    // => 1200
 // The maximum time never exceeds 359999 (99:59:59)
 
 // You can find some examples in the test fixtures.
+function tellMeTime(seconds){
+  
+  let hours = checkLength(Math.floor(seconds/3600);
+  let minutes = checkLength(Math.floor((sconds%3600)/60);
+  let seconds = checkLength(seconds-(hours*3600)-(minutes/60));
+  
+  return `${hours}:${minutes}:${seconds}`
+}
