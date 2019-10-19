@@ -6820,3 +6820,14 @@ function songDecoder(str){
 //   let songs = arr.filter(song => {
 //     return (song !== 'W' && song !=='U' && song !=='B')
 //   })
+
+//   //console.log(songs);
+//   return songs.join('');
+return arr.filter(s=>s).join(' ');
+
+// let songDecoder = str => str.replace(/WUB/g,'').replace((/\s+/g),'').trim()
+
+}
+
+//songDecoder("WUBWUBIWUBAMWUBWUBX");
+songDecoder("WUBWEWUBAREWUBWUBTHEWUBCHAMPIONSWUBMYWUBFRIENDWUB")
