@@ -6844,3 +6844,15 @@ console.log(both);
 // When the printer has a malfunction, the control string marks it with a letter that isn't a through m, for example: "aaaxbbbbyyhwawiwjjjwwm".
 
 // Write a function, printer_error, which will output the error rate of the printer as a string whose numerator is the number of errors and the denominator the length of the control string. Do not reduce the fraction.
+
+
+function printer_error (str){
+  //console.log(str.length);
+  //console.log(str.includes('a'))
+  //
+  // console.log(str.match(/nopqrstuvwxyz/g));
+  // var output = (str.match(/nopqrstuvwxyz/g) || []).length;
+  // console.log(output);
+  // if(output === false ){
+  //   return `0/${str.length}`
+  // }else {
