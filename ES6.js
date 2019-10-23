@@ -6856,3 +6856,8 @@ function printer_error (str){
   // if(output === false ){
   //   return `0/${str.length}`
   // }else {
+    //   return `${output}/${str.length}`
+  // }
+// charCodeAt ===== 97-109 are ok
+
+  let denom = str.length;
