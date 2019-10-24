@@ -6861,3 +6861,17 @@ function printer_error (str){
 // charCodeAt ===== 97-109 are ok
 
   let denom = str.length;
+  // }else {
+  //   return `${output}/${str.length}`
+  // }
+// charCodeAt ===== 97-109 are ok
+
+let denom = str.length;
+let errorsLength = str.split('').filter(elem => {
+  return elem.charCodeAt() > 109 || elem.charCodeAt() < 97
+}).length
+
+//console.log(errorsLength)
+
+return `${errorsLength}/${denom}`
+}
