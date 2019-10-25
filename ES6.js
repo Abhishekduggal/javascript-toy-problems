@@ -6875,3 +6875,14 @@ let errorsLength = str.split('').filter(elem => {
 
 return `${errorsLength}/${denom}`
 }
+
+
+
+
+return `${errorsLength}/${denom}`
+}
+
+
+// For example:
+//printer_error("aaabbbbhaijjjm") //==> "0/14"
+printer_error("aaaxbbbbyyhwawiwjjjwwm") //==> "8/22"
