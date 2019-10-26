@@ -6886,3 +6886,10 @@ return `${errorsLength}/${denom}`
 // For example:
 //printer_error("aaabbbbhaijjjm") //==> "0/14"
 printer_error("aaaxbbbbyyhwawiwjjjwwm") //==> "8/22"
+
+function insertion(arr){
+  for(let i = 1; i < arr.length; i++){
+    // console.log('i',arr[i])
+    for(let j = 0; j < i; j++)
+    // console.log('j', arr[i][j])
+    if(arr[i] < arr[j]){
