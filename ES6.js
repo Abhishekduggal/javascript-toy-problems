@@ -6905,3 +6905,15 @@ function insertion(arr){
 
 insertion([3,2,1])
 
+// function counter() {
+//   let num = 0;
+//   return function () {
+//     return num += 1;
+//   }
+// }
+
+// const counterOne = counter();
+// counterOne();
+// console.log(counterOne());
+// const counterTwo = counter();
+// console.log(counterTwo());
