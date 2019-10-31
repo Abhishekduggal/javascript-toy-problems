@@ -6919,3 +6919,10 @@ insertion([3,2,1])
 // console.log(counterTwo());
 
 const stevensRegularOrder = ['Ham', 'BP', 'BananaPeps', 'Ranch', 'Spinach'];
+
+// function createOrder(regular = []) {
+//   return function(ingredient) {
+//     regular.push(ingredient);
+//     return regular;
+//   }
+// }
