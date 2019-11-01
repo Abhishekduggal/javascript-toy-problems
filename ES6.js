@@ -6926,3 +6926,9 @@ const stevensRegularOrder = ['Ham', 'BP', 'BananaPeps', 'Ranch', 'Spinach'];
 //     return regular;
 //   }
 // }
+
+// const stevensSandwich = createOrder(stevensRegularOrder);
+// console.log(stevensSandwich('Lettuce'));
+
+// const robsSandwich = createOrder();
+// console.log(robsSandwich('Tuna'));
