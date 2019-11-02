@@ -6932,3 +6932,10 @@ const stevensRegularOrder = ['Ham', 'BP', 'BananaPeps', 'Ranch', 'Spinach'];
 
 // const robsSandwich = createOrder();
 // console.log(robsSandwich('Tuna'));
+
+
+function createOrder(regular = []) {
+	return {
+		addIngredient(ingredient) {
+			regular.push(ingredient);
+		},
