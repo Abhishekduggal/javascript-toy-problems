@@ -6953,3 +6953,20 @@ function createOrder(regular = []) {
 		},
 	};
 }
+
+
+// FUNCTION bankAccount -> startingBalance
+// return function => Deposit or Withdraw
+
+// function bankAccount(balance) {
+// 	return function(action, amt) {
+// 		if (action === 'deposit') {
+// 			return (balance += amt);
+// 		} else if (action === 'withdraw') {
+// 			if (balance - amt < -50) {
+// 				return 'No Go';
+// 			}
+// 			return (balance -= amt);
+// 		}
+// 	};
+// }
