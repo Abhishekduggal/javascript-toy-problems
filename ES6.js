@@ -6978,3 +6978,24 @@ function createOrder(regular = []) {
 // Calculator
 // Add, subtract, multiply, divide
 // number = 0
+
+// function calculator() {
+//   let num = 0;
+//   return {
+//     add(val) {
+//       return num += val;
+//     },
+//     subtract(val) {
+//       return num -= val;
+//     },
+//     multiply(val) {
+//       return num *= val;
+//     },
+//     divide(val) {
+//       return num /= val;
+//     },
+//     reset() {
+//       num = 0;
+//     }
+//   }
+// }
