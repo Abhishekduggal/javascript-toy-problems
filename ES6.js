@@ -6999,3 +6999,12 @@ function createOrder(regular = []) {
 //     }
 //   }
 // }
+
+// const calcOne = calculator();
+
+// calcOne.add(10);
+// calcOne.subtract(5);
+
+// function sayName() {
+//   return this.name;
+// }
