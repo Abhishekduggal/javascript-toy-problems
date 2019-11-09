@@ -7008,3 +7008,18 @@ function createOrder(regular = []) {
 // function sayName() {
 //   return this.name;
 // }
+
+
+// const user = {
+//   name: 'steven',
+//   sayName: sayName
+// }
+
+// const user2 = {
+//   name: 'Jeff',
+//   sayJeff: sayName
+// }
+
+// user.sayName();
+// user2.sayJeff();
+// sayName();
