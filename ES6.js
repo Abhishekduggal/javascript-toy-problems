@@ -7050,3 +7050,17 @@ const x5m = {
 // driveNational();
 // console.log(driveNational());
 // console.log(driveBeemer());
+
+// Object factory (like action creators);
+// function createCar(make, model, year) {
+//   return {
+//     make: make,
+//     model: model,
+//     year: year
+//   }
+// }
+
+// const myCar = createCar('Ford', 'Mustang', 2001);
+
+// let obj = {}
+// obj.name = 'Steven';
