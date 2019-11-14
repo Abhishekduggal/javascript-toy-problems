@@ -7107,3 +7107,23 @@ const x5m = {
 //     //
 //   }
 // }
+
+// user.sayName();
+
+// class Car {
+//   constructor(make, year) {
+//     this.state = {
+//       make,
+//       year,
+//       miles: 0
+//     }
+//   }
+//   tellMake() {
+//     return this.state.make;
+//   }
+// }
+
+// const mustang = new Car('Ford', 2001);
+
+// console.log(mustang);
+// console.log(mustang.tellMake());
