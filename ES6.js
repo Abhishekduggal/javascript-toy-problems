@@ -7150,3 +7150,13 @@ class Dog extends Animal {
 
 const rocky = new Dog('Rocky', 'Woofs');
 rocky.speak();
+
+// const user = {
+//   name: 'abhishek',
+//   sayName() {
+//     return this.name;
+//   }
+// }
+
+// // Implicit Binding 
+// user.sayName();
