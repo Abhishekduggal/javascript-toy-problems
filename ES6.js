@@ -7127,3 +7127,26 @@ const x5m = {
 
 // console.log(mustang);
 // console.log(mustang.tellMake());
+
+
+class Animal {
+  constructor(name, noise) {
+    this.name = name;
+    this.noise = noise;
+  }
+  speak() {
+    console.log(this.name + ' makes a noise.');
+  }
+}
+
+class Dog extends Animal {
+  constructor(noise, name) {
+    super(noise, name);
+  }
+  speak() {
+    console.log(this.name + ' ' + this.noise);
+  }
+}
+
+const rocky = new Dog('Rocky', 'Woofs');
+rocky.speak();
