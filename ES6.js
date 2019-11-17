@@ -7160,3 +7160,17 @@ rocky.speak();
 
 // // Implicit Binding 
 // user.sayName();
+
+
+// function sayName(){
+//   return this.name;
+// }
+// const user = {
+//   name: 'abhishek',
+//   sayName: sayName
+// }
+
+// const user2 = {
+//   name: 'Jeff',
+//   sayJeff: sayName
+// }
