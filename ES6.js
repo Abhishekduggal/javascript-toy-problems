@@ -7216,4 +7216,13 @@ function countdown(n){
   //30 Character solution goes here
   let arrN = [n];
   // let addN = [n+1, n+2];
-  
+
+  arrN.push(n+1,n+2);
+  // arrN.push(...addN);
+  console.log(arrN)
+
+return arrN.reverse().join('!');
+
+}
+
+countdown(10);
