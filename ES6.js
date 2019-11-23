@@ -7250,4 +7250,12 @@ function unformatted() {
           console.log("count is two!");
         }
 
-        
+      }
+      console.log("are we still in the inner func?");
+    } 
+    innerFunction(5);
+    return "end of the func";
+  }
+  
+  
+  unformatted();
