@@ -7282,3 +7282,11 @@ const accum = (str) => {
     newStr += str[i].toLowerCase();
   }
   count++;
+
+  i !== (str.length - 1) ? newStr += `-` : newStr;
+
+}
+return newStr;
+}
+
+accum('cwAt')
