@@ -7304,3 +7304,19 @@ accum('cwAt')
   // return result.join('-')
 //   let count = 1
 //   let newStr = '';
+
+accum('cwAt')
+
+// function accum(str){
+  // let arr = str.split('')
+  
+  // let result = arr.map((el, i) => {
+  //   let upper = el.toUpperCase();
+  //   let counter = i + 1;
+
+  //   return `${upper}${el}` 
+  // })
+  // console.log(result)
+  // return result.join('-')
+//   let count = 1
+//   let newStr = '';
