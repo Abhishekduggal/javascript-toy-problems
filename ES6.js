@@ -7344,3 +7344,9 @@ for(var i = 0; i< str.length; i++){
 //   const data1 = axios.get('https://www.swapi.co/api/people');
 //   const data2 = axios.get(`https://www.swapi.co/api/people`);
 //   const data3 = axios.get('https://www.swapi.co/api/people');
+
+//   return await Promise.all([data1, data2, data3]);
+//   } catch(e) {
+//     console.log(e);
+//   }
+// }
