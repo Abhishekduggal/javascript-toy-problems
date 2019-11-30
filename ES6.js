@@ -7335,3 +7335,12 @@ for(var i = 0; i< str.length; i++){
   // }
   
   // accum("abcd"); 
+
+  // async/await
+// const axios = require('axios');
+
+// async function getThePeople() {
+//   try {
+//   const data1 = axios.get('https://www.swapi.co/api/people');
+//   const data2 = axios.get(`https://www.swapi.co/api/people`);
+//   const data3 = axios.get('https://www.swapi.co/api/people');
