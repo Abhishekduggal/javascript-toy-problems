@@ -7350,3 +7350,12 @@ for(var i = 0; i< str.length; i++){
 //     console.log(e);
 //   }
 // }
+
+//   const response = await getThePeople();
+//   console.log(response);
+// })()
+// try {
+//   doSomethingBroken();
+// } catch (err) {
+//   console.log(err);
+// }
