@@ -7359,3 +7359,13 @@ for(var i = 0; i< str.length; i++){
 // } catch (err) {
 //   console.log(err);
 // }
+// }
+// (async function() {
+//   const response = await getThePeople();
+//   console.log(response);
+// })()
+// try {
+//   doSomethingBroken();
+// } catch (err) {
+//   console.log(err);
+// }
