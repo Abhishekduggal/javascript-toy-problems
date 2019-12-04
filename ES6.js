@@ -7369,3 +7369,13 @@ for(var i = 0; i< str.length; i++){
 // } catch (err) {
 //   console.log(err);
 // }
+// }
+// function promiseGen() {
+//   return new Promise((resolve, reject) => {
+//     if (true) {
+//       resolve('True');
+//     } else {
+//       reject('False');
+//     }
+//   });
+// }
