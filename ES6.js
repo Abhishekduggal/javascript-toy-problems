@@ -7379,3 +7379,14 @@ for(var i = 0; i< str.length; i++){
 //     }
 //   });
 // }
+
+//     }
+//   });
+// }
+
+// promiseGen().then(res => console.log(res)).catch(err => console.log('err', err));
+
+// throw new Error('You broke the things');
+
+let arr =[]
+console.log(arr.length)
