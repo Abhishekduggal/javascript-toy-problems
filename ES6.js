@@ -7445,3 +7445,17 @@ console.log(arr.length)
 // {"price":72,"tax":0.14},{"price":51,"tax":0.09},{"price":89,"tax":0.15},
 // {"price":48,"tax":0.13}];
 // // Do not edit code above.
+
+// // /*
+//   Use a higher order method to get the sum of all the order totals after adding in the sales tax
+// // */
+
+// let ordersTotal = orders.map(order => order.price += order.price * order.tax);//console.log(withTax);
+
+// console.log(ordersTotal)
+// //Code Here
+
+
+// function largeNumbers ({first, second, third}) {
+//   return Math.min(first,second,third);
+// };
