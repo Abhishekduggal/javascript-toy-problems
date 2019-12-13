@@ -7474,3 +7474,20 @@ console.log(arr.length)
   //   First we'll look at the difference between accessing property values in a for in loop and accessing the property name in a for in loop.
   //   In the example below, we are accessing the property values. Uncomment the code below, run it and look at what prints in the console.
   // */
+
+  // ////////// PROBLEM 2 //////////
+
+// // Do not edit the code below.
+// var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
+// // Do not edit the code above.
+
+// /*
+//   The array above represents IDs tied to reported workplace accidents. 
+//   An employee accidentally entered in duplicates to array, making it look as though there are more accidents this year than there actually are.
+//     1. Write a function called 'removeDuplicates' that will remove all duplicate entries in the workplaceAccidents array.
+//     2. Use nested for loops to check for duplicate numbers, and then remove the duplicates from the array.
+//     3. Return the updated array.
+// */
+
+// //Code Here
+
