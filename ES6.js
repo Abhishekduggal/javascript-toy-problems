@@ -7545,3 +7545,21 @@ console.log(arr.length)
   // }
 
   // /*
+
+  // /*
+  //   In this next example, we are accessing the property names themselves. Uncomment the code below, run it and look at what prints in the console.
+  // */
+
+  // for(var key in values) {
+  //   console.log(key)
+  // }
+
+  // function showValues( obj ) {
+  //   //Code Here
+  //   var str = '';
+
+  //   for(var prop in obj){
+  //     str = str + obj[prop]; 
+  //   }
+  //   return str;
+  // }
