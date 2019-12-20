@@ -7596,3 +7596,24 @@ console.log(arr.length)
 // // */
 
 // let ordersTotal = orders.map(order => order.price += order.price * order.tax);//console.log(withTax);
+
+// function zooAnimals(obj){
+//   var {lion, tiger, bear} = {lion: obj.lion, tiger: obj.tiger, bear: obj.bear};
+//   console.l  // /*
+  //   First we'll look at the difference between accessing property values in a for in loop and accessing the property name in a for in loop.
+  //   In the example below, we are accessing the property values. Uncomment the code below, run it and look at what prints in the console.
+  // */
+
+  // var values = {
+  //   one: 'These',
+  //   two: ' are',
+  //   three: ' the',
+  //   four: ' property',
+  //   five: ' values.'
+  // } 
+
+  // for(var key in values) {
+  //   console.log(values[key])
+  // }
+
+  // /*
