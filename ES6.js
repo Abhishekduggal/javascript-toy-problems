@@ -7617,3 +7617,22 @@ console.log(arr.length)
   // }
 
   // /*
+   // function showValues( obj ) {
+  //   //Code Here
+  //   var str = '';
+
+  //   for(var prop in obj){
+  //     str = str + obj[prop]; 
+  //   }
+  //   return str;
+  // }
+
+  // // function greaterThan10(obj){
+  // //   for (var prop in obj){
+  // //     if(obj[prop] > 10){
+  // //       console.log(obj[prop])
+  // //       obj[prop] = 0;
+  // //     }
+  // //   }
+  // //   return obj;
+  // // }
