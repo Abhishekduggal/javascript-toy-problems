@@ -7636,3 +7636,20 @@ console.log(arr.length)
   // //   }
   // //   return obj;
   // // }
+
+  // // var values = {
+  // //   one: 5,
+  // //   two: 12,
+  // //   three: ' the',
+  // //   four: ' property',
+  // //   five: ' values.'
+  // // }
+  // // greaterThan10(values);
+  // // //showValues(values);
+
+// // function totalPopulation(obj){
+
+// //   var{utah, california, texas, arizona} = obj;
+// //   console.log(utah);
+// //   //return (utah.val + california.val + )
+// // }
