@@ -7672,3 +7672,26 @@ console.log(arr.length)
 //     "email": "cswalowe1@example.com",
 //     "department": "Engineering"
 //   },
+
+//   {
+//     "firstName": "Theo",
+//     "lastName": "Trill",
+//     "email": "ttrill2@sina.com.cn",
+//     "department": "Services"
+//   },
+//   {
+//     "firstName": "Elsy",
+//     "lastName": "McCrorie",
+//     "email": "emccrorie3@netscape.com",
+//     "department": "Legal"
+//   },
+//   {
+//     "firstName": "Lorie",
+//     "lastName": "Handsheart",
+//     "email": "lhandsheart4@fotki.com",
+//     "department": "Research and Development"
+//   }
+// ];
+// // Do not edit the code above.
+
+// /*
