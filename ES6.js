@@ -7719,3 +7719,24 @@ console.log(arr.length)
 // //   //console.log(employee);
 // // });
 // // return remove;
+
+// //   // });
+// // var remove = employees.filter(function(employee){
+// //   console.log(employee.firstName);
+  
+// //   if(employee.firstName === 'Lorie'){
+// //     employee.department = 'HR';
+// //   }
+// //   return employee.firstName !== 'Theo';
+// //   //console.log(employee);
+// // });
+// // return remove;
+// // }
+
+// // employeeUpdater(employees);
+
+og(obj);
+//   return obj;
+  
+// }
+// zooAnimals(obj);
