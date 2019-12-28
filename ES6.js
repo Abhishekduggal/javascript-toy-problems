@@ -7740,3 +7740,28 @@ og(obj);
   
 // }
 // zooAnimals(obj);
+
+// // let arr = [1,2,3,4,5,4,3,2,1];
+
+// // let product = arr.reduce(function(total, elem){
+// // console.log(total, elem)
+// //   return total * elem
+// // })
+
+// // product
+
+// let customers = [
+//   {name: "Shea", total: 150, message: 'This '},
+//   {name: 'Jarid', total: 1, message: 'is '},
+//   {name: 'Joe', total: 10000, message: 'a new '},
+//   {name: 'Erik', total: -100, message: 'message.'}
+// ]
+
+// // let total = customers.reduce( function(total, elem){
+// //   return total + elem.total; 
+// // }, 0)
+
+// let sentence = customers.reduce(function(total, elem){
+//   return total + elem.message;
+// }, '')
+
