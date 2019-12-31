@@ -7812,3 +7812,28 @@ og(obj);
 
 // let {name, total, message, age} = person;
 // console.log(name, total, message, age)
+
+// let  req = {
+//   body: {
+//     user: {
+//       location: {
+//         city:
+//         state:
+//         zip:
+//         address:
+//       }
+//     }
+//   }
+// }
+
+// let {city, address, zip, state} = req.body.user.location;
+
+// let arr = [1,2,3,4,5];
+
+// let [one, blah, , ,five] = arr;
+
+// console.log(one, blah, five)
+
+// function destructObj ({name}){
+//   return name;
+// }
