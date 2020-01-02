@@ -7837,3 +7837,22 @@ og(obj);
 // function destructObj ({name}){
 //   return name;
 // }
+
+// destructObj({name:'Shea'})
+
+
+// function destructArr([first]){
+//   return first;
+// }
+
+// destructArr([{name:'Shea'}])
+
+// function addTwo (x, y){
+//   return x + y;
+// }
+
+// let addTwo2 = (x, y) =>  x + y;  
+
+// let addTwo3 = (x) => x + 2;
+
+// addTwo3(10)
