@@ -7856,3 +7856,48 @@ og(obj);
 // let addTwo3 = (x) => x + 2;
 
 // addTwo3(10)
+
+// addTwo3(10)
+
+// let arr = [1,2,3,4,5]
+
+// arr.map(elem => {
+
+//   return elem + 2
+// }); 
+
+// let person = {
+//   name: "Shea",
+//   sayName: () => {
+//     return this.name;
+//   }
+// }
+
+// person.sayName()
+
+
+// function car (make, model, year){
+//   return {
+//     make, model, year, go: function(){console.log('vroom')}
+//   }
+// }
+
+// let myCar = car ('Nissan', 'xTerra', 2008)
+// // myCar
+
+// function Car (make, model, year){
+//   // let this = {make: make, model:model};
+//   this.make = make;
+//   this.model = model;
+//   this.year = year;
+//   // return this;
+// }
+
+// Car.prototype.go = function(){
+//   console.log("vroom")
+// }
+
+// let myToyCar = new Car('Triumph', 'Spitfire', 1976);
+// console.log(myToyCar)
+// console.log(myCar)
+// myToyCar.go();
