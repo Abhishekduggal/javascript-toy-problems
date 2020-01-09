@@ -7993,3 +7993,20 @@ fizzBuzz(60);
 // songDecoder("WUBWUBIWUBAMWUBWUBX") ==> I AM X
 // songDecoder("WUBWEWUBAREWUBWUBTHEWUBCHAMPIONSWUBMYWUBFRIENDWUB") ==>  WE ARE THE CHAMPIONS MY FRIEND
 
+function songDecoder(str){
+  let arr = str.split('WUB');
+  //console.log(arr);
+
+//   let songs = arr.filter(song => {
+//     return (song !== 'W' && song !=='U' && song !=='B')
+//   })
+//   //console.log(songs);
+//   return songs.join('');
+return arr.filter(s=>s).join(' ');
+
+// let songDecoder = str => str.replace(/WUB/g,'').replace((/\s+/g),'').trim()
+
+}
+
+songDecoder("WUBWUBIWUBAMWUBWUBX");
+//songDecoder("WUBWEWUBAREWUBWUBTHEWUBCHAMPIONSWUBMYWUBFRIENDWUB")
