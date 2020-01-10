@@ -8010,3 +8010,10 @@ return arr.filter(s=>s).join(' ');
 
 songDecoder("WUBWUBIWUBAMWUBWUBX");
 //songDecoder("WUBWEWUBAREWUBWUBTHEWUBCHAMPIONSWUBMYWUBFRIENDWUB")
+
+function insertion(arr){
+  for(let i = 1; i < arr.length; i++){
+    // console.log('i',arr[i])
+    for(let j = 0; j < i; j++)
+    // console.log('j', arr[i][j])
+    if(arr[i] < arr[j]){
