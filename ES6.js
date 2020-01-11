@@ -8028,3 +8028,15 @@ function insertion(arr){
 }
 
 insertion([3,2,1])
+
+ 
+for(let i = .0001; i < distance; i+=i){
+  counter++;
+}
+return counter;
+}
+
+foldsToTheMoon(384400000);
+
+// function distanceToMoon(thickness){
+// // let paperThickness = thickness*0.001
