@@ -8017,3 +8017,14 @@ function insertion(arr){
     for(let j = 0; j < i; j++)
     // console.log('j', arr[i][j])
     if(arr[i] < arr[j]){
+
+      console.log(arr[i], arr[j])
+      let [bigger] = arr.splice(i, 1)
+      arr.splice(j, 0, bigger)
+      j=i
+    }
+  }
+  return arr
+}
+
+insertion([3,2,1])
