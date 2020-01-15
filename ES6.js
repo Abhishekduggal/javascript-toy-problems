@@ -8067,3 +8067,12 @@ foldsToTheMoon(384400000);
 // rgb(255, 255, 300) // returns FFFFFF
 // rgb(0,0,0) // returns 000000
 // rgb(148, 0, 211) // returns 9400D3
+
+function assignEvenAndOdds(userInput){
+  // var arr = userInput.split(',');
+  var arr =[];
+  console.log(arr);
+  var evens = [];
+  var odds = [];
+
+  userInput.filter(num => {
