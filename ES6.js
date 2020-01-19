@@ -8117,3 +8117,13 @@ for(let i = 0; i < n; i++)
 
 }
 
+newArr.push((newArr[i-1] || 1) + (newArr[i-2] || 0))
+}
+
+console.log(newArr);
+
+return newArr.reverse();
+}
+
+fibonnaci(10);
+
