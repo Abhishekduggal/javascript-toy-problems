@@ -8145,3 +8145,12 @@ fibonnaci(10);
 // }
 
 // sequence(5);
+
+ 
+for(let i = .0001; i < distance; i+=i){
+  counter++;
+}
+return counter;
+}
+
+foldsToTheMoon(384400000);
