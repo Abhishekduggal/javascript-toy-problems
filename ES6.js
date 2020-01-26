@@ -8185,3 +8185,17 @@ foldsToTheMoon(384400000);
 //     console.log(e);
 //   }
 // }
+// }
+// (async function() {
+//   const response = await getThePeople();
+//   console.log(response);
+// })()
+// try {
+//   doSomethingBroken();
+// } catch (err) {
+//   console.log(err);
+// }
+// function promiseGen() {
+//   return new Promise((resolve, reject) => {
+//     if (true) {
+//       resolve('True');
