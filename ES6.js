@@ -8199,3 +8199,20 @@ foldsToTheMoon(384400000);
 //   return new Promise((resolve, reject) => {
 //     if (true) {
 //       resolve('True');
+
+// function promiseGen() {
+//   return new Promise((resolve, reject) => {
+//     if (true) {
+//       resolve('True');
+//     } else {
+//       reject('False');
+//     }
+//   });
+// }
+
+// promiseGen().then(res => console.log(res)).catch(err => console.log('err', err));
+
+// throw new Error('You broke the things');
+
+let arr =[]
+console.log(arr.length)
