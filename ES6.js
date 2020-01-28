@@ -8216,3 +8216,11 @@ foldsToTheMoon(384400000);
 
 let arr =[]
 console.log(arr.length)
+
+
+function insertion(arr){
+  for(let i = 1; i < arr.length; i++){
+    // console.log('i',arr[i])
+    for(let j = 0; j < i; j++)
+    // console.log('j', arr[i][j])
+    if(arr[i] < arr[j]){
