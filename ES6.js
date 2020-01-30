@@ -8239,3 +8239,15 @@ function insertion(arr){
   }
   
   insertion([3,2,1])
+
+
+  // ////////// PROBLEM 2 //////////
+
+// // Do not edit the code below.
+// var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
+// // Do not edit the code above.
+
+// /*
+//   The array above represents IDs tied to reported workplace accidents. 
+//   An employee accidentally entered in duplicates to array, making it look as though there are more accidents this year than there actually are.
+//
