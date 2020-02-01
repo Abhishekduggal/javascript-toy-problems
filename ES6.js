@@ -8284,3 +8284,22 @@ function insertion(arr){
 // // Do not edit code above.
 
 // // /*
+
+
+
+// let ordersTotal = orders.map(order => order.price += order.price * order.tax);//console.log(withTax);
+
+// console.log(ordersTotal)
+// //Code Here
+
+
+// function largeNumbers ({first, second, third}) {
+//   return Math.min(first,second,third);
+// };
+
+// largeNumbers({first: 10, second: 2, third: 90})//).toBe(2)
+// var obj = {
+//   lion: 3,
+//   tiger: 4,
+//   bear: 5
+// }
