@@ -8310,3 +8310,17 @@ function insertion(arr){
   //   First we'll look at the difference between accessing property values in a for in loop and accessing the property name in a for in loop.
   //   In the example below, we are accessing the property values. Uncomment the code below, run it and look at what prints in the console.
   // */
+
+   // var values = {
+  //   one: 'These',
+  //   two: ' are',
+  //   three: ' the',
+  //   four: ' property',
+  //   five: ' values.'
+  // } 
+
+  // for(var key in values) {
+  //   console.log(values[key])
+  // }
+
+  // /*
