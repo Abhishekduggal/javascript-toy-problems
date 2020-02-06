@@ -8343,3 +8343,31 @@ function insertion(arr){
   //   }
   //   return str;
   // }
+
+  // // function greaterThan10(obj){
+  // //   for (var prop in obj){
+  // //     if(obj[prop] > 10){
+  // //       console.log(obj[prop])
+  // //       obj[prop] = 0;
+  // //     }
+  // //   }
+  // //   return obj;
+  // // }
+  // // var values = {
+  // //   one: 5,
+  // //   two: 12,
+  // //   three: ' the',
+  // //   four: ' property',
+  // //   five: ' values.'
+  // // }
+  // // greaterThan10(values);
+  // // //showValues(values);
+
+// // function totalPopulation(obj){
+
+// //   var{utah, california, texas, arizona} = obj;
+// //   console.log(utah);
+// //   //return (utah.val + california.val + )
+// // }
+
+// // var obj = {utah: 10, california: 29087, texas: 82937, arizona: 28347}
