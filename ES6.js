@@ -8371,3 +8371,30 @@ function insertion(arr){
 // // }
 
 // // var obj = {utah: 10, california: 29087, texas: 82937, arizona: 28347}
+
+
+// largeNumbers({first: 10, second: 2, third: 90})//).toBe(2)
+// var obj = {
+//   lion: 3,
+//   tiger: 4,
+//   bear: 5
+// }
+
+// function zooAnimals(obj){
+//   var {lion, tiger, bear} = {lion: obj.lion, tiger: obj.tiger, bear: obj.bear};
+//   console.l  // /*
+  //   First we'll look at the difference between accessing property values in a for in loop and accessing the property name in a for in loop.
+  //   In the example below, we are accessing the property values. Uncomment the code below, run it and look at what prints in the console.
+  // */
+
+  // var values = {
+  //   one: 'These',
+  //   two: ' are',
+  //   three: ' the',
+  //   four: ' property',
+  //   five: ' values.'
+  // } 
+
+  // for(var key in values) {
+  //   console.log(values[key])
+  // }
