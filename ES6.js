@@ -8411,3 +8411,19 @@ function insertion(arr){
 const accum = (str) => {
   var count = 1;
   var newStr = '';
+
+  
+  for(var i = 0; i < str.length; i++) {
+    newStr += str.charAt(i).toUpperCase();
+
+ 
+  for(var j = 1; j < count; j++) {
+    newStr += str[i].toLowerCase();
+  }
+  count++;
+
+  i !== (str.length - 1) ? newStr += `-` : newStr;
+
+}
+return newStr;
+}
