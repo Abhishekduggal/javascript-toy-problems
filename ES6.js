@@ -8439,3 +8439,24 @@ accum('cwAt')
 
   //   return `${upper}${el}` 
   // })
+
+    // })
+  // console.log(result)
+  // return result.join('-')
+//   let count = 1
+//   let newStr = '';
+
+//   for(var i = 0; i< str.length; i++){
+//     newStr += str[i].toUpperCase();
+
+//     for(var j=1; j< count; j++){
+//       newstr +=str.charAt(i).toLowerCase();
+//     }
+//     count++;
+
+//     i !== (str.length--1) ? newStr += '-' : newStr;
+//   }
+//   return newStr;
+// }
+
+// accum("abcd"); 
