@@ -8504,3 +8504,22 @@ let z = Array.from(n.toString()).map(Number);
     
 //   // Key  
 //   //& value (array)
+
+//   // return the new object
+  
+//   //var temp = [];
+  
+//   var key = [];
+//   var result = {};
+//   // Iterate over the array, using forEach
+    
+//       //console.log('Iterate Item', item);
+      
+//     if(typeof predicate === 'function'){
+//         collection.forEach(function(item){
+//           if(result[predicate(item)]){
+//             result[predicate(item)].push(item);
+//           }else{
+//             result[predicate(item)] = item;
+//           }
+//         });  
