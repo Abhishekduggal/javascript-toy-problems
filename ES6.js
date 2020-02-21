@@ -1,10 +1,10 @@
 var names = ["Alexandria", "Matthew", "Joe"];
 
-names.every(function(name) {
+names.every(function (name) {
   return name.length > 4;
 });
 
-names.some(function(name) {
+names.some(function (name) {
   return name.length > 4;
 });
 
@@ -16,14 +16,14 @@ var requests = [
 
 var inProgress;
 
-inProgress = requests.some(function(request) {
+inProgress = requests.some(function (request) {
   return request.status === "pending";
 });
 
 // Balance parnethesis using Reduce Helper function
 
 function checkPattern(str) {
-  return !str.split("").reduce(function(acc, char) {
+  return !str.split("").reduce(function (acc, char) {
     if (acc < 0) {
       return acc;
     }
@@ -45,7 +45,7 @@ var trips = [{ distance: 34 }, { distance: 12 }, { distance: 1 }];
 
 var totalDistance;
 
-totalDistance = trips.reduce(function(sum, trip) {
+totalDistance = trips.reduce(function (sum, trip) {
   return sum + trip.distance;
 }, 0);
 
@@ -275,7 +275,7 @@ function mostVowels(str) {
   var newStr = str.split(" ");
   console.log(newStr);
 
-  for (var i = 0; i < newStr.length; i++) {}
+  for (var i = 0; i < newStr.length; i++) { }
 }
 mostVowels("I am a keeper with some real rhythms");
 // => "keeper"
@@ -365,7 +365,7 @@ function groupBy(collection, predicate) {
   if (typeof predicate === "function") {
     // Iterate over the array, using forEach
     //console.log(predicate);
-    collection.forEach(function(item) {
+    collection.forEach(function (item) {
       if (result[predicate(item)]) {
         result[predicate(item)].push(item);
       } else {
@@ -375,7 +375,7 @@ function groupBy(collection, predicate) {
   }
 
   if (typeof predicate === "string") {
-    collection.forEach(function(item) {
+    collection.forEach(function (item) {
       if (result[item[predicate]]) {
         result[item[predicate]].push(item);
       } else {
@@ -418,11 +418,11 @@ function groupBy(collection, predicate) {
   // return output;
   // // //console.log('output', output);
 }
-var firstLetter = function(word) {
+var firstLetter = function (word) {
   return word.charAt(0);
 };
 
-var mathValue = function(val) {
+var mathValue = function (val) {
   return Math.floor(val);
 };
 
@@ -433,7 +433,7 @@ console.log(groupBy(["apple", "cat", "boat", "card", "bond"], "length"));
 // returns { '5': ['apple'], '4': ['boat', 'card', 'bond'], '3': ['cat'] }
 
 console.log(
-  groupBy([1.4, 5.6, 3.6, 1.8, 3.4], function(val) {
+  groupBy([1.4, 5.6, 3.6, 1.8, 3.4], function (val) {
     return Math.floor(val);
   })
 );
@@ -727,7 +727,7 @@ function groupBy(collection, predicate) {
   if (typeof predicate === "function") {
     // Iterate over the array, using forEach
     //console.log(predicate);
-    collection.forEach(function(item) {
+    collection.forEach(function (item) {
       if (result[predicate(item)]) {
         result[predicate(item)].push(item);
       } else {
@@ -737,7 +737,7 @@ function groupBy(collection, predicate) {
   }
 
   if (typeof predicate === "string") {
-    collection.forEach(function(item) {
+    collection.forEach(function (item) {
       if (result[item[predicate]]) {
         result[item[predicate]].push(item);
       } else {
@@ -780,11 +780,11 @@ function groupBy(collection, predicate) {
   // return output;
   // // //console.log('output', output);
 }
-var firstLetter = function(word) {
+var firstLetter = function (word) {
   return word.charAt(0);
 };
 
-var mathValue = function(val) {
+var mathValue = function (val) {
   return Math.floor(val);
 };
 
@@ -795,7 +795,7 @@ console.log(groupBy(["apple", "cat", "boat", "card", "bond"], "length"));
 // returns { '5': ['apple'], '4': ['boat', 'card', 'bond'], '3': ['cat'] }
 
 console.log(
-  groupBy([1.4, 5.6, 3.6, 1.8, 3.4], function(val) {
+  groupBy([1.4, 5.6, 3.6, 1.8, 3.4], function (val) {
     return Math.floor(val);
   })
 );
@@ -841,14 +841,14 @@ function getUserById(users, id, cb) {
 }
 // Do not edit the code below.
 
-getUserById(users, "16t", function(user) {
+getUserById(users, "16t", function (user) {
   console.log(
     "The user with the id 16t has the email of " +
-      user.email +
-      " the name of " +
-      user.name +
-      " and the address of " +
-      user.address
+    user.email +
+    " the name of " +
+    user.name +
+    " and the address of " +
+    user.address
   );
 });
 // Do not edit the code above.
@@ -894,14 +894,14 @@ function getUserById(users, id, cb) {
 }
 // Do not edit the code below.
 
-getUserById(users, "16t", function(user) {
+getUserById(users, "16t", function (user) {
   console.log(
     "The user with the id 16t has the email of " +
-      user.email +
-      " the name of " +
-      user.name +
-      " and the address of " +
-      user.address
+    user.email +
+    " the name of " +
+    user.name +
+    " and the address of " +
+    user.address
   );
 });
 // Do not edit the code above.
@@ -947,14 +947,14 @@ function getUserById(users, id, cb) {
 }
 // Do not edit the code below.
 
-getUserById(users, "16t", function(user) {
+getUserById(users, "16t", function (user) {
   console.log(
     "The user with the id 16t has the email of " +
-      user.email +
-      " the name of " +
-      user.name +
-      " and the address of " +
-      user.address
+    user.email +
+    " the name of " +
+    user.name +
+    " and the address of " +
+    user.address
   );
 });
 // Do not edit the code above.
@@ -976,7 +976,7 @@ function handlePosts() {
   //   savePost(posts[i]);
   // }
 
-  posts.forEach(function(post) {
+  posts.forEach(function (post) {
     savePost(post);
   });
 }
@@ -1073,7 +1073,7 @@ function superSize(int) {
   const n = int;
   let z = Array.from(n.toString()).map(Number);
   //console.log(z);
-  let y = z.sort(function(a, b) {
+  let y = z.sort(function (a, b) {
     return b - a;
   });
   console.log(y);
@@ -1297,7 +1297,7 @@ function HashNode(key, value, next) {
   this.value = value;
   this.next = next || null;
 }
-HashTable.prototype.hash = function(key) {
+HashTable.prototype.hash = function (key) {
   var total = 0;
 
   for (var i = 0; i < key.length; i++) {
@@ -1307,7 +1307,7 @@ HashTable.prototype.hash = function(key) {
   return bucket;
 };
 
-HashTable.prototype.insert = function(key, value) {
+HashTable.prototype.insert = function (key, value) {
   var index = this.hash(key);
   if (!this.buckets[index]) {
     this.buckets[index] = new HashNode(key, value);
@@ -1327,7 +1327,7 @@ HashTable.prototype.insert = function(key, value) {
   }
 };
 
-HashTable.prototype.insert = function(key, value) {
+HashTable.prototype.insert = function (key, value) {
   var index = this.hash(key);
   if (!this.buckets[index]) {
     this.buckets[index] = new HashNode(key, value);
@@ -1347,7 +1347,7 @@ HashTable.prototype.insert = function(key, value) {
   }
 };
 
-HashTable.prototype.retrieveAll = function() {
+HashTable.prototype.retrieveAll = function () {
   var allNodes = [];
 
   for (var i = 0; i < this.numBuckets; i++) {
@@ -1390,7 +1390,7 @@ function twoOldestAges(ages) {
 
   var output = [];
 
-  copy.sort(function(a, b) {
+  copy.sort(function (a, b) {
     return a - b;
   });
 
@@ -1505,7 +1505,7 @@ function inAscOrder(arr) {
 
 // Practice
 
-(function() {
+(function () {
   'use strict';
 
   window._ = {};
@@ -1513,8 +1513,8 @@ function inAscOrder(arr) {
   // Returns whatever value is passed as the argument. This function doesn't
   // seem very useful, but remember it--if a function needs to provide an
   // iterator when the user does not pass one in, this will be handy.
-  _.identity = function(val) {
-    return val; 
+  _.identity = function (val) {
+    return val;
   };
 
   /**
@@ -1538,15 +1538,15 @@ function inAscOrder(arr) {
 
   // Return an array of the first n elements of an array. If n is undefined,
   // return just the first element.
-  _.first = function(array, n) {
+  _.first = function (array, n) {
     return n === undefined ? array[0] : array.slice(0, n);
   };
 
   // Like first, but for the last elements. If n is undefined, return just the
   // last element.
-  _.last = function(array, n) {
-    return n === undefined ? array[array.length-1] : array.slice(0, array.length-n);
-    
+  _.last = function (array, n) {
+    return n === undefined ? array[array.length - 1] : array.slice(0, array.length - n);
+
   };
 
   // Call iterator(value, key, collection) for each element of collection.
@@ -1554,30 +1554,30 @@ function inAscOrder(arr) {
   //
   // Note: _.each does not have a return value, but rather simply runs the
   // iterator function over each item in the input collection.
-  _.each = function(collection, iterator) {
-   
-   if(Array.isArray(collection)){
-     
-     for(var i = 0; i < collection.length; i++) {
-       iterator(collection[i], key, collection);
-     }
-   } else {
-     for (var key in collection) {
-       iterator(collection[key], key, collection);
-     }
-   }
-    
+  _.each = function (collection, iterator) {
+
+    if (Array.isArray(collection)) {
+
+      for (var i = 0; i < collection.length; i++) {
+        iterator(collection[i], key, collection);
+      }
+    } else {
+      for (var key in collection) {
+        iterator(collection[key], key, collection);
+      }
+    }
+
   };
-  
+
   // Returns the index at which value can be found in the array, or -1 if value
   // is not present in the array.
-  _.indexOf = function(array, target){
+  _.indexOf = function (array, target) {
     // TIP: Here's an example of a function that needs to iterate, which we've
     // implemented for you. Instead of using a standard `for` loop, though,
     // it uses the iteration helper `each`, which you will need to write.
     var result = -1;
 
-    _.each(array, function(item, index) {
+    _.each(array, function (item, index) {
       if (item === target && result === -1) {
         result = index;
       }
@@ -1587,20 +1587,20 @@ function inAscOrder(arr) {
   };
 
   // Return all elements of an array that pass a truth test.
-  _.filter = function(collection, test) {
+  _.filter = function (collection, test) {
     var results = [];
-    _.each (collection, function(value){
-      if( test(value) ) {
+    _.each(collection, function (value) {
+      if (test(value)) {
         results.push(value);
       }
       return results;
     });
-  };  
+  };
   // Return all elements of an array that don't pass a truth test.
-  _.reject = function(collection, test) {
+  _.reject = function (collection, test) {
     // TIP: see if you can re-use _.filter() here, without simply
     // copying code in and modifying it
-    return _.filter(collection, function(value) {
+    return _.filter(collection, function (value) {
       return !test(value);
     });
   };
@@ -1609,30 +1609,30 @@ function inAscOrder(arr) {
   // var numbers = [1, 2, 1, 3, 1, 4];
   //expect(_.uniq(numbers)).to.eql([1, 2, 3, 4]);
 
-  _.uniq = function(array, isSorted, iterator) {
-    
-    var unique =   {}, results[];
-    
-    for(var i = 0; i < array.length; i++) {
+  _.uniq = function (array, isSorted, iterator) {
+
+    var unique = {}, results[];
+
+    for (var i = 0; i < array.length; i++) {
       unique[array[i]] = array[i];
     }
-    for (var key in collection){
+    for (var key in collection) {
       results.push(unique[key]);
     }
     return results;
   };
   // Return the results of applying an iterator to each element.
-  _.map = function(collection, iterator) {
+  _.map = function (collection, iterator) {
     // map() is a useful primitive iteration function that works a lot
     // like each(), but in addition to running the operation on all
     // the members, it also maintains an array of results.
     var results = [];
-    _.each(collection, function(value,key,collection) {
-      results.push(iterator(value,key,collection));
+    _.each(collection, function (value, key, collection) {
+      results.push(iterator(value, key, collection));
     });
     return results;
   };
-  
+
   /*
    * TIP: map is really handy when you want to transform an array of
    * values into a new array of values. _.pluck() is solved for you
@@ -1642,11 +1642,11 @@ function inAscOrder(arr) {
   // Takes an array of objects and returns and array of the values of
   // a certain property in it. E.g. take an array of people and return
   // an array of just their ages
-  _.pluck = function(collection, key) {
+  _.pluck = function (collection, key) {
     // TIP: map is really handy when you want to transform an array of
     // values into a new array of values. _.pluck() is solved for you
     // as an example of this.
-    return _.map(collection, function(item){
+    return _.map(collection, function (item) {
       return item[key];
     });
   };
@@ -1671,47 +1671,48 @@ function inAscOrder(arr) {
   //     return total + number * number;
   //   }); // should be 5, regardless of the iterator function passed in
   //          No accumulator is given so the first element is used.
-  _.reduce = function(collection, iterator, accumulator) {
+  _.reduce = function (collection, iterator, accumulator) {
     var initializing = arguments.length === 2;
-    
-    _.each(collection, function(value){
-      if(initializing) {
+
+    _.each(collection, function (value) {
+      if (initializing) {
         accumulator = value;
         initializing = false;
       } else {
-    accumulator = iterator(accumulator,value);
+        accumulator = iterator(accumulator, value);
       }
-    )};
+    )
   };
-  
-  // Determine if the array or object contains a given value (using `===`).
-  _.contains = function(collection, target) {
-    // TIP: Many iteration problems can be most easily expressed in
-    // terms of reduce(). Here's a freebie to demonstrate!
-    return _.reduce(collection, function(wasFound, item) {
-      if (wasFound) {
-        return true;
-      }
-      return item === target;
-    }, false);
-  };
+};
 
- // Determine whether all of the elements match a truth test.
- _.every = function(collection, iterator) {
+// Determine if the array or object contains a given value (using `===`).
+_.contains = function (collection, target) {
+  // TIP: Many iteration problems can be most easily expressed in
+  // terms of reduce(). Here's a freebie to demonstrate!
+  return _.reduce(collection, function (wasFound, item) {
+    if (wasFound) {
+      return true;
+    }
+    return item === target;
+  }, false);
+};
+
+// Determine whether all of the elements match a truth test.
+_.every = function (collection, iterator) {
   // TIP: Try re-using reduce() here.
-  
+
   iterator = iterator || _.identity();
-  return !!_.reduce(collection, function (trueSoFar, value){
+  return !!_.reduce(collection, function (trueSoFar, value) {
     return trueSoFar && iterator(value);
   }, true);
 };
 
 // Determine whether any of the elements pass a truth test. If no iterator is
 // provided, provide a default one
-_.some = function(collection, iterator) {
+_.some = function (collection, iterator) {
   // TIP: There's a very clever way to re-use every() here.
-iterator = iterator || _.identity();
-  return !!_.reduce(collection, function (trueSoFar, value){
+  iterator = iterator || _.identity();
+  return !!_.reduce(collection, function (trueSoFar, value) {
     return trueSoFar || iterator(value);
   }, false);
 };
@@ -1734,96 +1735,96 @@ iterator = iterator || _.identity();
 //   }, {
 //     bla: "even more stuff"
 //   }); // obj1 now contains key1, key2, key3 and bla
-_.extend = function(obj) {
-  
+_.extend = function (obj) {
+
   //arguments[0] = obj; Lookup "arguments"
-  
-  _.each(arguments, function(source){
-    _.each(source, function(value, key){
+
+  _.each(arguments, function (source) {
+    _.each(source, function (value, key) {
       obj[key] = value;
     })
   });
   return obj;
 };
 // Like extend, but doesn't ever overwrite a key that already
-  // exists in obj
-  _.defaults = function(obj) {
-    _.each(arguments, function(source){
-        _.each(source, function(value, key){
-          obj[key] === undefined && (obj[key] = value);
-        })
-      });
-      return obj;  
-      
-    }; 
-    
-    /**
-     * FUNCTIONS
-     * =========
-     *
-     * Now we're getting into function decorators, which take in any function
-     * and return out a new version of the function that works somewhat differently
-     */
-  
-    // Return a function that can be called at most one time. Subsequent calls
-    // should return the previously returned value.
-    _.once = function(func) {
-      // TIP: These variables are stored in a "closure scope" (worth researching),
-      // so that they'll remain available to the newly-generated function every
-      // time it's called.
-      var alreadyCalled = false;
-      var result;
-  
-      // TIP: We'll return a new function that delegates to the old one, but only
-      // if it hasn't been called before.
-      return function() {
-        if (!alreadyCalled) {
-          // TIP: .apply(this, arguments) is the standard way to pass on all of the
-          // infromation from one function call to another.
-          result = func.apply(this, arguments);
-          alreadyCalled = true;
-        }
-        // The new function always returns the originally computed result.
-        return result;
-      };
-    };
+// exists in obj
+_.defaults = function (obj) {
+  _.each(arguments, function (source) {
+    _.each(source, function (value, key) {
+      obj[key] === undefined && (obj[key] = value);
+    })
+  });
+  return obj;
+
+};
+
+/**
+ * FUNCTIONS
+ * =========
+ *
+ * Now we're getting into function decorators, which take in any function
+ * and return out a new version of the function that works somewhat differently
+ */
+
+// Return a function that can be called at most one time. Subsequent calls
+// should return the previously returned value.
+_.once = function (func) {
+  // TIP: These variables are stored in a "closure scope" (worth researching),
+  // so that they'll remain available to the newly-generated function every
+  // time it's called.
+  var alreadyCalled = false;
+  var result;
+
+  // TIP: We'll return a new function that delegates to the old one, but only
+  // if it hasn't been called before.
+  return function () {
+    if (!alreadyCalled) {
+      // TIP: .apply(this, arguments) is the standard way to pass on all of the
+      // infromation from one function call to another.
+      result = func.apply(this, arguments);
+      alreadyCalled = true;
+    }
+    // The new function always returns the originally computed result.
+    return result;
+  };
+};
 
 // Memorize an expensive function's results by storing them. You may assume
-  // that the function only takes primitives as arguments.
-  // memoize could be renamed to oncePerUniqueArgumentList; memoize does the
-  // same thing as once, but based on many sets of unique arguments.
-  //
-  // _.memoize should return a function that, when called, will check if it has
-  // already computed the result for the given argument and return that value
-  // instead if possible.
-  _.memoize = function(func) {
-    
-    var results = {};
-    
-    return (function()){
-      
-      var arg = JSON.stringify(arguments);  
-      if(!results[arg] ) {
-        
-        results[arg] = func.call(this,arguments);
-      }
-      return results[arg];
-    };
-  }
-  // return a function when called, is going to wait for wait amount
-  // of time and then invoke func. 
-  
-  _.delay = function(func, wait) {
-  
-  var args1 = [].slice.call(arguments,2);
-  
-  return function(){
+// that the function only takes primitives as arguments.
+// memoize could be renamed to oncePerUniqueArgumentList; memoize does the
+// same thing as once, but based on many sets of unique arguments.
+//
+// _.memoize should return a function that, when called, will check if it has
+// already computed the result for the given argument and return that value
+// instead if possible.
+_.memoize = function (func) {
+
+  var results = {};
+
+  return (function ()){
+
+    var arg = JSON.stringify(arguments);
+    if (!results[arg]) {
+
+      results[arg] = func.call(this, arguments);
+    }
+    return results[arg];
+  };
+}
+// return a function when called, is going to wait for wait amount
+// of time and then invoke func. 
+
+_.delay = function (func, wait) {
+
+  var args1 = [].slice.call(arguments, 2);
+
+  return function () {
     var args2 = [].slice.call(arguments);
-    setTimeout(function(){
-   func.apply(this, args1.concat(args2)); 
-  }, wait);
-    };
-  }())
+    setTimeout(function () {
+      func.apply(this, args1.concat(args2));
+    }, wait);
+  };
+}())
 
 
 // Problem
@@ -1837,11 +1838,11 @@ class Puppy {
   }
 
   // code here
-  getsTreat(parm){
-    return this.happiness+20;
+  getsTreat(parm) {
+    return this.happiness + 20;
   }
-  
-  takesNap(parm){
+
+  takesNap(parm) {
     var energy = this.energy - 45;
     var beh = this.behavior + 15;
     var happy = this.happiness;
@@ -1875,19 +1876,19 @@ Charles.takesNap()
 
 // Output: 2, 3, 4, 23, 5
 
-function sort (arr){
+function sort(arr) {
   let obj = {};
 
-  let newArr = arr.map((el,i) => {
-    obj[el*(i+1)]=el;
+  let newArr = arr.map((el, i) => {
+    obj[el * (i + 1)] = el;
     console.log(obj)
-    });
+  });
   //console.log(newArr)
   return Object.values(obj);
 
 }
 
-sort([23,2,3,4,5])
+sort([23, 2, 3, 4, 5])
 
 //Practice
 
@@ -2049,25 +2050,25 @@ sort([23,2,3,4,5])
 
 
 class Car {
-  constructor(make, model, year){
+  constructor(make, model, year) {
     this.make = make;
     this.model = model;
     this.year = year;
   }
-  go(){
+  go() {
     console.log('vroom')
   }
-  stop(){
+  stop() {
     console.log('Squeal!!')
   }
 }
 
 class SUV extends Car {
-  constructor(make, model, year, offRoad){
+  constructor(make, model, year, offRoad) {
     super(make, model, year)
     this.offRoad = offRoad;
   }
-  tipOver(){
+  tipOver() {
     console.log('OH NO!!!!')
   }
 }
@@ -2075,10 +2076,10 @@ let myCar = new SUV('Nissan', 'xTerra', 2008, true)
 myCar.tipOver()
 let myToyCar = new Car('Triumph', 'Spitfire', 1976);
 
- // Spread Operator
+// Spread Operator
 
- let arr1 = [1,2,3,4,5];
-let arr2 = [6,7,8,9];
+let arr1 = [1, 2, 3, 4, 5];
+let arr2 = [6, 7, 8, 9];
 
 let both = [...arr1, ...arr2];
 console.log(both);
@@ -2141,59 +2142,59 @@ console.log(both);
 
 // Practice
 
-  // /*
-  //   First we'll look at the difference between accessing property values in a for in loop and accessing the property name in a for in loop.
-  //   In the example below, we are accessing the property values. Uncomment the code below, run it and look at what prints in the console.
-  // */
+// /*
+//   First we'll look at the difference between accessing property values in a for in loop and accessing the property name in a for in loop.
+//   In the example below, we are accessing the property values. Uncomment the code below, run it and look at what prints in the console.
+// */
 
-  // var values = {
-  //   one: 'These',
-  //   two: ' are',
-  //   three: ' the',
-  //   four: ' property',
-  //   five: ' values.'
-  // } 
+// var values = {
+//   one: 'These',
+//   two: ' are',
+//   three: ' the',
+//   four: ' property',
+//   five: ' values.'
+// } 
 
-  // for(var key in values) {
-  //   console.log(values[key])
-  // }
+// for(var key in values) {
+//   console.log(values[key])
+// }
 
-  // /*
-  //   In this next example, we are accessing the property names themselves. Uncomment the code below, run it and look at what prints in the console.
-  // */
+// /*
+//   In this next example, we are accessing the property names themselves. Uncomment the code below, run it and look at what prints in the console.
+// */
 
-  // for(var key in values) {
-  //   console.log(key)
-  // }
+// for(var key in values) {
+//   console.log(key)
+// }
 
-  // function showValues( obj ) {
-  //   //Code Here
-  //   var str = '';
+// function showValues( obj ) {
+//   //Code Here
+//   var str = '';
 
-  //   for(var prop in obj){
-  //     str = str + obj[prop]; 
-  //   }
-  //   return str;
-  // }
+//   for(var prop in obj){
+//     str = str + obj[prop]; 
+//   }
+//   return str;
+// }
 
-  // // function greaterThan10(obj){
-  // //   for (var prop in obj){
-  // //     if(obj[prop] > 10){
-  // //       console.log(obj[prop])
-  // //       obj[prop] = 0;
-  // //     }
-  // //   }
-  // //   return obj;
-  // // }
-  // // var values = {
-  // //   one: 5,
-  // //   two: 12,
-  // //   three: ' the',
-  // //   four: ' property',
-  // //   five: ' values.'
-  // // }
-  // // greaterThan10(values);
-  // // //showValues(values);
+// // function greaterThan10(obj){
+// //   for (var prop in obj){
+// //     if(obj[prop] > 10){
+// //       console.log(obj[prop])
+// //       obj[prop] = 0;
+// //     }
+// //   }
+// //   return obj;
+// // }
+// // var values = {
+// //   one: 5,
+// //   two: 12,
+// //   three: ' the',
+// //   four: ' property',
+// //   five: ' values.'
+// // }
+// // greaterThan10(values);
+// // //showValues(values);
 
 // // function totalPopulation(obj){
 
@@ -2256,7 +2257,7 @@ console.log(both);
 // //   // });
 // // var remove = employees.filter(function(employee){
 // //   console.log(employee.firstName);
-  
+
 // //   if(employee.firstName === 'Lorie'){
 // //     employee.department = 'HR';
 // //   }
@@ -2282,7 +2283,7 @@ console.log(both);
 //       if(dupArr[i] === dupArr[j]){
 //         dupArr.splice(j,1);
 //       }
-      
+
 //     }
 //   };
 //   return dupArr;
@@ -2324,58 +2325,58 @@ console.log(both);
 // function zooAnimals(obj){
 //   var {lion, tiger, bear} = {lion: obj.lion, tiger: obj.tiger, bear: obj.bear};
 //   console.l  // /*
-  //   First we'll look at the difference between accessing property values in a for in loop and accessing the property name in a for in loop.
-  //   In the example below, we are accessing the property values. Uncomment the code below, run it and look at what prints in the console.
-  // */
+//   First we'll look at the difference between accessing property values in a for in loop and accessing the property name in a for in loop.
+//   In the example below, we are accessing the property values. Uncomment the code below, run it and look at what prints in the console.
+// */
 
-  // var values = {
-  //   one: 'These',
-  //   two: ' are',
-  //   three: ' the',
-  //   four: ' property',
-  //   five: ' values.'
-  // } 
+// var values = {
+//   one: 'These',
+//   two: ' are',
+//   three: ' the',
+//   four: ' property',
+//   five: ' values.'
+// } 
 
-  // for(var key in values) {
-  //   console.log(values[key])
-  // }
+// for(var key in values) {
+//   console.log(values[key])
+// }
 
-  // /*
-  //   In this next example, we are accessing the property names themselves. Uncomment the code below, run it and look at what prints in the console.
-  // */
+// /*
+//   In this next example, we are accessing the property names themselves. Uncomment the code below, run it and look at what prints in the console.
+// */
 
-  // for(var key in values) {
-  //   console.log(key)
-  // }
+// for(var key in values) {
+//   console.log(key)
+// }
 
-  // function showValues( obj ) {
-  //   //Code Here
-  //   var str = '';
+// function showValues( obj ) {
+//   //Code Here
+//   var str = '';
 
-  //   for(var prop in obj){
-  //     str = str + obj[prop]; 
-  //   }
-  //   return str;
-  // }
+//   for(var prop in obj){
+//     str = str + obj[prop]; 
+//   }
+//   return str;
+// }
 
-  // // function greaterThan10(obj){
-  // //   for (var prop in obj){
-  // //     if(obj[prop] > 10){
-  // //       console.log(obj[prop])
-  // //       obj[prop] = 0;
-  // //     }
-  // //   }
-  // //   return obj;
-  // // }
-  // // var values = {
-  // //   one: 5,
-  // //   two: 12,
-  // //   three: ' the',
-  // //   four: ' property',
-  // //   five: ' values.'
-  // // }
-  // // greaterThan10(values);
-  // // //showValues(values);
+// // function greaterThan10(obj){
+// //   for (var prop in obj){
+// //     if(obj[prop] > 10){
+// //       console.log(obj[prop])
+// //       obj[prop] = 0;
+// //     }
+// //   }
+// //   return obj;
+// // }
+// // var values = {
+// //   one: 5,
+// //   two: 12,
+// //   three: ' the',
+// //   four: ' property',
+// //   five: ' values.'
+// // }
+// // greaterThan10(values);
+// // //showValues(values);
 
 // // function totalPopulation(obj){
 
@@ -2438,7 +2439,7 @@ console.log(both);
 // //   // });
 // // var remove = employees.filter(function(employee){
 // //   console.log(employee.firstName);
-  
+
 // //   if(employee.firstName === 'Lorie'){
 // //     employee.department = 'HR';
 // //   }
@@ -2452,7 +2453,7 @@ console.log(both);
 
 // og(obj);
 //   return obj;
-  
+
 // }
 // zooAnimals(obj);
 
@@ -2472,42 +2473,42 @@ console.log(both);
 
 // Practice
 
-function binaryToString(binary){
+function binaryToString(binary) {
 
 
   var newBin = binary.split(" ");
   console.log(newBin);
   var binCode = [];
-  
+
   for (i = 0; i < newBin.length; i++) {
-      binCode.push(String.fromCharCode(newBin[i]);
-    }
+    binCode.push(String.fromCharCode(newBin[i]);
+  }
   return binCode.join("");
-  
-      // // split string into an array so we can loop through it
-      // var newStr=binary.split(" ");
-      // // declare a new array to later push "translated" values into
-      // var sArr=[];
-      // // loop through binary array, translate and push translated values into the new array
-      // newStr.forEach(function(item){
-      // sArr.push(String.fromCharCode(parseInt(item,2)));
-      // })
-  
-      // // join the array back into a string
-      // return sArr.join("");
-      }
-  binaryToString('0b10000110b11000010b1110100'); //== 'Cat'
 
-  // Practice
+  // // split string into an array so we can loop through it
+  // var newStr=binary.split(" ");
+  // // declare a new array to later push "translated" values into
+  // var sArr=[];
+  // // loop through binary array, translate and push translated values into the new array
+  // newStr.forEach(function(item){
+  // sArr.push(String.fromCharCode(parseInt(item,2)));
+  // })
 
-  // A printer prints colors represented by the letters "a" through "m". At the end of the print, it puts out a control string to show what colors were printed.  A "good" control string output example might be "aaabbbbhaijjjm" due to the fact that only the letters a through m were used, and no errors (other letters) were used.
+  // // join the array back into a string
+  // return sArr.join("");
+}
+binaryToString('0b10000110b11000010b1110100'); //== 'Cat'
+
+// Practice
+
+// A printer prints colors represented by the letters "a" through "m". At the end of the print, it puts out a control string to show what colors were printed.  A "good" control string output example might be "aaabbbbhaijjjm" due to the fact that only the letters a through m were used, and no errors (other letters) were used.
 
 // When the printer has a malfunction, the control string marks it with a letter that isn't a through m, for example: "aaaxbbbbyyhwawiwjjjwwm".
 
 // Write a function, printer_error, which will output the error rate of the printer as a string whose numerator is the number of errors and the denominator the length of the control string. Do not reduce the fraction.
 
 
-function printer_error (str){
+function printer_error(str) {
   //console.log(str.length);
   //console.log(str.includes('a'))
   //
@@ -2519,16 +2520,16 @@ function printer_error (str){
   // }else {
   //   return `${output}/${str.length}`
   // }
-// charCodeAt ===== 97-109 are ok
+  // charCodeAt ===== 97-109 are ok
 
   let denom = str.length;
   let errorsLength = str.split('').filter(elem => {
     return elem.charCodeAt() > 109 || elem.charCodeAt() < 97
   }).length
 
-//console.log(errorsLength)
+  //console.log(errorsLength)
 
-return `${errorsLength}/${denom}`
+  return `${errorsLength}/${denom}`
 }
 
 
@@ -2540,14 +2541,14 @@ printer_error("aaaxbbbbyyhwawiwjjjwwm") //==> "8/22"
 
 function unformatted() {
   function innerFunction(count) {
-    while(count > 0) {
+    while (count > 0) {
       count--;
-        if(count===2) {
-          console.log("count is two!");
-        }
+      if (count === 2) {
+        console.log("count is two!");
+      }
     }
     console.log("are we still in the inner func?");
-  } 
+  }
   innerFunction(5);
   return "end of the func";
 }
@@ -2559,25 +2560,25 @@ unformatted();
 
 //myUnshift([1,2,3], 0)    // => [0,1,2,3]
 
-function myUnshift(array, value){
+function myUnshift(array, value) {
   var array1 = [value];
-  
-  for(var i = 0; i < array.length; i++){
+
+  for (var i = 0; i < array.length; i++) {
     //console.log(array[i]);
-    
-   array1.push(array[i]);
-  
-  // array.push(value)
-    
+
+    array1.push(array[i]);
+
+    // array.push(value)
+
   }
-  
+
   console.log(array1);
-  
-  
-  
+
+
+
 }
 
-myUnshift([1,2,3], 0);
+myUnshift([1, 2, 3], 0);
 
 
 // Practice
@@ -2602,19 +2603,19 @@ myUnshift([1,2,3], 0);
 
 // Output: 2, 3, 4, 23, 5
 
-function sort (arr){
+function sort(arr) {
   let obj = {};
 
-  let newArr = arr.map((el,i) => {
-    obj[el*(i+1)]=el;
+  let newArr = arr.map((el, i) => {
+    obj[el * (i + 1)] = el;
     console.log(obj)
-    });
+  });
   //console.log(newArr)
   return Object.values(obj);
 
 }
 
-sort([23,2,3,4,5])
+sort([23, 2, 3, 4, 5])
 
 // Practice
 
@@ -2664,9 +2665,9 @@ const _ = require('lodash');
 
 const arr = [1, 2, 3];
 const users = [
-	{ name: 'Steven', age: 26 },
-	{ name: 'Jeff', age: 35 },
-	{ name: 'Steven', age: 234 },
+  { name: 'Steven', age: 26 },
+  { name: 'Jeff', age: 35 },
+  { name: 'Steven', age: 234 },
 ];
 
 const nums = { a: 2, b: 3 };
@@ -2724,58 +2725,58 @@ const nums = { a: 2, b: 3 };
 // function zooAnimals(obj){
 //   var {lion, tiger, bear} = {lion: obj.lion, tiger: obj.tiger, bear: obj.bear};
 //   console.l  // /*
-  //   First we'll look at the difference between accessing property values in a for in loop and accessing the property name in a for in loop.
-  //   In the example below, we are accessing the property values. Uncomment the code below, run it and look at what prints in the console.
-  // */
+//   First we'll look at the difference between accessing property values in a for in loop and accessing the property name in a for in loop.
+//   In the example below, we are accessing the property values. Uncomment the code below, run it and look at what prints in the console.
+// */
 
-  // var values = {
-  //   one: 'These',
-  //   two: ' are',
-  //   three: ' the',
-  //   four: ' property',
-  //   five: ' values.'
-  // } 
+// var values = {
+//   one: 'These',
+//   two: ' are',
+//   three: ' the',
+//   four: ' property',
+//   five: ' values.'
+// } 
 
-  // for(var key in values) {
-  //   console.log(values[key])
-  // }
+// for(var key in values) {
+//   console.log(values[key])
+// }
 
-  // /*
-  //   In this next example, we are accessing the property names themselves. Uncomment the code below, run it and look at what prints in the console.
-  // */
+// /*
+//   In this next example, we are accessing the property names themselves. Uncomment the code below, run it and look at what prints in the console.
+// */
 
-  // for(var key in values) {
-  //   console.log(key)
-  // }
+// for(var key in values) {
+//   console.log(key)
+// }
 
-  // function showValues( obj ) {
-  //   //Code Here
-  //   var str = '';
+// function showValues( obj ) {
+//   //Code Here
+//   var str = '';
 
-  //   for(var prop in obj){
-  //     str = str + obj[prop]; 
-  //   }
-  //   return str;
-  // }
+//   for(var prop in obj){
+//     str = str + obj[prop]; 
+//   }
+//   return str;
+// }
 
-  // // function greaterThan10(obj){
-  // //   for (var prop in obj){
-  // //     if(obj[prop] > 10){
-  // //       console.log(obj[prop])
-  // //       obj[prop] = 0;
-  // //     }
-  // //   }
-  // //   return obj;
-  // // }
-  // // var values = {
-  // //   one: 5,
-  // //   two: 12,
-  // //   three: ' the',
-  // //   four: ' property',
-  // //   five: ' values.'
-  // // }
-  // // greaterThan10(values);
-  // // //showValues(values);
+// // function greaterThan10(obj){
+// //   for (var prop in obj){
+// //     if(obj[prop] > 10){
+// //       console.log(obj[prop])
+// //       obj[prop] = 0;
+// //     }
+// //   }
+// //   return obj;
+// // }
+// // var values = {
+// //   one: 5,
+// //   two: 12,
+// //   three: ' the',
+// //   four: ' property',
+// //   five: ' values.'
+// // }
+// // greaterThan10(values);
+// // //showValues(values);
 
 // // function totalPopulation(obj){
 
@@ -2838,7 +2839,7 @@ const nums = { a: 2, b: 3 };
 // //   // });
 // // var remove = employees.filter(function(employee){
 // //   console.log(employee.firstName);
-  
+
 // //   if(employee.firstName === 'Lorie'){
 // //     employee.department = 'HR';
 // //   }
@@ -2852,7 +2853,7 @@ const nums = { a: 2, b: 3 };
 
 og(obj);
 //   return obj;
-  
+
 // }
 // zooAnimals(obj);
 
@@ -2883,7 +2884,7 @@ og(obj);
 //       if(dupArr[i] === dupArr[j]){
 //         dupArr.splice(j,1);
 //       }
-      
+
 //     }
 //   };
 //   return dupArr;
@@ -2999,22 +3000,22 @@ const stevensRegularOrder = ['Ham', 'BP', 'BananaPeps', 'Ranch', 'Spinach'];
 // console.log(robsSandwich('Tuna'));
 
 function createOrder(regular = []) {
-	return {
-		addIngredient(ingredient) {
-			regular.push(ingredient);
-		},
-		deleteIngredient(ingredient) {
-			for (let i = 0; i < regular.length; i++) {
-				if (regular[i] === ingredient) {
-					regular.splice(i, 1);
-					i--;
-				}
-			}
-		},
-		readIngredients() {
-			console.log(regular);
-		},
-	};
+  return {
+    addIngredient(ingredient) {
+      regular.push(ingredient);
+    },
+    deleteIngredient(ingredient) {
+      for (let i = 0; i < regular.length; i++) {
+        if (regular[i] === ingredient) {
+          regular.splice(i, 1);
+          i--;
+        }
+      }
+    },
+    readIngredients() {
+      console.log(regular);
+    },
+  };
 }
 
 // FUNCTION bankAccount -> startingBalance
@@ -3224,22 +3225,22 @@ console.log(isIsogram('hello there')); // returns false (multiple l's)
 
 */
 
-function isIsogram( str ) {
+function isIsogram(str) {
   // split the alphabets
   // for loop
   // if / else
 
-var split = str.split('');
+  var split = str.split('');
 
-var track = [];
-//console.log(split);
+  var track = [];
+  //console.log(split);
 
-  for(var i = 0; i < split.length; i++){
+  for (var i = 0; i < split.length; i++) {
     //str.indexOf(searchValue[, fromIndex])]
-    
+
     //console.log(track);
     //console.log(track.indexOf(split[i]));
-    if(track.indexOf(split[i]) > -1){
+    if (track.indexOf(split[i]) > -1) {
       return false;
     }
     track.push(split[i]);
@@ -3263,24 +3264,24 @@ console.log(isIsogram('do the max'));
 
 // Practice
 
-function assignEvenAndOdds(userInput){
+function assignEvenAndOdds(userInput) {
   // var arr = userInput.split(',');
-  var arr =[];
+  var arr = [];
   console.log(arr);
   var evens = [];
   var odds = [];
 
   userInput.filter(num => {
-      if(parseInt(num) % 2 === 0){
-          evens.push(num);
-      }else if(parseInt(num) % 2 !== 0){
-          odds.push(num);
-      }
+    if (parseInt(num) % 2 === 0) {
+      evens.push(num);
+    } else if (parseInt(num) % 2 !== 0) {
+      odds.push(num);
+    }
   });
   console.log(evens);
   console.log(odds);
 }
-assignEvenAndOdds(['1','2','3','4'])
+assignEvenAndOdds(['1', '2', '3', '4'])
 
 
 // Write a function, which takes a non-negative integer (seconds) as input and returns the time in a human-readable format (HH:MM:SS)
@@ -3292,17 +3293,17 @@ assignEvenAndOdds(['1','2','3','4'])
 
 // You can find some examples in the test fixtures.
 
-function tellMeTime(seconds){
-  
-  let hours = checkLength(Math.floor(seconds/3600);
-  let minutes = checkLength(Math.floor((sconds%3600)/60);
-  let seconds = checkLength(seconds-(hours*3600)-(minutes/60));
-  
+function tellMeTime(seconds) {
+
+  let hours = checkLength(Math.floor(seconds / 3600);
+  let minutes = checkLength(Math.floor((sconds % 3600) / 60);
+  let seconds = checkLength(seconds - (hours * 3600) - (minutes / 60));
+
   return `${hours}:${minutes}:${seconds}`
 }
 
-function checkLength(digit){
-  if(('+digit').legth < 2) {return '0'+digit}
+function checkLength(digit) {
+  if (('+digit').legth < 2) { return '0' + digit }
   return digit;
 }
 
@@ -3362,39 +3363,39 @@ Operator
 
 // Practice
 
-function reverseArray(arr){
+function reverseArray(arr) {
   var newArray = [];
   // console.log(arr);
-  
+
   if (arr.length > 0) {
     // console.log(newArray);
     newArray.push(arr[arr.length - 1]);
     // console.log(arr[arr.length - 1]);
     console.log(newArray);
-    
-    return newArray.concat(reverseArray(arr.slice(0, arr.length-1)))
+
+    return newArray.concat(reverseArray(arr.slice(0, arr.length - 1)))
   }
   return [];
-  
-  
+
+
 };
 
-var arr = [1,2,3,4]
+var arr = [1, 2, 3, 4]
 var reversedArr = reverseArray(arr);
 
 console.log(reversedArr)    // [4,3,2,1]
-// console.log(arr)    // [1,2,3,4]
+  // console.log(arr)    // [1,2,3,4]
 
-// Practice
+  // Practice
 
-/ Times Tables
+  / Times Tables
 // Write a function that generates a "Times Tables" function for any number passed in. The function should accept a single parameter (a number) and return a function that itself returns the product of that number and any number passed in.
 
-function timesTable(num1){
-var multiply = function(num2){
- return num1 * num2;
- };
- return multiply;
+function timesTable(num1) {
+  var multiply = function (num2) {
+    return num1 * num2;
+  };
+  return multiply;
 }
 
 // var ninesTable = timesTable(9);
@@ -3424,31 +3425,31 @@ twelvesTable(100)    // => 1200
 //   return 1.05* 1.07;
 // }
 
-function biller(state){
-  var bill = function(num){
-  // return num * state();
-  // }
-    if(state === "NY"){
-    return (num * 1.03) * 1.09;
-    } else if(state === "NJ"){
-    return (num * 1.05) * 1.07;
+function biller(state) {
+  var bill = function (num) {
+    // return num * state();
+    // }
+    if (state === "NY") {
+      return (num * 1.03) * 1.09;
+    } else if (state === "NJ") {
+      return (num * 1.05) * 1.07;
     } else {
-    return "invalid State";
+      return "invalid State";
     }
   }
- return bill;
- }
- 
- 
- 
- 
- var newYorkBiller = biller('NY');
- newYorkBiller(100)   // => 112.27
- 
- var newJersBiller = biller('NJ');
- newJersBiller(100)    // => 112.35
+  return bill;
+}
 
- // The rgb() method is incomplete. Complete the method so that passing in RGB decimal values will result in a hexadecimal representation being returned. The valid decimal values for RGB are 0 - 255. Any (r,g,b) argument values that fall out of that range should be rounded to the closest valid value.
+
+
+
+var newYorkBiller = biller('NY');
+newYorkBiller(100)   // => 112.27
+
+var newJersBiller = biller('NJ');
+newJersBiller(100)    // => 112.35
+
+// The rgb() method is incomplete. Complete the method so that passing in RGB decimal values will result in a hexadecimal representation being returned. The valid decimal values for RGB are 0 - 255. Any (r,g,b) argument values that fall out of that range should be rounded to the closest valid value.
 
 // The following are examples of expected output values:
 
@@ -3458,11 +3459,11 @@ function biller(state){
 // rgb(148, 0, 211) // returns 9400D3
 
 // Write a function that rearranges an integer into its largest possible value.
-function superSize(int){
+function superSize(int) {
   const n = int;
-let z = Array.from(n.toString()).map(Number);
+  let z = Array.from(n.toString()).map(Number);
   //console.log(z);
-  let y = z.sort(function(a, b){return b-a});
+  let y = z.sort(function (a, b) { return b - a });
   console.log(y);
 }
 superSize(123456) //654321
@@ -3476,13 +3477,13 @@ superSize(123456) //654321
 
 // For the purposes of this Kata, you may assume that all inputs are valid (i.e. arrays containing only positive integers with a length of at least 2).
 
-function inAscOrder (arr){
+function inAscOrder(arr) {
   var first = arr[0];
-  for (var i = 1; i < arr.length; i++){
+  for (var i = 1; i < arr.length; i++) {
     // if(arr[i] < arr[i - 1])
-    if(first > arr[i]){
+    if (first > arr[i]) {
       return false;
-    }else {
+    } else {
       first = arr[i];
       //console.log(i);
     }
@@ -3502,14 +3503,14 @@ function inAscOrder (arr){
 
 function unformatted() {
   function innerFunction(count) {
-    while(count > 0) {
+    while (count > 0) {
       count--;
-        if(count===2) {
-          console.log("count is two!");
-        }
+      if (count === 2) {
+        console.log("count is two!");
+      }
     }
     console.log("are we still in the inner func?");
-  } 
+  }
   innerFunction(5);
   return "end of the func";
 }
@@ -3777,9 +3778,9 @@ const _ = require('lodash');
 
 const arr = [1, 2, 3];
 const users = [
-	{ name: 'Steven', age: 26 },
-	{ name: 'Jeff', age: 35 },
-	{ name: 'Steven', age: 234 },
+  { name: 'Steven', age: 26 },
+  { name: 'Jeff', age: 35 },
+  { name: 'Steven', age: 234 },
 ];
 
 const nums = { a: 2, b: 3 };
@@ -3841,25 +3842,25 @@ const nums = { a: 2, b: 3 };
 
 // throw new Error('You broke the things');
 
-let arr =[]
+let arr = []
 console.log(arr.length)
 
-function insertion(arr){
-  for(let i = 1; i < arr.length; i++){
+function insertion(arr) {
+  for (let i = 1; i < arr.length; i++) {
     // console.log('i',arr[i])
-    for(let j = 0; j < i; j++)
-    // console.log('j', arr[i][j])
-    if(arr[i] < arr[j]){
-      console.log(arr[i], arr[j])
-      let [bigger] = arr.splice(i, 1)
-      arr.splice(j, 0, bigger)
-      j=i
-    }
+    for (let j = 0; j < i; j++)
+      // console.log('j', arr[i][j])
+      if (arr[i] < arr[j]) {
+        console.log(arr[i], arr[j])
+        let [bigger] = arr.splice(i, 1)
+        arr.splice(j, 0, bigger)
+        j = i
+      }
   }
   return arr
 }
 
-insertion([3,2,1])
+insertion([3, 2, 1])
 
 // const user = {
 //   name: 'abhishek',
@@ -3950,14 +3951,14 @@ insertion([3,2,1])
 
 function unformatted() {
   function innerFunction(count) {
-    while(count > 0) {
+    while (count > 0) {
       count--;
-        if(count===2) {
-          console.log("count is two!");
-        }
+      if (count === 2) {
+        console.log("count is two!");
+      }
     }
     console.log("are we still in the inner func?");
-  } 
+  }
   innerFunction(5);
   return "end of the func";
 }
@@ -3965,22 +3966,22 @@ function unformatted() {
 
 unformatted();
 
-function insertion(arr){
-  for(let i = 1; i < arr.length; i++){
+function insertion(arr) {
+  for (let i = 1; i < arr.length; i++) {
     // console.log('i',arr[i])
-    for(let j = 0; j < i; j++)
-    // console.log('j', arr[i][j])
-    if(arr[i] < arr[j]){
-      console.log(arr[i], arr[j])
-      let [bigger] = arr.splice(i, 1)
-      arr.splice(j, 0, bigger)
-      j=i
-    }
+    for (let j = 0; j < i; j++)
+      // console.log('j', arr[i][j])
+      if (arr[i] < arr[j]) {
+        console.log(arr[i], arr[j])
+        let [bigger] = arr.splice(i, 1)
+        arr.splice(j, 0, bigger)
+        j = i
+      }
   }
   return arr
 }
 
-insertion([3,2,1])
+insertion([3, 2, 1])
 
 // The rgb() method is incomplete. Complete the method so that passing in RGB decimal values will result in a hexadecimal representation being returned. The valid decimal values for RGB are 0 - 255. Any (r,g,b) argument values that fall out of that range should be rounded to the closest valid value.
 
@@ -4011,13 +4012,13 @@ insertion([3,2,1])
 // increment counter as we make folds
 // return our counter
 
-function foldsToTheMoon(distance){
+function foldsToTheMoon(distance) {
   let counter = 0;
-  if(distance <=0){
+  if (distance <= 0) {
     return null
   }
 
-  for(let i = .0001; i < distance; i+=i){
+  for (let i = .0001; i < distance; i += i) {
     counter++;
   }
   return counter;
@@ -4052,35 +4053,35 @@ foldsToTheMoon(384400000);
 const accum = (str) => {
   var count = 1;
   var newStr = '';
-  
-  for(var i = 0; i < str.length; i++) {
-      newStr += str.charAt(i).toUpperCase();
-  
-   
-    for(var j = 1; j < count; j++) {
+
+  for (var i = 0; i < str.length; i++) {
+    newStr += str.charAt(i).toUpperCase();
+
+
+    for (var j = 1; j < count; j++) {
       newStr += str[i].toLowerCase();
     }
     count++;
-  
+
     i !== (str.length - 1) ? newStr += `-` : newStr;
-  
+
   }
   return newStr;
-  }
-  
-  accum('cwAt')
+}
 
-  // function accum(str){
-  // let arr = str.split('')
-  
-  // let result = arr.map((el, i) => {
-  //   let upper = el.toUpperCase();
-  //   let counter = i + 1;
+accum('cwAt')
 
-  //   return `${upper}${el}` 
-  // })
-  // console.log(result)
-  // return result.join('-')
+// function accum(str){
+// let arr = str.split('')
+
+// let result = arr.map((el, i) => {
+//   let upper = el.toUpperCase();
+//   let counter = i + 1;
+
+//   return `${upper}${el}` 
+// })
+// console.log(result)
+// return result.join('-')
 //   let count = 1
 //   let newStr = '';
 
@@ -4108,17 +4109,17 @@ const accum = (str) => {
 
 // You can find some examples in the test fixtures.
 
-function tellMeTime(seconds){
-  
-  let hours = checkLength(Math.floor(seconds/3600);
-  let minutes = checkLength(Math.floor((sconds%3600)/60);
-  let seconds = checkLength(seconds-(hours*3600)-(minutes/60));
-  
+function tellMeTime(seconds) {
+
+  let hours = checkLength(Math.floor(seconds / 3600);
+  let minutes = checkLength(Math.floor((sconds % 3600) / 60);
+  let seconds = checkLength(seconds - (hours * 3600) - (minutes / 60));
+
   return `${hours}:${minutes}:${seconds}`
 }
 
-function checkLength(digit){
-  if(('+digit').legth < 2) {return '0'+digit}
+function checkLength(digit) {
+  if (('+digit').legth < 2) { return '0' + digit }
   return digit;
 }
 tellMeTime(3599);
@@ -4165,8 +4166,8 @@ tellMeTime(3599);
 
 // nameIt(5999);
 
-let arr1 = [1,2,3,4,5];
-let arr2 = [6,7,8,9];
+let arr1 = [1, 2, 3, 4, 5];
+let arr2 = [6, 7, 8, 9];
 
 let both = [...arr1, ...arr2];
 console.log(both);
@@ -4181,12 +4182,12 @@ function handlePosts() {
     { id: 52, title: 'Code Refactor City' },
     { id: 105, title: 'The Brightest Ruby' }
   ];
-  
+
   // for (var i = 0; i < posts.length; i++) {
   //   savePost(posts[i]);
   // }
-  
-  posts.forEach(function(post){
+
+  posts.forEach(function (post) {
     savePost(post);
   });
 }
@@ -4211,19 +4212,19 @@ function handlePosts() {
 
 // Output: 2, 3, 4, 23, 5
 
-function sort (arr){
+function sort(arr) {
   let obj = {};
 
-  let newArr = arr.map((el,i) => {
-    obj[el*(i+1)]=el;
+  let newArr = arr.map((el, i) => {
+    obj[el * (i + 1)] = el;
     console.log(obj)
-    });
+  });
   //console.log(newArr)
   return Object.values(obj);
 
 }
 
-sort([23,2,3,4,5])
+sort([23, 2, 3, 4, 5])
 
 // // let arr = [1,2,3,4,5,4,3,2,1];
 
@@ -4354,24 +4355,24 @@ sort([23,2,3,4,5])
 
 
 class Car {
-  constructor(make, model, year){
+  constructor(make, model, year) {
     this.make = make;
     this.model = model;
     this.year = year;
   }
-  go(){
+  go() {
     console.log('vroom')
   }
-  stop(){
+  stop() {
     console.log('Squeal!!')
   }
 }
 class SUV extends Car {
-  constructor(make, model, year, offRoad){
+  constructor(make, model, year, offRoad) {
     super(make, model, year)
     this.offRoad = offRoad;
   }
-  tipOver(){
+  tipOver() {
     console.log('OH NO!!!!')
   }
 }
@@ -4379,7 +4380,7 @@ let myCar = new SUV('Nissan', 'xTerra', 2008, true)
 myCar.tipOver()
 let myToyCar = new Car('Triumph', 'Spitfire', 1976);
 
- 
+
 // groupBy takes an array and splits it into sets, grouped by the 
 // result of running each value through the predicate. If the 
 // predicate is a string instead of a function, it groups by the 
@@ -4393,21 +4394,21 @@ let myToyCar = new Car('Triumph', 'Spitfire', 1976);
 //       // store it in a variable
 //       // They will will be key for the object
 //       // Value will be the item that we are at the iteration of the loop
-      
+
 //       // check the key alreay exist in the object 
 //         // If it does we have to add, 
-    
+
 //   // Key  
 //   //& value (array)
-  
+
 //   // return the new object
-  
+
 //   //var temp = [];
-  
+
 //   var key = [];
 //   var result = {};
 //   // Iterate over the array, using forEach
-    
+
 //       //console.log('Iterate Item', item);
 
 //     if(typeof predicate === 'function'){
@@ -4418,13 +4419,13 @@ let myToyCar = new Car('Triumph', 'Spitfire', 1976);
 //             result[predicate(item)] = item;
 //           }
 //         });  
-      
+
 //     }else if(typeof predicate === 'string'){
 //         collection.forEach(function(item){
-          
+
 //         });
 //       }
-    
+
 //   return result;
 //   //console.log('output', result);
 // }
@@ -4432,54 +4433,54 @@ let myToyCar = new Car('Triumph', 'Spitfire', 1976);
 //   //   for(let i = 0; i<collection.length; i++){
 //   //     if (output[predicate(collection[i])]){
 //   //       output[predicate(collection[i])].push(collection[i])
-        
+
 //   //     } else {
 //   //       output[predicate(collection[i])] = [collection[i]]
 //   //     }
 //   //   }
 
-function groupBy(collection, predicate){ 
+function groupBy(collection, predicate) {
   // pseudocode begins here:
-    // Depending on the second parameter function / string /
-    // what are we doing here?
-    // function - call the function and pass each item 
-      // store it in a variable
-      // They will will be key for the object
-      // Value will be the item that we are at the iteration of the loop
-      
-      // check the key alreay exist in the object 
-        // If it does we have to add, 
-    
+  // Depending on the second parameter function / string /
+  // what are we doing here?
+  // function - call the function and pass each item 
+  // store it in a variable
+  // They will will be key for the object
+  // Value will be the item that we are at the iteration of the loop
+
+  // check the key alreay exist in the object 
+  // If it does we have to add, 
+
   // Key  
   //& value (array)
   // return the new object
-// function groupBy(collection, predicate){
+  // function groupBy(collection, predicate){
   var result = {};
   var temp = [];
   var key = [];
   var output = {};
   // Iterate over the array, using forEach
-    collection.forEach(function(item){
-      //console.log('Iterate Item', item);
-      
-      if(typeof predicate === 'function'){
-        
-        if(typeof item === 'string'){
-            //console.log(predicate);
-            
-            //console.log(key);
-            key = firstLetter(item);
-            output[key] = item;
-            //console.log('output', output);
-        
-        } else if (typeof item === 'number'){
-          //console.log('hello world');
-          key = mathValue(item);
-          //console.log(key);
-          output[key] = item;
-          //console.log('output', output);
-        }
-    }else if(typeof predicate === 'string'){
+  collection.forEach(function (item) {
+    //console.log('Iterate Item', item);
+
+    if (typeof predicate === 'function') {
+
+      if (typeof item === 'string') {
+        //console.log(predicate);
+
+        //console.log(key);
+        key = firstLetter(item);
+        output[key] = item;
+        //console.log('output', output);
+
+      } else if (typeof item === 'number') {
+        //console.log('hello world');
+        key = mathValue(item);
+        //console.log(key);
+        output[key] = item;
+        //console.log('output', output);
+      }
+    } else if (typeof predicate === 'string') {
       //console.log(item.length);
       //console.log(key);
       key = item.length;
@@ -4488,14 +4489,14 @@ function groupBy(collection, predicate){
     }
   });
 
-return output;
-// //console.log('output', output);
+  return output;
+  // //console.log('output', output);
 
 }
 
-var firstLetter = function(word) { return word.charAt(0); };
+var firstLetter = function (word) { return word.charAt(0); };
 
-var mathValue = function(val) { return Math.floor(val)};
+var mathValue = function (val) { return Math.floor(val) };
 
 console.log(groupBy(['apple', 'cat', 'boat', 'card', 'bond'], firstLetter));
 // returns { 'a': ['apple'], 'c': ['cat', 'card'], 'b': ['boat', 'bond'] }
@@ -4503,8 +4504,8 @@ console.log(groupBy(['apple', 'cat', 'boat', 'card', 'bond'], firstLetter));
 console.log(groupBy(['apple', 'cat', 'boat', 'card', 'bond'], 'length'));
 // returns { '5': ['apple'], '4': ['boat', 'card', 'bond'], '3': ['cat'] }
 
-console.log(groupBy([1.4, 5.6, 3.6, 1.8, 3.4], function(val) { 
-  return Math.floor(val); 
+console.log(groupBy([1.4, 5.6, 3.6, 1.8, 3.4], function (val) {
+  return Math.floor(val);
 }));
 // what would this return?
 // returns { '5': [5.6], '3':[3.6, 3.4], '1':[1.4,1.8]};
@@ -4552,9 +4553,9 @@ const _ = require('lodash');
 
 const arr = [1, 2, 3];
 const users = [
-	{ name: 'Steven', age: 26 },
-	{ name: 'Jeff', age: 35 },
-	{ name: 'Steven', age: 234 },
+  { name: 'Steven', age: 26 },
+  { name: 'Jeff', age: 35 },
+  { name: 'Steven', age: 234 },
 ];
 
 const nums = { a: 2, b: 3 };
@@ -4627,16 +4628,16 @@ var desks = [
   { type: 'sitting' },
   { type: 'standing' }
 ];
-var deskTypes = desks.reduce(function(acc, desk) {
-    
+var deskTypes = desks.reduce(function (acc, desk) {
+
   console.log(desk.type)
   acc.sitting++
   acc.standing++
   console.log(acc.sitting)
   console.log(acc.standing)
 
-  if(desk.type === 'sitting'){ ++acc.sitting}
-  if(desk.type === 'standing'){ ++acc.standing}
+  if (desk.type === 'sitting') { ++acc.sitting }
+  if (desk.type === 'standing') { ++acc.standing }
 
   return acc;
 }, { sitting: 0, standing: 0 });
@@ -4792,25 +4793,25 @@ purchases.map(e => e.price)
 
 // throw new Error('You broke the things');
 
-let arr =[]
+let arr = []
 console.log(arr.length)
 
-function insertion(arr){
-  for(let i = 1; i < arr.length; i++){
+function insertion(arr) {
+  for (let i = 1; i < arr.length; i++) {
     // console.log('i',arr[i])
-    for(let j = 0; j < i; j++)
-    // console.log('j', arr[i][j])
-    if(arr[i] < arr[j]){
-      console.log(arr[i], arr[j])
-      let [bigger] = arr.splice(i, 1)
-      arr.splice(j, 0, bigger)
-      j=i
-    }
+    for (let j = 0; j < i; j++)
+      // console.log('j', arr[i][j])
+      if (arr[i] < arr[j]) {
+        console.log(arr[i], arr[j])
+        let [bigger] = arr.splice(i, 1)
+        arr.splice(j, 0, bigger)
+        j = i
+      }
   }
   return arr
 }
 
-insertion([3,2,1])
+insertion([3, 2, 1])
 
 // This time no story, no theory. The examples below show you how to write function accum:
 
@@ -4823,34 +4824,34 @@ insertion([3,2,1])
 const accum = (str) => {
   var count = 1;
   var newStr = '';
-  for(var i = 0; i < str.length; i++) {
+  for (var i = 0; i < str.length; i++) {
     newStr += str.charAt(i).toUpperCase();
 
- 
-  for(var j = 1; j < count; j++) {
-    newStr += str[i].toLowerCase();
+
+    for (var j = 1; j < count; j++) {
+      newStr += str[i].toLowerCase();
+    }
+    count++;
+
+    i !== (str.length - 1) ? newStr += `-` : newStr;
+
   }
-  count++;
-
-  i !== (str.length - 1) ? newStr += `-` : newStr;
-
-}
-return newStr;
+  return newStr;
 }
 
 accum('cwAt')
 
 // function accum(str){
-  // let arr = str.split('')
-  
-  // let result = arr.map((el, i) => {
-  //   let upper = el.toUpperCase();
-  //   let counter = i + 1;
+// let arr = str.split('')
 
-  //   return `${upper}${el}` 
-  // })
-  // console.log(result)
-  // return result.join('-')
+// let result = arr.map((el, i) => {
+//   let upper = el.toUpperCase();
+//   let counter = i + 1;
+
+//   return `${upper}${el}` 
+// })
+// console.log(result)
+// return result.join('-')
 //   let count = 1
 //   let newStr = '';
 // function counter() {
@@ -4879,12 +4880,19 @@ const stevensRegularOrder = ['Ham', 'BP', 'BananaPeps', 'Ranch', 'Spinach'];
 
 // const robsSandwich = createOrder();
 // console.log(robsSandwich('Tuna'));
-function createOrder(regular = []) {  return {    addIngredient(ingredient) 
-  {      regular.push(ingredient);    },    deleteIngredient(ingredient) 
-  {      for (let i = 0; i < regular.length; i++) {        if (regular[i] === ingredient) 
-    {          regular.splice(i, 1); 
-           i--;        }      }    },    
-           readIngredients() {      console.log(regular);    },  };}
+function createOrder(regular = []) {
+  return {
+    addIngredient(ingredient) { regular.push(ingredient); }, deleteIngredient(ingredient) {
+      for (let i = 0; i < regular.length; i++) {
+        if (regular[i] === ingredient) {
+          regular.splice(i, 1);
+          i--;
+        }
+      }
+    },
+    readIngredients() { console.log(regular); },
+  };
+}
 
 // FUNCTION bankAccount -> startingBalance
 // return function => Deposit or Withdraw
@@ -5089,13 +5097,13 @@ rocky.speak();
 // check if number is positive else return null
 // increment counter as we make folds
 // return our counter
-function foldsToTheMoon(distance){
+function foldsToTheMoon(distance) {
   let counter = 0;
-  if(distance <=0){
+  if (distance <= 0) {
     return null
   }
 
-  for(let i = .0001; i < distance; i+=i){
+  for (let i = .0001; i < distance; i += i) {
     counter++;
   }
   return counter;
@@ -5117,7 +5125,7 @@ foldsToTheMoon(384400000);
 
 // distanceToMoon(0.0001);
 var array1 = [5, 12, 8, 130, 44];
-var array2 = ['hi','hello','abhi']
+var array2 = ['hi', 'hello', 'abhi']
 
 function findFirstLargeNumber(element) {
   return element === 'abhi';
@@ -5126,14 +5134,14 @@ console.log(array2.findIndex(findFirstLargeNumber))
 
 var array1 = [5, 12, 8, 130, 44];
 
-var found = array1.find(function(element) {
+var found = array1.find(function (element) {
   return element > 10;
 });
 
 console.log(found);
 // expected output: 12
 var array1 = [5, 12, 8, 130, 44];
-var array2 = ['hi','hello','abhi']
+var array2 = ['hi', 'hello', 'abhi']
 
 function findFirstLargeNumber(element) {
   return element === 'abhi';
@@ -5143,7 +5151,7 @@ console.log(array2.findIndex(findFirstLargeNumber))
 
 var array1 = [5, 12, 8, 130, 44];
 
-var found = array1.find(function(element) {
+var found = array1.find(function (element) {
   return element > 10;
 });
 
@@ -5154,18 +5162,18 @@ console.log(found);
 // DNAStrand("ATTGC") ==>  "TAACG"
 // DNAStrand("GTAT")  ==>  "CATA"
 
-function dna (str){
-  
+function dna(str) {
+
   let arr = [];
-  
-  for(let i = 0; i < str.length; i++){
-    if(str[i] === 'A'){
+
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === 'A') {
       arr.push('T');
-    } else if(str[i] === 'T'){
+    } else if (str[i] === 'T') {
       arr.push('A');
-    }else if(str[i] === 'G'){
+    } else if (str[i] === 'G') {
       arr.push('C');
-    }else if(str[i] === 'C'){
+    } else if (str[i] === 'C') {
       arr.push('G');
     }
   }
@@ -5245,34 +5253,34 @@ var desks = [
   { type: 'sitting' },
   { type: 'standing' }
 ];
-var deskTypes = desks.reduce(function(acc, desk) {
-    
+var deskTypes = desks.reduce(function (acc, desk) {
+
   console.log(desk.type)
   acc.sitting++
   acc.standing++
   console.log(acc.sitting)
   console.log(acc.standing)
-  if(desk.type === 'sitting'){ ++acc.sitting}
-  if(desk.type === 'standing'){ ++acc.standing}
+  if (desk.type === 'sitting') { ++acc.sitting }
+  if (desk.type === 'standing') { ++acc.standing }
 
   return acc;
 }, { sitting: 0, standing: 0 });
-function countGrade(scores){
+function countGrade(scores) {
   //coding here...
-  var S = scores.filter(function (x) { return x === 100}).length;
-  
-  var A = scores.filter(function (x) { return x < 100 && x >=90}).length;
-  var B = scores.filter(function (x) { return x < 90 && x >=80}).length;
-  
-  var C = scores.filter(function (x) { return x < 80 && x >=60}).length;
-  
-  var D = scores.filter(function (x) { return x < 60 && x >=0}).length;
-  
-  var X = scores.filter(function (x) { return x === -1}).length;
+  var S = scores.filter(function (x) { return x === 100 }).length;
 
-console.log('S: ' + S);  
+  var A = scores.filter(function (x) { return x < 100 && x >= 90 }).length;
+  var B = scores.filter(function (x) { return x < 90 && x >= 80 }).length;
+
+  var C = scores.filter(function (x) { return x < 80 && x >= 60 }).length;
+
+  var D = scores.filter(function (x) { return x < 60 && x >= 0 }).length;
+
+  var X = scores.filter(function (x) { return x === -1 }).length;
+
+  console.log('S: ' + S);
 }
-countGrade([50,60,70,80,90,100]); //should return {S:1, A:1, B:1, C:2, D:1, X:0}
+countGrade([50, 60, 70, 80, 90, 100]); //should return {S:1, A:1, B:1, C:2, D:1, X:0}
 // // let arr = [1,2,3,4,5,4,3,2,1];
 
 // // let product = arr.reduce(function(total, elem){
@@ -5422,24 +5430,24 @@ countGrade([50,60,70,80,90,100]); //should return {S:1, A:1, B:1, C:2, D:1, X:0}
 // myToyCar.go();
 
 class Car {
-  constructor(make, model, year){
+  constructor(make, model, year) {
     this.make = make;
     this.model = model;
     this.year = year;
   }
-  go(){
+  go() {
     console.log('vroom')
   }
-  stop(){
+  stop() {
     console.log('Squeal!!')
   }
 }
 class SUV extends Car {
-  constructor(make, model, year, offRoad){
+  constructor(make, model, year, offRoad) {
     super(make, model, year)
     this.offRoad = offRoad;
   }
-  tipOver(){
+  tipOver() {
     console.log('OH NO!!!!')
   }
 }
@@ -5467,12 +5475,12 @@ let myToyCar = new Car('Triumph', 'Spitfire', 1976);
 // increment counter as we make folds
 // return our counter
 
-function foldsToTheMoon(distance){
+function foldsToTheMoon(distance) {
   let counter = 0;
-  if(distance <=0){
+  if (distance <= 0) {
     return null
   }
-  for(let i = .0001; i < distance; i+=i){
+  for (let i = .0001; i < distance; i += i) {
     counter++;
   }
   return counter;
@@ -5708,7 +5716,7 @@ var users = [
     email: 'tyler@gmail.com',
     name: 'Tyler',
     address: '167 East 500 North'
-  },  {
+  }, {
     id: '15a',
     email: 'cahlan@gmail.com',
     name: 'Cahlan',
@@ -5721,12 +5729,12 @@ var users = [
     address: '192 East 32 North'
   },
 ];
-function getUserById (users, id, cb){
+function getUserById(users, id, cb) {
   //console.log(users);
   console.log(users[0].id);
-  for(let i = 0; i < users.length; i++){
+  for (let i = 0; i < users.length; i++) {
     //console.log(users[i].id);
-    if(users[i].id === id){
+    if (users[i].id === id) {
       return cb(users[i]);
     }
   }
@@ -5734,8 +5742,8 @@ function getUserById (users, id, cb){
 // Do not edit the code below.
 
 
-getUserById(users, '16t', function(user){
-  console.log('The user with the id 16t has the email of ' + user.email + ' the name of ' + user.name + ' and the address of ' + user.address); 
+getUserById(users, '16t', function (user) {
+  console.log('The user with the id 16t has the email of ' + user.email + ' the name of ' + user.name + ' and the address of ' + user.address);
 });
 // Do not edit the code above.
 // In DNA strings, symbols "A" and "T" are complements of each other, as are "C" and "G". Given one side of the DNA, you need to find the complementary side.
@@ -5743,18 +5751,18 @@ getUserById(users, '16t', function(user){
 // DNAStrand("ATTGC") ==>  "TAACG"
 // DNAStrand("GTAT")  ==>  "CATA"
 
-function dna (str){
-  
+function dna(str) {
+
   let arr = [];
-  
-  for(let i = 0; i < str.length; i++){
-    if(str[i] === 'A'){
+
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === 'A') {
       arr.push('T');
-    } else if(str[i] === 'T'){
+    } else if (str[i] === 'T') {
       arr.push('A');
-    }else if(str[i] === 'G'){
+    } else if (str[i] === 'G') {
       arr.push('C');
-    }else if(str[i] === 'C'){
+    } else if (str[i] === 'C') {
       arr.push('G');
     }
   }
@@ -5807,11 +5815,11 @@ function fibonnaci(n) {
   //let newNum - n-1;
   let newArr = [];
 
-  for(let i = 0; i < n; i++){
+  for (let i = 0; i < n; i++) {
 
-    console.log(newArr, newArr[i-1], newArr[i-2]);
+    console.log(newArr, newArr[i - 1], newArr[i - 2]);
 
-    newArr.push((newArr[i-1] || 1) + (newArr[i-2] || 0))
+    newArr.push((newArr[i - 1] || 1) + (newArr[i - 2] || 0))
   }
 
   console.log(newArr);
@@ -5828,7 +5836,7 @@ fibonnaci(10);
 //   } 
 //     return (sequence(n-1)+sequence(n-2))
 
-  
+
 //   //return result//.reverse();
 //   //return result//.reverse();
 
@@ -5849,22 +5857,22 @@ fibonnaci(10);
 //       // store it in a variable
 //       // They will will be key for the object
 //       // Value will be the item that we are at the iteration of the loop
-      
+
 //       // check the key alreay exist in the object 
 //         // If it does we have to add, 
-    
+
 //   // Key  
 //   //& value (array)
-  
+
 //   // return the new object
-  
+
 //   //var temp = [];
-  
+
 //   var key = [];
 //   var result = {};
 //   // Iterate over the array, using forEach
 //       //console.log('Iterate Item', item);
-      
+
 //     if(typeof predicate === 'function'){
 //         collection.forEach(function(item){
 //           if(result[predicate(item)]){
@@ -5873,10 +5881,10 @@ fibonnaci(10);
 //             result[predicate(item)] = item;
 //           }
 //         });  
-      
+
 //     }else if(typeof predicate === 'string'){
 //         collection.forEach(function(item){
-          
+
 //         });
 //       }
 //   return result;
@@ -5888,54 +5896,54 @@ fibonnaci(10);
 //   //   for(let i = 0; i<collection.length; i++){
 //   //     if (output[predicate(collection[i])]){
 //   //       output[predicate(collection[i])].push(collection[i])
-        
+
 //   //     } else {
 //   //       output[predicate(collection[i])] = [collection[i]]
 //   //     }
 //   //   }
-function groupBy(collection, predicate){   // pseudocode begins here:    
+function groupBy(collection, predicate) {   // pseudocode begins here:    
   // Depending on the second parameter function / string /    // what are we doing here?    // function - call the function and pass each item       // store it in a variable      // They will will be key for the object      // Value will be the item that we are at the iteration of the loop            // check the key alreay exist in the object         // If it does we have to add,       // Key    //& value (array)    
   // return the new object// function groupBy(collection, predicate){  var result = {};
 
-    //var temp = [];
+  //var temp = [];
   //var key = [];
-  
-  if (typeof(predicate) === "function") {
+
+  if (typeof (predicate) === "function") {
     // Iterate over the array, using forEach
     //console.log(predicate);
-        collection.forEach(function(item){
-         if (result[predicate(item)]){
-           result[predicate(item)].push(item);
-           
-         } else {
-           result[predicate(item)] = [item];
-         }
-       });
-     }
-     if (typeof(predicate) === "string"){
-      collection.forEach(function(item){
-        if (result[item[predicate]]){
-        result[item[predicate]].push(item);
+    collection.forEach(function (item) {
+      if (result[predicate(item)]) {
+        result[predicate(item)].push(item);
+
       } else {
-      result[item[predicate]] = [item];
+        result[predicate(item)] = [item];
       }
     });
-  }  
+  }
+  if (typeof (predicate) === "string") {
+    collection.forEach(function (item) {
+      if (result[item[predicate]]) {
+        result[item[predicate]].push(item);
+      } else {
+        result[item[predicate]] = [item];
+      }
+    });
+  }
   //console.log('output', output);
   return result;
-   //   collection.forEach(function(item){
+  //   collection.forEach(function(item){
   //     //console.log('Iterate Item', item);
-      
+
   //     if(typeof predicate === 'function'){
-        
+
   //       if(typeof item === 'string'){
   //           
-            
+
   //           //console.log(key);
   //           key = firstLetter(item);
   //           output[key] = item;
   //           
-        
+
   //       } else if (typeof item === 'number'){
   //           //console.log('hello world');
   //           key = mathValue(item);
@@ -5951,22 +5959,22 @@ function groupBy(collection, predicate){   // pseudocode begins here:
   //       //console.log('output', output);
   //     }
   //   });
- 
+
   // return output;
   // // //console.log('output', output);
-  
-}
-var firstLetter = function(word) { return word.charAt(0); };
 
-var mathValue = function(val) { return Math.floor(val)};
+}
+var firstLetter = function (word) { return word.charAt(0); };
+
+var mathValue = function (val) { return Math.floor(val) };
 
 console.log(groupBy(['apple', 'cat', 'boat', 'card', 'bond'], firstLetter));
 // returns { 'a': ['apple'], 'c': ['cat', 'card'], 'b': ['boat', 'bond'] }
 console.log(groupBy(['apple', 'cat', 'boat', 'card', 'bond'], 'length'));
 // returns { '5': ['apple'], '4': ['boat', 'card', 'bond'], '3': ['cat'] }
 
-console.log(groupBy([1.4, 5.6, 3.6, 1.8, 3.4], function(val) { 
-  return Math.floor(val); 
+console.log(groupBy([1.4, 5.6, 3.6, 1.8, 3.4], function (val) {
+  return Math.floor(val);
 }));
 
 // Write a function, which takes a non-negative integer (seconds) as input and returns the time in a human-readable format (HH:MM:SS)
@@ -5978,16 +5986,16 @@ console.log(groupBy([1.4, 5.6, 3.6, 1.8, 3.4], function(val) {
 
 // You can find some examples in the test fixtures.
 
-function tellMeTime(seconds){
-  
-  let hours = checkLength(Math.floor(seconds/3600);
-  let minutes = checkLength(Math.floor((sconds%3600)/60);
-  let seconds = checkLength(seconds-(hours*3600)-(minutes/60));
-  
+function tellMeTime(seconds) {
+
+  let hours = checkLength(Math.floor(seconds / 3600);
+  let minutes = checkLength(Math.floor((sconds % 3600) / 60);
+  let seconds = checkLength(seconds - (hours * 3600) - (minutes / 60));
+
   return `${hours}:${minutes}:${seconds}`
 }
-function checkLength(digit){
-  if(('+digit').legth < 2) {return '0'+digit}
+function checkLength(digit) {
+  if (('+digit').legth < 2) { return '0' + digit }
   return digit;
 }
 
@@ -6037,51 +6045,51 @@ tellMeTime(3599);
 function sumTransactions(array1) {
   var sum = 0;
   var max = (array1[0].amount);
-  
+
   //console.log (array1[0]);
-  
-  for (var i = 1; i < array1.length; i++ ) {
+
+  for (var i = 1; i < array1.length; i++) {
     //console.log(array1[0].amount);
-    
+
     if (max < array1[i].amount) {
       console.log('max', max)
       console.log('amount', array1[i].amount);
-      
+
       max = array1[i].amount;
-    } 
+    }
     //console.log(array1[i]);
     //console.log(array1[i].amount);
     //console.log([i]);
     //sum += array1[i].amount;
-  
+
   }
-  
-  
+
+
 
 
 
   function sumTransactions(array1) {
     var sum = 0;
     var max = (array1[0].amount);
-    
+
     //console.log (array1[0]);
-    
-    for (var i = 1; i < array1.length; i++ ) {
+
+    for (var i = 1; i < array1.length; i++) {
       //console.log(array1[0].amount);
-      
-      
-      
+
+
+
       if (max < array1[i].amount) {
         console.log('max', max)
         console.log('amount', array1[i].amount);
-        
+
         max = array1[i].amount;
-      } 
+      }
       //console.log(array1[i]);
       //console.log(array1[i].amount);
       //console.log([i]);
       //sum += array1[i].amount;
-    
+
     }
     return max;
   }
@@ -6102,469 +6110,469 @@ function sumTransactions(array1) {
     {}
 
     var transactions = [
-      {
-        name: "Tons of glitter",
-        amount: 70
-      },
-      {
-        name: "Porcelain Pink Flamingos",
-        amount: 92
-      },
-      {
-        name: "Chandelier replacement",
-        amount: 10000,
-      },
-      {},
-      {
-        name: "Dinner at TGIF x6",
-        amount: 350
-      }
-    ];
-    
-    sumTransactions(transactions); // => 10512
-    // Biller Builder
-// You work for an e-commerce company that does business in New York and New Jersey. Due to differences in tax and shipping rates, the final bill for the same product is different for customers in the different states.
+    {
+      name: "Tons of glitter",
+      amount: 70
+    },
+    {
+      name: "Porcelain Pink Flamingos",
+      amount: 92
+    },
+    {
+      name: "Chandelier replacement",
+      amount: 10000,
+    },
+    {},
+    {
+      name: "Dinner at TGIF x6",
+      amount: 350
+    }
+  ];
 
-// The company has asked you to write a function that accepts a single parameter indicating a customer's state ('NY' or 'NJ') and returns a function that calculates the final bill for a customer in that state given the total list price of their items.
+  sumTransactions(transactions); // => 10512
+  // Biller Builder
+  // You work for an e-commerce company that does business in New York and New Jersey. Due to differences in tax and shipping rates, the final bill for the same product is different for customers in the different states.
 
-// The calculation of final bills are as follows:
-// In New York, the final bill is calculated as the price of the item, plus a 3% shipping fee, plus a 9% sales tax assessed on the price of the item together with shipping costs.
-// In New Jersey, the final bill is calculated as the price of an item, plus a 5% shipping fee, plus a 7% sales tax assessed on the price of the item together with shipping costs.
-// So the final bill for a $100 item in New York would be: (100*1.03)*1.09 = 112.27 And in New Jersey: (100*1.05)*1.07 = 112.35
+  // The company has asked you to write a function that accepts a single parameter indicating a customer's state ('NY' or 'NJ') and returns a function that calculates the final bill for a customer in that state given the total list price of their items.
 
-// function NY(){
-//   return 1.03 * 1.09;
-// }
+  // The calculation of final bills are as follows:
+  // In New York, the final bill is calculated as the price of the item, plus a 3% shipping fee, plus a 9% sales tax assessed on the price of the item together with shipping costs.
+  // In New Jersey, the final bill is calculated as the price of an item, plus a 5% shipping fee, plus a 7% sales tax assessed on the price of the item together with shipping costs.
+  // So the final bill for a $100 item in New York would be: (100*1.03)*1.09 = 112.27 And in New Jersey: (100*1.05)*1.07 = 112.35
 
-// function NJ(){
-//   return 1.05* 1.07;
-// }
-function biller(state){
-  var bill = function(num){
-  // return num * state();
+  // function NY(){
+  //   return 1.03 * 1.09;
   // }
-    if(state === "NY"){
-    return (num * 1.03) * 1.09;
-    } else if(state === "NJ"){
-    return (num * 1.05) * 1.07;
-    } else {
-    return "invalid State";
+
+  // function NJ(){
+  //   return 1.05* 1.07;
+  // }
+  function biller(state) {
+    var bill = function (num) {
+      // return num * state();
+      // }
+      if (state === "NY") {
+        return (num * 1.03) * 1.09;
+      } else if (state === "NJ") {
+        return (num * 1.05) * 1.07;
+      } else {
+        return "invalid State";
+      }
     }
+    return bill;
   }
- return bill;
- }
- var newYorkBiller = biller('NY');
-newYorkBiller(100)   // => 112.27
-
-var newJersBiller = biller('NJ');
-newJersBiller(100)    // => 112.35
-const _ = require('lodash');
-
-const purchases = [
-  { month: "February", price: 37.85 },
-  { month: "January", price: 73.24 },
-  { month: "February", price: 61.41 },
-  { month: "April", price: 41.07 },
-  { month: "March", price: 34.5 },
-  { month: "April", price: 68.52 },
-  { month: "March", price: 44.53 },
-  { month: "April", price: 44.95 },
-  { month: "January", price: 72.86 },
-  { month: "February", price: 58.96 },
-  { month: "April", price: 88.62 },
-  { month: "April", price: 32.53 },
-  { month: "January", price: 61.02 },
-  { month: "April", price: 22.92 },
-  { month: "April", price: 79.4 },
-  { month: "April", price: 13.23 },
-  { month: "February", price: 26.31 },
-  { month: "February", price: 74.3 },
-  { month: "March", price: 28.76 },
-  { month: "March", price: 85.51 },
-  { month: "March", price: 75.88 },
-  { month: "January", price: 22.83 },
-  { month: "January", price: 44.39 },
-  { month: "February", price: 22.04 },
-  { month: "April", price: 56.89 },
-  { month: "February", price: 86.19 },
-  { month: "April", price: 87.99 },
-  { month: "January", price: 14.25 },
-  { month: "March", price: 60.8 },
-  { month: "February", price: 23.65 }
-];
-const purchasesByMonth = _.groupBy(purchases, "month");
-console.log(purchasesByMonth);
-
-// for (key in purchasesByMonth) {
-//   console.log(typeof key)
-// }
-
-purchases.map(e => e.price)
-
-
-// _.reduce({ 'a': 1, 'b': 2, 'c': 1 }, function(result, value, key) {
-//   (result[value] || (result[value] = [])).push(key);
-//   return result;
-// }, {});
-
-
-
-// console.log(purchasesByMonth.price)  
-// const totalByMonth = _.reduce(purchasesByMonth, )
-// async/await
-// const axios = require('axios');
-
-// async function getThePeople() {
-//   try {
-//   const data1 = axios.get('https://www.swapi.co/api/people');
-//   const data2 = axios.get(`https://www.swapi.co/api/people`);
-//   const data3 = axios.get('https://www.swapi.co/api/people');
-//   return await Promise.all([data1, data2, data3]);
-//   } catch(e) {
-//     console.log(e);
-//   }
-// }
-// (async function() {
-//   const response = await getThePeople();
-//   console.log(response);
-// })()
-// try {
-//   doSomethingBroken();
-// } catch (err) {
-//   console.log(err);
-// }
-// function promiseGen() {
-//   return new Promise((resolve, reject) => {
-//     if (true) {
-//       resolve('True');
-//     } else {
-//       reject('False');
-//     }
-//   });
-// }
-// promiseGen().then(res => console.log(res)).catch(err => console.log('err', err));
-
-// throw new Error('You broke the things');
-
-let arr =[]
-console.log(arr.length)
-
-var array1 = [5, 12, 8, 130, 44];
-var array2 = ['hi','hello','abhi']
-
-function findFirstLargeNumber(element) {
-  return element === 'abhi';
-}
+  var newYorkBiller = biller('NY');
+  newYorkBiller(100)   // => 112.27
+
+  var newJersBiller = biller('NJ');
+  newJersBiller(100)    // => 112.35
+  const _ = require('lodash');
+
+  const purchases = [
+    { month: "February", price: 37.85 },
+    { month: "January", price: 73.24 },
+    { month: "February", price: 61.41 },
+    { month: "April", price: 41.07 },
+    { month: "March", price: 34.5 },
+    { month: "April", price: 68.52 },
+    { month: "March", price: 44.53 },
+    { month: "April", price: 44.95 },
+    { month: "January", price: 72.86 },
+    { month: "February", price: 58.96 },
+    { month: "April", price: 88.62 },
+    { month: "April", price: 32.53 },
+    { month: "January", price: 61.02 },
+    { month: "April", price: 22.92 },
+    { month: "April", price: 79.4 },
+    { month: "April", price: 13.23 },
+    { month: "February", price: 26.31 },
+    { month: "February", price: 74.3 },
+    { month: "March", price: 28.76 },
+    { month: "March", price: 85.51 },
+    { month: "March", price: 75.88 },
+    { month: "January", price: 22.83 },
+    { month: "January", price: 44.39 },
+    { month: "February", price: 22.04 },
+    { month: "April", price: 56.89 },
+    { month: "February", price: 86.19 },
+    { month: "April", price: 87.99 },
+    { month: "January", price: 14.25 },
+    { month: "March", price: 60.8 },
+    { month: "February", price: 23.65 }
+  ];
+  const purchasesByMonth = _.groupBy(purchases, "month");
+  console.log(purchasesByMonth);
+
+  // for (key in purchasesByMonth) {
+  //   console.log(typeof key)
+  // }
+
+  purchases.map(e => e.price)
+
+
+  // _.reduce({ 'a': 1, 'b': 2, 'c': 1 }, function(result, value, key) {
+  //   (result[value] || (result[value] = [])).push(key);
+  //   return result;
+  // }, {});
+
+
+
+  // console.log(purchasesByMonth.price)  
+  // const totalByMonth = _.reduce(purchasesByMonth, )
+  // async/await
+  // const axios = require('axios');
+
+  // async function getThePeople() {
+  //   try {
+  //   const data1 = axios.get('https://www.swapi.co/api/people');
+  //   const data2 = axios.get(`https://www.swapi.co/api/people`);
+  //   const data3 = axios.get('https://www.swapi.co/api/people');
+  //   return await Promise.all([data1, data2, data3]);
+  //   } catch(e) {
+  //     console.log(e);
+  //   }
+  // }
+  // (async function() {
+  //   const response = await getThePeople();
+  //   console.log(response);
+  // })()
+  // try {
+  //   doSomethingBroken();
+  // } catch (err) {
+  //   console.log(err);
+  // }
+  // function promiseGen() {
+  //   return new Promise((resolve, reject) => {
+  //     if (true) {
+  //       resolve('True');
+  //     } else {
+  //       reject('False');
+  //     }
+  //   });
+  // }
+  // promiseGen().then(res => console.log(res)).catch(err => console.log('err', err));
+
+  // throw new Error('You broke the things');
+
+  let arr = []
+  console.log(arr.length)
+
+  var array1 = [5, 12, 8, 130, 44];
+  var array2 = ['hi', 'hello', 'abhi']
+
+  function findFirstLargeNumber(element) {
+    return element === 'abhi';
+  }
+
+  var array1 = [5, 12, 8, 130, 44];
+  var array2 = ['hi', 'hello', 'abhi']
 
-var array1 = [5, 12, 8, 130, 44];
-var array2 = ['hi','hello','abhi']
+  function findFirstLargeNumber(element) {
+    return element === 'abhi';
+  }
 
-function findFirstLargeNumber(element) {
-  return element === 'abhi';
-}
+  var array1 = [5, 12, 8, 130, 44];
 
-var array1 = [5, 12, 8, 130, 44];
+  var found = array1.find(function (element) {
+    return element > 10;
+  });
 
-var found = array1.find(function(element) {
-  return element > 10;
-});
+  console.log(found);
+  // expected output: 12
+  console.log(array2.findIndex(findFirstLargeNumber))
 
-console.log(found);
-// expected output: 12
-console.log(array2.findIndex(findFirstLargeNumber))
+  var array1 = [5, 12, 8, 130, 44];
+
+  var found = array1.find(function (element) {
+    return element > 10;
+  });
 
-var array1 = [5, 12, 8, 130, 44];
+  console.log(found);
+  // expected output: 12
 
-var found = array1.find(function(element) {
-  return element > 10;
-});
+  // const user = {
+  //   name: 'abhishek',
+  //   sayName() {
+  //     return this.name;
+  //   }
+  // }
 
-console.log(found);
-// expected output: 12
+  // // Implicit Binding 
+  // user.sayName();
+  // // Implicit Binding 
+  // user.sayName();
 
-// const user = {
-//   name: 'abhishek',
-//   sayName() {
-//     return this.name;
-//   }
-// }
 
-// // Implicit Binding 
-// user.sayName();
-// // Implicit Binding 
-// user.sayName();
+  // function sayName(){
+  //   return this.name;
+  // }
+  // const user = {
+  //   name: 'abhishek',
+  //   sayName: sayName
+  // }
 
+  // const user = {
+  //   name: 'abhishek',
+  //   sayName() {
+  //     return this.name;
+  //   }
+  // }
 
-// function sayName(){
-//   return this.name;
-// }
-// const user = {
-//   name: 'abhishek',
-//   sayName: sayName
-// }
+  // // Implicit Binding 
+  // user.sayName();
 
-// const user = {
-//   name: 'abhishek',
-//   sayName() {
-//     return this.name;
-//   }
-// }
 
-// // Implicit Binding 
-// user.sayName();
+  // function sayName(){
+  //   return this.name;
+  // }
+  // const user = {
+  //   name: 'abhishek',
+  //   sayName: sayName
+  // }
+  // const user2 = {
+  //   name: 'Jeff',
+  //   sayJeff: sayName
+  // }
+  // // user.sayName();
 
+  // user2.sayJeff();
 
-// function sayName(){
-//   return this.name;
-// }
-// const user = {
-//   name: 'abhishek',
-//   sayName: sayName
-// }
-// const user2 = {
-//   name: 'Jeff',
-//   sayJeff: sayName
-// }
-// // user.sayName();
+  //Implicit Binding 
 
-// user2.sayJeff();
 
-//Implicit Binding 
 
+  //Explicit Binding
 
+  // function drive(){
+  //   return this.miles += 1;
+  // }
 
-//Explicit Binding
+  // const grandNational = {
+  //   make: 'Buick',
+  //   model: 'Grand National',
+  //   year: "'87",
+  //   miles: 0
+  // }
 
-// function drive(){
-//   return this.miles += 1;
-// }
+  // const x5m = {
+  //   make: 'BMW',
+  //   model: 'X5M',
+  //   year: "2018",
+  //   miles: 0
+  // }
 
-// const grandNational = {
-//   make: 'Buick',
-//   model: 'Grand National',
-//   year: "'87",
-//   miles: 0
-// }
+  // drive.call(x5m,,,,);
+  // drive.apply(x5m, [,,,,]);
 
-// const x5m = {
-//   make: 'BMW',
-//   model: 'X5M',
-//   year: "2018",
-//   miles: 0
-// }
+  // const driveNational = drive.bind(grandNational);
 
-// drive.call(x5m,,,,);
-// drive.apply(x5m, [,,,,]);
+  // const driveBeemer = drive.bind(x5m);
 
-// const driveNational = drive.bind(grandNational);
+  // driveNational();
+  // driveNational();
+  // driveBeemer();
 
-// const driveBeemer = drive.bind(x5m);
 
-// driveNational();
-// driveNational();
-// driveBeemer();
+  //Constructor functions 
+  // function Car(make, model, year){
+  //   this.make = make;
+  //   this.model = model;
+  //   this.year = year;
+  //   this.miles = 0;
+  //   this.drive = function () {
+  //     return this.miles += 1;
+  //   }
+  // }
 
+  // const mustang = new Car('Ford', 'Mustang', 2001);
 
-//Constructor functions 
-// function Car(make, model, year){
-//   this.make = make;
-//   this.model = model;
-//   this.year = year;
-//   this.miles = 0;
-//   this.drive = function () {
-//     return this.miles += 1;
-//   }
-// }
+  // console.log(mustang)
 
-// const mustang = new Car('Ford', 'Mustang', 2001);
 
-// console.log(mustang)
+  //Constructor functions 
+  // function Car(make, model, year){
+  //   this.make = make;
+  //   this.model = model;
+  //   this.year = year;
+  //   this.miles = 0;
+  //   this.drive = function () {
+  //     return this.miles += 1;
+  //   }
+  // }
 
+  // const mustang = new Car('Ford', 'Mustang', 2001);
 
-//Constructor functions 
-// function Car(make, model, year){
-//   this.make = make;
-//   this.model = model;
-//   this.year = year;
-//   this.miles = 0;
-//   this.drive = function () {
-//     return this.miles += 1;
-//   }
-// }
+  // console.log(mustang)
 
-// const mustang = new Car('Ford', 'Mustang', 2001);
 
-// console.log(mustang)
+  // const user = {
+  //   name: 'abhishek',
+  //   sayName() {
+  //     return this.name;
+  //   }
+  // }
 
+  // // Implicit Binding 
+  // user.sayName();
 
-// const user = {
-//   name: 'abhishek',
-//   sayName() {
-//     return this.name;
-//   }
-// }
 
-// // Implicit Binding 
-// user.sayName();
+  // function sayName(){
+  //   return this.name;
+  // }
+  // const user = {
+  //   name: 'abhishek',
+  //   sayName: sayName
+  // }
 
+  // const user2 = {
+  //   name: 'Jeff',
+  //   sayJeff: sayName
+  // }
+  // // user.sayName();
 
-// function sayName(){
-//   return this.name;
-// }
-// const user = {
-//   name: 'abhishek',
-//   sayName: sayName
-// }
+  // user2.sayJeff();
 
-// const user2 = {
-//   name: 'Jeff',
-//   sayJeff: sayName
-// }
-// // user.sayName();
+  //Implicit Binding 
 
-// user2.sayJeff();
 
-//Implicit Binding 
 
+  //Explicit Binding
 
+  // function drive(){
+  //   return this.miles += 1;
+  // }
 
-//Explicit Binding
+  // const grandNational = {
+  //   make: 'Buick',
+  //   model: 'Grand National',
+  //   year: "'87",
+  //   miles: 0
+  // }
 
-// function drive(){
-//   return this.miles += 1;
-// }
+  // const x5m = {
+  //   make: 'BMW',
+  //   model: 'X5M',
+  //   year: "2018",
+  //   miles: 0
+  // }
 
-// const grandNational = {
-//   make: 'Buick',
-//   model: 'Grand National',
-//   year: "'87",
-//   miles: 0
-// }
+  // drive.call(x5m,,,,);
+  // drive.apply(x5m, [,,,,]);
 
-// const x5m = {
-//   make: 'BMW',
-//   model: 'X5M',
-//   year: "2018",
-//   miles: 0
-// }
+  // const driveNational = drive.bind(grandNational);
 
-// drive.call(x5m,,,,);
-// drive.apply(x5m, [,,,,]);
+  // const driveBeemer = drive.bind(x5m);
 
-// const driveNational = drive.bind(grandNational);
+  // driveNational();
+  // driveNational();
+  // driveBeemer();
 
-// const driveBeemer = drive.bind(x5m);
+  // Object Factory (Like action creators)
+  // function createCar(make, model, year){
+  //   return {
+  //     make: make,
+  //     model: model,
+  //     year: year
+  //   }
+  // }
 
-// driveNational();
-// driveNational();
-// driveBeemer();
+  //Constructor functions 
+  // function Car(make, model, year){
+  //   this.make = make;
+  //   this.model = model;
+  //   this.year = year;
+  //   this.miles = 0;
+  //   this.drive = function () {
+  //     return this.miles += 1;
+  //   }
+  // }
 
-// Object Factory (Like action creators)
-// function createCar(make, model, year){
-//   return {
-//     make: make,
-//     model: model,
-//     year: year
-//   }
-// }
+  // const mustang = new Car('Ford', 'Mustang', 2001);
 
-//Constructor functions 
-// function Car(make, model, year){
-//   this.make = make;
-//   this.model = model;
-//   this.year = year;
-//   this.miles = 0;
-//   this.drive = function () {
-//     return this.miles += 1;
-//   }
-// }
+  // console.log(mustang)
 
-// const mustang = new Car('Ford', 'Mustang', 2001);
+  // const allParks = [new Park('Green Park', 1987, 0.2, 215), 
+  // 					new Park('National Park', 1894, 2.9, 3541), 
+  // 					new Park('Oak Park', 1953, 0.4, 949)];
 
-// console.log(mustang)
+  // const allStreets = [new Street('Ocean Avenue', 1999, 1.1, 4),
+  // 					new Street('Evergreen Street', 2008, 2.7, 2), 
+  // 					new Street('4th Street', 2015, 2.5),
+  // 					new Street('Sunset Boulevard', 1982, 2.5, 5)];
 
-// const allParks = [new Park('Green Park', 1987, 0.2, 215), 
-// 					new Park('National Park', 1894, 2.9, 3541), 
-// 					new Park('Oak Park', 1953, 0.4, 949)];
 
-// const allStreets = [new Street('Ocean Avenue', 1999, 1.1, 4),
-// 					new Street('Evergreen Street', 2008, 2.7, 2), 
-// 					new Street('4th Street', 2015, 2.5),
-// 					new Street('Sunset Boulevard', 1982, 2.5, 5)];
+  // function calc(arr){
+  // 	const sum = arr.reduce((prev, curr, index) => prev + curr, 0);
 
+  // 	return [sum, sum / arr.length];
+  // }
 
-// function calc(arr){
-// 	const sum = arr.reduce((prev, curr, index) => prev + curr, 0);
+  // function reportParks (p){
+  // 	console.log('------ Park Reports ------')
 
-// 	return [sum, sum / arr.length];
-// }
+  // 	//density
+  // 	p.forEach(el => el.treeDensity());
 
-// function reportParks (p){
-// 	console.log('------ Park Reports ------')
+  // 	// average age
+  // 	const ages = p.map(el => new Date().getFullYear() - el.buildYear);
+  // 	const [totalAge, avgAge] = calc(ages);
 
-// 	//density
-// 	p.forEach(el => el.treeDensity());
+  // 	console.log(`Our ${p.length} parks have an average of ${avgAge} years`)
 
-// 	// average age
-// 	const ages = p.map(el => new Date().getFullYear() - el.buildYear);
-// 	const [totalAge, avgAge] = calc(ages);
+  // 	//which park hsa more than 1,000
 
-// 	console.log(`Our ${p.length} parks have an average of ${avgAge} years`)
+  // 	const i = p.map(el => el.numTrees).findIndex(el => el >= 1000);
+  // 	console.log(`${p[i].name} has more than 1000 trees`)
 
-// 	//which park hsa more than 1,000
+  // }
 
-// 	const i = p.map(el => el.numTrees).findIndex(el => el >= 1000);
-// 	console.log(`${p[i].name} has more than 1000 trees`)
+  // function reportStreets (s){
+  // 	console.log('------ Streets Reports ------')
 
-// }
+  // 	// Total and average length of the towns streets
+  // 	const [totalLength, avgLength] = calc(s.map(el => el.length));
+  // 	console.log(`Our ${s.length} streets have a total length of ${totalLength} km, with an average of ${avgLength} km.`);
 
-// function reportStreets (s){
-// 	console.log('------ Streets Reports ------')
+  // 	// Classify Sizes
+  // 	s.forEach(el => el.classifystreet());
+  // }
 
-// 	// Total and average length of the towns streets
-// 	const [totalLength, avgLength] = calc(s.map(el => el.length));
-// 	console.log(`Our ${s.length} streets have a total length of ${totalLength} km, with an average of ${avgLength} km.`);
+  // reportParks(allParks);
+  // reportStreets(allStreets);
 
-// 	// Classify Sizes
-// 	s.forEach(el => el.classifystreet());
-// }
+  // Write a function called validParentheses that takes a string of parentheses, and determines if the order of the parentheses is valid. validParentheses should return true if the string is valid, and false if it's invalid.
 
-// reportParks(allParks);
-// reportStreets(allStreets);
+  // Examples: 
+  // validParentheses( "()" ) => returns true 
+  // validParentheses( ")(()))" ) => returns false 
+  // validParentheses( "(" ) => returns false 
+  // validParentheses( "(())((()())())" ) => returns true 
 
-// Write a function called validParentheses that takes a string of parentheses, and determines if the order of the parentheses is valid. validParentheses should return true if the string is valid, and false if it's invalid.
+  // All input strings will be nonempty, and will only consist of open parentheses '(' and/or closed parentheses ')'
 
-// Examples: 
-// validParentheses( "()" ) => returns true 
-// validParentheses( ")(()))" ) => returns false 
-// validParentheses( "(" ) => returns false 
-// validParentheses( "(())((()())())" ) => returns true 
+  function validParentheses(str) {
+    let result = 0;
 
-// All input strings will be nonempty, and will only consist of open parentheses '(' and/or closed parentheses ')'
+    // console.log(str.search('()'))
 
-function validParentheses(str){
-  let result = 0;
-  
-  // console.log(str.search('()'))
 
-
-  for(let i = 0; i<str.length; i++){
-    // console.log(str[i])
-    if(str[i] === '('){
-      // console.log(str[i]);
-      result++;
-    }else if( str[i] === ')' ){
-      result--;
-      // console.log(str[i]);
+    for (let i = 0; i < str.length; i++) {
+      // console.log(str[i])
+      if (str[i] === '(') {
+        // console.log(str[i]);
+        result++;
+      } else if (str[i] === ')') {
+        result--;
+        // console.log(str[i]);
+      }
+      if (result < 0) {
+        return false;
+      }
     }
-    if(result<0){
-      return false;
-    }
-  }
-  return !result;
+    return !result;
   }
 }
-if(result<0){
+if (result < 0) {
   return false;
 }
 }
@@ -6573,7 +6581,7 @@ return !result;
 
 // validParentheses( "()" )
 // validParentheses( ")(()))" )
-validParentheses( "(())((()())())" )
+validParentheses("(())((()())())")
 // validParentheses( "(" )
 const _ = require('lodash');
 
@@ -6607,9 +6615,9 @@ const _ = require('lodash');
 // y(x());
 const arr = [1, 2, 3];
 const users = [
-	{ name: 'Steven', age: 26 },
-	{ name: 'Jeff', age: 35 },
-	{ name: 'Steven', age: 234 },
+  { name: 'Steven', age: 26 },
+  { name: 'Jeff', age: 35 },
+  { name: 'Steven', age: 234 },
 ];
 
 const nums = { a: 2, b: 3 };
@@ -6651,8 +6659,8 @@ const nums = { a: 2, b: 3 };
 
 // console.log(Object.entries(grouped));
 
- 
-for(let i = .0001; i < distance; i+=i){
+
+for (let i = .0001; i < distance; i += i) {
   counter++;
 }
 return counter;
@@ -6694,11 +6702,11 @@ function fibonnaci(n) {
   //let newNum - n-1;
   let newArr = [];
 
-  for(let i = 0; i < n; i++){
+  for (let i = 0; i < n; i++) {
 
-    console.log(newArr, newArr[i-1], newArr[i-2]);
+    console.log(newArr, newArr[i - 1], newArr[i - 2]);
 
-    newArr.push((newArr[i-1] || 1) + (newArr[i-2] || 0))
+    newArr.push((newArr[i - 1] || 1) + (newArr[i - 2] || 0))
   }
 }
 
@@ -6712,7 +6720,7 @@ fibonnaci(10);
 //   } 
 //     return (sequence(n-1)+sequence(n-2))
 
-  
+
 //   //return result//.reverse();
 
 // }
@@ -6722,164 +6730,164 @@ fibonnaci(10);
 // Times Tables
 // Write a function that generates a "Times Tables" function for any number passed in. The function should accept a single parameter (a number) and return a function that itself returns the product of that number and any number passed in.
 
-function timesTable(num1){
-  var multiply = function(num2){
-   return num1 * num2;
-   };
-   // var ninesTable = timesTable(9);
-// ninesTable(8)    // => 72
+function timesTable(num1) {
+  var multiply = function (num2) {
+    return num1 * num2;
+  };
+  // var ninesTable = timesTable(9);
+  // ninesTable(8)    // => 72
 
-var twelvesTable = timesTable(12);
-twelvesTable(15)    // => 180
-twelvesTable(100)    // => 1200
+  var twelvesTable = timesTable(12);
+  twelvesTable(15)    // => 180
+  twelvesTable(100)    // => 1200
 
-// Write a function, which takes a non-negative integer (seconds) as input and returns the time in a human-readable format (HH:MM:SS)
+  // Write a function, which takes a non-negative integer (seconds) as input and returns the time in a human-readable format (HH:MM:SS)
 
-// HH = hours, padded to 2 digits, range: 00 - 99
-// MM = minutes, padded to 2 digits, range: 00 - 59
-// SS = seconds, padded to 2 digits, range: 00 - 59
-// The maximum time never exceeds 359999 (99:59:59)
+  // HH = hours, padded to 2 digits, range: 00 - 99
+  // MM = minutes, padded to 2 digits, range: 00 - 59
+  // SS = seconds, padded to 2 digits, range: 00 - 59
+  // The maximum time never exceeds 359999 (99:59:59)
 
-// You can find some examples in the test fixtures.
-function tellMeTime(seconds){
-  
-  let hours = checkLength(Math.floor(seconds/3600);
-  let minutes = checkLength(Math.floor((sconds%3600)/60);
-  let seconds = checkLength(seconds-(hours*3600)-(minutes/60));
-  
-  return `${hours}:${minutes}:${seconds}`
-}
+  // You can find some examples in the test fixtures.
+  function tellMeTime(seconds) {
 
-function checkLength(digit){
-  if(('+digit').legth < 2) {return '0'+digit}
-  return digit;
-}
-tellMeTime(3599);
-// function tellMeTime(secondsVal){
-// // var minutes = Math.floor(time / 60); And to get the remaining seconds, multiply the full minutes with 60 and subtract from the total seconds: var seconds = time - minutes * 60; Now if you also want to get the full hours too, divide the number of total seconds by 3600 (60 minutes/hour.Sep 17, 2010
+    let hours = checkLength(Math.floor(seconds / 3600);
+    let minutes = checkLength(Math.floor((sconds % 3600) / 60);
+    let seconds = checkLength(seconds - (hours * 3600) - (minutes / 60));
 
-// var secondsNum = parseInt(secondsVal, 10);
+    return `${hours}:${minutes}:${seconds}`
+  }
 
-// var secondsNum = parseInt(secondsVal, 10);
+  function checkLength(digit) {
+    if (('+digit').legth < 2) { return '0' + digit }
+    return digit;
+  }
+  tellMeTime(3599);
+  // function tellMeTime(secondsVal){
+  // // var minutes = Math.floor(time / 60); And to get the remaining seconds, multiply the full minutes with 60 and subtract from the total seconds: var seconds = time - minutes * 60; Now if you also want to get the full hours too, divide the number of total seconds by 3600 (60 minutes/hour.Sep 17, 2010
 
-// var hours = secondsNum/3600 < 1 ? 00 : (secondsNum/3600);
-// console.log(hours);
+  // var secondsNum = parseInt(secondsVal, 10);
 
-// var minutes = Math.floor(secondsNum/60);
-// console.log(minutes);
+  // var secondsNum = parseInt(secondsVal, 10);
 
-// var seconds = (seconds-minutes)*60 || 00;
-// console.log(seconds);
+  // var hours = secondsNum/3600 < 1 ? 00 : (secondsNum/3600);
+  // console.log(hours);
 
-// return (`${hours}:${minutes}:${seconds}`); 
+  // var minutes = Math.floor(secondsNum/60);
+  // console.log(minutes);
 
-// }
+  // var seconds = (seconds-minutes)*60 || 00;
+  // console.log(seconds);
 
-// tellMeTime(359999) // 00:01:00
+  // return (`${hours}:${minutes}:${seconds}`); 
 
-// function nameIt(seconds) {
+  // }
 
-// let min = 0,
-//     hour = 0,
-//     sec = 0;
+  // tellMeTime(359999) // 00:01:00
 
-// if(seconds){
-//   if(seconds>=60){
-//     min = Math.floor(seconds/60)
-//     sec = seconds%60
-//   }else {
+  // function nameIt(seconds) {
 
-// if(seconds){
-//   if(seconds>=60){
-//     min = Math.floor(seconds/60)
-//     sec = seconds%60
-//   }else {
-//     sec = seconds;
-//   }
-//   if(min>=60){
-//     hour = Math.floor(min/60)
-//     min = min-hour * 60
-//   }
-// }
-// return `${hour}:${min}:${sec}`
-// }
+  // let min = 0,
+  //     hour = 0,
+  //     sec = 0;
 
-// nameIt(5999);
-// Write a function called songDecoder that removes the terrible dubstep sounds from a song, to reveal the original, pure, un-dubstepped beauty.
+  // if(seconds){
+  //   if(seconds>=60){
+  //     min = Math.floor(seconds/60)
+  //     sec = seconds%60
+  //   }else {
 
-// The input consists of a single non-empty string, consisting only of uppercase English letters, the string's length doesn't exceed 200 characters
+  // if(seconds){
+  //   if(seconds>=60){
+  //     min = Math.floor(seconds/60)
+  //     sec = seconds%60
+  //   }else {
+  //     sec = seconds;
+  //   }
+  //   if(min>=60){
+  //     hour = Math.floor(min/60)
+  //     min = min-hour * 60
+  //   }
+  // }
+  // return `${hour}:${min}:${sec}`
+  // }
 
-// Examples:
-// songDecoder("WUBWUBIWUBAMWUBWUBX") ==> I AM X
-// songDecoder("WUBWEWUBAREWUBWUBTHEWUBCHAMPIONSWUBMYWUBFRIENDWUB") ==>  WE ARE THE CHAMPIONS MY FRIEND
+  // nameIt(5999);
+  // Write a function called songDecoder that removes the terrible dubstep sounds from a song, to reveal the original, pure, un-dubstepped beauty.
 
-function songDecoder(str){
-  let arr = str.split('WUB');
-  //console.log(arr);
+  // The input consists of a single non-empty string, consisting only of uppercase English letters, the string's length doesn't exceed 200 characters
 
-//   let songs = arr.filter(song => {
-//     return (song !== 'W' && song !=='U' && song !=='B')
-//   })
+  // Examples:
+  // songDecoder("WUBWUBIWUBAMWUBWUBX") ==> I AM X
+  // songDecoder("WUBWEWUBAREWUBWUBTHEWUBCHAMPIONSWUBMYWUBFRIENDWUB") ==>  WE ARE THE CHAMPIONS MY FRIEND
 
-//   //console.log(songs);
-//   return songs.join('');
-return arr.filter(s=>s).join(' ');
+  function songDecoder(str) {
+    let arr = str.split('WUB');
+    //console.log(arr);
 
-// let songDecoder = str => str.replace(/WUB/g,'').replace((/\s+/g),'').trim()
+    //   let songs = arr.filter(song => {
+    //     return (song !== 'W' && song !=='U' && song !=='B')
+    //   })
 
-}
+    //   //console.log(songs);
+    //   return songs.join('');
+    return arr.filter(s => s).join(' ');
 
-//songDecoder("WUBWUBIWUBAMWUBWUBX");
-songDecoder("WUBWEWUBAREWUBWUBTHEWUBCHAMPIONSWUBMYWUBFRIENDWUB")
+    // let songDecoder = str => str.replace(/WUB/g,'').replace((/\s+/g),'').trim()
 
-let arr1 = [1,2,3,4,5];
-let arr2 = [6,7,8,9];
+  }
 
-let both = [...arr1, ...arr2];
-console.log(both);
+  //songDecoder("WUBWUBIWUBAMWUBWUBX");
+  songDecoder("WUBWEWUBAREWUBWUBTHEWUBCHAMPIONSWUBMYWUBFRIENDWUB")
 
+  let arr1 = [1, 2, 3, 4, 5];
+  let arr2 = [6, 7, 8, 9];
 
-// A printer prints colors represented by the letters "a" through "m". At the end of the print, it puts out a control string to show what colors were printed.  A "good" control string output example might be "aaabbbbhaijjjm" due to the fact that only the letters a through m were used, and no errors (other letters) were used.
-
-// When the printer has a malfunction, the control string marks it with a letter that isn't a through m, for example: "aaaxbbbbyyhwawiwjjjwwm".
-
-// Write a function, printer_error, which will output the error rate of the printer as a string whose numerator is the number of errors and the denominator the length of the control string. Do not reduce the fraction.
+  let both = [...arr1, ...arr2];
+  console.log(both);
 
 
-function printer_error (str){
-  //console.log(str.length);
-  //console.log(str.includes('a'))
-  //
-  // console.log(str.match(/nopqrstuvwxyz/g));
-  // var output = (str.match(/nopqrstuvwxyz/g) || []).length;
-  // console.log(output);
-  // if(output === false ){
-  //   return `0/${str.length}`
-  // }else {
+  // A printer prints colors represented by the letters "a" through "m". At the end of the print, it puts out a control string to show what colors were printed.  A "good" control string output example might be "aaabbbbhaijjjm" due to the fact that only the letters a through m were used, and no errors (other letters) were used.
+
+  // When the printer has a malfunction, the control string marks it with a letter that isn't a through m, for example: "aaaxbbbbyyhwawiwjjjwwm".
+
+  // Write a function, printer_error, which will output the error rate of the printer as a string whose numerator is the number of errors and the denominator the length of the control string. Do not reduce the fraction.
+
+
+  function printer_error(str) {
+    //console.log(str.length);
+    //console.log(str.includes('a'))
+    //
+    // console.log(str.match(/nopqrstuvwxyz/g));
+    // var output = (str.match(/nopqrstuvwxyz/g) || []).length;
+    // console.log(output);
+    // if(output === false ){
+    //   return `0/${str.length}`
+    // }else {
     //   return `${output}/${str.length}`
-  // }
-// charCodeAt ===== 97-109 are ok
+    // }
+    // charCodeAt ===== 97-109 are ok
 
-  let denom = str.length;
-  // }else {
-  //   return `${output}/${str.length}`
-  // }
-// charCodeAt ===== 97-109 are ok
+    let denom = str.length;
+    // }else {
+    //   return `${output}/${str.length}`
+    // }
+    // charCodeAt ===== 97-109 are ok
 
-let denom = str.length;
-let errorsLength = str.split('').filter(elem => {
-  return elem.charCodeAt() > 109 || elem.charCodeAt() < 97
-}).length
+    let denom = str.length;
+    let errorsLength = str.split('').filter(elem => {
+      return elem.charCodeAt() > 109 || elem.charCodeAt() < 97
+    }).length
 
-//console.log(errorsLength)
+    //console.log(errorsLength)
 
-return `${errorsLength}/${denom}`
-}
-
-
+    return `${errorsLength}/${denom}`
+  }
 
 
-return `${errorsLength}/${denom}`
+
+
+  return `${errorsLength}/${denom}`
 }
 
 
@@ -6887,23 +6895,23 @@ return `${errorsLength}/${denom}`
 //printer_error("aaabbbbhaijjjm") //==> "0/14"
 printer_error("aaaxbbbbyyhwawiwjjjwwm") //==> "8/22"
 
-function insertion(arr){
-  for(let i = 1; i < arr.length; i++){
+function insertion(arr) {
+  for (let i = 1; i < arr.length; i++) {
     // console.log('i',arr[i])
-    for(let j = 0; j < i; j++)
-    // console.log('j', arr[i][j])
-    if(arr[i] < arr[j]){
+    for (let j = 0; j < i; j++)
+      // console.log('j', arr[i][j])
+      if (arr[i] < arr[j]) {
 
-      console.log(arr[i], arr[j])
-      let [bigger] = arr.splice(i, 1)
-      arr.splice(j, 0, bigger)
-      j=i
-    }
+        console.log(arr[i], arr[j])
+        let [bigger] = arr.splice(i, 1)
+        arr.splice(j, 0, bigger)
+        j = i
+      }
   }
   return arr
 }
 
-insertion([3,2,1])
+insertion([3, 2, 1])
 
 // function counter() {
 //   let num = 0;
@@ -6935,23 +6943,23 @@ const stevensRegularOrder = ['Ham', 'BP', 'BananaPeps', 'Ranch', 'Spinach'];
 
 
 function createOrder(regular = []) {
-	return {
-		addIngredient(ingredient) {
-			regular.push(ingredient);
+  return {
+    addIngredient(ingredient) {
+      regular.push(ingredient);
     },
-    
+
     deleteIngredient(ingredient) {
-			for (let i = 0; i < regular.length; i++) {
-				if (regular[i] === ingredient) {
-					regular.splice(i, 1);
-					i--;
-				}
-			}
-		},
-		readIngredients() {
-			console.log(regular);
-		},
-	};
+      for (let i = 0; i < regular.length; i++) {
+        if (regular[i] === ingredient) {
+          regular.splice(i, 1);
+          i--;
+        }
+      }
+    },
+    readIngredients() {
+      console.log(regular);
+    },
+  };
 }
 
 
@@ -7042,7 +7050,7 @@ const x5m = {
   miles: -400
 }
 
-/ drive.call(x5m, , , ,);
+  / drive.call(x5m, , , , );
 // drive.apply(x5m, [, , ,]);
 
 // const driveNational = drive.bind(grandNational);
@@ -7212,31 +7220,31 @@ rocky.speak();
 //n = 10  //==>  "12!11!10"
 // n = 100 //==>  "102!101!100"
 
-function countdown(n){
+function countdown(n) {
   //30 Character solution goes here
   let arrN = [n];
   // let addN = [n+1, n+2];
 
-  arrN.push(n+1,n+2);
+  arrN.push(n + 1, n + 2);
   // arrN.push(...addN);
   console.log(arrN)
 
-return arrN.reverse().join('!');
+  return arrN.reverse().join('!');
 
 }
 
 countdown(10);
 
 
-function countdown(n){
+function countdown(n) {
   //30 Character solution goes here
   let arrN = [n];
   // let addN = [n+1, n+2];
-  arrN.push(n+1,n+2);
+  arrN.push(n + 1, n + 2);
   // arrN.push(...addN);
   console.log(arrN)
 
-return arrN.reverse().join('!');
+  return arrN.reverse().join('!');
 
 }
 
@@ -7244,24 +7252,24 @@ countdown(10);
 
 function unformatted() {
   function innerFunction(count) {
-    while(count > 0) {
+    while (count > 0) {
       count--;
-        if(count===2) {
-          console.log("count is two!");
-        }
-
+      if (count === 2) {
+        console.log("count is two!");
       }
-      console.log("are we still in the inner func?");
-    } 
-    innerFunction(5);
-    return "end of the func";
+
+    }
+    console.log("are we still in the inner func?");
   }
-  
-  
-  unformatted();
+  innerFunction(5);
+  return "end of the func";
+}
 
 
-  // This time no story, no theory. The examples below show you how to write function accum:
+unformatted();
+
+
+// This time no story, no theory. The examples below show you how to write function accum:
 
 // Examples:
 
@@ -7272,262 +7280,262 @@ function unformatted() {
 const accum = (str) => {
   var count = 1;
   var newStr = '';
-  
 
-  for(var i = 0; i < str.length; i++) {
+
+  for (var i = 0; i < str.length; i++) {
     newStr += str.charAt(i).toUpperCase();
 
- 
-  for(var j = 1; j < count; j++) {
-    newStr += str[i].toLowerCase();
+
+    for (var j = 1; j < count; j++) {
+      newStr += str[i].toLowerCase();
+    }
+    count++;
+
+    i !== (str.length - 1) ? newStr += `-` : newStr;
+
   }
-  count++;
-
-  i !== (str.length - 1) ? newStr += `-` : newStr;
-
-}
-return newStr;
+  return newStr;
 }
 
 accum('cwAt')
 
 // function accum(str){
-  // let arr = str.split('')
-  
-  // let result = arr.map((el, i) => {
-  //   let upper = el.toUpperCase();
-  //   let counter = i + 1;
+// let arr = str.split('')
 
-  //   return `${upper}${el}` 
-  // })
-  // console.log(result)
-  // return result.join('-')
+// let result = arr.map((el, i) => {
+//   let upper = el.toUpperCase();
+//   let counter = i + 1;
+
+//   return `${upper}${el}` 
+// })
+// console.log(result)
+// return result.join('-')
 //   let count = 1
 //   let newStr = '';
 
 accum('cwAt')
 
 // function accum(str){
-  // let arr = str.split('')
-  
-  // let result = arr.map((el, i) => {
-  //   let upper = el.toUpperCase();
-  //   let counter = i + 1;
+// let arr = str.split('')
 
-  //   return `${upper}${el}` 
-  // })
-  // console.log(result)
-  // return result.join('-')
+// let result = arr.map((el, i) => {
+//   let upper = el.toUpperCase();
+//   let counter = i + 1;
+
+//   return `${upper}${el}` 
+// })
+// console.log(result)
+// return result.join('-')
 //   let count = 1
 //   let newStr = '';
 
-for(var i = 0; i< str.length; i++){
+for (var i = 0; i < str.length; i++) {
   //     newStr += str[i].toUpperCase();
-  
+
   //     for(var j=1; j< count; j++){
   //       newstr +=str.charAt(i).toLowerCase();
   //     }
   //     count++;
-  
+
   //     i !== (str.length--1) ? newStr += '-' : newStr;
   //   }
   //   return newStr;
   // }
-  
+
   // accum("abcd"); 
 
   // async/await
-// const axios = require('axios');
+  // const axios = require('axios');
 
-// async function getThePeople() {
-//   try {
-//   const data1 = axios.get('https://www.swapi.co/api/people');
-//   const data2 = axios.get(`https://www.swapi.co/api/people`);
-//   const data3 = axios.get('https://www.swapi.co/api/people');
+  // async function getThePeople() {
+  //   try {
+  //   const data1 = axios.get('https://www.swapi.co/api/people');
+  //   const data2 = axios.get(`https://www.swapi.co/api/people`);
+  //   const data3 = axios.get('https://www.swapi.co/api/people');
 
-//   return await Promise.all([data1, data2, data3]);
-//   } catch(e) {
-//     console.log(e);
-//   }
-// }
+  //   return await Promise.all([data1, data2, data3]);
+  //   } catch(e) {
+  //     console.log(e);
+  //   }
+  // }
 
-//   const response = await getThePeople();
-//   console.log(response);
-// })()
-// try {
-//   doSomethingBroken();
-// } catch (err) {
-//   console.log(err);
-// }
-// }
-// (async function() {
-//   const response = await getThePeople();
-//   console.log(response);
-// })()
-// try {
-//   doSomethingBroken();
-// } catch (err) {
-//   console.log(err);
-// }
-// }
-// function promiseGen() {
-//   return new Promise((resolve, reject) => {
-//     if (true) {
-//       resolve('True');
-//     } else {
-//       reject('False');
-//     }
-//   });
-// }
+  //   const response = await getThePeople();
+  //   console.log(response);
+  // })()
+  // try {
+  //   doSomethingBroken();
+  // } catch (err) {
+  //   console.log(err);
+  // }
+  // }
+  // (async function() {
+  //   const response = await getThePeople();
+  //   console.log(response);
+  // })()
+  // try {
+  //   doSomethingBroken();
+  // } catch (err) {
+  //   console.log(err);
+  // }
+  // }
+  // function promiseGen() {
+  //   return new Promise((resolve, reject) => {
+  //     if (true) {
+  //       resolve('True');
+  //     } else {
+  //       reject('False');
+  //     }
+  //   });
+  // }
 
-//     }
-//   });
-// }
+  //     }
+  //   });
+  // }
 
-// promiseGen().then(res => console.log(res)).catch(err => console.log('err', err));
+  // promiseGen().then(res => console.log(res)).catch(err => console.log('err', err));
 
-// throw new Error('You broke the things');
+  // throw new Error('You broke the things');
 
-let arr =[]
-console.log(arr.length)
+  let arr = []
+  console.log(arr.length)
 
-// The rgb() method is incomplete. Complete the method so that passing in RGB decimal values will result in a hexadecimal representation being returned. The valid decimal values for RGB are 0 - 255. Any (r,g,b) argument values that fall out of that range should be rounded to the closest valid value.
+  // The rgb() method is incomplete. Complete the method so that passing in RGB decimal values will result in a hexadecimal representation being returned. The valid decimal values for RGB are 0 - 255. Any (r,g,b) argument values that fall out of that range should be rounded to the closest valid value.
 
-// The following are examples of expected output values:
+  // The following are examples of expected output values:
 
-// rgb(255, 255, 255) // returns FFFFFF
-// rgb(255, 255, 300) // returns FFFFFF
-// rgb(0,0,0) // returns 000000
-// rgb(148, 0, 211) // returns 9400D3
+  // rgb(255, 255, 255) // returns FFFFFF
+  // rgb(255, 255, 300) // returns FFFFFF
+  // rgb(0,0,0) // returns 000000
+  // rgb(148, 0, 211) // returns 9400D3
 
-// ////////// PROBLEM 2 //////////
+  // ////////// PROBLEM 2 //////////
 
-// // Do not edit the code below.
-// var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
-// // Do not edit the code above.
+  // // Do not edit the code below.
+  // var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
+  // // Do not edit the code above.
 
-// /*
-//   The array above represents IDs tied to reported workplace accidents. 
-//   An employee accidentally entered in duplicates to array, making it look as though there are more accidents this year than there actually are.
-//     1. Write a function called 'removeDuplicates' that will remove all duplicate entries in the workplaceAccidents array.
-//     2. Use nested for loops to check for duplicate numbers, and then remove the duplicates from the array.
-//     3. Return the updated array.
-// */
+  // /*
+  //   The array above represents IDs tied to reported workplace accidents. 
+  //   An employee accidentally entered in duplicates to array, making it look as though there are more accidents this year than there actually are.
+  //     1. Write a function called 'removeDuplicates' that will remove all duplicate entries in the workplaceAccidents array.
+  //     2. Use nested for loops to check for duplicate numbers, and then remove the duplicates from the array.
+  //     3. Return the updated array.
+  // */
 
-// //Code Here
+  // //Code Here
 
-// function removeDuplicates(){
-//   //var arr = [];
-//   var dupArr = workplaceAccidents;
+  // function removeDuplicates(){
+  //   //var arr = [];
+  //   var dupArr = workplaceAccidents;
 
-//   for(let i = 0; i < dupArr.length; i++){
-//     //console.log(dupArr[i]);
-//     for(let j = dupArr.length -1; j > i; j--){
-//       //console.log(dupArr[j]);
+  //   for(let i = 0; i < dupArr.length; i++){
+  //     //console.log(dupArr[i]);
+  //     for(let j = dupArr.length -1; j > i; j--){
+  //       //console.log(dupArr[j]);
 
-//       if(dupArr[i] === dupArr[j]){
-//         dupArr.splice(j,1);
-//       }
-      
-//     }
-//   };
-//   return dupArr;
-// }
+  //       if(dupArr[i] === dupArr[j]){
+  //         dupArr.splice(j,1);
+  //       }
 
-// removeDuplicates();
+  //     }
+  //   };
+  //   return dupArr;
+  // }
 
-
-////////// PROBLEM 5 //////////
-
-// Do not edit code below.
-// const orders = [{"price":15,"tax":0.09},{"price":42,"tax":0.07},{"price":56,"tax":0.11},
-// {"price":80,"tax":0.11},{"price":69,"tax":0.06},{"price":68,"tax":0.14},
-// {"price":72,"tax":0.14},{"price":51,"tax":0.09},{"price":89,"tax":0.15},
-// {"price":48,"tax":0.13}];
-// // Do not edit code above.
-
-// // /*
-//   Use a higher order method to get the sum of all the order totals after adding in the sales tax
-// // */
-
-// let ordersTotal = orders.map(order => order.price += order.price * order.tax);//console.log(withTax);
-
-// console.log(ordersTotal)
-// //Code Here
+  // removeDuplicates();
 
 
-// function largeNumbers ({first, second, third}) {
-//   return Math.min(first,second,third);
-// };
+  ////////// PROBLEM 5 //////////
+
+  // Do not edit code below.
+  // const orders = [{"price":15,"tax":0.09},{"price":42,"tax":0.07},{"price":56,"tax":0.11},
+  // {"price":80,"tax":0.11},{"price":69,"tax":0.06},{"price":68,"tax":0.14},
+  // {"price":72,"tax":0.14},{"price":51,"tax":0.09},{"price":89,"tax":0.15},
+  // {"price":48,"tax":0.13}];
+  // // Do not edit code above.
+
+  // // /*
+  //   Use a higher order method to get the sum of all the order totals after adding in the sales tax
+  // // */
+
+  // let ordersTotal = orders.map(order => order.price += order.price * order.tax);//console.log(withTax);
+
+  // console.log(ordersTotal)
+  // //Code Here
 
 
-// largeNumbers({first: 10, second: 2, third: 90})//).toBe(2)
-// var obj = {
-//   lion: 3,
-//   tiger: 4,
-//   bear: 5
-// }
+  // function largeNumbers ({first, second, third}) {
+  //   return Math.min(first,second,third);
+  // };
 
-// function zooAnimals(obj){
-//   var {lion, tiger, bear} = {lion: obj.lion, tiger: obj.tiger, bear: obj.bear};
-//   console.l  // /*
+
+  // largeNumbers({first: 10, second: 2, third: 90})//).toBe(2)
+  // var obj = {
+  //   lion: 3,
+  //   tiger: 4,
+  //   bear: 5
+  // }
+
+  // function zooAnimals(obj){
+  //   var {lion, tiger, bear} = {lion: obj.lion, tiger: obj.tiger, bear: obj.bear};
+  //   console.l  // /*
   //   First we'll look at the difference between accessing property values in a for in loop and accessing the property name in a for in loop.
   //   In the example below, we are accessing the property values. Uncomment the code below, run it and look at what prints in the console.
   // */
 
   // ////////// PROBLEM 2 //////////
 
-// // Do not edit the code below.
-// var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
-// // Do not edit the code above.
+  // // Do not edit the code below.
+  // var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
+  // // Do not edit the code above.
 
-// /*
-//   The array above represents IDs tied to reported workplace accidents. 
-//   An employee accidentally entered in duplicates to array, making it look as though there are more accidents this year than there actually are.
-//     1. Write a function called 'removeDuplicates' that will remove all duplicate entries in the workplaceAccidents array.
-//     2. Use nested for loops to check for duplicate numbers, and then remove the duplicates from the array.
-//     3. Return the updated array.
-// */
+  // /*
+  //   The array above represents IDs tied to reported workplace accidents. 
+  //   An employee accidentally entered in duplicates to array, making it look as though there are more accidents this year than there actually are.
+  //     1. Write a function called 'removeDuplicates' that will remove all duplicate entries in the workplaceAccidents array.
+  //     2. Use nested for loops to check for duplicate numbers, and then remove the duplicates from the array.
+  //     3. Return the updated array.
+  // */
 
-// //Code Here
+  // //Code Here
 
-// //Code Here
+  // //Code Here
 
-// function removeDuplicates(){
-//   //var arr = [];
-//   var dupArr = workplaceAccidents;
+  // function removeDuplicates(){
+  //   //var arr = [];
+  //   var dupArr = workplaceAccidents;
 
-//   for(let i = 0; i < dupArr.length; i++){
-//     //console.log(dupArr[i]);
-//     for(let j = dupArr.length -1; j > i; j--){
-//       //console.log(dupArr[j]);
-//       if(dupArr[i] === dupArr[j]){
-//         dupArr.splice(j,1);
-//       }
-      
-//     }
-//   };
-//   return dupArr;
-// }
+  //   for(let i = 0; i < dupArr.length; i++){
+  //     //console.log(dupArr[i]);
+  //     for(let j = dupArr.length -1; j > i; j--){
+  //       //console.log(dupArr[j]);
+  //       if(dupArr[i] === dupArr[j]){
+  //         dupArr.splice(j,1);
+  //       }
 
-// removeDuplicates();
+  //     }
+  //   };
+  //   return dupArr;
+  // }
 
-////////// PROBLEM 5 //////////
+  // removeDuplicates();
 
-// Do not edit code below.
-// const orders = [{"price":15,"tax":0.09},{"price":42,"tax":0.07},{"price":56,"tax":0.11},
-// {"price":80,"tax":0.11},{"price":69,"tax":0.06},{"price":68,"tax":0.14},
-// {"price":72,"tax":0.14},{"price":51,"tax":0.09},{"price":89,"tax":0.15},
-// {"price":48,"tax":0.13}];
-// // Do not edit code above.
+  ////////// PROBLEM 5 //////////
 
-// // /*
-//   Use a higher order method to get the sum of all the order totals after adding in the sales tax
-// // */
+  // Do not edit code below.
+  // const orders = [{"price":15,"tax":0.09},{"price":42,"tax":0.07},{"price":56,"tax":0.11},
+  // {"price":80,"tax":0.11},{"price":69,"tax":0.06},{"price":68,"tax":0.14},
+  // {"price":72,"tax":0.14},{"price":51,"tax":0.09},{"price":89,"tax":0.15},
+  // {"price":48,"tax":0.13}];
+  // // Do not edit code above.
 
-// function zooAnimals(obj){
-//   var {lion, tiger, bear} = {lion: obj.lion, tiger: obj.tiger, bear: obj.bear};
-//   console.l  // /*
+  // // /*
+  //   Use a higher order method to get the sum of all the order totals after adding in the sales tax
+  // // */
+
+  // function zooAnimals(obj){
+  //   var {lion, tiger, bear} = {lion: obj.lion, tiger: obj.tiger, bear: obj.bear};
+  //   console.l  // /*
   //   First we'll look at the difference between accessing property values in a for in loop and accessing the property name in a for in loop.
   //   In the example below, we are accessing the property values. Uncomment the code below, run it and look at what prints in the console.
   // */
@@ -7563,7 +7571,7 @@ console.log(arr.length)
   //   }
   //   return str;
   // }
-// // function greaterThan10(obj){
+  // // function greaterThan10(obj){
   // //   for (var prop in obj){
   // //     if(obj[prop] > 10){
   // //       console.log(obj[prop])
@@ -7584,22 +7592,22 @@ console.log(arr.length)
 
   ////////// PROBLEM 5 //////////
 
-// Do not edit code below.
-// const orders = [{"price":15,"tax":0.09},{"price":42,"tax":0.07},{"price":56,"tax":0.11},
-// {"price":80,"tax":0.11},{"price":69,"tax":0.06},{"price":68,"tax":0.14},
-// {"price":72,"tax":0.14},{"price":51,"tax":0.09},{"price":89,"tax":0.15},
-// {"price":48,"tax":0.13}];
-// // Do not edit code above.
+  // Do not edit code below.
+  // const orders = [{"price":15,"tax":0.09},{"price":42,"tax":0.07},{"price":56,"tax":0.11},
+  // {"price":80,"tax":0.11},{"price":69,"tax":0.06},{"price":68,"tax":0.14},
+  // {"price":72,"tax":0.14},{"price":51,"tax":0.09},{"price":89,"tax":0.15},
+  // {"price":48,"tax":0.13}];
+  // // Do not edit code above.
 
-// // /*
-//   Use a higher order method to get the sum of all the order totals after adding in the sales tax
-// // */
+  // // /*
+  //   Use a higher order method to get the sum of all the order totals after adding in the sales tax
+  // // */
 
-// let ordersTotal = orders.map(order => order.price += order.price * order.tax);//console.log(withTax);
+  // let ordersTotal = orders.map(order => order.price += order.price * order.tax);//console.log(withTax);
 
-// function zooAnimals(obj){
-//   var {lion, tiger, bear} = {lion: obj.lion, tiger: obj.tiger, bear: obj.bear};
-//   console.l  // /*
+  // function zooAnimals(obj){
+  //   var {lion, tiger, bear} = {lion: obj.lion, tiger: obj.tiger, bear: obj.bear};
+  //   console.l  // /*
   //   First we'll look at the difference between accessing property values in a for in loop and accessing the property name in a for in loop.
   //   In the example below, we are accessing the property values. Uncomment the code below, run it and look at what prints in the console.
   // */
@@ -7617,7 +7625,7 @@ console.log(arr.length)
   // }
 
   // /*
-   // function showValues( obj ) {
+  // function showValues( obj ) {
   //   //Code Here
   //   var str = '';
 
@@ -7647,393 +7655,393 @@ console.log(arr.length)
   // // greaterThan10(values);
   // // //showValues(values);
 
-// // function totalPopulation(obj){
-
-// //   var{utah, california, texas, arizona} = obj;
-// //   console.log(utah);
-// //   //return (utah.val + california.val + )
-// // }
-
-// // var obj = {utah: 10, california: 29087, texas: 82937, arizona: 28347}
-
-// // totalPopulation(obj);
-
-// // Do not edit the code below.
-// var employees = [
-//   {
-//     "firstName": "Von",
-//     "lastName": "Budibent",
-//     "email": "vbudibent0@163.com",
-//     "department": "Sales"
-//   },
-//   {
-//     "firstName": "Catherina",
-//     "lastName": "Swalowe",
-//     "email": "cswalowe1@example.com",
-//     "department": "Engineering"
-//   },
-
-//   {
-//     "firstName": "Theo",
-//     "lastName": "Trill",
-//     "email": "ttrill2@sina.com.cn",
-//     "department": "Services"
-//   },
-//   {
-//     "firstName": "Elsy",
-//     "lastName": "McCrorie",
-//     "email": "emccrorie3@netscape.com",
-//     "department": "Legal"
-//   },
-//   {
-//     "firstName": "Lorie",
-//     "lastName": "Handsheart",
-//     "email": "lhandsheart4@fotki.com",
-//     "department": "Research and Development"
-//   }
-// ];
-// // Do not edit the code above.
-
-// /*
-
-// /*
-//   Create a function called 'employeeUpdater' that takes no parameters. employeeUpdater will loop over the array above and perform the following:
-//     1. If employee's first name is Theo, remove that employee because he just got fired.
-//     2. If the employee's first name is Lorie, change her department to 'HR'.
-//     3. Return the updated employee array.
-// */
-
-// //Code Here
-
-// // function employeeUpdater() {
-// //   // employees.forEach(function(emp) {
-// //   //   console.log(emp);
-// //   // });
-// // var remove = employees.filter(function(employee){
-// //   console.log(employee.firstName);
-  
-// //   if(employee.firstName === 'Lorie'){
-// //     employee.department = 'HR';
-// //   }
-// //   return employee.firstName !== 'Theo';
-// //   //console.log(employee);
-// // });
-// // return remove;
-
-// //   // });
-// // var remove = employees.filter(function(employee){
-// //   console.log(employee.firstName);
-  
-// //   if(employee.firstName === 'Lorie'){
-// //     employee.department = 'HR';
-// //   }
-// //   return employee.firstName !== 'Theo';
-// //   //console.log(employee);
-// // });
-// // return remove;
-// // }
-
-// // employeeUpdater(employees);
-
-og(obj);
-//   return obj;
-  
-// }
-// zooAnimals(obj);
-
-// // let arr = [1,2,3,4,5,4,3,2,1];
-
-// // let product = arr.reduce(function(total, elem){
-// // console.log(total, elem)
-// //   return total * elem
-// // })
-
-// // product
+  // // function totalPopulation(obj){
+
+  // //   var{utah, california, texas, arizona} = obj;
+  // //   console.log(utah);
+  // //   //return (utah.val + california.val + )
+  // // }
+
+  // // var obj = {utah: 10, california: 29087, texas: 82937, arizona: 28347}
+
+  // // totalPopulation(obj);
+
+  // // Do not edit the code below.
+  // var employees = [
+  //   {
+  //     "firstName": "Von",
+  //     "lastName": "Budibent",
+  //     "email": "vbudibent0@163.com",
+  //     "department": "Sales"
+  //   },
+  //   {
+  //     "firstName": "Catherina",
+  //     "lastName": "Swalowe",
+  //     "email": "cswalowe1@example.com",
+  //     "department": "Engineering"
+  //   },
+
+  //   {
+  //     "firstName": "Theo",
+  //     "lastName": "Trill",
+  //     "email": "ttrill2@sina.com.cn",
+  //     "department": "Services"
+  //   },
+  //   {
+  //     "firstName": "Elsy",
+  //     "lastName": "McCrorie",
+  //     "email": "emccrorie3@netscape.com",
+  //     "department": "Legal"
+  //   },
+  //   {
+  //     "firstName": "Lorie",
+  //     "lastName": "Handsheart",
+  //     "email": "lhandsheart4@fotki.com",
+  //     "department": "Research and Development"
+  //   }
+  // ];
+  // // Do not edit the code above.
+
+  // /*
+
+  // /*
+  //   Create a function called 'employeeUpdater' that takes no parameters. employeeUpdater will loop over the array above and perform the following:
+  //     1. If employee's first name is Theo, remove that employee because he just got fired.
+  //     2. If the employee's first name is Lorie, change her department to 'HR'.
+  //     3. Return the updated employee array.
+  // */
+
+  // //Code Here
+
+  // // function employeeUpdater() {
+  // //   // employees.forEach(function(emp) {
+  // //   //   console.log(emp);
+  // //   // });
+  // // var remove = employees.filter(function(employee){
+  // //   console.log(employee.firstName);
+
+  // //   if(employee.firstName === 'Lorie'){
+  // //     employee.department = 'HR';
+  // //   }
+  // //   return employee.firstName !== 'Theo';
+  // //   //console.log(employee);
+  // // });
+  // // return remove;
+
+  // //   // });
+  // // var remove = employees.filter(function(employee){
+  // //   console.log(employee.firstName);
+
+  // //   if(employee.firstName === 'Lorie'){
+  // //     employee.department = 'HR';
+  // //   }
+  // //   return employee.firstName !== 'Theo';
+  // //   //console.log(employee);
+  // // });
+  // // return remove;
+  // // }
+
+  // // employeeUpdater(employees);
+
+  og(obj);
+  //   return obj;
+
+  // }
+  // zooAnimals(obj);
+
+  // // let arr = [1,2,3,4,5,4,3,2,1];
+
+  // // let product = arr.reduce(function(total, elem){
+  // // console.log(total, elem)
+  // //   return total * elem
+  // // })
+
+  // // product
 
-// let customers = [
-//   {name: "Shea", total: 150, message: 'This '},
-//   {name: 'Jarid', total: 1, message: 'is '},
-//   {name: 'Joe', total: 10000, message: 'a new '},
-//   {name: 'Erik', total: -100, message: 'message.'}
-// ]
+  // let customers = [
+  //   {name: "Shea", total: 150, message: 'This '},
+  //   {name: 'Jarid', total: 1, message: 'is '},
+  //   {name: 'Joe', total: 10000, message: 'a new '},
+  //   {name: 'Erik', total: -100, message: 'message.'}
+  // ]
 
-// // let total = customers.reduce( function(total, elem){
-// //   return total + elem.total; 
-// // }, 0)
+  // // let total = customers.reduce( function(total, elem){
+  // //   return total + elem.total; 
+  // // }, 0)
 
-// let sentence = customers.reduce(function(total, elem){
-//   return total + elem.message;
-// }, '')
+  // let sentence = customers.reduce(function(total, elem){
+  //   return total + elem.message;
+  // }, '')
 
 
-// let sentence = customers.reduce(function(total, elem){
-//   return total + elem.message;
-// }, '')
+  // let sentence = customers.reduce(function(total, elem){
+  //   return total + elem.message;
+  // }, '')
 
-// sentence
+  // sentence
 
 
-// let dog = {
-//   name: 'Rufus',
-//   isBad: false,
-//   bark: function(){
-//     console.log('woof')
-//   },
-//   age: 77,
-//   color: 'Brindle'
-// };
+  // let dog = {
+  //   name: 'Rufus',
+  //   isBad: false,
+  //   bark: function(){
+  //     console.log('woof')
+  //   },
+  //   age: 77,
+  //   color: 'Brindle'
+  // };
 
-// let extension = {
-//   isFed: true,
-//   size: 'Big',
-//   isBad : true
-// }
+  // let extension = {
+  //   isFed: true,
+  //   size: 'Big',
+  //   isBad : true
+  // }
 
-// let newDog = Object.assign({}, dog, extension);
-// console.log(dog === newDog);
-// console.log(newDog)
+  // let newDog = Object.assign({}, dog, extension);
+  // console.log(dog === newDog);
+  // console.log(newDog)
 
-// for ( let key in dog ){
-//   if (!dog[key]){
-//     delete dog[key]
-//   }
-// }
-// for (key in extension){
-//   dog[key] = extension[key];
-// }
-// dog
+  // for ( let key in dog ){
+  //   if (!dog[key]){
+  //     delete dog[key]
+  //   }
+  // }
+  // for (key in extension){
+  //   dog[key] = extension[key];
+  // }
+  // dog
 
 
-// let person = {name: "Shea", total: 150, message: 'This '}
+  // let person = {name: "Shea", total: 150, message: 'This '}
 
-// let name = person.name;
-// let total = person.total
-// let message = person.message;
+  // let name = person.name;
+  // let total = person.total
+  // let message = person.message;
 
-// let {name, total, message, age} = person;
-// console.log(name, total, message, age)
+  // let {name, total, message, age} = person;
+  // console.log(name, total, message, age)
 
-// let  req = {
-//   body: {
-//     user: {
-//       location: {
-//         city:
-//         state:
-//         zip:
-//         address:
-//       }
-//     }
-//   }
-// }
-
-// let {city, address, zip, state} = req.body.user.location;
-
-// let arr = [1,2,3,4,5];
-
-// let [one, blah, , ,five] = arr;
+  // let  req = {
+  //   body: {
+  //     user: {
+  //       location: {
+  //         city:
+  //         state:
+  //         zip:
+  //         address:
+  //       }
+  //     }
+  //   }
+  // }
 
-// console.log(one, blah, five)
-
-// function destructObj ({name}){
-//   return name;
-// }
-
-// destructObj({name:'Shea'})
-
-
-// function destructArr([first]){
-//   return first;
-// }
-
-// destructArr([{name:'Shea'}])
-
-// function addTwo (x, y){
-//   return x + y;
-// }
-
-// let addTwo2 = (x, y) =>  x + y;  
-
-// let addTwo3 = (x) => x + 2;
-
-// addTwo3(10)
-
-// addTwo3(10)
-
-// let arr = [1,2,3,4,5]
-
-// arr.map(elem => {
-
-//   return elem + 2
-// }); 
-
-// let person = {
-//   name: "Shea",
-//   sayName: () => {
-//     return this.name;
-//   }
-// }
-
-// person.sayName()
-
-
-// function car (make, model, year){
-//   return {
-//     make, model, year, go: function(){console.log('vroom')}
-//   }
-// }
-
-// let myCar = car ('Nissan', 'xTerra', 2008)
-// // myCar
-
-// function Car (make, model, year){
-//   // let this = {make: make, model:model};
-//   this.make = make;
-//   this.model = model;
-//   this.year = year;
-//   // return this;
-// }
-
-// Car.prototype.go = function(){
-//   console.log("vroom")
-// }
-
-// let myToyCar = new Car('Triumph', 'Spitfire', 1976);
-// console.log(myToyCar)
-// console.log(myCar)
-// myToyCar.go();
-
-class Car {
-  constructor(make, model, year){
-    this.make = make;
-    this.model = model;
-    this.year = year;
-  }
-  go(){
-    console.log('vroom')
-  }
-  stop(){
-    console.log('Squeal!!')
-  }
-}
-
-class SUV extends Car {
-  constructor(make, model, year, offRoad){
-    super(make, model, year)
-    this.offRoad = offRoad;
-  }
-  tipOver(){
-    console.log('OH NO!!!!')
-  }
-}
-let myCar = new SUV('Nissan', 'xTerra', 2008, true)
-myCar.tipOver()
-let myToyCar = new Car('Triumph', 'Spitfire', 1976);
-
- 
-
-class Car {
-  constructor(make, model, year){
-    this.make = make;
-    this.model = model;
-    this.year = year;
-  }
-  go(){
-    console.log('vroom')
-  }
-  stop(){
-    console.log('Squeal!!')
-  }
-}
-
-class SUV extends Car {
-  constructor(make, model, year, offRoad){
-    super(make, model, year)
-    this.offRoad = offRoad;
-  }
-  tipOver(){
-    console.log('OH NO!!!!')
-  }
-}
-let myCar = new SUV('Nissan', 'xTerra', 2008, true)
-myCar.tipOver()
-let myToyCar = new Car('Triumph', 'Spitfire', 1976);
-
- 
-// Return an array containing the numbers from 1 to N, where N is the parametered value. N will never be less than 1.
-
-// Replace certain values however if any of the following conditions are met:
-
-// If the value is a multiple of 3: use the value 'Fizz' instead
-// If the value is a multiple of 5: use the value 'Buzz' instead
-// If the value is a multiple of 3 & 5: use the value 'FizzBuzz' instead
-
-function fizzBuzz(n){
-  var result = [];
-  for(var i =1; i <= n; i++){
-    if(i % 3 === 0 && i % 5 !== 0 ){
-      result.push('Fizz');
-    } else if (i % 5 === 0 && i % 3 !== 0){
-      result.push('Buzz');
-    } else if (i % 3 ===0 && i % 5 === 0){
-      result.push('FizzBuzz');
-    }else {
-      result.push(i);
+  // let {city, address, zip, state} = req.body.user.location;
+
+  // let arr = [1,2,3,4,5];
+
+  // let [one, blah, , ,five] = arr;
+
+  // console.log(one, blah, five)
+
+  // function destructObj ({name}){
+  //   return name;
+  // }
+
+  // destructObj({name:'Shea'})
+
+
+  // function destructArr([first]){
+  //   return first;
+  // }
+
+  // destructArr([{name:'Shea'}])
+
+  // function addTwo (x, y){
+  //   return x + y;
+  // }
+
+  // let addTwo2 = (x, y) =>  x + y;  
+
+  // let addTwo3 = (x) => x + 2;
+
+  // addTwo3(10)
+
+  // addTwo3(10)
+
+  // let arr = [1,2,3,4,5]
+
+  // arr.map(elem => {
+
+  //   return elem + 2
+  // }); 
+
+  // let person = {
+  //   name: "Shea",
+  //   sayName: () => {
+  //     return this.name;
+  //   }
+  // }
+
+  // person.sayName()
+
+
+  // function car (make, model, year){
+  //   return {
+  //     make, model, year, go: function(){console.log('vroom')}
+  //   }
+  // }
+
+  // let myCar = car ('Nissan', 'xTerra', 2008)
+  // // myCar
+
+  // function Car (make, model, year){
+  //   // let this = {make: make, model:model};
+  //   this.make = make;
+  //   this.model = model;
+  //   this.year = year;
+  //   // return this;
+  // }
+
+  // Car.prototype.go = function(){
+  //   console.log("vroom")
+  // }
+
+  // let myToyCar = new Car('Triumph', 'Spitfire', 1976);
+  // console.log(myToyCar)
+  // console.log(myCar)
+  // myToyCar.go();
+
+  class Car {
+    constructor(make, model, year) {
+      this.make = make;
+      this.model = model;
+      this.year = year;
+    }
+    go() {
+      console.log('vroom')
+    }
+    stop() {
+      console.log('Squeal!!')
     }
   }
-  return result;
-}
 
-fizzBuzz(60);
-
-// Write a function called songDecoder that removes the terrible dubstep sounds from a song, to reveal the original, pure, un-dubstepped beauty.
-
-// The input consists of a single non-empty string, consisting only of uppercase English letters, the string's length doesn't exceed 200 characters
-
-// Examples:
-// songDecoder("WUBWUBIWUBAMWUBWUBX") ==> I AM X
-// songDecoder("WUBWEWUBAREWUBWUBTHEWUBCHAMPIONSWUBMYWUBFRIENDWUB") ==>  WE ARE THE CHAMPIONS MY FRIEND
-
-function songDecoder(str){
-  let arr = str.split('WUB');
-  //console.log(arr);
-
-//   let songs = arr.filter(song => {
-//     return (song !== 'W' && song !=='U' && song !=='B')
-//   })
-//   //console.log(songs);
-//   return songs.join('');
-return arr.filter(s=>s).join(' ');
-
-// let songDecoder = str => str.replace(/WUB/g,'').replace((/\s+/g),'').trim()
-
-}
-
-songDecoder("WUBWUBIWUBAMWUBWUBX");
-//songDecoder("WUBWEWUBAREWUBWUBTHEWUBCHAMPIONSWUBMYWUBFRIENDWUB")
-
-function insertion(arr){
-  for(let i = 1; i < arr.length; i++){
-    // console.log('i',arr[i])
-    for(let j = 0; j < i; j++)
-    // console.log('j', arr[i][j])
-    if(arr[i] < arr[j]){
-
-      console.log(arr[i], arr[j])
-      let [bigger] = arr.splice(i, 1)
-      arr.splice(j, 0, bigger)
-      j=i
+  class SUV extends Car {
+    constructor(make, model, year, offRoad) {
+      super(make, model, year)
+      this.offRoad = offRoad;
+    }
+    tipOver() {
+      console.log('OH NO!!!!')
     }
   }
-  return arr
-}
+  let myCar = new SUV('Nissan', 'xTerra', 2008, true)
+  myCar.tipOver()
+  let myToyCar = new Car('Triumph', 'Spitfire', 1976);
 
-insertion([3,2,1])
 
- 
-for(let i = .0001; i < distance; i+=i){
-  counter++;
-}
-return counter;
+
+  class Car {
+    constructor(make, model, year) {
+      this.make = make;
+      this.model = model;
+      this.year = year;
+    }
+    go() {
+      console.log('vroom')
+    }
+    stop() {
+      console.log('Squeal!!')
+    }
+  }
+
+  class SUV extends Car {
+    constructor(make, model, year, offRoad) {
+      super(make, model, year)
+      this.offRoad = offRoad;
+    }
+    tipOver() {
+      console.log('OH NO!!!!')
+    }
+  }
+  let myCar = new SUV('Nissan', 'xTerra', 2008, true)
+  myCar.tipOver()
+  let myToyCar = new Car('Triumph', 'Spitfire', 1976);
+
+
+  // Return an array containing the numbers from 1 to N, where N is the parametered value. N will never be less than 1.
+
+  // Replace certain values however if any of the following conditions are met:
+
+  // If the value is a multiple of 3: use the value 'Fizz' instead
+  // If the value is a multiple of 5: use the value 'Buzz' instead
+  // If the value is a multiple of 3 & 5: use the value 'FizzBuzz' instead
+
+  function fizzBuzz(n) {
+    var result = [];
+    for (var i = 1; i <= n; i++) {
+      if (i % 3 === 0 && i % 5 !== 0) {
+        result.push('Fizz');
+      } else if (i % 5 === 0 && i % 3 !== 0) {
+        result.push('Buzz');
+      } else if (i % 3 === 0 && i % 5 === 0) {
+        result.push('FizzBuzz');
+      } else {
+        result.push(i);
+      }
+    }
+    return result;
+  }
+
+  fizzBuzz(60);
+
+  // Write a function called songDecoder that removes the terrible dubstep sounds from a song, to reveal the original, pure, un-dubstepped beauty.
+
+  // The input consists of a single non-empty string, consisting only of uppercase English letters, the string's length doesn't exceed 200 characters
+
+  // Examples:
+  // songDecoder("WUBWUBIWUBAMWUBWUBX") ==> I AM X
+  // songDecoder("WUBWEWUBAREWUBWUBTHEWUBCHAMPIONSWUBMYWUBFRIENDWUB") ==>  WE ARE THE CHAMPIONS MY FRIEND
+
+  function songDecoder(str) {
+    let arr = str.split('WUB');
+    //console.log(arr);
+
+    //   let songs = arr.filter(song => {
+    //     return (song !== 'W' && song !=='U' && song !=='B')
+    //   })
+    //   //console.log(songs);
+    //   return songs.join('');
+    return arr.filter(s => s).join(' ');
+
+    // let songDecoder = str => str.replace(/WUB/g,'').replace((/\s+/g),'').trim()
+
+  }
+
+  songDecoder("WUBWUBIWUBAMWUBWUBX");
+  //songDecoder("WUBWEWUBAREWUBWUBTHEWUBCHAMPIONSWUBMYWUBFRIENDWUB")
+
+  function insertion(arr) {
+    for (let i = 1; i < arr.length; i++) {
+      // console.log('i',arr[i])
+      for (let j = 0; j < i; j++)
+        // console.log('j', arr[i][j])
+        if (arr[i] < arr[j]) {
+
+          console.log(arr[i], arr[j])
+          let [bigger] = arr.splice(i, 1)
+          arr.splice(j, 0, bigger)
+          j = i
+        }
+    }
+    return arr
+  }
+
+  insertion([3, 2, 1])
+
+
+  for (let i = .0001; i < distance; i += i) {
+    counter++;
+  }
+  return counter;
 }
 
 foldsToTheMoon(384400000);
@@ -8068,9 +8076,9 @@ foldsToTheMoon(384400000);
 // rgb(0,0,0) // returns 000000
 // rgb(148, 0, 211) // returns 9400D3
 
-function assignEvenAndOdds(userInput){
+function assignEvenAndOdds(userInput) {
   // var arr = userInput.split(',');
-  var arr =[];
+  var arr = [];
   console.log(arr);
   var evens = [];
   var odds = [];
@@ -8079,16 +8087,16 @@ function assignEvenAndOdds(userInput){
 
 
     userInput.filter(num => {
-      if(parseInt(num) % 2 === 0){
-          evens.push(num);
-      }else if(parseInt(num) % 2 !== 0){
-          odds.push(num);
+      if (parseInt(num) % 2 === 0) {
+        evens.push(num);
+      } else if (parseInt(num) % 2 !== 0) {
+        odds.push(num);
       }
-  });
-  console.log(evens);
-  console.log(odds);
-}
-assignEvenAndOdds(['1','2','3','4'])
+    });
+    console.log(evens);
+    console.log(odds);
+  }
+assignEvenAndOdds(['1', '2', '3', '4'])
 
 
 // Your task is to create an array of size n with the values of the Fibonnaci sequence, and reverse the order in which the sequence is displayed.
@@ -8105,24 +8113,23 @@ assignEvenAndOdds(['1','2','3','4'])
 // reverse my array 
 
 function fibonnaci(n) {
-  //let newNum - n-1;
-  let newArr = [];
+      //let newNum - n-1;
+      let newArr = [];
 
 
-for(let i = 0; i < n; i++)
+      for (let i = 0; i < n; i++) {
+        console.log(newArr, newArr[i - 1], newArr[i - 2]);
 
-{     console.log(newArr, newArr[i-1], newArr[i-2]);
+        newArr.push((newArr[i - 1] || 1) + (newArr[i - 2] || 0))
 
-  newArr.push((newArr[i-1] || 1) + (newArr[i-2] || 0))
+      }
 
-}
-
-newArr.push((newArr[i-1] || 1) + (newArr[i-2] || 0))
-}
+      newArr.push((newArr[i - 1] || 1) + (newArr[i - 2] || 0))
+    }
 
 console.log(newArr);
 
-return newArr.reverse();
+  return newArr.reverse();
 }
 
 fibonnaci(10);
@@ -8139,15 +8146,15 @@ fibonnaci(10);
 //   } 
 //     return (sequence(n-1)+sequence(n-2))
 
-  
+
 //   //return result//.reverse();
 
 // }
 
 // sequence(5);
 
- 
-for(let i = .0001; i < distance; i+=i){
+
+for (let i = .0001; i < distance; i += i) {
   counter++;
 }
 return counter;
@@ -8214,104 +8221,104 @@ foldsToTheMoon(384400000);
 
 // throw new Error('You broke the things');
 
-let arr =[]
+let arr = []
 console.log(arr.length)
 
 
-function insertion(arr){
-  for(let i = 1; i < arr.length; i++){
+function insertion(arr) {
+  for (let i = 1; i < arr.length; i++) {
     // console.log('i',arr[i])
-    for(let j = 0; j < i; j++)
-    // console.log('j', arr[i][j])
-    if(arr[i] < arr[j]){
-
-      console.log('i',arr[i])
-      for(let j = 0; j < i; j++)
+    for (let j = 0; j < i; j++)
       // console.log('j', arr[i][j])
-      if(arr[i] < arr[j]){
-        console.log(arr[i], arr[j])
-        let [bigger] = arr.splice(i, 1)
-        arr.splice(j, 0, bigger)
-        j=i
+      if (arr[i] < arr[j]) {
+
+        console.log('i', arr[i])
+        for (let j = 0; j < i; j++)
+          // console.log('j', arr[i][j])
+          if (arr[i] < arr[j]) {
+            console.log(arr[i], arr[j])
+            let [bigger] = arr.splice(i, 1)
+            arr.splice(j, 0, bigger)
+            j = i
+          }
       }
-    }
     return arr
   }
-  
-  insertion([3,2,1])
+
+  insertion([3, 2, 1])
 
 
   // ////////// PROBLEM 2 //////////
 
-// // Do not edit the code below.
-// var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
-// // Do not edit the code above.
+  // // Do not edit the code below.
+  // var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
+  // // Do not edit the code above.
 
-// /*
-//   The array above represents IDs tied to reported workplace accidents. 
-//   An employee accidentally entered in duplicates to array, making it look as though there are more accidents this year than there actually are.
-//
+  // /*
+  //   The array above represents IDs tied to reported workplace accidents. 
+  //   An employee accidentally entered in duplicates to array, making it look as though there are more accidents this year than there actually are.
+  //
 
-// //Code Here
+  // //Code Here
 
-// function removeDuplicates(){
-//   //var arr = [];
-//   var dupArr = workplaceAccidents;
+  // function removeDuplicates(){
+  //   //var arr = [];
+  //   var dupArr = workplaceAccidents;
 
-//   for(let i = 0; i < dupArr.length; i++){
-//     //console.log(dupArr[i]);
-//     for(let j = dupArr.length -1; j > i; j--){
-//       //console.log(dupArr[j]);
-//       if(dupArr[i] === dupArr[j]){
-//         dupArr.splice(j,1);
-//       }
-      
-//     }
-//   };
-//   return dupArr;
-// }
+  //   for(let i = 0; i < dupArr.length; i++){
+  //     //console.log(dupArr[i]);
+  //     for(let j = dupArr.length -1; j > i; j--){
+  //       //console.log(dupArr[j]);
+  //       if(dupArr[i] === dupArr[j]){
+  //         dupArr.splice(j,1);
+  //       }
 
-// removeDuplicates();
+  //     }
+  //   };
+  //   return dupArr;
+  // }
 
-
-////////// PROBLEM 5 //////////
-
-// Do not edit code below.
-// const orders = [{"price":15,"tax":0.09},{"price":42,"tax":0.07},{"price":56,"tax":0.11},
-// {"price":80,"tax":0.11},{"price":69,"tax":0.06},{"price":68,"tax":0.14},
-// {"price":72,"tax":0.14},{"price":51,"tax":0.09},{"price":89,"tax":0.15},
-// {"price":48,"tax":0.13}];
-// // Do not edit code above.
-
-// // /*
+  // removeDuplicates();
 
 
+  ////////// PROBLEM 5 //////////
 
-// let ordersTotal = orders.map(order => order.price += order.price * order.tax);//console.log(withTax);
+  // Do not edit code below.
+  // const orders = [{"price":15,"tax":0.09},{"price":42,"tax":0.07},{"price":56,"tax":0.11},
+  // {"price":80,"tax":0.11},{"price":69,"tax":0.06},{"price":68,"tax":0.14},
+  // {"price":72,"tax":0.14},{"price":51,"tax":0.09},{"price":89,"tax":0.15},
+  // {"price":48,"tax":0.13}];
+  // // Do not edit code above.
 
-// console.log(ordersTotal)
-// //Code Here
+  // // /*
 
 
-// function largeNumbers ({first, second, third}) {
-//   return Math.min(first,second,third);
-// };
 
-// largeNumbers({first: 10, second: 2, third: 90})//).toBe(2)
-// var obj = {
-//   lion: 3,
-//   tiger: 4,
-//   bear: 5
-// }
+  // let ordersTotal = orders.map(order => order.price += order.price * order.tax);//console.log(withTax);
 
-// function zooAnimals(obj){
-//   var {lion, tiger, bear} = {lion: obj.lion, tiger: obj.tiger, bear: obj.bear};
-//   console.l  // /*
+  // console.log(ordersTotal)
+  // //Code Here
+
+
+  // function largeNumbers ({first, second, third}) {
+  //   return Math.min(first,second,third);
+  // };
+
+  // largeNumbers({first: 10, second: 2, third: 90})//).toBe(2)
+  // var obj = {
+  //   lion: 3,
+  //   tiger: 4,
+  //   bear: 5
+  // }
+
+  // function zooAnimals(obj){
+  //   var {lion, tiger, bear} = {lion: obj.lion, tiger: obj.tiger, bear: obj.bear};
+  //   console.l  // /*
   //   First we'll look at the difference between accessing property values in a for in loop and accessing the property name in a for in loop.
   //   In the example below, we are accessing the property values. Uncomment the code below, run it and look at what prints in the console.
   // */
 
-   // var values = {
+  // var values = {
   //   one: 'These',
   //   two: ' are',
   //   three: ' the',
@@ -8363,26 +8370,26 @@ function insertion(arr){
   // // greaterThan10(values);
   // // //showValues(values);
 
-// // function totalPopulation(obj){
+  // // function totalPopulation(obj){
 
-// //   var{utah, california, texas, arizona} = obj;
-// //   console.log(utah);
-// //   //return (utah.val + california.val + )
-// // }
+  // //   var{utah, california, texas, arizona} = obj;
+  // //   console.log(utah);
+  // //   //return (utah.val + california.val + )
+  // // }
 
-// // var obj = {utah: 10, california: 29087, texas: 82937, arizona: 28347}
+  // // var obj = {utah: 10, california: 29087, texas: 82937, arizona: 28347}
 
 
-// largeNumbers({first: 10, second: 2, third: 90})//).toBe(2)
-// var obj = {
-//   lion: 3,
-//   tiger: 4,
-//   bear: 5
-// }
+  // largeNumbers({first: 10, second: 2, third: 90})//).toBe(2)
+  // var obj = {
+  //   lion: 3,
+  //   tiger: 4,
+  //   bear: 5
+  // }
 
-// function zooAnimals(obj){
-//   var {lion, tiger, bear} = {lion: obj.lion, tiger: obj.tiger, bear: obj.bear};
-//   console.l  // /*
+  // function zooAnimals(obj){
+  //   var {lion, tiger, bear} = {lion: obj.lion, tiger: obj.tiger, bear: obj.bear};
+  //   console.l  // /*
   //   First we'll look at the difference between accessing property values in a for in loop and accessing the property name in a for in loop.
   //   In the example below, we are accessing the property values. Uncomment the code below, run it and look at what prints in the console.
   // */
@@ -8402,37 +8409,37 @@ function insertion(arr){
 
   // This time no story, no theory. The examples below show you how to write function accum:
 
-// Examples:
+  // Examples:
 
-// accum("abcd");    ==>  "A-Bb-Ccc-Dddd"
-// accum("RqaEzty"); ==>  "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
-// accum("cwAt");    ==>  "C-Ww-Aaa-Tttt"
+  // accum("abcd");    ==>  "A-Bb-Ccc-Dddd"
+  // accum("RqaEzty"); ==>  "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
+  // accum("cwAt");    ==>  "C-Ww-Aaa-Tttt"
 
-const accum = (str) => {
-  var count = 1;
-  var newStr = '';
+  const accum = (str) => {
+    var count = 1;
+    var newStr = '';
 
-  
-  for(var i = 0; i < str.length; i++) {
-    newStr += str.charAt(i).toUpperCase();
 
- 
-  for(var j = 1; j < count; j++) {
-    newStr += str[i].toLowerCase();
+    for (var i = 0; i < str.length; i++) {
+      newStr += str.charAt(i).toUpperCase();
+
+
+      for (var j = 1; j < count; j++) {
+        newStr += str[i].toLowerCase();
+      }
+      count++;
+
+      i !== (str.length - 1) ? newStr += `-` : newStr;
+
+    }
+    return newStr;
   }
-  count++;
 
-  i !== (str.length - 1) ? newStr += `-` : newStr;
+  accum('cwAt')
 
-}
-return newStr;
-}
-
-accum('cwAt')
-
-// function accum(str){
+  // function accum(str){
   // let arr = str.split('')
-  
+
   // let result = arr.map((el, i) => {
   //   let upper = el.toUpperCase();
   //   let counter = i + 1;
@@ -8440,39 +8447,39 @@ accum('cwAt')
   //   return `${upper}${el}` 
   // })
 
-    // })
+  // })
   // console.log(result)
   // return result.join('-')
-//   let count = 1
-//   let newStr = '';
+  //   let count = 1
+  //   let newStr = '';
 
-//   for(var i = 0; i< str.length; i++){
-//     newStr += str[i].toUpperCase();
+  //   for(var i = 0; i< str.length; i++){
+  //     newStr += str[i].toUpperCase();
 
-//     for(var j=1; j< count; j++){
-//       newstr +=str.charAt(i).toLowerCase();
-//     }
-//     count++;
+  //     for(var j=1; j< count; j++){
+  //       newstr +=str.charAt(i).toLowerCase();
+  //     }
+  //     count++;
 
-//     i !== (str.length--1) ? newStr += '-' : newStr;
-//   }
-//   return newStr;
-// }
+  //     i !== (str.length--1) ? newStr += '-' : newStr;
+  //   }
+  //   return newStr;
+  // }
 
-// accum("abcd"); 
-
-
-// Write a function that rearranges an integer into its largest possible value.
-function superSize(int){
-  const n = int;
-let z = Array.from(n.toString()).map(Number);
-  //console.log(z);
+  // accum("abcd"); 
 
 
-  const n = int;
-  let z = Array.from(n.toString()).map(Number);
+  // Write a function that rearranges an integer into its largest possible value.
+  function superSize(int) {
+    const n = int;
+    let z = Array.from(n.toString()).map(Number);
     //console.log(z);
-    let y = z.sort(function(a, b){return b-a});
+
+
+    const n = int;
+    let z = Array.from(n.toString()).map(Number);
+    //console.log(z);
+    let y = z.sort(function (a, b) { return b - a });
     console.log(y);
   }
   superSize(123456) //654321
@@ -8485,140 +8492,177 @@ let z = Array.from(n.toString()).map(Number);
 
 
 
-// groupBy takes an array and splits it into sets, grouped by the 
-// result of running each value through the predicate. If the 
-// predicate is a string instead of a function, it groups by the 
-// property named by predicate on each of the values. 
+  // groupBy takes an array and splits it into sets, grouped by the 
+  // result of running each value through the predicate. If the 
+  // predicate is a string instead of a function, it groups by the 
+  // property named by predicate on each of the values. 
 
-// function groupBy(collection, predicate){ 
-//   // pseudocode begins here:
-//     // Depending on the second parameter function / string /
-//     // what are we doing here?
-//     // function - call the function and pass each item
-//       // store it in a variable
-//       // They will will be key for the object
-//       // Value will be the item that we are at the iteration of the loop
-      
-//       // check the key alreay exist in the object 
-//         // If it does we have to add, 
-    
-//   // Key  
-//   //& value (array)
+  // function groupBy(collection, predicate){ 
+  //   // pseudocode begins here:
+  //     // Depending on the second parameter function / string /
+  //     // what are we doing here?
+  //     // function - call the function and pass each item
+  //       // store it in a variable
+  //       // They will will be key for the object
+  //       // Value will be the item that we are at the iteration of the loop
 
-//   // return the new object
-  
-//   //var temp = [];
-  
-//   var key = [];
-//   var result = {};
-//   // Iterate over the array, using forEach
-    
-//       //console.log('Iterate Item', item);
-      
-//     if(typeof predicate === 'function'){
-//         collection.forEach(function(item){
-//           if(result[predicate(item)]){
-//             result[predicate(item)].push(item);
-//           }else{
-//             result[predicate(item)] = item;
-//           }
-//         });  
+  //       // check the key alreay exist in the object 
+  //         // If it does we have to add, 
 
-//     }else if(typeof predicate === 'string'){
-//         collection.forEach(function(item){
-          
-//         });
-//       }
-    
-//   return result;
-//   //console.log('output', result);
-// }
+  //   // Key  
+  //   //& value (array)
 
+  //   // return the new object
 
-//   // if (typeof(predicate) === "function") {
-//   //   for(let i = 0; i<collection.length; i++){
-//   //     if (output[predicate(collection[i])]){
-//   //       output[predicate(collection[i])].push(collection[i])
-        
-//   //     } else {
+  //   //var temp = [];
 
-//     }else if(typeof predicate === 'string'){
-//         collection.forEach(function(item){
-          
-//         });
-//       }
-    
-//   return result;
-//   //console.log('output', result);
-// }
+  //   var key = [];
+  //   var result = {};
+  //   // Iterate over the array, using forEach
+
+  //       //console.log('Iterate Item', item);
+
+  //     if(typeof predicate === 'function'){
+  //         collection.forEach(function(item){
+  //           if(result[predicate(item)]){
+  //             result[predicate(item)].push(item);
+  //           }else{
+  //             result[predicate(item)] = item;
+  //           }
+  //         });  
+
+  //     }else if(typeof predicate === 'string'){
+  //         collection.forEach(function(item){
+
+  //         });
+  //       }
+
+  //   return result;
+  //   //console.log('output', result);
+  // }
 
 
-//   // if (typeof(predicate) === "function") {
-//   //   for(let i = 0; i<collection.length; i++){
-//   //     if (output[predicate(collection[i])]){
-//   //       output[predicate(collection[i])].push(collection[i])
-        
-//   //     } else {
-//   //       output[predicate(collection[i])] = [collection[i]]
-//   //     }
-//   //   }
+  //   // if (typeof(predicate) === "function") {
+  //   //   for(let i = 0; i<collection.length; i++){
+  //   //     if (output[predicate(collection[i])]){
+  //   //       output[predicate(collection[i])].push(collection[i])
 
-function groupBy(collection, predicate){ 
+  //   //     } else {
+
+  //     }else if(typeof predicate === 'string'){
+  //         collection.forEach(function(item){
+
+  //         });
+  //       }
+
+  //   return result;
+  //   //console.log('output', result);
+  // }
+
+
+  //   // if (typeof(predicate) === "function") {
+  //   //   for(let i = 0; i<collection.length; i++){
+  //   //     if (output[predicate(collection[i])]){
+  //   //       output[predicate(collection[i])].push(collection[i])
+
+  //   //     } else {
+  //   //       output[predicate(collection[i])] = [collection[i]]
+  //   //     }
+  //   //   }
+
+  function groupBy(collection, predicate) {
 
     // pseudocode begins here:
     // Depending on the second parameter function / string /
     // what are we doing here?
     // function - call the function and pass each item 
-      // store it in a variable
-      // They will will be key for the object
-      // Value will be the item that we are at the iteration of the loop
-      
-      // check the key alreay exist in the object 
-        // If it does we have to add, 
-    
-  // Key  
-  //& value (array)
-  
-  // return the new object
-// function groupBy(collection, predicate){
-  var result = {};
-  //var temp = [];
-  //var key = [];
-  
-   //console.log('output', output);
-   return result;
-  
-  
-   //   collection.forEach(function(item){
-   //     //console.log('Iterate Item', item);
-       
-   //     if(typeof predicate === 'function'){
-         
-   //       if(typeof item === 'string'){
-   //           
-             
-   //           //console.log(key);
-   //           key = firstLetter(item);
-   //           output[key] = item;
-   //           
-         
-   //       } else if (typeof item === 'number'){
-   //           //console.log('hello world');
-   //           key = mathValue(item);
-   //           //console.log(key);
-   //           output[key] = item;
-   //           //console.log('output', output);
-   //         }
-   //     }else if(typeof predicate === 'string'){
-   //       //console.log(item.length);
-   //       //console.log(key);
-   //       key = item.length;
-   //       output[key] = item;
-   //       //console.log('output', output);
-   //     }
-   //   });
-  
-   // return output;
-   // // //console.log('output', output);
-   
- }
+    // store it in a variable
+    // They will will be key for the object
+    // Value will be the item that we are at the iteration of the loop
+
+    // check the key alreay exist in the object 
+    // If it does we have to add, 
+
+    // Key  
+    //& value (array)
+
+    // return the new object
+    // function groupBy(collection, predicate){
+    var result = {};
+    //var temp = [];
+    //var key = [];
+
+    //console.log('output', output);
+    return result;
+
+
+    //   collection.forEach(function(item){
+    //     //console.log('Iterate Item', item);
+
+    //     if(typeof predicate === 'function'){
+
+    //       if(typeof item === 'string'){
+    //           
+
+    //           //console.log(key);
+    //           key = firstLetter(item);
+    //           output[key] = item;
+    //           
+
+    //       } else if (typeof item === 'number'){
+    //           //console.log('hello world');
+    //           key = mathValue(item);
+    //           //console.log(key);
+    //           output[key] = item;
+    //           //console.log('output', output);
+    //         }
+    //     }else if(typeof predicate === 'string'){
+    //       //console.log(item.length);
+    //       //console.log(key);
+    //       key = item.length;
+    //       output[key] = item;
+    //       //console.log('output', output);
+    //     }
+    //   });
+
+    // return output;
+    // // //console.log('output', output);
+
+  }
+
+  //       if(typeof item === 'string'){
+  //           
+
+  //           //console.log(key);
+  //           key = firstLetter(item);
+  //           output[key] = item;
+  //           
+
+  //       } else if (typeof item === 'number'){
+  //           //console.log('hello world');
+  //           key = mathValue(item);
+  //           //console.log(key);
+  //           output[key] = item;
+  //           //console.log('output', output);
+  //         }
+  //     }else if(typeof predicate === 'string'){
+  //       //console.log(item.length);
+  //       //console.log(key);
+  //       key = item.length;
+  //       output[key] = item;
+  //       //console.log('output', output);
+  //     }
+  //   });
+
+  // return output;
+  // // //console.log('output', output);
+
+}
+var firstLetter = function (word) { return word.charAt(0); };
+
+var mathValue = function (val) { return Math.floor(val) };
+
+console.log(groupBy(['apple', 'cat', 'boat', 'card', 'bond'], firstLetter));
+// returns { 'a': ['apple'], 'c': ['cat', 'card'], 'b': ['boat', 'bond'] }
+
+console.log(groupBy(['apple', 'cat', 'boat', 'card', 'bond'], 'length'));
