@@ -8679,3 +8679,12 @@ console.log(groupBy(['apple', 'cat', 'boat', 'card', 'bond'], firstLetter));
 // returns { 'a': ['apple'], 'c': ['cat', 'card'], 'b': ['boat', 'bond'] }
 
 console.log(groupBy(['apple', 'cat', 'boat', 'card', 'bond'], 'length'));
+
+// Write a function that rearranges an integer into its largest possible value.
+function superSize(int) {
+  const n = int;
+  let z = Array.from(n.toString()).map(Number);
+  //console.log(z);
+  let y = z.sort(function (a, b) { return b - a });
+  console.log(y);
+}
