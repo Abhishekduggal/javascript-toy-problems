@@ -8701,3 +8701,21 @@ superSize(123456) //654321
 // If the argument passed through is single digit or is 
 //already the maximum possible integer, your function 
 //should simply return it.
+
+
+
+
+// Write a function that rearranges an integer into its largest possible value.
+function superSize(int) {
+  const n = int;
+  let z = Array.from(n.toString()).map(Number);
+  //console.log(z);
+  let y = z.sort(function (a, b) { return b - a });
+  console.log(y);
+}
+superSize(123456) //654321
+//superSize(105) // 510
+//superSize(12) // 21
+// If the argument passed through is single 
+//digit or is already the maximum possible integer, 
+//your function should simply return it.
