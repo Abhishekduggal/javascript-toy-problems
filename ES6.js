@@ -8719,3 +8719,10 @@ superSize(123456) //654321
 // If the argument passed through is single 
 //digit or is already the maximum possible integer, 
 //your function should simply return it.
+
+function assignEvenAndOdds(userInput) {
+  // var arr = userInput.split(',');
+  var arr = [];
+  console.log(arr);
+  var evens = [];
+  var odds = [];
