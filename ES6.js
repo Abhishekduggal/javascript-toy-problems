@@ -8726,3 +8726,24 @@ function assignEvenAndOdds(userInput) {
   console.log(arr);
   var evens = [];
   var odds = [];
+
+
+
+  function assignEvenAndOdds(userInput) {
+    // var arr = userInput.split(',');
+    var arr = [];
+    console.log(arr);
+    var evens = [];
+    var odds = [];
+
+    userInput.filter(num => {
+      if (parseInt(num) % 2 === 0) {
+        evens.push(num);
+      } else if (parseInt(num) % 2 !== 0) {
+        odds.push(num);
+      }
+    });
+    console.log(evens);
+    console.log(odds);
+  }
+  assignEvenAndOdds(['1', '2', '3', '4'])
