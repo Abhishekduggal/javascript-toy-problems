@@ -8747,3 +8747,14 @@ function assignEvenAndOdds(userInput) {
     console.log(odds);
   }
   assignEvenAndOdds(['1', '2', '3', '4'])
+
+
+  function truthyOrFalsy(val) {
+    if (val) {
+      //if the value is truthy, console.log('The value is truthy')
+      console.log('The value is truthy')
+    } else {
+      //if the value is falsy, console.log('The value is falsy')
+      console.log('The value is falsy')
+    }
+  }
