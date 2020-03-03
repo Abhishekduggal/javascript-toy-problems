@@ -8811,3 +8811,13 @@ function songDecoder(str) {
 
 songDecoder("WUBWUBIWUBAMWUBWUBX");
 //songDecoder("WUBWEWUBAREWUBWUBTHEWUBCHAMPIONSWUBMYWUBFRIENDWUB")
+
+
+
+for (let i = .0001; i < distance; i += i) {
+  counter++;
+}
+return counter;
+}
+
+foldsToTheMoon(384400000);
