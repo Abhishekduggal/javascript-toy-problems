@@ -8840,3 +8840,12 @@ foldsToTheMoon(384400000);
 // }
 
 // distanceToMoon(0.0001);
+
+
+function countGrade(scores) {
+  //coding here...
+  var S = scores.filter(function (x) { return x === 100 }).length;
+
+  var A = scores.filter(function (x) { return x < 100 && x >= 90 }).length;
+
+  var B = scores.filter(function (x) { return x < 90 && x >= 80 }).length;
