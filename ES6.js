@@ -8849,3 +8849,14 @@ function countGrade(scores) {
   var A = scores.filter(function (x) { return x < 100 && x >= 90 }).length;
 
   var B = scores.filter(function (x) { return x < 90 && x >= 80 }).length;
+
+  var C = scores.filter(function (x) { return x < 80 && x >= 60 }).length;
+
+  var D = scores.filter(function (x) { return x < 60 && x >= 0 }).length;
+
+  var X = scores.filter(function (x) { return x === -1 }).length;
+
+  console.log('S: ' + S);
+}
+
+countGrade([50, 60, 70, 80, 90, 100]); //should return {S:1, A:1, B:1, C:2, D:1, X:0}
