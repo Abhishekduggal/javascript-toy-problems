@@ -8887,3 +8887,19 @@ const accum = (str) => {
     i !== (str.length - 1) ? newStr += `-` : newStr;
 
   }
+
+}
+return newStr;
+}
+
+accum('cwAt')
+
+// function accum(str){
+  // let arr = str.split('')
+
+  // let result = arr.map((el, i) => {
+  //   let upper = el.toUpperCase();
+  //   let counter = i + 1;
+
+  //   return `${upper}${el}` 
+  // })
