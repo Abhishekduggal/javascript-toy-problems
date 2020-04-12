@@ -8895,27 +8895,27 @@ return newStr;
 accum('cwAt')
 
 // function accum(str){
-  // let arr = str.split('')
+// let arr = str.split('')
 
-  // let result = arr.map((el, i) => {
-  //   let upper = el.toUpperCase();
-  //   let counter = i + 1;
+// let result = arr.map((el, i) => {
+//   let upper = el.toUpperCase();
+//   let counter = i + 1;
 
-  //   return `${upper}${el}` 
-  // })
+//   return `${upper}${el}` 
+// })
 
 
 // function accum(str){
-  // let arr = str.split('')
+// let arr = str.split('')
 
-  // let result = arr.map((el, i) => {
-  //   let upper = el.toUpperCase();
-  //   let counter = i + 1;
+// let result = arr.map((el, i) => {
+//   let upper = el.toUpperCase();
+//   let counter = i + 1;
 
-  //   return `${upper}${el}` 
-  // })
-  // console.log(result)
-  // return result.join('-')
+//   return `${upper}${el}` 
+// })
+// console.log(result)
+// return result.join('-')
 //   let count = 1
 //   let newStr = '';
 
@@ -8933,3 +8933,17 @@ accum('cwAt')
 // }
 
 // accum("abcd"); 
+
+// Trolls are attacking your comment section!
+
+// A common way to deal with this situation is to remove all of the vowels from the trolls' comments, neutralizing the threat.
+
+// Your task is to write a function that takes a string and return a new string with all vowels removed.
+
+// For example, the string "This website is for losers LOL!" would become "Ths wbst s fr lsrs LL!".
+
+function rem(str) {
+
+  // var arr = str.split('');
+  // //var replace = str.replace('a','').replace('e','').replace('i','').replace('o','').replace('u','')
+  // //console.log(arr);
