@@ -8948,7 +8948,7 @@ function rem(str) {
   // //var replace = str.replace('a','').replace('e','').replace('i','').replace('o','').replace('u','')
   // //console.log(arr);
 
-    // //var newArr = arr.map((item,i) => {
+  // //var newArr = arr.map((item,i) => {
   //   //console.log(item);
   //   for(var i = 0; i < arr.length; i++){
   //   if(arr[i] === 'e'){
@@ -8960,3 +8960,17 @@ function rem(str) {
   //   }else if(arr[i] === 'u'){
   //     arr.splice(i,1);
   //   }
+
+  // }
+  // console.log(arr)
+  // return arr.join('');
+
+  return str.replace(/[aeiou]/gi, '');
+
+  // ES6 
+  //let removeVowels = str.replace(/[aeiou]/gi,'');
+
+  //console.log(removeVowels)
+}
+
+rem("This website is for losers LOL!");
