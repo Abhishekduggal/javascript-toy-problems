@@ -8974,3 +8974,16 @@ function rem(str) {
 }
 
 rem("This website is for losers LOL!");
+
+// console.log(arr)
+// return arr.join('');
+
+return str.replace(/[aeiou]/gi, '');
+
+  // ES6 
+  //let removeVowels = str.replace(/[aeiou]/gi,'');
+
+//console.log(removeVowels)
+}
+
+rem("This website is for losers LOL!");
