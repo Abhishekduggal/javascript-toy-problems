@@ -8987,3 +8987,44 @@ return str.replace(/[aeiou]/gi, '');
 }
 
 rem("This website is for losers LOL!");
+
+// Trolls are attacking your comment section!
+
+// A common way to deal with this situation is to remove all of the vowels from the trolls' comments, neutralizing the threat.
+
+// Your task is to write a function that takes a string and return a new string with all vowels removed.
+
+// For example, the string "This website is for losers LOL!" would become "Ths wbst s fr lsrs LL!".
+
+function rem(str) {
+
+  // var arr = str.split('');
+  // //var replace = str.replace('a','').replace('e','').replace('i','').replace('o','').replace('u','')
+  // //console.log(arr);
+
+  // //var newArr = arr.map((item,i) => {
+  //   //console.log(item);
+  //   for(var i = 0; i < arr.length; i++){
+  //   if(arr[i] === 'e'){
+  //     arr.splice(i,1,);
+  //   }else if(arr[i] === 'i'){
+  //     arr.splice(i,1);
+  //   }else if(arr[i] === 'o'){
+  //     arr.splice(i,1);
+  //   }else if(arr[i] === 'u'){
+  //     arr.splice(i,1);
+  //   }
+
+  // }
+  // console.log(arr)
+  // return arr.join('');
+
+  return str.replace(/[aeiou]/gi, '');
+
+  // ES6 
+  //let removeVowels = str.replace(/[aeiou]/gi,'');
+
+  //console.log(removeVowels)
+}
+
+rem("This website is for losers LOL!");
