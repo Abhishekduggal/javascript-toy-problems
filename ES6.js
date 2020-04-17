@@ -9028,3 +9028,14 @@ function rem(str) {
 }
 
 rem("This website is for losers LOL!");
+
+// const user = {
+//   name: 'abhishek',
+//   sayName() {
+//     return this.name;
+//   }
+// }
+
+// // Implicit Binding 
+// user.sayName();
+
