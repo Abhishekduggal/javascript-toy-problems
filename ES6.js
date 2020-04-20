@@ -9056,3 +9056,16 @@ rem("This website is for losers LOL!");
 // user2.sayJeff();
 
 //Implicit Binding 
+
+//Explicit Binding
+
+// function drive(){
+//   return this.miles += 1;
+// }
+
+// const grandNational = {
+//   make: 'Buick',
+//   model: 'Grand National',
+//   year: "'87",
+//   miles: 0
+// }
