@@ -9084,3 +9084,16 @@ rem("This website is for losers LOL!");
 // const driveNational = drive.bind(grandNational);
 
 // const driveBeemer = drive.bind(x5m);
+
+// driveNational();
+// driveNational();
+// driveBeemer();
+
+// Object Factory (Like action creators)
+// function createCar(make, model, year){
+//   return {
+//     make: make,
+//     model: model,
+//     year: year
+//   }
+// }
