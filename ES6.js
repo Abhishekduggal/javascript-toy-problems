@@ -9112,3 +9112,21 @@ rem("This website is for losers LOL!");
 // const mustang = new Car('Ford', 'Mustang', 2001);
 
 // console.log(mustang)
+
+// return the two oldest/oldest ages within the array of ages passed in.
+function twoOldestAges(ages) {
+
+  var copy = ages;
+
+  //console.log(copy);
+
+  var output = [];
+
+  copy.sort(function (a, b) { return a - b });
+
+  console.log(copy);
+
+  output = copy.slice(copy.length - 2, copy.length);
+
+  console.log(output);
+}
