@@ -9173,3 +9173,21 @@ function inAscOrder(arr) {
 //inAscOrder([9,8,7,6,5,4,3,2,1]); // returns false because the numbers are in DESCENDING order
 
 // Extra Challenge: If time, try to optimise and shorten your code as much as possible.
+
+
+// groupBy takes an array and splits it into sets, grouped by the 
+// result of running each value through the predicate. If the 
+// predicate is a string instead of a function, it groups by the 
+// property named by predicate on each of the values. 
+
+// function groupBy(collection, predicate){ 
+//   // pseudocode begins here:
+//     // Depending on the second parameter function / string /
+//     // what are we doing here?
+//     // function - call the function and pass each item
+//       // store it in a variable
+//       // They will will be key for the object
+//       // Value will be the item that we are at the iteration of the loop
+
+//       // check the key alreay exist in the object 
+//         // If it does we have to add, 
