@@ -9210,3 +9210,28 @@ function inAscOrder(arr) {
 //           if(result[predicate(item)]){
 //             result[predicate(item)].push(item);
 //           }else{
+{
+    //             result[predicate(item)] = item;
+    //           }
+    //         });  
+
+    //     }else if(typeof predicate === 'string'){
+    //         collection.forEach(function(item){
+
+    //         });
+    //       }
+
+    //   return result;
+    //   //console.log('output', result);
+    // }
+
+
+    //   // if (typeof(predicate) === "function") {
+    //   //   for(let i = 0; i<collection.length; i++){
+    //   //     if (output[predicate(collection[i])]){
+    //   //       output[predicate(collection[i])].push(collection[i])
+
+    //   //     } else {
+    //   //       output[predicate(collection[i])] = [collection[i]]
+    //   //     }
+    //   //   }
