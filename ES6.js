@@ -9211,41 +9211,57 @@ function inAscOrder(arr) {
 //             result[predicate(item)].push(item);
 //           }else{
 {
-    //             result[predicate(item)] = item;
-    //           }
-    //         });  
+  //             result[predicate(item)] = item;
+  //           }
+  //         });  
 
-    //     }else if(typeof predicate === 'string'){
-    //         collection.forEach(function(item){
+  //     }else if(typeof predicate === 'string'){
+  //         collection.forEach(function(item){
 
-    //         });
-    //       }
+  //         });
+  //       }
 
-    //   return result;
-    //   //console.log('output', result);
-    // }
-
-
-    //   // if (typeof(predicate) === "function") {
-    //   //   for(let i = 0; i<collection.length; i++){
-    //   //     if (output[predicate(collection[i])]){
-    //   //       output[predicate(collection[i])].push(collection[i])
-
-    //   //     } else {
-    //   //       output[predicate(collection[i])] = [collection[i]]
-    //   //     }
-    //   //   }
-    //   return result;
-//   //console.log('output', result);
-// }
+  //   return result;
+  //   //console.log('output', result);
+  // }
 
 
-//   // if (typeof(predicate) === "function") {
-//   //   for(let i = 0; i<collection.length; i++){
-//   //     if (output[predicate(collection[i])]){
-//   //       output[predicate(collection[i])].push(collection[i])
+  //   // if (typeof(predicate) === "function") {
+  //   //   for(let i = 0; i<collection.length; i++){
+  //   //     if (output[predicate(collection[i])]){
+  //   //       output[predicate(collection[i])].push(collection[i])
 
-//   //     } else {
-//   //       output[predicate(collection[i])] = [collection[i]]
-//   //     }
-//   //   }
+  //   //     } else {
+  //   //       output[predicate(collection[i])] = [collection[i]]
+  //   //     }
+  //   //   }
+  //   return result;
+  //   //console.log('output', result);
+  // }
+
+
+  //   // if (typeof(predicate) === "function") {
+  //   //   for(let i = 0; i<collection.length; i++){
+  //   //     if (output[predicate(collection[i])]){
+  //   //       output[predicate(collection[i])].push(collection[i])
+
+  //   //     } else {
+  //   //       output[predicate(collection[i])] = [collection[i]]
+  //   //     }
+  //   //   }
+
+  function groupBy(collection, predicate) {
+  // pseudocode begins here:
+    // Depending on the second parameter function / string /
+    // what are we doing here?
+    // function - call the function and pass each item 
+      // store it in a variable
+      // They will will be key for the object
+      // Value will be the item that we are at the iteration of the loop
+
+      // check the key alreay exist in the object 
+        // If it does we have to add, 
+
+  // Key  
+  //& value (array)
+
