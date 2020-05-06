@@ -9307,3 +9307,18 @@ function inAscOrder(arr) {
     // //console.log('output', output);
 
   }
+  var firstLetter = function (word) { return word.charAt(0); };
+
+  var mathValue = function (val) { return Math.floor(val) };
+
+  console.log(groupBy(['apple', 'cat', 'boat', 'card', 'bond'], firstLetter));
+  // returns { 'a': ['apple'], 'c': ['cat', 'card'], 'b': ['boat', 'bond'] }
+
+  console.log(groupBy(['apple', 'cat', 'boat', 'card', 'bond'], 'length'));
+  // returns { '5': ['apple'], '4': ['boat', 'card', 'bond'], '3': ['cat'] }
+
+  console.log(groupBy([1.4, 5.6, 3.6, 1.8, 3.4], function (val) {
+    return Math.floor(val);
+  }));
+// what would this return?
+// returns { '5': [5.6], '3':[3.6, 3.4], '1':[1.4,1.8]};
