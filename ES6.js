@@ -9320,5 +9320,16 @@ function inAscOrder(arr) {
   console.log(groupBy([1.4, 5.6, 3.6, 1.8, 3.4], function (val) {
     return Math.floor(val);
   }));
-// what would this return?
-// returns { '5': [5.6], '3':[3.6, 3.4], '1':[1.4,1.8]};
+  // what would this return?
+  // returns { '5': [5.6], '3':[3.6, 3.4], '1':[1.4,1.8]};
+
+  // Times Tables
+  // Write a function that generates a "Times Tables" function 
+  //for any number passed in. The function should accept a single 
+  //parameter (a number) and return a function that itself 
+  //returns the product of that number and any number passed in.
+
+  function timesTable(num1) {
+    var multiply = function (num2) {
+      return num1 * num2;
+    };
