@@ -9333,3 +9333,13 @@ function inAscOrder(arr) {
     var multiply = function (num2) {
       return num1 * num2;
     };
+
+    return multiply;
+  }
+
+  // var ninesTable = timesTable(9);
+  // ninesTable(8)    // => 72
+
+  var twelvesTable = timesTable(12);
+  twelvesTable(15)    // => 180
+  twelvesTable(100)    // => 1200
