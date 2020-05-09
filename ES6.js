@@ -9343,3 +9343,14 @@ function inAscOrder(arr) {
   var twelvesTable = timesTable(12);
   twelvesTable(15)    // => 180
   twelvesTable(100)    // => 1200
+
+  // forEach helper array Function
+
+  //Below code to refactor using forEach();
+
+  function handlePosts() {
+    var posts = [
+      { id: 23, title: 'Daily JS News' },
+      { id: 52, title: 'Code Refactor City' },
+      { id: 105, title: 'The Brightest Ruby' }
+    ];
