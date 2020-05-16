@@ -9425,3 +9425,13 @@ console.log(found);
 //     console.log(e);
 //   }
 // }
+// }
+// (async function() {
+//   const response = await getThePeople();
+//   console.log(response);
+// })()
+// try {
+//   doSomethingBroken();
+// } catch (err) {
+//   console.log(err);
+// }
