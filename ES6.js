@@ -9411,3 +9411,17 @@ var found = array1.find(function (element) {
 
 console.log(found);
 // expected output: 12
+
+// async/await
+// const axios = require('axios');
+
+// async function getThePeople() {
+//   try {
+//   const data1 = axios.get('https://www.swapi.co/api/people');
+//   const data2 = axios.get(`https://www.swapi.co/api/people`);
+//   const data3 = axios.get('https://www.swapi.co/api/people');
+//   return await Promise.all([data1, data2, data3]);
+//   } catch(e) {
+//     console.log(e);
+//   }
+// }
