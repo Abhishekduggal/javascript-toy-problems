@@ -9435,3 +9435,14 @@ console.log(found);
 // } catch (err) {
 //   console.log(err);
 // }
+//   }
+// }
+// (async function() {
+//   const response = await getThePeople();
+//   console.log(response);
+// })()
+// try {
+//   doSomethingBroken();
+// } catch (err) {
+//   console.log(err);
+// }
