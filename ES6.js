@@ -9502,3 +9502,14 @@ console.log(arr.length)
 
 let arr = []
 console.log(arr.length)
+
+var specialPets = [{
+  name: 'Sadie',
+  species: 'cat'
+}, {
+  name: 'Layla',
+  species: 'cat'
+}, {
+  name: 'Bogie',
+  species: 'dog'
+}];
