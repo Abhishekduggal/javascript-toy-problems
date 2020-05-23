@@ -9526,3 +9526,28 @@ specialPets.forEach(function (value) {
 // Sadie the cat is very special!
 // Layla the cat is very special!
 // Bogie the dog is very special!
+
+
+var specialPets = [{
+  name: 'Sadie',
+  species: 'cat'
+}, {
+  name: 'Layla',
+  species: 'cat'
+}, {
+  name: 'Bogie',
+  species: 'dog'
+}];
+
+// YOUR CODE HERE
+specialPets.forEach(function (value) {
+  console.log(value.name + ' the ' + value.species + ' is very special!');
+
+});
+
+
+
+// Expected output:
+// Sadie the cat is very special!
+// Layla the cat is very special!
+// Bogie the dog is very special!
