@@ -9551,3 +9551,12 @@ specialPets.forEach(function (value) {
 // Sadie the cat is very special!
 // Layla the cat is very special!
 // Bogie the dog is very special!
+
+// Hash Table
+
+// Store a name & email address
+
+function HashTable(size) {
+  this.buckets = Array(size);
+  this.numBuckets = this.buckets.length;
+}
