@@ -9584,3 +9584,12 @@ HashTable.prototype.insert = function (key, value) {
     this.buckets[index].value = value;
   } else {
     var currentNode = this.buckets[index];
+    var currentNode = this.buckets[index];
+
+    while (currentNode.next) {
+      if (currentNode.next.key === key) {
+        currentNode.next.value = value;
+        return; // exit the while loop
+      }
+      currentNode = currentNode.next;
+    }
