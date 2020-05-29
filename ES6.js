@@ -9593,3 +9593,21 @@ HashTable.prototype.insert = function (key, value) {
       }
       currentNode = currentNode.next;
     }
+
+  }
+  currentNode.next = new HashNode(key, value);
+}
+};
+
+HashTable.prototype.get = function (key) {
+  var index = this.hash(key);
+
+  if (!this.buckets[index]) {
+    return null;
+  } else {
+    var currentNode = this.buckets[index];
+
+    while (currentNode) {
+      if (currentNode.key === key) {
+        return currentNode.value
+      }
