@@ -9642,3 +9642,18 @@ HashTable.prototype.get = function (key) {
       return null;
     }
   };
+
+  HashTable.prototype.retrieveAll = function () {
+    var allNodes = [];
+
+    for (var i = 0; i < this.numBuckets; i++) {
+
+      var currentNode = this.buckets[i];
+
+      while (currentNode) {
+        allNodes.push(currentNode);
+        currentNode = currentNode.next;
+      }
+    }
+    return allNodes;
+  };
