@@ -9657,3 +9657,23 @@ HashTable.prototype.get = function (key) {
     }
     return allNodes;
   };
+
+  var myHT = new HashTable(30);
+  console.log(myHT);
+
+  myHT.insert('Dean', 'dean@gmail.com');
+  myHT.insert('Megan', 'megan@gmail.com');
+  myHT.insert('Dane', 'danen@yahoo.com');
+  myHT.insert('Dean', 'deanmachine@gmail.com');
+  myHT.insert('Megan', 'megansmith@gmail.com');
+  myHT.insert('Dane', 'dane1010@outlook.com');
+  myHT.insert('Joe', 'joe@gmail.com');
+  myHT.insert('Samantha', 'sami@twitter.com');
+
+  //console.log(myHT.hash('Becca'));
+
+  // console.log(myHT.buckets);
+
+  // console.log(myHT.get('Megan'));
+
+  console.log(myHT.retrieveAll());
