@@ -9677,3 +9677,9 @@ HashTable.prototype.get = function (key) {
   // console.log(myHT.get('Megan'));
 
   console.log(myHT.retrieveAll());
+
+
+  function HashTable(size) {
+    this.buckets = Array(size);
+    this.numBuckets = this.buckets.length;
+  }
