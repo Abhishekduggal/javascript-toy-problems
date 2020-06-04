@@ -9695,3 +9695,16 @@ HashTable.prototype.get = function (key) {
   //positive integers with a length of at least 2).
 
   function inAscOrder(arr) {
+    function inAscOrder(arr) {
+      var first = arr[0];
+      for (var i = 1; i < arr.length; i++) {
+        // if(arr[i] < arr[i - 1])
+        if (first > arr[i]) {
+          return false;
+        } else {
+          first = arr[i];
+          //console.log(i);
+        }
+      }
+      return true;
+    }
