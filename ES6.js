@@ -9741,3 +9741,17 @@ HashTable.prototype.get = function (key) {
         break;
       }
     }
+
+    // for(var i = 0; i<arr.length; i++){
+    //   console.log(arr[i])
+    //   if(str[0] === 't'){
+    //     arr.splice(i,0);
+    //   }
+    // }
+    //console.log(arr);
+    return arr.join('') + 'ay'
+  }
+
+  translate('truck');
+//translate('igloo');
+
