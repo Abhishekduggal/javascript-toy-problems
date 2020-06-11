@@ -9753,5 +9753,40 @@ HashTable.prototype.get = function (key) {
   }
 
   translate('truck');
-//translate('igloo');
+  //translate('igloo');
 
+  // write a function that translates english to pig-latin
+  // 'truck' would be 'rucktay'
+  // 'igloo' would be 'iglooway'
+
+  // for a more advanced problem write a function that works with multiple words in a string:
+  // 'hello friend' would be 'ellohay iendfray'
+  // 'i live in the igloo' would be 'iway ivelay inway hetay iglooway'
+
+  function translate(str) {
+    var arr = str.split('');
+    var vowel = /[aeiou]/;
+
+    if (vowel.test(arr[0])) {
+      return `${str}way`
+    }
+
+    while (true) {
+      if (!vowel.test(arr[0])) {
+        arr.push(arr.splice(0, 1))
+      } else if (vowel.test(arr[0])) {
+        break;
+      }
+    }
+    // for(var i = 0; i<arr.length; i++){
+    //   console.log(arr[i])
+    //   if(str[0] === 't'){
+    //     arr.splice(i,0);
+    //   }
+    // }
+    //console.log(arr);
+    return arr.join('') + 'ay'
+  }
+
+  translate('truck');
+//translate('igloo');
