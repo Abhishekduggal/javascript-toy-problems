@@ -9816,3 +9816,13 @@ HashTable.prototype.get = function (key) {
 // }, '')
 
 // sentence
+
+// let dog = {
+//   name: 'Rufus',
+//   isBad: false,
+//   bark: function(){
+//     console.log('woof')
+//   },
+//   age: 77,
+//   color: 'Brindle'
+// };
