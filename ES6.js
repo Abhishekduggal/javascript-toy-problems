@@ -9806,3 +9806,13 @@ HashTable.prototype.get = function (key) {
 //   {name: 'Joe', total: 10000, message: 'a new '},
 //   {name: 'Erik', total: -100, message: 'message.'}
 // ]
+
+// // let total = customers.reduce( function(total, elem){
+// //   return
+// // }, 0)
+
+// let sentence = customers.reduce(function(total, elem){
+//   return total + elem.message;
+// }, '')
+
+// sentence
