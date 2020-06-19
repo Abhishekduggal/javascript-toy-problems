@@ -9854,3 +9854,17 @@ HashTable.prototype.get = function (key) {
 
 // let {name, total, message, age} = person;
 // console.log(name, total, message, age)
+
+
+// let  req = {
+//   body: {
+//     user: {
+//       location: {
+//         city:
+//         state:
+//         zip:
+//         address:
+//       }
+//     }
+//   }
+// }
