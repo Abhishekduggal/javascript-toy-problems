@@ -9868,3 +9868,12 @@ HashTable.prototype.get = function (key) {
 //     }
 //   }
 // }
+
+
+// let {city, address, zip, state} = req.body.user.location;
+
+// let arr = [1,2,3,4,5];
+
+// let [one, blah, , ,five] = arr;
+
+// console.log(one, blah, five)
