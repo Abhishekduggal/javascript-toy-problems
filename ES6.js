@@ -9877,3 +9877,14 @@ HashTable.prototype.get = function (key) {
 // let [one, blah, , ,five] = arr;
 
 // console.log(one, blah, five)
+
+// function destructObj ({name}){
+//   return name;
+// }
+
+// destructObj({name:'Shea'})
+
+
+// function destructArr([first]){
+//   return first;
+// }
