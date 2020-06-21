@@ -9907,3 +9907,25 @@ HashTable.prototype.get = function (key) {
 //   dog[key] = extension[key];
 // }
 // dog
+
+// let person = {name: "Shea", total: 150, message: 'This '}
+
+// let name = person.name;
+// let total = person.total
+// let message = person.message;
+
+// let {name, total, message, age} = person;
+// console.log(name, total, message, age)
+
+// let  req = {
+//   body: {
+//     user: {
+//       location: {
+//         city:
+//         state:
+//         zip:
+//         address:
+//       }
+//     }
+//   }
+// }
