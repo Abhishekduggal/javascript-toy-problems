@@ -9888,3 +9888,22 @@ HashTable.prototype.get = function (key) {
 // function destructArr([first]){
 //   return first;
 // }
+
+// let extension = {
+//   isFed: true,
+//   size: 'Big',
+//   isBad : true
+// }
+// let newDog = Object.assign({}, dog, extension);
+// console.log(dog === newDog);
+// console.log(newDog)
+
+// for ( let key in dog ){
+//   if (!dog[key]){
+//     delete dog[key]
+//   }
+// }
+// for (key in extension){
+//   dog[key] = extension[key];
+// }
+// dog
