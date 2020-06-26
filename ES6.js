@@ -9943,3 +9943,13 @@ HashTable.prototype.get = function (key) {
 // }
 
 // destructObj({name:'Shea'})
+
+// function destructArr([first]){
+//   return first;
+// }
+
+// destructArr([{name:'Shea'}])
+
+// function addTwo (x, y){
+//   return x + y;
+// }
