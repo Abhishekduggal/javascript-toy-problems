@@ -9953,3 +9953,11 @@ HashTable.prototype.get = function (key) {
 // function addTwo (x, y){
 //   return x + y;
 // }
+
+// let addTwo2 = (x, y) =>  x + y;  
+
+// let addTwo3 = (x) => x + 2;
+
+// addTwo3(10)
+
+// let arr = [1,2,3,4,5]
