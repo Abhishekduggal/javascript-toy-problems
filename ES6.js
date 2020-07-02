@@ -9789,217 +9789,230 @@ HashTable.prototype.get = function (key) {
   }
 
   translate('truck');
-//translate('igloo');
+  //translate('igloo');
 
-// // let arr = [1,2,3,4,5,4,3,2,1];
+  // // let arr = [1,2,3,4,5,4,3,2,1];
 
-// // let product = arr.reduce(function(total, elem){
-// // console.log(total, elem)
-// //   return total * elem
-// // })
+  // // let product = arr.reduce(function(total, elem){
+  // // console.log(total, elem)
+  // //   return total * elem
+  // // })
 
-// // product
+  // // product
 
-// let customers = [
-//   {name: "Shea", total: 150, message: 'This '},
-//   {name: 'Jarid', total: 1, message: 'is '},
-//   {name: 'Joe', total: 10000, message: 'a new '},
-//   {name: 'Erik', total: -100, message: 'message.'}
-// ]
+  // let customers = [
+  //   {name: "Shea", total: 150, message: 'This '},
+  //   {name: 'Jarid', total: 1, message: 'is '},
+  //   {name: 'Joe', total: 10000, message: 'a new '},
+  //   {name: 'Erik', total: -100, message: 'message.'}
+  // ]
 
-// // let total = customers.reduce( function(total, elem){
-// //   return
-// // }, 0)
+  // // let total = customers.reduce( function(total, elem){
+  // //   return
+  // // }, 0)
 
-// let sentence = customers.reduce(function(total, elem){
-//   return total + elem.message;
-// }, '')
+  // let sentence = customers.reduce(function(total, elem){
+  //   return total + elem.message;
+  // }, '')
 
-// sentence
+  // sentence
 
-// let dog = {
-//   name: 'Rufus',
-//   isBad: false,
-//   bark: function(){
-//     console.log('woof')
-//   },
-//   age: 77,
-//   color: 'Brindle'
-// };
+  // let dog = {
+  //   name: 'Rufus',
+  //   isBad: false,
+  //   bark: function(){
+  //     console.log('woof')
+  //   },
+  //   age: 77,
+  //   color: 'Brindle'
+  // };
 
-// let extension = {
-//   isFed: true,
-//   size: 'Big',
-//   isBad : true
-// }
-// let newDog = Object.assign({}, dog, extension);
-// console.log(dog === newDog);
-// console.log(newDog)
+  // let extension = {
+  //   isFed: true,
+  //   size: 'Big',
+  //   isBad : true
+  // }
+  // let newDog = Object.assign({}, dog, extension);
+  // console.log(dog === newDog);
+  // console.log(newDog)
 
-// for ( let key in dog ){
-//   if (!dog[key]){
-//     delete dog[key]
-//   }
-// }
-// for (key in extension){
-//   dog[key] = extension[key];
-// }
-// dog
+  // for ( let key in dog ){
+  //   if (!dog[key]){
+  //     delete dog[key]
+  //   }
+  // }
+  // for (key in extension){
+  //   dog[key] = extension[key];
+  // }
+  // dog
 
-// let person = {name: "Shea", total: 150, message: 'This '}
+  // let person = {name: "Shea", total: 150, message: 'This '}
 
-// let name = person.name;
-// let total = person.total
-// let message = person.message;
+  // let name = person.name;
+  // let total = person.total
+  // let message = person.message;
 
-// let {name, total, message, age} = person;
-// console.log(name, total, message, age)
-
-
-// let  req = {
-//   body: {
-//     user: {
-//       location: {
-//         city:
-//         state:
-//         zip:
-//         address:
-//       }
-//     }
-//   }
-// }
+  // let {name, total, message, age} = person;
+  // console.log(name, total, message, age)
 
 
-// let {city, address, zip, state} = req.body.user.location;
-
-// let arr = [1,2,3,4,5];
-
-// let [one, blah, , ,five] = arr;
-
-// console.log(one, blah, five)
-
-// function destructObj ({name}){
-//   return name;
-// }
-
-// destructObj({name:'Shea'})
-
-
-// function destructArr([first]){
-//   return first;
-// }
-
-// let extension = {
-//   isFed: true,
-//   size: 'Big',
-//   isBad : true
-// }
-// let newDog = Object.assign({}, dog, extension);
-// console.log(dog === newDog);
-// console.log(newDog)
-
-// for ( let key in dog ){
-//   if (!dog[key]){
-//     delete dog[key]
-//   }
-// }
-// for (key in extension){
-//   dog[key] = extension[key];
-// }
-// dog
-
-// let person = {name: "Shea", total: 150, message: 'This '}
-
-// let name = person.name;
-// let total = person.total
-// let message = person.message;
-
-// let {name, total, message, age} = person;
-// console.log(name, total, message, age)
-
-// let  req = {
-//   body: {
-//     user: {
-//       location: {
-//         city:
-//         state:
-//         zip:
-//         address:
-//       }
-//     }
-//   }
-// }
-
-// let {city, address, zip, state} = req.body.user.location;
-
-// let arr = [1,2,3,4,5];
-
-// let [one, blah, , ,five] = arr;
-
-// console.log(one, blah, five)
-
-// function destructObj ({name}){
-//   return name;
-// }
-
-// destructObj({name:'Shea'})
-
-// function destructArr([first]){
-//   return first;
-// }
-
-// destructArr([{name:'Shea'}])
-
-// function addTwo (x, y){
-//   return x + y;
-// }
-
-// let addTwo2 = (x, y) =>  x + y;  
-
-// let addTwo3 = (x) => x + 2;
-
-// addTwo3(10)
-
-// let arr = [1,2,3,4,5]
-
-// arr.map(elem => {
-
-//   return elem + 2
-// }); 
-
-// let person = {
-//   name: "Shea",
-//   sayName: () => {
-//     return this.name;
-//   }
-// }
-
-// person.sayName()
+  // let  req = {
+  //   body: {
+  //     user: {
+  //       location: {
+  //         city:
+  //         state:
+  //         zip:
+  //         address:
+  //       }
+  //     }
+  //   }
+  // }
 
 
-// function car (make, model, year){
-//   return {
-//     make, model, year, go: function(){console.log('vroom')}
-//   }
-// }
+  // let {city, address, zip, state} = req.body.user.location;
 
-// let myCar = car ('Nissan', 'xTerra', 2008)
-// // myCar
+  // let arr = [1,2,3,4,5];
 
-// function Car (make, model, year){
-//   // let this = {make: make, model:model};
-//   this.make = make;
-//   this.model = model;
-//   this.year = year;
-//   // return this;
-// }
+  // let [one, blah, , ,five] = arr;
 
-// Car.prototype.go = function(){
-//   console.log("vroom")
-// }
+  // console.log(one, blah, five)
 
-// let myToyCar = new Car('Triumph', 'Spitfire', 1976);
-// console.log(myToyCar)
-// console.log(myCar)
-// myToyCar.go();
+  // function destructObj ({name}){
+  //   return name;
+  // }
 
+  // destructObj({name:'Shea'})
+
+
+  // function destructArr([first]){
+  //   return first;
+  // }
+
+  // let extension = {
+  //   isFed: true,
+  //   size: 'Big',
+  //   isBad : true
+  // }
+  // let newDog = Object.assign({}, dog, extension);
+  // console.log(dog === newDog);
+  // console.log(newDog)
+
+  // for ( let key in dog ){
+  //   if (!dog[key]){
+  //     delete dog[key]
+  //   }
+  // }
+  // for (key in extension){
+  //   dog[key] = extension[key];
+  // }
+  // dog
+
+  // let person = {name: "Shea", total: 150, message: 'This '}
+
+  // let name = person.name;
+  // let total = person.total
+  // let message = person.message;
+
+  // let {name, total, message, age} = person;
+  // console.log(name, total, message, age)
+
+  // let  req = {
+  //   body: {
+  //     user: {
+  //       location: {
+  //         city:
+  //         state:
+  //         zip:
+  //         address:
+  //       }
+  //     }
+  //   }
+  // }
+
+  // let {city, address, zip, state} = req.body.user.location;
+
+  // let arr = [1,2,3,4,5];
+
+  // let [one, blah, , ,five] = arr;
+
+  // console.log(one, blah, five)
+
+  // function destructObj ({name}){
+  //   return name;
+  // }
+
+  // destructObj({name:'Shea'})
+
+  // function destructArr([first]){
+  //   return first;
+  // }
+
+  // destructArr([{name:'Shea'}])
+
+  // function addTwo (x, y){
+  //   return x + y;
+  // }
+
+  // let addTwo2 = (x, y) =>  x + y;  
+
+  // let addTwo3 = (x) => x + 2;
+
+  // addTwo3(10)
+
+  // let arr = [1,2,3,4,5]
+
+  // arr.map(elem => {
+
+  //   return elem + 2
+  // }); 
+
+  // let person = {
+  //   name: "Shea",
+  //   sayName: () => {
+  //     return this.name;
+  //   }
+  // }
+
+  // person.sayName()
+
+
+  // function car (make, model, year){
+  //   return {
+  //     make, model, year, go: function(){console.log('vroom')}
+  //   }
+  // }
+
+  // let myCar = car ('Nissan', 'xTerra', 2008)
+  // // myCar
+
+  // function Car (make, model, year){
+  //   // let this = {make: make, model:model};
+  //   this.make = make;
+  //   this.model = model;
+  //   this.year = year;
+  //   // return this;
+  // }
+
+  // Car.prototype.go = function(){
+  //   console.log("vroom")
+  // }
+
+  // let myToyCar = new Car('Triumph', 'Spitfire', 1976);
+  // console.log(myToyCar)
+  // console.log(myCar)
+  // myToyCar.go();
+
+  class Car {
+    constructor(make, model, year) {
+      this.make = make;
+      this.model = model;
+      this.year = year;
+    }
+    go() {
+      console.log('vroom')
+    }
+    stop() {
+      console.log('Squeal!!')
+    }
+  }
