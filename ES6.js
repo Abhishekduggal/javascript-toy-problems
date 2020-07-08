@@ -10062,5 +10062,15 @@ HashTable.prototype.get = function (key) {
   ];
 
 
+  function getUserById(users, id, cb) {
+    //console.log(users);
+    console.log(users[0].id);
+    for (let i = 0; i < users.length; i++) {
+      //console.log(users[i].id);
+      if (users[i].id === id) {
+        return cb(users[i]);
+      }
+    }
+  }
 
 
