@@ -10081,5 +10081,16 @@ HashTable.prototype.get = function (key) {
       user.email + ' the name of ' + user.name
       + ' and the address of ' + user.address);
   });
-// Do not edit the code above.
+  // Do not edit the code above.
 
+
+  var specialPets = [{
+    name: 'Sadie',
+    species: 'cat'
+  }, {
+    name: 'Layla',
+    species: 'cat'
+  }, {
+    name: 'Bogie',
+    species: 'dog'
+  }];
