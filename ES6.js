@@ -10108,3 +10108,14 @@ HashTable.prototype.get = function (key) {
 // Sadie the cat is very special!
 // Layla the cat is very special!
 // Bogie the dog is very special!
+
+// function counter() {
+//   let num = 0;
+//   return function(){
+//     return num += 1;
+//   }
+// }
+
+// const counterOne = counter();
+// counterOne();
+// counterOne();
