@@ -10133,3 +10133,10 @@ HashTable.prototype.get = function (key) {
 //     return regular;
 //   }
 // }
+
+
+// const abhishekSandwhich = createOrder(abhishekRegularOrder);
+// abhishekSandwhich('falafel');
+
+// const newCustomerSandwhich = createOrder();
+// newCustomerSandwhich('Mushroom');
