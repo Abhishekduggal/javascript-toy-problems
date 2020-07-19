@@ -10156,3 +10156,16 @@ HashTable.prototype.get = function (key) {
 //           i--;
 //         }
 //       }
+
+//     },
+//     readIngredients(){
+//       console.log(regular);
+//     }
+//     }
+//   }
+// }
+
+
+
+// function bankAccount -> starting balance 
+// // return function => deposit or withdraw 
