@@ -10204,3 +10204,14 @@ HashTable.prototype.get = function (key) {
 // let abhishekAccount = bankAccount(20);
 // abhishekAccount('deposit', 80);
 // abhishekAccount('withdraw', 1000);
+
+// function counter() {
+//   let num = 0;
+//   return function(){
+//     return num += 1;
+//   }
+// }
+
+// const counterOne = counter();
+// counterOne();
+// counterOne();
