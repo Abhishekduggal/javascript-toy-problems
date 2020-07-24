@@ -10215,3 +10215,21 @@ HashTable.prototype.get = function (key) {
 // const counterOne = counter();
 // counterOne();
 // counterOne();
+
+
+// const counterTwo = counter();
+// counterTwo();
+
+// const abhishekRegularOrder = ['Mustard', 'Spinach']
+// function createOrder(regular = []) {
+//   // let sandwichOrder = [];
+
+//   return function (ingredient){
+//     regular.push(ingredient);
+//     return regular;
+//   }
+// }
+
+// const abhishekSandwhich = createOrder(abhishekRegularOrder);
+// abhishekSandwhich('falafel');
+
