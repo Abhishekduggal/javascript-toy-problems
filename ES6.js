@@ -10275,3 +10275,16 @@ HashTable.prototype.get = function (key) {
 //     }
 //   }
 // }
+
+// const abhishekSandwhich = createOrder(abhishekRegularOrder);
+// abhishekSandwhich('falafel');
+
+// const newCustomerSandwhich = createOrder();
+// newCustomerSandwhich('Mushroom');
+
+// function createOrder(regular = []){
+//   return {
+//     addIngredient(ingredient) {
+//       regular.push(ingredient){
+//         regular.push(ingredient)
+//       },
