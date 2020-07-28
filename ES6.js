@@ -10288,3 +10288,31 @@ HashTable.prototype.get = function (key) {
 //       regular.push(ingredient){
 //         regular.push(ingredient)
 //       },
+
+// const calcOne = calculator();
+
+// calcOne.add(10);
+// calcOne.subtract(5);
+
+
+// function motivation(firstname, lastname) {
+//   var welcomeText = "You're doing awesome, keep it up";
+
+//   // code message function here.
+//   return function(firstname, lastname) {
+//       //Uncommment this to return the value of your message function
+//       return `${welcomeText} ${firstname} ${lastname}.`;
+//   };
+// }
+
+// var greeting = motivation("Billy", "Bob"); 
+// console.log(greeting);
+
+// function timeOutCounter() {
+//   for (var i = 0; i <= 5; i++) {
+//     setTimeout(function() {
+//       console.log(i);
+//     }, i * 1000);
+//   }
+// }
+// timeOutCounter();
