@@ -10316,3 +10316,10 @@ HashTable.prototype.get = function (key) {
 //   }
 // }
 // timeOutCounter();
+
+// const user = {
+//   name: 'abhishek',
+//   sayName() {
+//     return this.name;
+//   }
+// }
