@@ -10104,234 +10104,297 @@ HashTable.prototype.get = function (key) {
 
 
 
-// Expected output:
-// Sadie the cat is very special!
-// Layla the cat is very special!
-// Bogie the dog is very special!
+  // Expected output:
+  // Sadie the cat is very special!
+  // Layla the cat is very special!
+  // Bogie the dog is very special!
 
-// function counter() {
-//   let num = 0;
-//   return function(){
-//     return num += 1;
-//   }
+  // function counter() {
+  //   let num = 0;
+  //   return function(){
+  //     return num += 1;
+  //   }
+  // }
+
+  // const counterOne = counter();
+  // counterOne();
+  // counterOne();
+
+
+  // const counterTwo = counter();
+  // counterTwo();
+
+  // const abhishekRegularOrder = ['Mustard', 'Spinach']
+  // function createOrder(regular = []) {
+  //   // let sandwichOrder = [];
+
+  //   return function (ingredient){
+  //     regular.push(ingredient);
+  //     return regular;
+  //   }
+  // }
+
+
+  // const abhishekSandwhich = createOrder(abhishekRegularOrder);
+  // abhishekSandwhich('falafel');
+
+  // const newCustomerSandwhich = createOrder();
+  // newCustomerSandwhich('Mushroom');
+
+
+  // function createOrder(regular = []){
+  //   return {
+  //     addIngredient(ingredient) {
+  //       regular.push(ingredient){
+  //         regular.push(ingredient)
+  //       },
+
+  //     deleteIngredient(ingredient){
+  //       for(let i = 0; i<regular.length; i++){
+  //         if(regular[i] === ingredient){
+  //           regular.splice(i,1);
+  //           i--;
+  //         }
+  //       }
+
+  //     },
+  //     readIngredients(){
+  //       console.log(regular);
+  //     }
+  //     }
+  //   }
+  // }
+
+
+
+  // function bankAccount -> starting balance 
+  // // return function => deposit or withdraw 
+
+  // function bankAccount(balance){
+  // // let balance = 0;
+  //   return function(action, amt){
+  //     if(action === 'deposit'){
+  //       return balance += amt;
+  //     }else if (action === 'withdraw'){
+  //       if(balance - amt < -50){
+  //         return 'No Go';
+  //       }
+  //       return (balance -= amt);
+  //     }
+  //   }
+  // }
+
+
+  // function bankAccount -> starting balance 
+  // // return function => deposit or withdraw 
+
+  // function bankAccount(balance){
+  // // let balance = 0;
+  //   return function(action, amt){
+  //     if(action === 'deposit'){
+  //       return balance += amt;
+  //     }else if (action === 'withdraw'){
+  //       if(balance - amt < -50){
+  //         return 'No Go';
+  //       }
+  //       return (balance -= amt);
+  //     }
+  //   }
+  // }
+  // let abhishekAccount = bankAccount(20);
+  // abhishekAccount('deposit', 80);
+  // abhishekAccount('withdraw', 1000);
+
+  // function counter() {
+  //   let num = 0;
+  //   return function(){
+  //     return num += 1;
+  //   }
+  // }
+
+  // const counterOne = counter();
+  // counterOne();
+  // counterOne();
+
+
+  // const counterTwo = counter();
+  // counterTwo();
+
+  // const abhishekRegularOrder = ['Mustard', 'Spinach']
+  // function createOrder(regular = []) {
+  //   // let sandwichOrder = [];
+
+  //   return function (ingredient){
+  //     regular.push(ingredient);
+  //     return regular;
+  //   }
+  // }
+
+  // const abhishekSandwhich = createOrder(abhishekRegularOrder);
+  // abhishekSandwhich('falafel');
+
+
+
+  // const newCustomerSandwhich = createOrder();
+  // newCustomerSandwhich('Mushroom');
+
+  // function createOrder(regular = []){
+  //   return {
+  //     addIngredient(ingredient) {
+  //       regular.push(ingredient){
+  //         regular.push(ingredient)
+  //       },
+  //     deleteIngredient(ingredient){
+  //       for(let i = 0; i<regular.length; i++){
+  //         if(regular[i] === ingredient){
+  //           regular.splice(i,1);
+  //           i--;
+  //         }
+  //       }
+  //     },
+  //     readIngredients(){
+  //       console.log(regular);
+  //     }
+  //     }
+  //   }
+  // }
+
+  // function bankAccount -> starting balance 
+  // // return function => deposit or withdraw 
+
+  // function bankAccount(balance){
+  // // let balance = 0;
+  //   return function(action, amt){
+  //     if(action === 'deposit'){
+  //       return balance += amt;
+  //     }else if (action === 'withdraw'){
+  //       if(balance - amt < -50){
+  //         return 'No Go';
+  //       }
+  //       return (balance -= amt);
+  //     }
+  //   }
+  // }
+
+  // const abhishekSandwhich = createOrder(abhishekRegularOrder);
+  // abhishekSandwhich('falafel');
+
+  // const newCustomerSandwhich = createOrder();
+  // newCustomerSandwhich('Mushroom');
+
+  // function createOrder(regular = []){
+  //   return {
+  //     addIngredient(ingredient) {
+  //       regular.push(ingredient){
+  //         regular.push(ingredient)
+  //       },
+
+  // const calcOne = calculator();
+
+  // calcOne.add(10);
+  // calcOne.subtract(5);
+
+
+  // function motivation(firstname, lastname) {
+  //   var welcomeText = "You're doing awesome, keep it up";
+
+  //   // code message function here.
+  //   return function(firstname, lastname) {
+  //       //Uncommment this to return the value of your message function
+  //       return `${welcomeText} ${firstname} ${lastname}.`;
+  //   };
+  // }
+
+  // var greeting = motivation("Billy", "Bob"); 
+  // console.log(greeting);
+
+  // function timeOutCounter() {
+  //   for (var i = 0; i <= 5; i++) {
+  //     setTimeout(function() {
+  //       console.log(i);
+  //     }, i * 1000);
+  //   }
+  // }
+  // timeOutCounter();
+
+  // const user = {
+  //   name: 'abhishek',
+  //   sayName() {
+  //     return this.name;
+  //   }
+  // }
+
+  // // Implicit Binding 
+  // user.sayName();
+
+
+  // function sayName(){
+  //   return this.name;
+  // }
+  // const user = {
+  //   name: 'abhishek',
+  //   sayName: sayName
+  // }
+
+  /Implicit Binding 
+
+
+
+//Explicit Binding
+
+// function drive(){
+//   return this.miles += 1;
 // }
 
-// const counterOne = counter();
-// counterOne();
-// counterOne();
-
-
-// const counterTwo = counter();
-// counterTwo();
-
-// const abhishekRegularOrder = ['Mustard', 'Spinach']
-// function createOrder(regular = []) {
-//   // let sandwichOrder = [];
-
-//   return function (ingredient){
-//     regular.push(ingredient);
-//     return regular;
-//   }
+// const grandNational = {
+//   make: 'Buick',
+//   model: 'Grand National',
+//   year: "'87",
+//   miles: 0
 // }
 
+// const x5m = {
+//   make: 'BMW',
+//   model: 'X5M',
+//   year: "2018",
+//   miles: 0
+// }
 
-// const abhishekSandwhich = createOrder(abhishekRegularOrder);
-// abhishekSandwhich('falafel');
+// drive.call(x5m,,,,);
+// drive.apply(x5m, [,,,,]);
 
-// const newCustomerSandwhich = createOrder();
-// newCustomerSandwhich('Mushroom');
+// const driveNational = drive.bind(grandNational);
 
+// const driveBeemer = drive.bind(x5m);
 
-// function createOrder(regular = []){
+// driveNational();
+// driveNational();
+// driveBeemer();
+
+// Object Factory (Like action creators)
+// function createCar(make, model, year){
 //   return {
-//     addIngredient(ingredient) {
-//       regular.push(ingredient){
-//         regular.push(ingredient)
-//       },
-
-//     deleteIngredient(ingredient){
-//       for(let i = 0; i<regular.length; i++){
-//         if(regular[i] === ingredient){
-//           regular.splice(i,1);
-//           i--;
-//         }
-//       }
-
-//     },
-//     readIngredients(){
-//       console.log(regular);
-//     }
-//     }
+//     make: make,
+//     model: model,
+//     year: year
 //   }
 // }
 
-
-
-// function bankAccount -> starting balance 
-// // return function => deposit or withdraw 
-
-// function bankAccount(balance){
-// // let balance = 0;
-//   return function(action, amt){
-//     if(action === 'deposit'){
-//       return balance += amt;
-//     }else if (action === 'withdraw'){
-//       if(balance - amt < -50){
-//         return 'No Go';
-//       }
-//       return (balance -= amt);
-//     }
+//Constructor functions 
+// function Car(make, model, year){
+//   this.make = make;
+//   this.model = model;
+//   this.year = year;
+//   this.miles = 0;
+//   this.drive = function () {
+//     return this.miles += 1;
 //   }
 // }
 
+// const mustang = new Car('Ford', 'Mustang', 2001);
 
-// function bankAccount -> starting balance 
-// // return function => deposit or withdraw 
-
-// function bankAccount(balance){
-// // let balance = 0;
-//   return function(action, amt){
-//     if(action === 'deposit'){
-//       return balance += amt;
-//     }else if (action === 'withdraw'){
-//       if(balance - amt < -50){
-//         return 'No Go';
-//       }
-//       return (balance -= amt);
-//     }
-//   }
-// }
-// let abhishekAccount = bankAccount(20);
-// abhishekAccount('deposit', 80);
-// abhishekAccount('withdraw', 1000);
-
-// function counter() {
-//   let num = 0;
-//   return function(){
-//     return num += 1;
-//   }
-// }
-
-// const counterOne = counter();
-// counterOne();
-// counterOne();
-
-
-// const counterTwo = counter();
-// counterTwo();
-
-// const abhishekRegularOrder = ['Mustard', 'Spinach']
-// function createOrder(regular = []) {
-//   // let sandwichOrder = [];
-
-//   return function (ingredient){
-//     regular.push(ingredient);
-//     return regular;
-//   }
-// }
-
-// const abhishekSandwhich = createOrder(abhishekRegularOrder);
-// abhishekSandwhich('falafel');
+// console.log(mustang)
 
 
 
-// const newCustomerSandwhich = createOrder();
-// newCustomerSandwhich('Mushroom');
 
-// function createOrder(regular = []){
-//   return {
-//     addIngredient(ingredient) {
-//       regular.push(ingredient){
-//         regular.push(ingredient)
-//       },
-//     deleteIngredient(ingredient){
-//       for(let i = 0; i<regular.length; i++){
-//         if(regular[i] === ingredient){
-//           regular.splice(i,1);
-//           i--;
-//         }
-//       }
-//     },
-//     readIngredients(){
-//       console.log(regular);
-//     }
-//     }
-//   }
-// }
-
-// function bankAccount -> starting balance 
-// // return function => deposit or withdraw 
-
-// function bankAccount(balance){
-// // let balance = 0;
-//   return function(action, amt){
-//     if(action === 'deposit'){
-//       return balance += amt;
-//     }else if (action === 'withdraw'){
-//       if(balance - amt < -50){
-//         return 'No Go';
-//       }
-//       return (balance -= amt);
-//     }
-//   }
-// }
-
-// const abhishekSandwhich = createOrder(abhishekRegularOrder);
-// abhishekSandwhich('falafel');
-
-// const newCustomerSandwhich = createOrder();
-// newCustomerSandwhich('Mushroom');
-
-// function createOrder(regular = []){
-//   return {
-//     addIngredient(ingredient) {
-//       regular.push(ingredient){
-//         regular.push(ingredient)
-//       },
-
-// const calcOne = calculator();
-
-// calcOne.add(10);
-// calcOne.subtract(5);
-
-
-// function motivation(firstname, lastname) {
-//   var welcomeText = "You're doing awesome, keep it up";
-
-//   // code message function here.
-//   return function(firstname, lastname) {
-//       //Uncommment this to return the value of your message function
-//       return `${welcomeText} ${firstname} ${lastname}.`;
-//   };
-// }
-
-// var greeting = motivation("Billy", "Bob"); 
-// console.log(greeting);
-
-// function timeOutCounter() {
-//   for (var i = 0; i <= 5; i++) {
-//     setTimeout(function() {
-//       console.log(i);
-//     }, i * 1000);
-//   }
-// }
-// timeOutCounter();
-
-// const user = {
-//   name: 'abhishek',
-//   sayName() {
-//     return this.name;
-//   }
-// }
-
-// // Implicit Binding 
-// user.sayName();
-
-
-// function sayName(){
-//   return this.name;
-// }
-// const user = {
-//   name: 'abhishek',
-//   sayName: sayName
-// }
