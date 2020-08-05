@@ -10419,3 +10419,14 @@ HashTable.prototype.get = function (key) {
   }
 
   countVowels('hi i am here HHHHHEEE where are you ooOOOOO');
+
+  const _ = require('lodash');
+
+// function addToArray(arr, input) {
+// 	arr.push(input);
+// 	return arr;
+// }
+
+// const arrayWithVal = addToArray([], 'Hello');
+
+// const addedVal = addToArray(arrayWithVal, 'world');
