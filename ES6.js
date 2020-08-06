@@ -10422,6 +10422,17 @@ HashTable.prototype.get = function (key) {
 
   const _ = require('lodash');
 
+  // function addToArray(arr, input) {
+  // 	arr.push(input);
+  // 	return arr;
+  // }
+
+  // const arrayWithVal = addToArray([], 'Hello');
+
+  // const addedVal = addToArray(arrayWithVal, 'world');
+
+  const _ = require('lodash');
+
 // function addToArray(arr, input) {
 // 	arr.push(input);
 // 	return arr;
@@ -10430,3 +10441,5 @@ HashTable.prototype.get = function (key) {
 // const arrayWithVal = addToArray([], 'Hello');
 
 // const addedVal = addToArray(arrayWithVal, 'world');
+
+// console.log(addToArray(addToArray(addToArray([], 'World'), 'Hello'), 'Messy'))
