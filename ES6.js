@@ -10443,3 +10443,18 @@ HashTable.prototype.get = function (key) {
 // const addedVal = addToArray(arrayWithVal, 'world');
 
 // console.log(addToArray(addToArray(addToArray([], 'World'), 'Hello'), 'Messy'))
+
+// const myArr = [1, 2, 3];
+
+// const total = myArr
+// 	.map(val => val * 2)
+// 	.filter(val => val > 4)
+// 	.reduce((acc, cur) => acc + cur);
+
+// console.log(total);
+
+// // const myVar = if (name === 'Steven') {
+// //   'Steven'
+// // } else {
+// //   'John'
+// // }
