@@ -10458,3 +10458,18 @@ HashTable.prototype.get = function (key) {
 // // } else {
 // //   'John'
 // // }
+
+
+// const myVar = name === 'Steven' ? 'Steven' : 'John';
+
+// const x = () => 7;
+// const y = someVal => someVal + 2;
+
+// y(x());
+
+// const _ = {
+// 	map() {},
+// 	filter() {},
+// 	chain() {},
+// };
+
