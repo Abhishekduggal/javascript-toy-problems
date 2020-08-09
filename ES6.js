@@ -10433,43 +10433,59 @@ HashTable.prototype.get = function (key) {
 
   const _ = require('lodash');
 
-// function addToArray(arr, input) {
-// 	arr.push(input);
-// 	return arr;
-// }
+  // function addToArray(arr, input) {
+  // 	arr.push(input);
+  // 	return arr;
+  // }
 
-// const arrayWithVal = addToArray([], 'Hello');
+  // const arrayWithVal = addToArray([], 'Hello');
 
-// const addedVal = addToArray(arrayWithVal, 'world');
+  // const addedVal = addToArray(arrayWithVal, 'world');
 
-// console.log(addToArray(addToArray(addToArray([], 'World'), 'Hello'), 'Messy'))
+  // console.log(addToArray(addToArray(addToArray([], 'World'), 'Hello'), 'Messy'))
 
-// const myArr = [1, 2, 3];
+  // const myArr = [1, 2, 3];
 
-// const total = myArr
-// 	.map(val => val * 2)
-// 	.filter(val => val > 4)
-// 	.reduce((acc, cur) => acc + cur);
+  // const total = myArr
+  // 	.map(val => val * 2)
+  // 	.filter(val => val > 4)
+  // 	.reduce((acc, cur) => acc + cur);
 
-// console.log(total);
+  // console.log(total);
 
-// // const myVar = if (name === 'Steven') {
-// //   'Steven'
-// // } else {
-// //   'John'
-// // }
+  // // const myVar = if (name === 'Steven') {
+  // //   'Steven'
+  // // } else {
+  // //   'John'
+  // // }
 
 
-// const myVar = name === 'Steven' ? 'Steven' : 'John';
+  // const myVar = name === 'Steven' ? 'Steven' : 'John';
 
-// const x = () => 7;
-// const y = someVal => someVal + 2;
+  // const x = () => 7;
+  // const y = someVal => someVal + 2;
 
-// y(x());
+  // y(x());
 
-// const _ = {
-// 	map() {},
-// 	filter() {},
-// 	chain() {},
-// };
+  // const _ = {
+  // 	map() {},
+  // 	filter() {},
+  // 	chain() {},
+  // };
 
+
+  const users = [
+    { name: 'Steven', age: 26 },
+    { name: 'Jeff', age: 35 },
+    { name: 'Steven', age: 234 },
+  ];
+
+  const nums = { a: 2, b: 3 };
+
+// Object.values(nums).map(val => val * 2);
+
+// const exponent = _.map(arr, val => val * val)
+// const userNames = _.map(users, 'age');
+// const mapped = _.map(nums, (num) => num + num)
+
+// console.log(mapped);
