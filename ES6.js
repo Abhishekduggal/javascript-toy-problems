@@ -10489,3 +10489,15 @@ HashTable.prototype.get = function (key) {
 // const mapped = _.map(nums, (num) => num + num)
 
 // console.log(mapped);
+
+// const collect = _.union([1, 2, 3], [2, 4, 6], [1, 5, 6]).sort();
+
+// console.log(collect);
+
+// const intersect = _.intersection([1, 2, 3, 5], [1, 4, 5, 6], [1, 2, 5]);
+
+// console.log(intersect);
+
+// const grouped = _.groupBy(users, 'name');
+
+// console.log(Object.entries(grouped));
