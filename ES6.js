@@ -10482,6 +10482,79 @@ HashTable.prototype.get = function (key) {
 
   const nums = { a: 2, b: 3 };
 
+  // Object.values(nums).map(val => val * 2);
+
+  // const exponent = _.map(arr, val => val * val)
+  // const userNames = _.map(users, 'age');
+  // const mapped = _.map(nums, (num) => num + num)
+
+  // console.log(mapped);
+
+  // const collect = _.union([1, 2, 3], [2, 4, 6], [1, 5, 6]).sort();
+
+  // console.log(collect);
+
+  // const intersect = _.intersection([1, 2, 3, 5], [1, 4, 5, 6], [1, 2, 5]);
+
+  // console.log(intersect);
+
+  // const grouped = _.groupBy(users, 'name');
+
+  // console.log(Object.entries(grouped));
+
+
+  const _ = require('lodash');
+
+  // function addToArray(arr, input) {
+  // 	arr.push(input);
+  // 	return arr;
+  // }
+
+  // const arrayWithVal = addToArray([], 'Hello');
+
+  // const addedVal = addToArray(arrayWithVal, 'world');
+
+  // console.log(addToArray(addToArray(addToArray([], 'World'), 'Hello'), 'Messy'))
+
+  // console.log(addedVal);
+
+  // const myArr = [1, 2, 3];
+
+  // const total = myArr
+  // 	.map(val => val * 2)
+  // 	.filter(val => val > 4)
+  // 	.reduce((acc, cur) => acc + cur);
+
+  // console.log(total);
+
+  // // const myVar = if (name === 'Steven') {
+  // //   'Steven'
+  // // } else {
+  // //   'John'
+  // // }
+
+  const arr = [1, 2, 3];
+  // const myVar = name === 'Steven' ? 'Steven' : 'John';
+
+  // const x = () => 7;
+  // const y = someVal => someVal + 2;
+
+  // y(x());
+
+  // const _ = {
+  // 	map() {},
+  // 	filter() {},
+  // 	chain() {},
+  // };
+
+  const users = [
+    { name: 'Steven', age: 26 },
+    { name: 'Jeff', age: 35 },
+    { name: 'Steven', age: 234 },
+  ];
+
+  const nums = { a: 2, b: 3 };
+
 // Object.values(nums).map(val => val * 2);
 
 // const exponent = _.map(arr, val => val * val)
