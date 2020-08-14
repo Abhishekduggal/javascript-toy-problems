@@ -10555,22 +10555,36 @@ HashTable.prototype.get = function (key) {
 
   const nums = { a: 2, b: 3 };
 
-// Object.values(nums).map(val => val * 2);
+  // Object.values(nums).map(val => val * 2);
 
-// const exponent = _.map(arr, val => val * val)
-// const userNames = _.map(users, 'age');
-// const mapped = _.map(nums, (num) => num + num)
+  // const exponent = _.map(arr, val => val * val)
+  // const userNames = _.map(users, 'age');
+  // const mapped = _.map(nums, (num) => num + num)
 
-// console.log(mapped);
+  // console.log(mapped);
 
-// const collect = _.union([1, 2, 3], [2, 4, 6], [1, 5, 6]).sort();
+  // const collect = _.union([1, 2, 3], [2, 4, 6], [1, 5, 6]).sort();
 
-// console.log(collect);
+  // console.log(collect);
 
-// const intersect = _.intersection([1, 2, 3, 5], [1, 4, 5, 6], [1, 2, 5]);
+  // const intersect = _.intersection([1, 2, 3, 5], [1, 4, 5, 6], [1, 2, 5]);
 
-// console.log(intersect);
+  // console.log(intersect);
 
-// const grouped = _.groupBy(users, 'name');
+  // const grouped = _.groupBy(users, 'name');
 
-// console.log(Object.entries(grouped));
+  // console.log(Object.entries(grouped));
+
+
+  // write a function that translates english to pig-latin
+  // 'truck' would be 'rucktay'
+  // 'igloo' would be 'iglooway'
+
+  // for a more advanced problem write a function that works with multiple words in a string:
+  // 'hello friend' would be 'ellohay iendfray'
+  // 'i live in the igloo' would be 'iway ivelay inway hetay iglooway'
+
+  function translate(str) {
+    var arr = str.split('');
+    var vowel = /[aeiou]/;
+
