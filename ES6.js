@@ -10596,3 +10596,20 @@ HashTable.prototype.get = function (key) {
       if (vowel.test(arr[0])) {
         return `${str}way`
       }
+
+      while (true) {
+        if (!vowel.test(arr[0])) {
+          arr.push(arr.splice(0, 1))
+        } else if (vowel.test(arr[0])) {
+          break;
+        }
+      }
+      // for(var i = 0; i<arr.length; i++){
+      //   console.log(arr[i])
+      //   if(str[0] === 't'){
+      //     arr.splice(i,0);
+      //   }
+      // }
+      //console.log(arr);
+      return arr.join('') + 'ay'
+    }
