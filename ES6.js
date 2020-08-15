@@ -10588,3 +10588,11 @@ HashTable.prototype.get = function (key) {
     var arr = str.split('');
     var vowel = /[aeiou]/;
 
+
+    function translate(str) {
+      var arr = str.split('');
+      var vowel = /[aeiou]/;
+
+      if (vowel.test(arr[0])) {
+        return `${str}way`
+      }
