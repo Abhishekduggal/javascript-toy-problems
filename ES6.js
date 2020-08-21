@@ -10668,3 +10668,19 @@ HashTable.prototype.get = function (key) {
 //     2. Use nested for loops to check for duplicate numbers, and then remove the duplicates from the array.
 //     3. Return the updated array.
 // */
+
+
+// //Code Here
+
+// function removeDuplicates(){
+//   //var arr = [];
+//   var dupArr = workplaceAccidents;
+
+//   for(let i = 0; i < dupArr.length; i++){
+//     //console.log(dupArr[i]);
+//     for(let j = dupArr.length -1; j > i; j--){
+//       //console.log(dupArr[j]);
+//       if(dupArr[i] === dupArr[j]){
+//         dupArr.splice(j,1);
+//       }
+
