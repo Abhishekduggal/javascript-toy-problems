@@ -10705,3 +10705,18 @@ HashTable.prototype.get = function (key) {
 // // /*
 //   Use a higher order method to get the sum of all the order totals after adding in the sales tax
 // // */
+
+
+// // /*
+//   Use a higher order method to get the sum of all the order totals after adding in the sales tax
+// // */
+
+// let ordersTotal = orders.map(order => order.price += order.price * order.tax);//console.log(withTax);
+
+// console.log(ordersTotal)
+// //Code Here
+
+
+// function largeNumbers ({first, second, third}) {
+//   return Math.min(first,second,third);
+// };
