@@ -10625,71 +10625,103 @@ HashTable.prototype.get = function (key) {
   }
 
   translate('truck');
-//translate('igloo');
+  //translate('igloo');
 
-// ////////// PROBLEM 2 //////////
+  // ////////// PROBLEM 2 //////////
 
-// // Do not edit the code below.
-// var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
-// // Do not edit the code above.
+  // // Do not edit the code below.
+  // var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
+  // // Do not edit the code above.
 
-// /*
-//   The array above represents IDs tied to reported workplace accidents. 
-//   An employee accidentally entered in duplicates to array, making it look as though there are more accidents this year than there actually are.
-//     1. Write a function called 'removeDuplicates' that will remove all duplicate entries in the workplaceAccidents array.
-//     2. Use nested for loops to check for duplicate numbers, and then remove the duplicates from the array.
-//     3. Return the updated array.
-// */
+  // /*
+  //   The array above represents IDs tied to reported workplace accidents. 
+  //   An employee accidentally entered in duplicates to array, making it look as though there are more accidents this year than there actually are.
+  //     1. Write a function called 'removeDuplicates' that will remove all duplicate entries in the workplaceAccidents array.
+  //     2. Use nested for loops to check for duplicate numbers, and then remove the duplicates from the array.
+  //     3. Return the updated array.
+  // */
 
-// //Code Here
+  // //Code Here
 
-// ////////// PROBLEM 2 //////////
+  // ////////// PROBLEM 2 //////////
 
-// // Do not edit the code below.
-// var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
-// // Do not edit the code above.
+  // // Do not edit the code below.
+  // var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
+  // // Do not edit the code above.
 
-// /*
-//   The array above represents IDs tied to reported workplace accidents. 
-//   An employee accidentally entered in duplicates to array, making it look as though there are more accidents this year than there actually are.
-//     1. Write a function called 'removeDuplicates' that will remove all duplicate entries in the workplaceAccidents array.
-//     2. Use nested for loops to check for duplicate numbers, and then remove the duplicates from the array.
-//     3. Return the updated array.
-// */// ////////// PROBLEM 2 //////////
+  // /*
+  //   The array above represents IDs tied to reported workplace accidents. 
+  //   An employee accidentally entered in duplicates to array, making it look as though there are more accidents this year than there actually are.
+  //     1. Write a function called 'removeDuplicates' that will remove all duplicate entries in the workplaceAccidents array.
+  //     2. Use nested for loops to check for duplicate numbers, and then remove the duplicates from the array.
+  //     3. Return the updated array.
+  // */// ////////// PROBLEM 2 //////////
 
-// // Do not edit the code below.
-// var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
-// // Do not edit the code above.
+  // // Do not edit the code below.
+  // var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
+  // // Do not edit the code above.
 
-// /*
-//   The array above represents IDs tied to reported workplace accidents. 
-//   An employee accidentally entered in duplicates to array, making it look as though there are more accidents this year than there actually are.
-//     1. Write a function called 'removeDuplicates' that will remove all duplicate entries in the workplaceAccidents array.
-//     2. Use nested for loops to check for duplicate numbers, and then remove the duplicates from the array.
-//     3. Return the updated array.
-// */
-
-
-// //Code Here
-
-// function removeDuplicates(){
-//   //var arr = [];
-//   var dupArr = workplaceAccidents;
-
-//   for(let i = 0; i < dupArr.length; i++){
-//     //console.log(dupArr[i]);
-//     for(let j = dupArr.length -1; j > i; j--){
-//       //console.log(dupArr[j]);
-//       if(dupArr[i] === dupArr[j]){
-//         dupArr.splice(j,1);
-//       }
+  // /*
+  //   The array above represents IDs tied to reported workplace accidents. 
+  //   An employee accidentally entered in duplicates to array, making it look as though there are more accidents this year than there actually are.
+  //     1. Write a function called 'removeDuplicates' that will remove all duplicate entries in the workplaceAccidents array.
+  //     2. Use nested for loops to check for duplicate numbers, and then remove the duplicates from the array.
+  //     3. Return the updated array.
+  // */
 
 
-//     }
-//   };
-//   return dupArr;
-// }
+  // //Code Here
 
+  // function removeDuplicates(){
+  //   //var arr = [];
+  //   var dupArr = workplaceAccidents;
+
+  //   for(let i = 0; i < dupArr.length; i++){
+  //     //console.log(dupArr[i]);
+  //     for(let j = dupArr.length -1; j > i; j--){
+  //       //console.log(dupArr[j]);
+  //       if(dupArr[i] === dupArr[j]){
+  //         dupArr.splice(j,1);
+  //       }
+
+
+  //     }
+  //   };
+  //   return dupArr;
+  // }
+
+  // removeDuplicates();
+
+
+  ////////// PROBLEM 5 //////////
+
+  // Do not edit code below.
+  // const orders = [{"price":15,"tax":0.09},{"price":42,"tax":0.07},{"price":56,"tax":0.11},
+  // {"price":80,"tax":0.11},{"price":69,"tax":0.06},{"price":68,"tax":0.14},
+  // {"price":72,"tax":0.14},{"price":51,"tax":0.09},{"price":89,"tax":0.15},
+  // {"price":48,"tax":0.13}];
+  // // Do not edit code above.
+
+  // // /*
+  //   Use a higher order method to get the sum of all the order totals after adding in the sales tax
+  // // */
+
+
+  // // /*
+  //   Use a higher order method to get the sum of all the order totals after adding in the sales tax
+  // // */
+
+  // let ordersTotal = orders.map(order => order.price += order.price * order.tax);//console.log(withTax);
+
+  // console.log(ordersTotal)
+  // //Code Here
+
+
+  // function largeNumbers ({first, second, third}) {
+  //   return Math.min(first,second,third);
+  // };
+
+  v
 // removeDuplicates();
 
 
@@ -10707,16 +10739,3 @@ HashTable.prototype.get = function (key) {
 // // */
 
 
-// // /*
-//   Use a higher order method to get the sum of all the order totals after adding in the sales tax
-// // */
-
-// let ordersTotal = orders.map(order => order.price += order.price * order.tax);//console.log(withTax);
-
-// console.log(ordersTotal)
-// //Code Here
-
-
-// function largeNumbers ({first, second, third}) {
-//   return Math.min(first,second,third);
-// };
