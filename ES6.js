@@ -10757,3 +10757,11 @@ HashTable.prototype.get = function (key) {
 //   tiger: 4,
 //   bear: 5
 // }
+
+
+// function zooAnimals(obj){
+//   var {lion, tiger, bear} = {lion: obj.lion, tiger: obj.tiger, bear: obj.bear};
+//   console.l  // /*
+  //   First we'll look at the difference between accessing property values in a for in loop and accessing the property name in a for in loop.
+  //   In the example below, we are accessing the property values. Uncomment the code below, run it and look at what prints in the console.
+  // */
