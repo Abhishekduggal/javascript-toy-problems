@@ -10797,3 +10797,24 @@ HashTable.prototype.get = function (key) {
   //   }
   //   return str;
   // }
+
+   // // function greaterThan10(obj){
+  // //   for (var prop in obj){
+  // //     if(obj[prop] > 10){
+  // //       console.log(obj[prop])
+  // //       obj[prop] = 0;
+  // //     }
+  // //   }
+  // //   return obj;
+  // // }
+  // // var values = {
+  // //   one: 5,
+  // //   two: 12,
+  // //   three: ' the',
+  // //   four: ' property',
+  // //   five: ' values.'
+  // // }
+  // // greaterThan10(values);
+  // // //showValues(values);
+
+// // function totalPopulation(obj){
