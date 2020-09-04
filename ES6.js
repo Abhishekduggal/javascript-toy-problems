@@ -10818,3 +10818,21 @@ HashTable.prototype.get = function (key) {
   // // //showValues(values);
 
 // // function totalPopulation(obj){
+
+// //   var{utah, california, texas, arizona} = obj;
+// //   console.log(utah);
+// //   //return (utah.val + california.val + )
+// // }
+
+// // var obj = {utah: 10, california: 29087, texas: 82937, arizona: 28347}
+
+// // totalPopulation(obj);
+
+// // Do not edit the code below.
+// var employees = [
+//   {
+//     "firstName": "Von",
+//     "lastName": "Budibent",
+//     "email": "vbudibent0@163.com",
+//     "department": "Sales"
+//   },
