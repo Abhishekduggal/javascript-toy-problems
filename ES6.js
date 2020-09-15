@@ -10900,3 +10900,15 @@ HashTable.prototype.get = function (key) {
 
 // }
 // zooAnimals(obj);
+
+
+// const user = {
+//   name: 'abhishek',
+//   sayName() {
+//     return this.name;
+//   }
+// }
+
+// // Implicit Binding 
+// user.sayName();
+
