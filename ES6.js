@@ -10912,3 +10912,11 @@ HashTable.prototype.get = function (key) {
 // // Implicit Binding 
 // user.sayName();
 
+// function sayName(){
+//   return this.name;
+// }
+// const user = {
+//   name: 'abhishek',
+//   sayName: sayName
+// }
+
