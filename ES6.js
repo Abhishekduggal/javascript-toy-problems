@@ -10920,3 +10920,11 @@ HashTable.prototype.get = function (key) {
 //   sayName: sayName
 // }
 
+
+// const user2 = {
+//   name: 'Jeff',
+//   sayJeff: sayName
+// }
+// // user.sayName();
+
+// user2.sayJeff();
