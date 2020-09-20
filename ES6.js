@@ -10945,3 +10945,14 @@ HashTable.prototype.get = function (key) {
 //   year: "'87",
 //   miles: 0
 // }
+
+// const x5m = {
+//   make: 'BMW',
+//   model: 'X5M',
+//   year: "2018",
+//   miles: 0
+// }
+
+// drive.call(x5m,,,,);
+// drive.apply(x5m, [,,,,]);
+
