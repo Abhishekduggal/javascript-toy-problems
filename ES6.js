@@ -10956,3 +10956,13 @@ HashTable.prototype.get = function (key) {
 // drive.call(x5m,,,,);
 // drive.apply(x5m, [,,,,]);
 
+// drive.call(x5m,,,,);
+// drive.apply(x5m, [,,,,]);
+
+// const driveNational = drive.bind(grandNational);
+
+// const driveBeemer = drive.bind(x5m);
+
+// driveNational();
+// driveNational();
+// driveBeemer();
