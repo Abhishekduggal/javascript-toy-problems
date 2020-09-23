@@ -10966,3 +10966,14 @@ HashTable.prototype.get = function (key) {
 // driveNational();
 // driveNational();
 // driveBeemer();
+
+
+// Object Factory (Like action creators)
+// function createCar(make, model, year){
+//   return {
+//     make: make,
+//     model: model,
+//     year: year
+//   }
+// }
+
