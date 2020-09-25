@@ -10896,105 +10896,116 @@ HashTable.prototype.get = function (key) {
   // // employeeUpdater(employees);
 
   og(obj);
-//   return obj;
+  //   return obj;
 
-// }
-// zooAnimals(obj);
-
-
-// const user = {
-//   name: 'abhishek',
-//   sayName() {
-//     return this.name;
-//   }
-// }
-
-// // Implicit Binding 
-// user.sayName();
-
-// function sayName(){
-//   return this.name;
-// }
-// const user = {
-//   name: 'abhishek',
-//   sayName: sayName
-// }
+  // }
+  // zooAnimals(obj);
 
 
-// const user2 = {
-//   name: 'Jeff',
-//   sayJeff: sayName
-// }
-// // user.sayName();
+  // const user = {
+  //   name: 'abhishek',
+  //   sayName() {
+  //     return this.name;
+  //   }
+  // }
 
-// user2.sayJeff();
+  // // Implicit Binding 
+  // user.sayName();
 
-//Implicit Binding 
-
-
-
-//Explicit Binding
-
-// function drive(){
-//   return this.miles += 1;
-// }
-
-// const grandNational = {
-//   make: 'Buick',
-//   model: 'Grand National',
-//   year: "'87",
-//   miles: 0
-// }
-
-// const x5m = {
-//   make: 'BMW',
-//   model: 'X5M',
-//   year: "2018",
-//   miles: 0
-// }
-
-// drive.call(x5m,,,,);
-// drive.apply(x5m, [,,,,]);
-
-// drive.call(x5m,,,,);
-// drive.apply(x5m, [,,,,]);
-
-// const driveNational = drive.bind(grandNational);
-
-// const driveBeemer = drive.bind(x5m);
-
-// driveNational();
-// driveNational();
-// driveBeemer();
+  // function sayName(){
+  //   return this.name;
+  // }
+  // const user = {
+  //   name: 'abhishek',
+  //   sayName: sayName
+  // }
 
 
-// Object Factory (Like action creators)
-// function createCar(make, model, year){
-//   return {
-//     make: make,
-//     model: model,
-//     year: year
-//   }
-// }
+  // const user2 = {
+  //   name: 'Jeff',
+  //   sayJeff: sayName
+  // }
+  // // user.sayName();
+
+  // user2.sayJeff();
+
+  //Implicit Binding 
 
 
-//Constructor functions 
-// function Car(make, model, year){
-//   this.make = make;
-//   this.model = model;
-//   this.year = year;
-//   this.miles = 0;
-//   this.drive = function () {
-//     return this.miles += 1;
-//   }
-// }
 
-// const mustang = new Car('Ford', 'Mustang', 2001);
+  //Explicit Binding
 
-// console.log(mustang)
+  // function drive(){
+  //   return this.miles += 1;
+  // }
+
+  // const grandNational = {
+  //   make: 'Buick',
+  //   model: 'Grand National',
+  //   year: "'87",
+  //   miles: 0
+  // }
+
+  // const x5m = {
+  //   make: 'BMW',
+  //   model: 'X5M',
+  //   year: "2018",
+  //   miles: 0
+  // }
+
+  // drive.call(x5m,,,,);
+  // drive.apply(x5m, [,,,,]);
+
+  // drive.call(x5m,,,,);
+  // drive.apply(x5m, [,,,,]);
+
+  // const driveNational = drive.bind(grandNational);
+
+  // const driveBeemer = drive.bind(x5m);
+
+  // driveNational();
+  // driveNational();
+  // driveBeemer();
 
 
-// Write a function that, given a string, returns the number of vowels in that string.
+  // Object Factory (Like action creators)
+  // function createCar(make, model, year){
+  //   return {
+  //     make: make,
+  //     model: model,
+  //     year: year
+  //   }
+  // }
 
-// We will consider that a, e, i, o and u are vowels for the sake of this problem.
 
+  //Constructor functions 
+  // function Car(make, model, year){
+  //   this.make = make;
+  //   this.model = model;
+  //   this.year = year;
+  //   this.miles = 0;
+  //   this.drive = function () {
+  //     return this.miles += 1;
+  //   }
+  // }
+
+  // const mustang = new Car('Ford', 'Mustang', 2001);
+
+  // console.log(mustang)
+
+
+  // Write a function that, given a string, returns the number of vowels in that string.
+
+  // We will consider that a, e, i, o and u are vowels for the sake of this problem.
+
+
+  function countVowels(str) {
+    let reg = /[a,e,i,o,u]/gi;
+    let count = (str.match(reg)).length
+    // Another way we can do this is for loop for string with if/else
+
+    //console.log(count);
+    return count;
+  }
+
+  countVowels('hi i am here HHHHHEEE where are you ooOOOOO');
