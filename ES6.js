@@ -11009,3 +11009,13 @@ HashTable.prototype.get = function (key) {
   }
 
   countVowels('hi i am here HHHHHEEE where are you ooOOOOO');
+
+
+  for (let i = .0001; i < distance; i += i) {
+    counter++;
+  }
+  return counter;
+}
+
+foldsToTheMoon(384400000);
+
