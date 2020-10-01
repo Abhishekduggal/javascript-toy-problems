@@ -11044,3 +11044,13 @@ foldsToTheMoon(384400000);
 // names.some(function (name){
 //   return name.length >4 
 // })
+
+// var requests = [//   { url: '/photos', status: 'complete' }
+
+//   { url: '/albums', status: 'pending' },
+
+//   { url: '/users', status: 'failed' }// ]; 
+
+// var inProgress; // inProgress = requests.some(function(request){
+
+  //     return request.status === 'pending';// }); 
