@@ -11054,3 +11054,17 @@ foldsToTheMoon(384400000);
 // var inProgress; // inProgress = requests.some(function(request){
 
   //     return request.status === 'pending';// }); 
+
+  // var inProgress;
+
+// inProgress = requests.some(function(request){
+//     return request.status === 'pending';
+// });
+
+// // ------- 
+
+// // Balance parnethesis using Reduce Helper function
+
+// function checkPattern(str) {
+
+// return !str.split('').reduce(function(acc, char){
