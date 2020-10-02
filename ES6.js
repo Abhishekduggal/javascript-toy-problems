@@ -11053,9 +11053,9 @@ foldsToTheMoon(384400000);
 
 // var inProgress; // inProgress = requests.some(function(request){
 
-  //     return request.status === 'pending';// }); 
+//     return request.status === 'pending';// }); 
 
-  // var inProgress;
+// var inProgress;
 
 // inProgress = requests.some(function(request){
 //     return request.status === 'pending';
@@ -11068,3 +11068,23 @@ foldsToTheMoon(384400000);
 // function checkPattern(str) {
 
 // return !str.split('').reduce(function(acc, char){
+
+
+//   if(acc < 0 ) {return acc};
+//   if(acc === '(') {return ++acc};
+//   if(acc === ')') {return --acc};
+
+//   return acc
+// }, 0)
+
+// }
+
+// checkPattern('(()((())))');
+
+var desks = [
+  { type: 'sitting' },
+  { type: 'standing' },
+  { type: 'sitting' },
+  { type: 'sitting' },
+  { type: 'standing' }
+];
