@@ -11110,3 +11110,19 @@ var deskTypes = desks.reduce(function (acc, desk) {
 // validParentheses( ")(()))" ) => returns false 
 // validParentheses( "(" ) => returns false 
 // validParentheses( "(())((()())())" ) => returns true 
+// All input strings will be nonempty, and will only consist of open parentheses '(' and/or closed parentheses ')'
+
+function validParentheses(str) {
+  let result = 0;
+
+  // console.log(str.search('()'))
+
+  for (let i = 0; i < str.length; i++) {
+    // console.log(str[i])
+    if (str[i] === '(') {
+      // console.log(str[i]);
+      result++;
+    } else if (str[i] === ')') {
+      result--;
+      // console.log(str[i]);
+    }
