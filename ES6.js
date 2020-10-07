@@ -11126,3 +11126,13 @@ function validParentheses(str) {
       result--;
       // console.log(str[i]);
     }
+
+  }
+}
+return !result;
+}
+
+// validParentheses( "()" )
+// validParentheses( ")(()))" )
+validParentheses("(())((()())())")
+// validParentheses( "(" )
