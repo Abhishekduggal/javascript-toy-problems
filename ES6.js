@@ -11136,3 +11136,11 @@ return !result;
 // validParentheses( ")(()))" )
 validParentheses("(())((()())())")
 // validParentheses( "(" )
+
+
+var array1 = [5, 12, 8, 130, 44];
+var array2 = ['hi', 'hello', 'abhi']
+
+function findFirstLargeNumber(element) {
+  return element === 'abhi';
+}
