@@ -11180,3 +11180,19 @@ function dna(str) {
     }
   }
   return arr.join('');
+
+  // Array Statement with switch case 
+
+  // my code
+  /*
+  var arr = str.split('');
+  var newStr = str.replace(/T/, "A").replace(/A/, "T").replace(/C/, "G").replace(/G/, "C")
+  //var 
+
+  console.log(newStr);
+
+  for(var i = 0; i < arr.length; i++){
+    if(arr[i] === 'A'){
+      arr[i] = 'T'
+    }else if (arr[i] === 'T'){
+      arr[i] === 'A'
