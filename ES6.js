@@ -11162,3 +11162,21 @@ console.log(found);
 // DNAStrand("ATTGC") ==>  "TAACG"
 // DNAStrand("GTAT")  ==>  "CATA"
 
+
+
+function dna(str) {
+
+  let arr = [];
+
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === 'A') {
+      arr.push('T');
+    } else if (str[i] === 'T') {
+      arr.push('A');
+    } else if (str[i] === 'G') {
+      arr.push('C');
+    } else if (str[i] === 'C') {
+      arr.push('G');
+    }
+  }
+  return arr.join('');
