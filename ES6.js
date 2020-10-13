@@ -11196,3 +11196,20 @@ function dna(str) {
       arr[i] = 'T'
     }else if (arr[i] === 'T'){
       arr[i] === 'A'
+
+        }else if (arr[i] === 'C'){
+      arr[i] === 'G'
+    }else if (arr[i] === 'G'){
+      arr[i] === 'C'
+    }
+  }
+  console.log(arr);
+  return arr.join('');
+  // console.log(arr);
+  // var newStr;
+
+  // str.replace('A')
+  */
+}
+
+dna('ATTGC');
