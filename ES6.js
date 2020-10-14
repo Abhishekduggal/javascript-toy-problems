@@ -11213,3 +11213,9 @@ function dna(str) {
 }
 
 dna('ATTGC');
+
+// Write a function that rearranges an integer into its largest possible value.
+function superSize(int) {
+  const n = int;
+  let z = Array.from(n.toString()).map(Number);
+  //console.log(z);
