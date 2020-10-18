@@ -11253,4 +11253,8 @@ var obj = graceHopperQuote.reduce(function (prev, current, index) {
 
   console.log(prev);
   //if( current )
-}); 
+});
+
+
+console.log(summary); // EASIER TO ASK FORGIVENESS THAN TO GET PERMISSION.
+console.log(typeof summary); // string
