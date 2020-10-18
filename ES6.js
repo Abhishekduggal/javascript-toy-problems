@@ -11246,3 +11246,11 @@ function assignEvenAndOdds(userInput) {
   console.log(odds);
 }
 assignEvenAndOdds(['1', '2', '3', '4'])
+
+var graceHopperQuote = 'It\'s easier to ask forgiveness than it is to get permission.';
+
+var obj = graceHopperQuote.reduce(function (prev, current, index) {
+
+  console.log(prev);
+  //if( current )
+}); 
