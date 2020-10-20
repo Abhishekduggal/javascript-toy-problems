@@ -11258,3 +11258,15 @@ var obj = graceHopperQuote.reduce(function (prev, current, index) {
 
 console.log(summary); // EASIER TO ASK FORGIVENESS THAN TO GET PERMISSION.
 console.log(typeof summary); // string
+
+
+var dolly = ["Dolly", "sheep", []];
+var dollyClone = cloneAnimal(dolly);
+
+function cloneAnimal(animal) {
+  var animalClone = animal.slice();
+
+  animal[0] += "Clone";
+  animalClone[2] = animal[0];
+  return animalClone;
+}
