@@ -11270,3 +11270,13 @@ function cloneAnimal(animal) {
   animalClone[2] = animal[0];
   return animalClone;
 }
+
+//console.log(dollyClone);
+
+// dolly[0] = "Dolly";
+// dolly[2].push("DollyClone");
+
+
+console.log(dollyClone);
+
+console.log(dolly);
