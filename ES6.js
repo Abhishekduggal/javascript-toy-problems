@@ -11280,3 +11280,14 @@ function cloneAnimal(animal) {
 console.log(dollyClone);
 
 console.log(dolly);
+
+var specialPets = [{
+  name: 'Sadie',
+  species: 'cat'
+}, {
+  name: 'Layla',
+  species: 'cat'
+}, {
+  name: 'Bogie',
+  species: 'dog'
+}];
