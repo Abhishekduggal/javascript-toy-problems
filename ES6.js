@@ -11316,3 +11316,12 @@ var specialPets = [{
   name: 'Bogie',
   species: 'dog'
 }];
+
+var arrNiceNames = []
+specialPets.filter(function (val) {
+  arrNiceNames.push(val.name);
+});
+
+arrNiceNames.filter;
+//console.log(arrNiceNames);
+// ['Sadie', 'Layla', 'Bogie']
