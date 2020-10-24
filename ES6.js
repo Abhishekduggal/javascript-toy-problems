@@ -11325,3 +11325,12 @@ specialPets.filter(function (val) {
 arrNiceNames.filter;
 //console.log(arrNiceNames);
 // ['Sadie', 'Layla', 'Bogie']
+
+var array1 = [5, 12, 8, 130, 44];
+var array2 = ['hi', 'hello', 'abhi']
+
+function findFirstLargeNumber(element) {
+  return element === 'abhi';
+}
+
+console.log(array2.findIndex(findFirstLargeNumber))
