@@ -11343,3 +11343,16 @@ var found = array1.find(function (element) {
 
 console.log(found);
 // expected output: 12
+
+var specialPets = [{
+  name: 'Sadie',
+  species: 'cat'
+}, {
+  name: 'Layla',
+  species: 'cat'
+}, {
+  name: 'Bogie',
+  species: 'dog'
+}];
+
+// YOUR CODE HERE
