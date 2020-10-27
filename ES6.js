@@ -11356,3 +11356,14 @@ var specialPets = [{
 }];
 
 // YOUR CODE HERE
+
+
+var noDogsArra = specialPets.filter(function (val) {
+  return val.species !== 'dog'
+})
+
+
+
+console.log(noDogsArra);
+// [ { name: 'Sadie', species: 'cat' },
+//   { name: 'Layla', species: 'cat' } ]
