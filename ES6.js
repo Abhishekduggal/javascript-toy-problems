@@ -11378,3 +11378,14 @@ console.log(noDogsArra);
 // var sampleArr = [9, 2, 7, 3, 1, 5, 6, 4, 8, 1]
 
 // Function should return: [9, 2, 7, 3, 5, 6, 4, 8, 1]
+
+/* 
+
+An isogram is a word that has no repeating letters, consecutive or nonconsecutive. Create a function that takes a string and returns either true or false depending on whether or not it's an "isogram". Assume all inputs will be lowercase.
+
+For example:
+console.log(isIsogram('algorithm')); // returns true
+console.log(isIsogram('do the max')); // returns false (multiple spaces)
+console.log(isIsogram('hello there')); // returns false (multiple l's)
+
+*/
