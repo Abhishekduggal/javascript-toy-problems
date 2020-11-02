@@ -11434,3 +11434,14 @@ console.log(isIsogram('do the max'));
 
 //       // check the key alreay exist in the object 
 //         // If it does we have to add, 
+
+//   // Key  
+//   //& value (array)
+
+//   // return the new object
+
+//   //var temp = [];
+
+//   var key = [];
+//   var result = {};
+//   // Iterate over the array, using forEach
