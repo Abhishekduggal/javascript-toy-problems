@@ -11445,3 +11445,18 @@ console.log(isIsogram('do the max'));
 //   var key = [];
 //   var result = {};
 //   // Iterate over the array, using forEach
+
+//   return result;
+//   //console.log('output', result);
+// }
+
+
+//   // if (typeof(predicate) === "function") {
+//   //   for(let i = 0; i<collection.length; i++){
+//   //     if (output[predicate(collection[i])]){
+//   //       output[predicate(collection[i])].push(collection[i])
+
+//   //     } else {
+//   //       output[predicate(collection[i])] = [collection[i]]
+//   //     }
+//   //   }
