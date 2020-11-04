@@ -11460,3 +11460,16 @@ console.log(isIsogram('do the max'));
 //   //       output[predicate(collection[i])] = [collection[i]]
 //   //     }
 //   //   }
+
+// Key  
+//& value (array)
+
+// return the new object
+// function groupBy(collection, predicate){
+var result = {};
+var temp = [];
+var key = [];
+var output = {};
+// Iterate over the array, using forEach
+collection.forEach(function (item) {
+      //console.log('Iterate Item', item);
