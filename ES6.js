@@ -11491,3 +11491,19 @@ collection.forEach(function (item) {
       output[key] = item;
       //console.log('output', output);
     }
+
+
+  } else if (typeof predicate === 'string') {
+    //console.log(item.length);
+    //console.log(key);
+    key = item.length;
+    output[key] = item;
+    //console.log('output', output);
+  }
+});
+
+return output;
+// //console.log('output', output);
+
+}
+var firstLetter = function (word) { return word.charAt(0); };
