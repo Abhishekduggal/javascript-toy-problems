@@ -11522,3 +11522,17 @@ console.log(groupBy([1.4, 5.6, 3.6, 1.8, 3.4], function (val) {
 }));
 // what would this return?
 // returns { '5': [5.6], '3':[3.6, 3.4], '1':[1.4,1.8]};
+
+// Linked List 
+
+// Its connected using a Next / Previous Pointers between Nodes 
+
+// Also has Head and Tail Pointers informaiton stored in a linked List
+
+// This example I will be creating / accessing a Linked List  
+
+
+function LinkedList() {
+  this.head = null;
+  this.tail = null;
+}
