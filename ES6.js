@@ -11536,3 +11536,16 @@ function LinkedList() {
   this.head = null;
   this.tail = null;
 }
+
+function Node(value, next, prev) {
+  // Each node has a value + Next & Previous pointers 
+
+  this.value = value;
+  this.next = next;
+  this.prev = prev;
+
+}
+
+// var ll = new LinkedList();
+
+// var node1 = new Node (100, 'node1', null);
