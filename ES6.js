@@ -11624,3 +11624,15 @@ LinkedList.prototype.search = function (searchValue) {
   };
   return null;
 };
+
+
+LinkedList.prototype.indexOf = function (value) {
+  var currentNode;
+  var currentIndex = 0;
+  var indexOutput = [];
+
+  if (this.head) {
+    currentNode = this.head;
+  } else {
+    currentNode = this.tail;
+  }
