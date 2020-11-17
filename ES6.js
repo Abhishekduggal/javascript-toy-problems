@@ -11647,3 +11647,34 @@ LinkedList.prototype.indexOf = function (value) {
   return indexOutput;
 
 };
+
+var myLL = new LinkedList;
+
+myLL.addToHead(10000);
+myLL.addToHead(100);
+myLL.addToHead(10);
+myLL.addToHead(10);
+myLL.addToHead(10);
+myLL.addToTail(1000);
+myLL.addToTail(100);
+myLL.addToTail(10);
+myLL.addToHead('Hello');
+myLL.addToTail('World');
+
+//console.log(ll);
+
+//console.log(myLL.tail.prev.prev.prev);
+
+// console.log(myLL);
+
+// console.log('Remove Head',myLL.removeHead());
+
+// console.log('Remove Tail', myLL.removeTail());
+
+console.log(myLL);
+
+// console.log(myLL.search(1));
+
+console.log(myLL.indexOf(10));
+
+
