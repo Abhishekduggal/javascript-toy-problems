@@ -11678,3 +11678,14 @@ console.log(myLL);
 console.log(myLL.indexOf(10));
 
 
+
+
+/ https:/ / www.codewars.com / kata / sort - an - array - by - value - and - index / train / javascript
+
+// Your task is to sort an array of integer numbers by the product of the value and the index of the positions. 
+
+// For sorting the index starts at 1, NOT at 0!
+// The sorting has to be ascending.
+// The array will never be null and will always contain numbers. 
+
+// Example:
