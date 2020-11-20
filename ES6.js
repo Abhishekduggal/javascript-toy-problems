@@ -11699,3 +11699,17 @@ console.log(myLL.indexOf(10));
 // 5 =>  5 * 5 = 25  -> Output-Pos 5
 
 // Output: 2, 3, 4, 23, 5
+
+function sort(arr) {
+  let obj = {};
+
+  let newArr = arr.map((el, i) => {
+    obj[el * (i + 1)] = el;
+    console.log(obj)
+  });
+  //console.log(newArr)
+  return Object.values(obj);
+
+}
+
+sort([23, 2, 3, 4, 5])
