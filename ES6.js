@@ -11743,4 +11743,12 @@ function toCurrency(price) {
   return price.toLocaleString()
 };
 
-toCurrency(1234564475758494554); 
+toCurrency(1234564475758494554);
+
+// 1234 = 1+2+3+4 = 10 
+
+function sumDigits(int) {
+  var str = int + ''
+  console.log(str);
+  var array = str.split('');
+  console.log(array);
