@@ -11752,3 +11752,22 @@ function sumDigits(int) {
   console.log(str);
   var array = str.split('');
   console.log(array);
+
+
+
+  (Note: modulo 10)
+  (Math - Javascript
+  )
+  var output = 0
+
+  if (array.length > 0) {
+    output += array[0];
+
+    sumDigits((int));
+
+
+  }
+}
+
+
+sumDigits(1234)    // => 10
