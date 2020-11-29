@@ -11811,3 +11811,14 @@ sumDigits(1234)    // => 10
 //             result[predicate(item)] = item;
 //           }
 //         });  
+
+//     }else if(typeof predicate === 'string'){
+//         collection.forEach(function(item){
+
+//         });
+//       }
+
+//   return result;
+//   //console.log('output', result);
+// }
+
