@@ -11905,3 +11905,14 @@ console.log(groupBy([1.4, 5.6, 3.6, 1.8, 3.4], function (val) {
 }));
 // what would this return?
 // returns { '5': [5.6], '3':[3.6, 3.4], '1':[1.4,1.8]};
+
+var specialPets = [{
+  name: 'Sadie',
+  species: 'cat'
+}, {
+  name: 'Layla',
+  species: 'cat'
+}, {
+  name: 'Bogie',
+  species: 'dog'
+}];
