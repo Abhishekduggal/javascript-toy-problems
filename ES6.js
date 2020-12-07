@@ -11916,3 +11916,16 @@ var specialPets = [{
   name: 'Bogie',
   species: 'dog'
 }];
+
+// YOUR CODE HERE
+specialPets.forEach(function (value) {
+  console.log(value.name + ' the ' + value.species + ' is very special!');
+
+});
+
+
+
+// Expected output:
+// Sadie the cat is very special!
+// Layla the cat is very special!
+// Bogie the dog is very special!
