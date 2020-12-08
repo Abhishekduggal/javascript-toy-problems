@@ -11929,3 +11929,11 @@ specialPets.forEach(function (value) {
 // Sadie the cat is very special!
 // Layla the cat is very special!
 // Bogie the dog is very special!
+
+// write a function that translates english to pig-latin
+// 'truck' would be 'rucktay'
+// 'igloo' would be 'iglooway'
+
+// for a more advanced problem write a function that works with multiple words in a string:
+// 'hello friend' would be 'ellohay iendfray'
+// 'i live in the igloo' would be 'iway ivelay inway hetay iglooway'
