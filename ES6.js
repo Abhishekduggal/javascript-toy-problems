@@ -11937,3 +11937,17 @@ specialPets.forEach(function (value) {
 // for a more advanced problem write a function that works with multiple words in a string:
 // 'hello friend' would be 'ellohay iendfray'
 // 'i live in the igloo' would be 'iway ivelay inway hetay iglooway'
+
+function translate(str) {
+  var arr = str.split('');
+
+  var vowel = /[aeiou]/;
+
+  if (vowel.test(arr[0])) {
+
+    return `${str}way`
+  }
+
+
+
+
