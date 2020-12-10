@@ -11950,4 +11950,12 @@ function translate(str) {
 
 
 
+  while (true) {
+    if (!vowel.test(arr[0])) {
+      arr.push(arr.splice(0, 1))
+    } else if (vowel.test(arr[0])) {
+      break;
+    }
+  }
+
 
