@@ -12020,3 +12020,14 @@ const leet = {
   Q: 'Q', R: 'R', S: '$', T: '7', U: 'U', V: 'V', W: 'W', X: 'X',
   Y: 'Y', Z: '2'
 }
+
+
+// console.log(arrStr)
+// const arrLeet = Object.entries(leet);
+// console.log(arrLeet)
+// console.log(arrLeet.find(a => arrStr))
+// }
+
+const toLeetSpeak = str => str.split('').map(e => leet[e]).join('');
+
+toLeetSpeak("LEET")
