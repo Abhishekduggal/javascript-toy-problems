@@ -12032,13 +12032,24 @@ const toLeetSpeak = str => str.split('').map(e => leet[e]).join('');
 
 toLeetSpeak("LEET")
 
-// The rgb() method is incomplete. Complete the method so that passing in RGB decimal values will result in a hexadecimal representation being returned. The valid decimal values for RGB are 0 - 255. Any (r,g,b) argument values that fall out of that range should be rounded to the closest valid value.
+  // The rgb() method is incomplete. Complete the method so that passing in RGB decimal values will result in a hexadecimal representation being returned. The valid decimal values for RGB are 0 - 255. Any (r,g,b) argument values that fall out of that range should be rounded to the closest valid value.
 
-// The following are examples of expected output values:
+  // The following are examples of expected output values:
 
 
 
-// rgb(255, 255, 255) // returns FFFFFF
-// rgb(255, 255, 300) // returns FFFFFF
-// rgb(0,0,0) // returns 000000
-// rgb(148, 0, 211) // returns 9400D3
+  // rgb(255, 255, 255) // returns FFFFFF
+  // rgb(255, 255, 300) // returns FFFFFF
+  // rgb(0,0,0) // returns 000000
+  // rgb(148, 0, 211) // returns 9400D3
+
+
+  / Logger Array(BONUS)
+// Write a function genLoggers that accepts a number and returns an array of that length. Each element in the array should be a function that logs its index in the array.
+
+// Note that this is a bonus problem; you are unlikely to encounter problems this challenging in the admissions process for a coding bootcamp!
+
+// Hint:
+// Logging the right index
+// Click to toggle hint  
+// Each function pushed into the array will need to reference its index in its own scope. Remember that (pre-ES6) the only way to create new scope is with a function. The function pushed into the array should itself be the result of a function call.
