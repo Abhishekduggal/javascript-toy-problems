@@ -12053,3 +12053,13 @@ toLeetSpeak("LEET")
 // Logging the right index
 // Click to toggle hint  
 // Each function pushed into the array will need to reference its index in its own scope. Remember that (pre-ES6) the only way to create new scope is with a function. The function pushed into the array should itself be the result of a function call.
+
+
+function genLoggers(num) {
+  var arr = [];
+  for (var i = 0; i < num; i++) {
+    var newFunc = indexArr(i);
+    arr.push(newFunc);
+  }
+  return arr;
+}
