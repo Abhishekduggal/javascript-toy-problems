@@ -12063,3 +12063,10 @@ function genLoggers(num) {
   }
   return arr;
 }
+
+}
+
+var loggerArray = genLoggers(5);
+// console.log(loggerArray);
+// loggerArray[0]();    // 0
+//loggerArray[4]();    // 4
