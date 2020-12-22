@@ -12070,3 +12070,13 @@ var loggerArray = genLoggers(5);
 // console.log(loggerArray);
 // loggerArray[0]();    // 0
 //loggerArray[4]();    // 4
+
+
+function converter(temperature) {
+  var fahrenheit = temperature;
+  var celsius = (fahrenheit - 32) * (5 / 9);
+  var kelvin = celsius + 273.15;
+
+  console.log(fahrenheit);
+  console.log(celsius);
+  console.log(kelvin);
