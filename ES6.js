@@ -12080,3 +12080,15 @@ function converter(temperature) {
   console.log(fahrenheit);
   console.log(celsius);
   console.log(kelvin);
+
+  console.log('celsius', (temperature - 32) * (5 / 9));
+  console.log('kelvin', ((temperature - 32) * (5 / 9)) + 273.15);
+}
+
+
+
+
+converter(77)
+// 77 degrees Fahrenheit
+// equals 25 degrees Celsius
+// equals 298.15 degrees Kelvin
