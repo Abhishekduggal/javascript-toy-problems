@@ -12117,3 +12117,29 @@ specialPets.forEach(function (value) {
 // Layla the cat is very special!
 // Bogie the dog is very special!
 
+
+for (let i = .0001; i < distance; i += i) {
+  counter++;
+}
+return counter;
+}
+
+foldsToTheMoon(384400000);
+
+// function distanceToMoon(thickness){
+// // let paperThickness = thickness*0.001
+// // console.log(paperThickness)
+// let moon = 384400 * 1000
+// let result = 0;
+
+// if(thickness < 0){
+//   return 'NULL';
+// }else {
+//   result = moon/(thickness)*2
+// }
+// console.log(result);
+// }
+
+// distanceToMoon(0.0001);
+
+
