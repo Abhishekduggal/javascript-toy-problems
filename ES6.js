@@ -12166,3 +12166,19 @@ function fibonnaci(n) {
 
     newArr.push((newArr[i - 1] || 1) + (newArr[i - 2] || 0))
   }
+
+  console.log(newArr);
+
+  return newArr.reverse();
+}
+
+fibonnaci(10);
+
+//     console.log(n);
+//     //result.push(n, );
+//   if(n < 65) {
+//     //console.log(n);
+//     return n
+//   } 
+//     return (sequence(n-1)+sequence(n-2))
+
