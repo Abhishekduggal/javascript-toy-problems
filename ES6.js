@@ -12182,3 +12182,13 @@ fibonnaci(10);
 //   } 
 //     return (sequence(n-1)+sequence(n-2))
 
+//     return n
+//   } 
+//     return (sequence(n-1)+sequence(n-2))
+
+
+//   //return result//.reverse();
+
+// }
+
+// sequence(5);
