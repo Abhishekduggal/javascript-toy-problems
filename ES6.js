@@ -12192,3 +12192,10 @@ fibonnaci(10);
 // }
 
 // sequence(5);
+
+
+function exponentiate(value1, value2) {
+  console.log(Math.pow(value1, value2));
+}
+
+exponentiate(3, 4)
