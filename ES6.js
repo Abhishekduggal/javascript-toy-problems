@@ -12211,3 +12211,13 @@ console.log(isIsogram('do the max')); // returns false (multiple spaces)
 console.log(isIsogram('hello there')); // returns false (multiple l's)
 
 */
+
+function isIsogram(str) {
+  // split the alphabets
+  // for loop
+  // if / else
+
+  var split = str.split('');
+
+  var track = [];
+//console.log(split);
