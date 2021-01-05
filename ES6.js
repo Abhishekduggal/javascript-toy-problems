@@ -12238,3 +12238,11 @@ function isIsogram(str) {
 
 console.log(isIsogram('algorithm'));
 console.log(isIsogram('do the max'));
+
+//myUnshift([1,2,3], 0)    // => [0,1,2,3]
+
+function myUnshift(array, value) {
+  var array1 = [value];
+
+  for (var i = 0; i < array.length; i++) {
+    //console.log(array[i]);
