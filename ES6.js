@@ -12220,4 +12220,21 @@ function isIsogram(str) {
   var split = str.split('');
 
   var track = [];
-//console.log(split);
+  //console.log(split);
+
+
+  for (var i = 0; i < split.length; i++) {
+    //str.indexOf(searchValue[, fromIndex])]
+
+    //console.log(track);
+    //console.log(track.indexOf(split[i]));
+    if (track.indexOf(split[i]) > -1) {
+      return false;
+    }
+    track.push(split[i]);
+  }
+  return true;
+}
+
+console.log(isIsogram('algorithm'));
+console.log(isIsogram('do the max'));
