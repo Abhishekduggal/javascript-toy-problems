@@ -12246,3 +12246,19 @@ function myUnshift(array, value) {
 
   for (var i = 0; i < array.length; i++) {
     //console.log(array[i]);
+
+
+
+    array1.push(array[i]);
+
+    // array.push(value)
+
+  }
+
+  console.log(array1);
+
+
+
+}
+
+myUnshift([1, 2, 3], 0);
