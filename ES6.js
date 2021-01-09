@@ -12262,3 +12262,9 @@ function myUnshift(array, value) {
 }
 
 myUnshift([1, 2, 3], 0);
+
+
+// Biller Builder
+// You work for an e-commerce company that does business in New York and New Jersey. Due to differences in tax and shipping rates, the final bill for the same product is different for customers in the different states.
+
+// The company has asked you to write a function that accepts a single parameter indicating a customer's state ('NY' or 'NJ') and returns a function that calculates the final bill for a customer in that state given the total list price of their items.
