@@ -12301,3 +12301,12 @@ function biller(state) {
   }
   return bill;
 }
+
+
+
+
+var newYorkBiller = biller('NY');
+newYorkBiller(100)   // => 112.27
+
+var newJersBiller = biller('NJ');
+newJersBiller(100)    // => 112.35
