@@ -12310,3 +12310,13 @@ newYorkBiller(100)   // => 112.27
 
 var newJersBiller = biller('NJ');
 newJersBiller(100)    // => 112.35
+
+
+function underToCamel(underName) {
+  var camelCaseOutput = "";
+  var foundUnder = false;
+
+  for (var i = 0; i < underName.length; i++) {
+    if (underName[i] === "_") {
+      foundUnder = true;
+    } else {
