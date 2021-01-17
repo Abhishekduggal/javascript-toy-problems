@@ -12337,9 +12337,24 @@ function underToCamel(underName) {
 
   / Linked List 
 
-// Its connected using a Next / Previous Pointers between Nodes 
+  // Its connected using a Next / Previous Pointers between Nodes 
 
-// Also has Head and Tail Pointers informaiton stored in a linked List
+  // Also has Head and Tail Pointers informaiton stored in a linked List
 
-// This example I will be creating / accessing a Linked List  
+  // This example I will be creating / accessing a Linked List  
 
+
+
+  function LinkedList() {
+    this.head = null;
+    this.tail = null;
+  }
+
+  function Node(value, next, prev) {
+    // Each node has a value + Next & Previous pointers 
+
+    this.value = value;
+    this.next = next;
+    this.prev = prev;
+
+  }
