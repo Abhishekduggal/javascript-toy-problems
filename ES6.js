@@ -12332,3 +12332,14 @@ function underToCamel(underName) {
     }
     return camelCaseOutput;
   }
+
+
+
+  / Linked List 
+
+// Its connected using a Next / Previous Pointers between Nodes 
+
+// Also has Head and Tail Pointers informaiton stored in a linked List
+
+// This example I will be creating / accessing a Linked List  
+
