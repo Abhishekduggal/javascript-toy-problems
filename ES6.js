@@ -12376,3 +12376,21 @@ function underToCamel(underName) {
     }
     this.head = newNode;
   };
+
+
+  // var ll = new LinkedList();
+
+  // ll.addToHead(100);
+  // ll.addToHead(200);
+  // ll.addToHead(300);
+
+  LinkedList.prototype.addToTail = function (value) {
+    var newNode = new Node(value, null, this.tail);
+
+    if (this.tail) {
+      this.tail.next = newNode;
+    } else {
+      this.head = newNode;
+    }
+    this.tail = newNode;
+  };
