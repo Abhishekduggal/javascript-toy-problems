@@ -12449,3 +12449,16 @@ function underToCamel(underName) {
     } else {
       currentNode = this.tail;
     }
+
+
+    while (currentNode) {
+      if (currentNode.value === value) {
+        var x = currentNode.value;
+        indexOutput.push(currentIndex);
+      }
+      currentNode = currentNode.next;
+      currentIndex++;
+    }
+    return indexOutput;
+
+  };
