@@ -12462,3 +12462,15 @@ function underToCamel(underName) {
     return indexOutput;
 
   };
+  var myLL = new LinkedList;
+
+  myLL.addToHead(10000);
+  myLL.addToHead(100);
+  myLL.addToHead(10);
+  myLL.addToHead(10);
+  myLL.addToHead(10);
+  myLL.addToTail(1000);
+  myLL.addToTail(100);
+  myLL.addToTail(10);
+  myLL.addToHead('Hello');
+  myLL.addToTail('World');
