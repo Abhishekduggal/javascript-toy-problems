@@ -12474,3 +12474,13 @@ function underToCamel(underName) {
   myLL.addToTail(10);
   myLL.addToHead('Hello');
   myLL.addToTail('World');
+
+  //console.log(ll);
+
+//console.log(myLL.tail.prev.prev.prev);
+
+// console.log(myLL);
+
+// console.log('Remove Head',myLL.removeHead());
+
+// console.log('Remove Tail', myLL.removeTail());
