@@ -12477,10 +12477,27 @@ function underToCamel(underName) {
 
   //console.log(ll);
 
-//console.log(myLL.tail.prev.prev.prev);
+  //console.log(myLL.tail.prev.prev.prev);
 
-// console.log(myLL);
+  // console.log(myLL);
 
-// console.log('Remove Head',myLL.removeHead());
+  // console.log('Remove Head',myLL.removeHead());
 
-// console.log('Remove Tail', myLL.removeTail());
+  // console.log('Remove Tail', myLL.removeTail());
+
+
+  //console.log(ll);
+
+  //console.log(myLL.tail.prev.prev.prev);
+
+  // console.log(myLL);
+
+  // console.log('Remove Head',myLL.removeHead());
+
+  // console.log('Remove Tail', myLL.removeTail());
+
+  console.log(myLL);
+
+  // console.log(myLL.search(1));
+
+  console.log(myLL.indexOf(10));
