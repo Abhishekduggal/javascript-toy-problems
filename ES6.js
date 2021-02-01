@@ -12520,4 +12520,10 @@ function underToCamel(underName) {
 // So the final bill for a $100 item in New York would be: (100*1.03)*1.09 = 112.27 And in 
 //New Jersey: (100*1.05)*1.07 = 112.35
 
+// function NY(){
+//   return 1.03 * 1.09;
+// }
 
+// function NJ(){
+//   return 1.05* 1.07;
+// }
