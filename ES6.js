@@ -12577,3 +12577,20 @@ function underToCamel(underName) {
 // addTen([10,20,30]); //-> [20,30,40]
 // //addTen([1,2,3,4]); //-> [11,12,13,14]
 
+
+
+// // Modify the given for loop to add ten to each element in the passed in array and then push the sum into the newArr array. You can assume that all items in the array will be numbers.
+
+
+// function addTen( arr ) {
+
+//   //var newArr = arr.map( num => num+10);
+// //   for(var i =0; i < arr.length; i++){
+// //     console.log(arr[i]);
+// //     newArr.push(arr[i]+10);
+
+// //     //console.log(arr[i]);
+// //   }
+// //   return newArr;
+// console.log(arr)
+//  }
