@@ -12594,3 +12594,19 @@ function underToCamel(underName) {
 // //   return newArr;
 // console.log(arr)
 //  }
+
+// addTen([10,20,30]); //-> [20,30,40]
+// //addTen([1,2,3,4]); //-> [11,12,13,14]
+
+// Given an array of user objects, update the user's email property if the condition is met.
+
+// function updateUserEmail( array, property, value, newEmail ) {
+
+//   array.forEach(arr => {
+//     console.log(arr);
+//     if(arr[property] === value){
+//       arr['email'] = newEmail;
+//     }
+//     console.log(arr);
+//   })
+// }
