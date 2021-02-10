@@ -12610,3 +12610,14 @@ function underToCamel(underName) {
 //     console.log(arr);
 //   })
 // }
+
+
+// var user0 = {
+//   name: 'James',
+//   email: null,
+//   flag: true
+// }
+
+// updateUserEmail([ user0 ], 'flag', true, 'email@domain.com'); 
+// //-> [{ name: 'James', email: 'email@domain.com', flag: true }]
+
