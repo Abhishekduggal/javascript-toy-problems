@@ -12621,3 +12621,15 @@ function underToCamel(underName) {
 // updateUserEmail([ user0 ], 'flag', true, 'email@domain.com'); 
 // //-> [{ name: 'James', email: 'email@domain.com', flag: true }]
 
+
+// Instructions 
+// Use the built in filter method to filter over the jobs array of objects 
+//and return the object of the person with a job as a programmer. 
+//Make sure to use the arrow function in conjunction with the filter method.  
+
+// Should not use the ES5 function declaration syntax in your final solution.
+// Should not use a for loop.
+// Should not have the function keyword anywhere in the solution.
+
+// Note: let and const do not working with these tests, you must use var.
+
