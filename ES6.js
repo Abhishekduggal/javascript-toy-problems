@@ -12557,79 +12557,86 @@ function underToCamel(underName) {
   // // Modify the given for loop to add ten to each element in the passed in array and then push the sum into the newArr array. You can assume that all items in the array will be numbers.
 
 
-// function addTen( arr ) {
+  // function addTen( arr ) {
 
-//   //var newArr = arr.map( num => num+10);
-// //   for(var i =0; i < arr.length; i++){
-// //     console.log(arr[i]);
-// //     newArr.push(arr[i]+10);
-
-
-// //     //console.log(arr[i]);
-// //   }
-// //   return newArr;
-// console.log(arr)
-//  }
+  //   //var newArr = arr.map( num => num+10);
+  // //   for(var i =0; i < arr.length; i++){
+  // //     console.log(arr[i]);
+  // //     newArr.push(arr[i]+10);
 
 
-
-
-// addTen([10,20,30]); //-> [20,30,40]
-// //addTen([1,2,3,4]); //-> [11,12,13,14]
+  // //     //console.log(arr[i]);
+  // //   }
+  // //   return newArr;
+  // console.log(arr)
+  //  }
 
 
 
-// // Modify the given for loop to add ten to each element in the passed in array and then push the sum into the newArr array. You can assume that all items in the array will be numbers.
+
+  // addTen([10,20,30]); //-> [20,30,40]
+  // //addTen([1,2,3,4]); //-> [11,12,13,14]
 
 
-// function addTen( arr ) {
 
-//   //var newArr = arr.map( num => num+10);
-// //   for(var i =0; i < arr.length; i++){
-// //     console.log(arr[i]);
-// //     newArr.push(arr[i]+10);
-
-// //     //console.log(arr[i]);
-// //   }
-// //   return newArr;
-// console.log(arr)
-//  }
-
-// addTen([10,20,30]); //-> [20,30,40]
-// //addTen([1,2,3,4]); //-> [11,12,13,14]
-
-// Given an array of user objects, update the user's email property if the condition is met.
-
-// function updateUserEmail( array, property, value, newEmail ) {
-
-//   array.forEach(arr => {
-//     console.log(arr);
-//     if(arr[property] === value){
-//       arr['email'] = newEmail;
-//     }
-//     console.log(arr);
-//   })
-// }
+  // // Modify the given for loop to add ten to each element in the passed in array and then push the sum into the newArr array. You can assume that all items in the array will be numbers.
 
 
-// var user0 = {
-//   name: 'James',
-//   email: null,
-//   flag: true
-// }
+  // function addTen( arr ) {
 
-// updateUserEmail([ user0 ], 'flag', true, 'email@domain.com'); 
-// //-> [{ name: 'James', email: 'email@domain.com', flag: true }]
+  //   //var newArr = arr.map( num => num+10);
+  // //   for(var i =0; i < arr.length; i++){
+  // //     console.log(arr[i]);
+  // //     newArr.push(arr[i]+10);
+
+  // //     //console.log(arr[i]);
+  // //   }
+  // //   return newArr;
+  // console.log(arr)
+  //  }
+
+  // addTen([10,20,30]); //-> [20,30,40]
+  // //addTen([1,2,3,4]); //-> [11,12,13,14]
+
+  // Given an array of user objects, update the user's email property if the condition is met.
+
+  // function updateUserEmail( array, property, value, newEmail ) {
+
+  //   array.forEach(arr => {
+  //     console.log(arr);
+  //     if(arr[property] === value){
+  //       arr['email'] = newEmail;
+  //     }
+  //     console.log(arr);
+  //   })
+  // }
 
 
-// Instructions 
-// Use the built in filter method to filter over the jobs array of objects 
-//and return the object of the person with a job as a programmer. 
-//Make sure to use the arrow function in conjunction with the filter method.  
+  // var user0 = {
+  //   name: 'James',
+  //   email: null,
+  //   flag: true
+  // }
 
-// Should not use the ES5 function declaration syntax in your final solution.
-// Should not use a for loop.
-// Should not have the function keyword anywhere in the solution.
+  // updateUserEmail([ user0 ], 'flag', true, 'email@domain.com'); 
+  // //-> [{ name: 'James', email: 'email@domain.com', flag: true }]
 
-// Note: let and const do not working with these tests, you must use var.
 
+  // Instructions 
+  // Use the built in filter method to filter over the jobs array of objects 
+  //and return the object of the person with a job as a programmer. 
+  //Make sure to use the arrow function in conjunction with the filter method.  
+
+  // Should not use the ES5 function declaration syntax in your final solution.
+  // Should not use a for loop.
+  // Should not have the function keyword anywhere in the solution.
+
+  // Note: let and const do not working with these tests, you must use var.
+
+
+
+  // Write a function that rearranges an integer into its largest possible value.
+  function superSize(int) {
+    const n = int;
+    let z = Array.from(n.toString()).map(Number);
+  //console.log(z);
