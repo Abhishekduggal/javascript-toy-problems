@@ -12646,6 +12646,18 @@ function underToCamel(underName) {
     console.log(y);
   }
   superSize(123456) //654321
-//superSize(105) // 510
-//superSize(12) // 21
-// If the argument passed through is single digit or is already the maximum possible integer, your function should simply return it.
+  //superSize(105) // 510
+  //superSize(12) // 21
+  // If the argument passed through is single digit or is already the maximum possible integer, your function should simply return it.
+
+
+  var specialPets = [{
+    name: 'Sadie',
+    species: 'cat'
+  }, {
+    name: 'Layla',
+    species: 'cat'
+  }, {
+    name: 'Bogie',
+    species: 'dog'
+  }];
