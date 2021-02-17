@@ -12675,3 +12675,20 @@ function underToCamel(underName) {
 // Sadie the cat is very special!
 // Layla the cat is very special!
 // Bogie the dog is very special!
+
+
+// // let arr = [1,2,3,4,5,4,3,2,1];
+
+// // let product = arr.reduce(function(total, elem){
+// // console.log(total, elem)
+// //   return total * elem
+// // })
+
+// // product
+
+// let customers = [
+//   {name: "Shea", total: 150, message: 'This '},
+//   {name: 'Jarid', total: 1, message: 'is '},
+//   {name: 'Joe', total: 10000, message: 'a new '},
+//   {name: 'Erik', total: -100, message: 'message.'}
+// ]
