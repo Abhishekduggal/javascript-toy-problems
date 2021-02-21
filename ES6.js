@@ -12713,3 +12713,13 @@ function underToCamel(underName) {
 //   age: 77,
 //   color: 'Brindle'
 // };
+
+
+// let extension = {
+//   isFed: true,
+//   size: 'Big',
+//   isBad : true
+// }
+// let newDog = Object.assign({}, dog, extension);
+// console.log(dog === newDog);
+// console.log(newDog)
