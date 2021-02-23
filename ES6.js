@@ -12747,3 +12747,19 @@ function underToCamel(underName) {
 //     make, model, year, go: function(){console.log('vroom')}
 //   }
 // }
+
+// let {name, total, message, age} = person;
+// console.log(name, total, message, age)
+
+// let  req = {
+//   body: {
+//     user: {
+//       location: {
+//         city:
+//         state:
+//         zip:
+//         address:
+//       }
+//     }
+//   }
+// }
