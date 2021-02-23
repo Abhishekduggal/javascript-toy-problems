@@ -12723,3 +12723,27 @@ function underToCamel(underName) {
 // let newDog = Object.assign({}, dog, extension);
 // console.log(dog === newDog);
 // console.log(newDog)
+
+
+// let arr = [1,2,3,4,5]
+
+// arr.map(elem => {
+
+//   return elem + 2
+// }); 
+
+// let person = {
+//   name: "Shea",
+//   sayName: () => {
+//     return this.name;
+//   }
+// }
+
+// person.sayName()
+
+
+// function car (make, model, year){
+//   return {
+//     make, model, year, go: function(){console.log('vroom')}
+//   }
+// }
