@@ -12763,3 +12763,50 @@ function underToCamel(underName) {
 //     }
 //   }
 // }
+
+// let {city, address, zip, state} = req.body.user.location;
+
+// let arr = [1,2,3,4,5];
+
+// let [one, blah, , ,five] = arr;
+
+// console.log(one, blah, five)
+
+// function destructObj ({name}){
+//   return name;
+// }
+
+// destructObj({name:'Shea'})
+
+
+// function destructArr([first]){
+//   return first;
+// }
+
+// destructArr([{name:'Shea'}])
+
+// function addTwo (x, y){
+//   return x + y;
+// }
+
+// let addTwo2 = (x, y) =>  x + y;  
+
+// let addTwo3 = (x) => x + 2;
+
+// addTwo3(10)
+
+// let arr = [1,2,3,4,5]
+
+// arr.map(elem => {
+
+//   return elem + 2
+// }); 
+
+// let person = {
+//   name: "Shea",
+//   sayName: () => {
+//     return this.name;
+//   }
+// }
+
+// person.sayName()
