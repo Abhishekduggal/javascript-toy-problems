@@ -12810,3 +12810,31 @@ function underToCamel(underName) {
 // }
 
 // person.sayName()
+
+
+// function car (make, model, year){
+//   return {
+//     make, model, year, go: function(){console.log('vroom')}
+//   }
+// }
+
+// let myCar = car ('Nissan', 'xTerra', 2008)
+// // myCar
+
+// function Car (make, model, year){
+//   // let this = {make: make, model:model};
+//   this.make = make;
+//   this.model = model;
+//   this.year = year;
+//   // return this;
+// }
+
+// Car.prototype.go = function(){
+//   console.log("vroom")
+// }
+
+// let myToyCar = new Car('Triumph', 'Spitfire', 1976);
+// console.log(myToyCar)
+// console.log(myCar)
+// myToyCar.go();
+
