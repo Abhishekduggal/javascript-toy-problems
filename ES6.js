@@ -12887,3 +12887,13 @@ function underToCamel(underName) {
   }
 
   countGrade([50, 60, 70, 80, 90, 100]); //should return {S:1, A:1, B:1, C:2, D:1, X:0}
+
+
+  function countVowels(str) {
+    var firstCharacter = str[0];
+    var resultVowels = 0;
+
+    if (str.length > 0) {
+      if (firstCharacter === 'a' || firstCharacter === 'e' || firstCharacter === 'i' || firstCharacter === 'o' || firstCharacter === 'u') {
+        console.log('if vowel', resultVowels);
+        resultVowels = countVowels(str.slice(1)) + 1;
