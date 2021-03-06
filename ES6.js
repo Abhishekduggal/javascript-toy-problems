@@ -12897,3 +12897,16 @@ function underToCamel(underName) {
       if (firstCharacter === 'a' || firstCharacter === 'e' || firstCharacter === 'i' || firstCharacter === 'o' || firstCharacter === 'u') {
         console.log('if vowel', resultVowels);
         resultVowels = countVowels(str.slice(1)) + 1;
+
+        return resultVowels;
+
+
+
+        // return resultVowels; 
+
+      } else {
+        console.log('no vowel', resultVowels);
+        resultVowels = countVowels(str.slice(1));
+        return resultVowels;
+      }
+        //console.log(str.slice(1));
