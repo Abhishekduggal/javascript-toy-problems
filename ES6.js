@@ -12925,3 +12925,12 @@ function underToCamel(underName) {
 
 
   countVowels('Four score and seven years')    // => 9
+
+
+  // 1234 = 1+2+3+4 = 10 
+
+  function sumDigits(int) {
+    var str = int + ''
+    console.log(str);
+    var array = str.split('');
+    console.log(array);
