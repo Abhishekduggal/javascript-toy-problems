@@ -12909,4 +12909,19 @@ function underToCamel(underName) {
         resultVowels = countVowels(str.slice(1));
         return resultVowels;
       }
-        //console.log(str.slice(1));
+      //console.log(str.slice(1));
+
+
+
+
+      //console.log(str.slice(1));
+
+    } else {
+      console.log('Done')
+      return resultVowels
+    }
+  }
+
+
+
+  countVowels('Four score and seven years')    // => 9
