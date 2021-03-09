@@ -12953,3 +12953,10 @@ function underToCamel(underName) {
 
 
   sumDigits(1234)    // => 10
+
+  function toCurrency(price) {
+    //your code here
+    return price.toLocaleString()
+  };
+
+  toCurrency(1234564475758494554); 
