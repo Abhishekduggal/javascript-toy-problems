@@ -12959,4 +12959,15 @@ function underToCamel(underName) {
     return price.toLocaleString()
   };
 
-  toCurrency(1234564475758494554); 
+  toCurrency(1234564475758494554);
+
+
+  function truthyOrFalsy(val) {
+    if (val) {
+      //if the value is truthy, console.log('The value is truthy')
+      console.log('The value is truthy')
+    } else {
+      //if the value is falsy, console.log('The value is falsy')
+      console.log('The value is falsy')
+    }
+  }
