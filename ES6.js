@@ -12971,3 +12971,18 @@ function underToCamel(underName) {
       console.log('The value is falsy')
     }
   }
+
+  truthyOrFalsy('');
+  // logs 'The value is falsy';
+  truthyOrFalsy('DevMountain');
+  // logs 'The value is truthy';
+  truthyOrFalsy([]);
+  // logs 'The value is truthy';
+  truthyOrFalsy(0);
+  // logs 'The value is falsy';
+  truthyOrFalsy(-1);
+  // logs 'The value is truthy';
+  truthyOrFalsy(null);
+  // logs 'The value is falsy';
+  truthyOrFalsy(NaN);
+// logs 'The value is falsy';
