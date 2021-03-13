@@ -12985,4 +12985,12 @@ function underToCamel(underName) {
   truthyOrFalsy(null);
   // logs 'The value is falsy';
   truthyOrFalsy(NaN);
-// logs 'The value is falsy';
+  // logs 'The value is falsy';
+
+
+  function assignEvenAndOdds(userInput) {
+    // var arr = userInput.split(',');
+    var arr = [];
+    console.log(arr);
+    var evens = [];
+    var odds = [];
