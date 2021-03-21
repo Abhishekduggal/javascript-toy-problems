@@ -13035,3 +13035,8 @@ function underToCamel(underName) {
   function countGrade(scores) {
     //coding here...
     var S = scores.filter(function (x) { return x === 100 }).length;
+
+
+  }
+
+  countGrade([50, 60, 70, 80, 90, 100]); //should return {S:1, A:1, B:1, C:2, D:1, X:0}
