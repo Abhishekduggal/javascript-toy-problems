@@ -13040,3 +13040,13 @@ function underToCamel(underName) {
   }
 
   countGrade([50, 60, 70, 80, 90, 100]); //should return {S:1, A:1, B:1, C:2, D:1, X:0}
+
+
+  // // let arr = [1,2,3,4,5,4,3,2,1];
+
+// // let product = arr.reduce(function(total, elem){
+// // console.log(total, elem)
+// //   return total * elem
+// // })
+
+// // product
