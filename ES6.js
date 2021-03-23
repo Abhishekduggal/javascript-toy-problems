@@ -13050,3 +13050,10 @@ function underToCamel(underName) {
 // // })
 
 // // product
+
+// let customers = [
+//   {name: "Shea", total: 150, message: 'This '},
+//   {name: 'Jarid', total: 1, message: 'is '},
+//   {name: 'Joe', total: 10000, message: 'a new '},
+//   {name: 'Erik', total: -100, message: 'message.'}
+// ]
