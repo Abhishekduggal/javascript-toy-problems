@@ -13084,3 +13084,12 @@ function underToCamel(underName) {
 //   size: 'Big',
 //   isBad : true
 // }
+
+// let newDog = Object.assign({}, dog, extension);
+// console.log(dog === newDog);
+// console.log(newDog)
+
+// for ( let key in dog ){
+//   if (!dog[key]){
+//     delete dog[key]
+//   }
