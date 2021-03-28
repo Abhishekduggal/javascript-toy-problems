@@ -13093,3 +13093,12 @@ function underToCamel(underName) {
 //   if (!dog[key]){
 //     delete dog[key]
 //   }
+
+// }
+// for (key in extension){
+//   dog[key] = extension[key];
+// }
+// dog
+
+
+// let person = {name: "Shea", total: 150, message: 'This '}
