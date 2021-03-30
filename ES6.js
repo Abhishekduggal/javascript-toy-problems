@@ -13102,3 +13102,10 @@ function underToCamel(underName) {
 
 
 // let person = {name: "Shea", total: 150, message: 'This '}
+
+// let name = person.name;
+// let total = person.total
+// let message = person.message;
+
+// let {name, total, message, age} = person;
+// console.log(name, total, message, age)
