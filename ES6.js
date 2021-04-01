@@ -13135,3 +13135,13 @@ function underToCamel(underName) {
 // function destructObj ({name}){
 //   return name;
 // }
+
+
+// destructObj({name:'Shea'})
+
+
+// function destructArr([first]){
+//   return first;
+// }
+
+// destructArr([{name:'Shea'}])
