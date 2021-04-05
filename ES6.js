@@ -13156,3 +13156,21 @@ function underToCamel(underName) {
 // let addTwo3 = (x) => x + 2;
 
 // addTwo3(10)
+
+// addTwo3(10)
+
+// let arr = [1,2,3,4,5]
+
+// arr.map(elem => {
+
+//   return elem + 2
+// }); 
+
+// let person = {
+//   name: "Shea",
+//   sayName: () => {
+//     return this.name;
+//   }
+// }
+
+// person.sayName()
