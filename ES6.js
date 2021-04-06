@@ -13174,3 +13174,13 @@ function underToCamel(underName) {
 // }
 
 // person.sayName()
+
+
+// function car (make, model, year){
+//   return {
+//     make, model, year, go: function(){console.log('vroom')}
+//   }
+// }
+
+// let myCar = car ('Nissan', 'xTerra', 2008)
+// // myCar
