@@ -13192,3 +13192,12 @@ function underToCamel(underName) {
 //   this.year = year;
 //   // return this;
 // }
+
+// Car.prototype.go = function(){
+//   console.log("vroom")
+// }
+
+// let myToyCar = new Car('Triumph', 'Spitfire', 1976);
+// console.log(myToyCar)
+// console.log(myCar)
+// myToyCar.go();
