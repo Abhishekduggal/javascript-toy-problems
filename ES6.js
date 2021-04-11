@@ -13044,171 +13044,184 @@ function underToCamel(underName) {
 
   // // let arr = [1,2,3,4,5,4,3,2,1];
 
-// // let product = arr.reduce(function(total, elem){
-// // console.log(total, elem)
-// //   return total * elem
-// // })
+  // // let product = arr.reduce(function(total, elem){
+  // // console.log(total, elem)
+  // //   return total * elem
+  // // })
 
-// // product
+  // // product
 
-// let customers = [
-//   {name: "Shea", total: 150, message: 'This '},
-//   {name: 'Jarid', total: 1, message: 'is '},
-//   {name: 'Joe', total: 10000, message: 'a new '},
-//   {name: 'Erik', total: -100, message: 'message.'}
-// ]
+  // let customers = [
+  //   {name: "Shea", total: 150, message: 'This '},
+  //   {name: 'Jarid', total: 1, message: 'is '},
+  //   {name: 'Joe', total: 10000, message: 'a new '},
+  //   {name: 'Erik', total: -100, message: 'message.'}
+  // ]
 
-// // let total = customers.reduce( function(total, elem){
-// //   return total + elem.total; 
-// // }, 0)
+  // // let total = customers.reduce( function(total, elem){
+  // //   return total + elem.total; 
+  // // }, 0)
 
-// let sentence = customers.reduce(function(total, elem){
-//   return total + elem.message;
-// }, '')
+  // let sentence = customers.reduce(function(total, elem){
+  //   return total + elem.message;
+  // }, '')
 
-// sentence
-
-
-// let dog = {
-//   name: 'Rufus',
-//   isBad: false,
-//   bark: function(){
-//     console.log('woof')
-//   },
-//   age: 77,
-//   color: 'Brindle'
-// };
-
-// let extension = {
-//   isFed: true,
-//   size: 'Big',
-//   isBad : true
-// }
-
-// let newDog = Object.assign({}, dog, extension);
-// console.log(dog === newDog);
-// console.log(newDog)
-
-// for ( let key in dog ){
-//   if (!dog[key]){
-//     delete dog[key]
-//   }
-
-// }
-// for (key in extension){
-//   dog[key] = extension[key];
-// }
-// dog
+  // sentence
 
 
-// let person = {name: "Shea", total: 150, message: 'This '}
+  // let dog = {
+  //   name: 'Rufus',
+  //   isBad: false,
+  //   bark: function(){
+  //     console.log('woof')
+  //   },
+  //   age: 77,
+  //   color: 'Brindle'
+  // };
 
-// let name = person.name;
-// let total = person.total
-// let message = person.message;
+  // let extension = {
+  //   isFed: true,
+  //   size: 'Big',
+  //   isBad : true
+  // }
 
-// let {name, total, message, age} = person;
-// console.log(name, total, message, age)
+  // let newDog = Object.assign({}, dog, extension);
+  // console.log(dog === newDog);
+  // console.log(newDog)
 
+  // for ( let key in dog ){
+  //   if (!dog[key]){
+  //     delete dog[key]
+  //   }
 
-// let  req = {
-//   body: {
-//     user: {
-//       location: {
-//         city:
-//         state:
-//         zip:
-//         address:
-//       }
-//     }
-//   }
-// }
-
-// let {city, address, zip, state} = req.body.user.location;
-
-// let arr = [1,2,3,4,5];
-
-// let [one, blah, , ,five] = arr;
-
-// console.log(one, blah, five)
-
-// function destructObj ({name}){
-//   return name;
-// }
+  // }
+  // for (key in extension){
+  //   dog[key] = extension[key];
+  // }
+  // dog
 
 
-// destructObj({name:'Shea'})
+  // let person = {name: "Shea", total: 150, message: 'This '}
+
+  // let name = person.name;
+  // let total = person.total
+  // let message = person.message;
+
+  // let {name, total, message, age} = person;
+  // console.log(name, total, message, age)
 
 
-// function destructArr([first]){
-//   return first;
-// }
+  // let  req = {
+  //   body: {
+  //     user: {
+  //       location: {
+  //         city:
+  //         state:
+  //         zip:
+  //         address:
+  //       }
+  //     }
+  //   }
+  // }
 
-// destructArr([{name:'Shea'}])
+  // let {city, address, zip, state} = req.body.user.location;
 
+  // let arr = [1,2,3,4,5];
 
-// function addTwo (x, y){
-//   return x + y;
-// }
+  // let [one, blah, , ,five] = arr;
 
-// let addTwo2 = (x, y) =>  x + y;  
+  // console.log(one, blah, five)
 
-// let addTwo3 = (x) => x + 2;
-
-// addTwo3(10)
-
-// addTwo3(10)
-
-// let arr = [1,2,3,4,5]
-
-// arr.map(elem => {
-
-//   return elem + 2
-// }); 
-
-// let person = {
-//   name: "Shea",
-//   sayName: () => {
-//     return this.name;
-//   }
-// }
-
-// person.sayName()
+  // function destructObj ({name}){
+  //   return name;
+  // }
 
 
-// function car (make, model, year){
-//   return {
-//     make, model, year, go: function(){console.log('vroom')}
-//   }
-// }
+  // destructObj({name:'Shea'})
 
-// let myCar = car ('Nissan', 'xTerra', 2008)
-// // myCar
 
-// function Car (make, model, year){
-//   // let this = {make: make, model:model};
-//   this.make = make;
-//   this.model = model;
-//   this.year = year;
-//   // return this;
-// }
+  // function destructArr([first]){
+  //   return first;
+  // }
 
-// Car.prototype.go = function(){
-//   console.log("vroom")
-// }
+  // destructArr([{name:'Shea'}])
 
-// let myToyCar = new Car('Triumph', 'Spitfire', 1976);
-// console.log(myToyCar)
-// console.log(myCar)
-// myToyCar.go();
 
-/* 
+  // function addTwo (x, y){
+  //   return x + y;
+  // }
 
-An isogram is a word that has no repeating letters, consecutive or nonconsecutive. Create a function that takes a string and returns either true or false depending on whether or not it's an "isogram". Assume all inputs will be lowercase.
+  // let addTwo2 = (x, y) =>  x + y;  
 
-For example:
-console.log(isIsogram('algorithm')); // returns true
-console.log(isIsogram('do the max')); // returns false (multiple spaces)
-console.log(isIsogram('hello there')); // returns false (multiple l's)
+  // let addTwo3 = (x) => x + 2;
 
-*/
+  // addTwo3(10)
+
+  // addTwo3(10)
+
+  // let arr = [1,2,3,4,5]
+
+  // arr.map(elem => {
+
+  //   return elem + 2
+  // }); 
+
+  // let person = {
+  //   name: "Shea",
+  //   sayName: () => {
+  //     return this.name;
+  //   }
+  // }
+
+  // person.sayName()
+
+
+  // function car (make, model, year){
+  //   return {
+  //     make, model, year, go: function(){console.log('vroom')}
+  //   }
+  // }
+
+  // let myCar = car ('Nissan', 'xTerra', 2008)
+  // // myCar
+
+  // function Car (make, model, year){
+  //   // let this = {make: make, model:model};
+  //   this.make = make;
+  //   this.model = model;
+  //   this.year = year;
+  //   // return this;
+  // }
+
+  // Car.prototype.go = function(){
+  //   console.log("vroom")
+  // }
+
+  // let myToyCar = new Car('Triumph', 'Spitfire', 1976);
+  // console.log(myToyCar)
+  // console.log(myCar)
+  // myToyCar.go();
+
+  /* 
+  
+  An isogram is a word that has no repeating letters, consecutive or nonconsecutive. Create a function that takes a string and returns either true or false depending on whether or not it's an "isogram". Assume all inputs will be lowercase.
+  
+  For example:
+  console.log(isIsogram('algorithm')); // returns true
+  console.log(isIsogram('do the max')); // returns false (multiple spaces)
+  console.log(isIsogram('hello there')); // returns false (multiple l's)
+  
+  */
+
+  function isIsogram(str) {
+    // split the alphabets
+    // for loop
+    // if / else
+
+    var split = str.split('');
+
+    var track = [];
+    //console.log(split);
+
+    for (var i = 0; i < split.length; i++) {
+    //str.indexOf(searchValue[, fromIndex])]
