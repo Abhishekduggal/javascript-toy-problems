@@ -13238,3 +13238,9 @@ function underToCamel(underName) {
 
   console.log(isIsogram('algorithm'));
   console.log(isIsogram('do the max'));
+
+
+  / return the two oldest/oldest ages within the array of ages passed in.
+  function twoOldestAges(ages) {
+
+    var copy = ages;
