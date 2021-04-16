@@ -13257,3 +13257,16 @@ function underToCamel(underName) {
 
     console.log(output);
   }
+
+  // var oldest1 = ages[0];
+  // var oldest2 = ages[1];
+
+  // ages.forEach(function(age){
+  //   if(age > oldest1){
+  //     oldest1 = age
+  //   }
+  //   console.log(age);
+
+  // });
+
+  twoOldestAges([1, 2, 10, 8, 32, 44, 45, 66]) // should return [8, 10];
