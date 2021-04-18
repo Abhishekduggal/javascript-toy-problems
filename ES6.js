@@ -13270,3 +13270,11 @@ function underToCamel(underName) {
   // });
 
   twoOldestAges([1, 2, 10, 8, 32, 44, 45, 66]) // should return [8, 10];
+
+
+  function assignEvenAndOdds(userInput) {
+    // var arr = userInput.split(',');
+    var arr = [];
+    console.log(arr);
+    var evens = [];
+    var odds = [];
