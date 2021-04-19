@@ -13292,3 +13292,11 @@ function underToCamel(underName) {
     console.log(odds);
   }
   assignEvenAndOdds(['1', '2', '3', '4'])
+
+
+
+  function insertion(arr) {
+    for (let i = 1; i < arr.length; i++) {
+      console.log('i', arr[i])
+      for (let j = 0; j < i; j++)
+      // console.log('j', arr[i][j])
