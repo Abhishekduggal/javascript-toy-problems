@@ -13365,12 +13365,19 @@ function underToCamel(underName) {
   purchases.map(e => e.price)
 
 
-// _.reduce({ 'a': 1, 'b': 2, 'c': 1 }, function(result, value, key) {
-//   (result[value] || (result[value] = [])).push(key);
-//   return result;
-// }, {});
+  // _.reduce({ 'a': 1, 'b': 2, 'c': 1 }, function(result, value, key) {
+  //   (result[value] || (result[value] = [])).push(key);
+  //   return result;
+  // }, {});
 
 
 
-// console.log(purchasesByMonth.price)  
-// const totalByMonth = _.reduce(purchasesByMonth, )
+  // console.log(purchasesByMonth.price)  
+  // const totalByMonth = _.reduce(purchasesByMonth, )
+
+  function assignEvenAndOdds(userInput) {
+    // var arr = userInput.split(',');
+    var arr = [];
+    console.log(arr);
+    var evens = [];
+    var odds = [];
