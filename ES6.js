@@ -13383,13 +13383,20 @@ function underToCamel(underName) {
     var odds = [];
 
     userInput.filter(num => {
-      if(parseInt(num) % 2 === 0){
-          evens.push(num);
-      }else if(parseInt(num) % 2 !== 0){
-          odds.push(num);
+      if (parseInt(num) % 2 === 0) {
+        evens.push(num);
+      } else if (parseInt(num) % 2 !== 0) {
+        odds.push(num);
       }
-  });
-  console.log(evens);
-  console.log(odds);
-}
-assignEvenAndOdds(['1','2','3','4'])
+    });
+    console.log(evens);
+    console.log(odds);
+  }
+  assignEvenAndOdds(['1', '2', '3', '4'])
+
+  var array1 = [5, 12, 8, 130, 44];
+  var array2 = ['hi', 'hello', 'abhi']
+
+  function findFirstLargeNumber(element) {
+    return element === 'abhi';
+  }
