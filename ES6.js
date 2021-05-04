@@ -13412,3 +13412,12 @@ function underToCamel(underName) {
 
   console.log(found);
 // expected output: 12
+
+// // let arr = [1,2,3,4,5,4,3,2,1];
+
+// // let product = arr.reduce(function(total, elem){
+// // console.log(total, elem)
+// //   return total * elem
+// // })
+
+// // product
