@@ -13432,3 +13432,16 @@ function underToCamel(underName) {
   // // let total = customers.reduce( function(total, elem){
   // //   return total + elem.total; 
   // // }, 0)
+
+
+
+  // let customers = [
+//   {name: "Shea", total: 150, message: 'This '},
+//   {name: 'Jarid', total: 1, message: 'is '},
+//   {name: 'Joe', total: 10000, message: 'a new '},
+//   {name: 'Erik', total: -100, message: 'message.'}
+// ]
+
+// // let total = customers.reduce( function(total, elem){
+// //   return total + elem.total; 
+// // }, 0)
