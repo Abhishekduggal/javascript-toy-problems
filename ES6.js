@@ -13445,3 +13445,17 @@ function underToCamel(underName) {
 // // let total = customers.reduce( function(total, elem){
 // //   return total + elem.total; 
 // // }, 0)
+
+// let sentence = customers.reduce(function(total, elem){
+//   return total + elem.message;
+// }, '')
+
+// sentence
+
+
+// let dog = {
+//   name: 'Rufus',
+//   isBad: false,
+//   bark: function(){
+//     console.log('woof')
+//   },
