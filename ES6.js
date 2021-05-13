@@ -13474,3 +13474,11 @@ function underToCamel(underName) {
 // // must return 0
 // cakes({apples: 3, flour: 300, sugar: 150, milk: 100, oil: 100}, {sugar: 500, flour: 2000, milk: 2000});
 
+
+
+// groupBy takes an array and splits it into sets, grouped by the 
+// result of running each value through the predicate. If the 
+// predicate is a string instead of a function, it groups by the 
+// property named by predicate on each of the values. 
+
+// function groupBy(collection, predicate){ 
