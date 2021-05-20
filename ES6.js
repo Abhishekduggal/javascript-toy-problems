@@ -13515,3 +13515,13 @@ function underToCamel(underName) {
 //             result[predicate(item)] = item;
 //           }
 //         });  
+//     }else if(typeof predicate === 'string'){
+//         collection.forEach(function(item){
+
+//         });
+//       }
+
+//   return result;
+//   //console.log('output', result);
+// }
+
