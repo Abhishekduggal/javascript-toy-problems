@@ -13484,44 +13484,61 @@ function underToCamel(underName) {
     // function groupBy(collection, predicate){ 
 
     /   // pseudocode begins here:
-  //     // Depending on the second parameter function / string /
-  //     // what are we doing here?
-  //     // function - call the function and pass each item
-  //       // store it in a variable
-  //       // They will will be key for the object
-  //       // Value will be the item that we are at the iteration of the loop
+    //     // Depending on the second parameter function / string /
+    //     // what are we doing here?
+    //     // function - call the function and pass each item
+    //       // store it in a variable
+    //       // They will will be key for the object
+    //       // Value will be the item that we are at the iteration of the loop
 
-  //       // check the key alreay exist in the object 
-  //         // If it does we have to add, 
+    //       // check the key alreay exist in the object 
+    //         // If it does we have to add, 
 
-  //   // Key  
-//   //& value (array)
+    //   // Key  
+    //   //& value (array)
 
-//   // return the new object
+    //   // return the new object
 
-//   //var temp = [];
+    //   //var temp = [];
 
-//   var key = [];
-//   var result = {};
-//   // Iterate over the array, using forEach
+    //   var key = [];
+    //   var result = {};
+    //   // Iterate over the array, using forEach
 
-//       //console.log('Iterate Item', item);
+    //       //console.log('Iterate Item', item);
 
-//     if(typeof predicate === 'function'){
-//         collection.forEach(function(item){
-//           if(result[predicate(item)]){
-//             result[predicate(item)].push(item);
-//           }else{
-//             result[predicate(item)] = item;
-//           }
-//         });  
-//     }else if(typeof predicate === 'string'){
-//         collection.forEach(function(item){
+    //     if(typeof predicate === 'function'){
+    //         collection.forEach(function(item){
+    //           if(result[predicate(item)]){
+    //             result[predicate(item)].push(item);
+    //           }else{
+    //             result[predicate(item)] = item;
+    //           }
+    //         });  
+    //     }else if(typeof predicate === 'string'){
+    //         collection.forEach(function(item){
 
-//         });
-//       }
+    //         });
+    //       }
 
-//   return result;
-//   //console.log('output', result);
-// }
+    //   return result;
+    //   //console.log('output', result);
+    // }
 
+
+
+
+    function groupBy(collection, predicate) {
+  // pseudocode begins here:
+    // Depending on the second parameter function / string /
+    // what are we doing here?
+    // function - call the function and pass each item 
+      // store it in a variable
+      // They will will be key for the object
+      // Value will be the item that we are at the iteration of the loop
+
+      // check the key alreay exist in the object 
+        // If it does we have to add, 
+
+  // Key  
+  //& value (array)
