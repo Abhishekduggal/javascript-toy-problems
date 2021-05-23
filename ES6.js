@@ -13561,3 +13561,20 @@ function underToCamel(underName) {
             key = firstLetter(item);
             output[key] = item;
             //console.log('output', output)
+
+
+          } else if (typeof item === 'number') {
+            //console.log('hello world');
+            key = mathValue(item);
+            //console.log(key);
+            output[key] = item;
+            //console.log('output', output);
+          }
+        } else if (typeof predicate === 'string') {
+          //console.log(item.length);
+          //console.log(key);
+          key = item.length;
+          output[key] = item;
+          //console.log('output', output);
+        }
+      });
