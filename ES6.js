@@ -13578,3 +13578,14 @@ function underToCamel(underName) {
           //console.log('output', output);
         }
       });
+
+      return output;
+      // //console.log('output', output);
+
+    }
+  var firstLetter = function (word) { return word.charAt(0); };
+
+  var mathValue = function (val) { return Math.floor(val) };
+
+  console.log(groupBy(['apple', 'cat', 'boat', 'card', 'bond'], firstLetter));
+// returns { 'a': ['apple'], 'c': ['cat', 'card'], 'b': ['boat', 'bond'] }
