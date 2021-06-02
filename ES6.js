@@ -13632,3 +13632,16 @@ function underToCamel(underName) {
 
 // var hours = secondsNum/3600 < 1 ? 00 : (secondsNum/3600);
 // console.log(hours);
+
+// var minutes = Math.floor(secondsNum/60);
+// console.log(minutes);
+
+// var seconds = (seconds-minutes)*60 || 00;
+// console.log(seconds);
+
+// return (`${hours}:${minutes}:${seconds}`); 
+
+// }
+
+// tellMeTime(359999) // 00:01:00
+
