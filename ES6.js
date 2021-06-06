@@ -13645,3 +13645,18 @@ function underToCamel(underName) {
 
 // tellMeTime(359999) // 00:01:00
 
+
+// function nameIt(seconds) {
+
+// let min = 0,
+//     hour = 0,
+//     sec = 0;
+
+// if(seconds){
+//   if(seconds>=60){
+//     min = Math.floor(seconds/60)
+//     sec = seconds%60
+//   }else {
+//     sec = seconds;
+//   }
+//   if(min>=60){
