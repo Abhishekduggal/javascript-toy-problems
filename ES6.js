@@ -13660,3 +13660,11 @@ function underToCamel(underName) {
 //     sec = seconds;
 //   }
 //   if(min>=60){
+  //     hour = Math.floor(min/60)
+//     min = min-hour * 60
+//   }
+// }
+// return `${hour}:${min}:${sec}`
+// }
+
+// nameIt(5999);
