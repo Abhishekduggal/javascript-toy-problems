@@ -13625,46 +13625,54 @@ function underToCamel(underName) {
   }
 
   tellMeTime(3599);
-// function tellMeTime(secondsVal){
-// // var minutes = Math.floor(time / 60); And to get the remaining seconds, multiply the full minutes with 60 and subtract from the total seconds: var seconds = time - minutes * 60; Now if you also want to get the full hours too, divide the number of total seconds by 3600 (60 minutes/hour.Sep 17, 2010
+  // function tellMeTime(secondsVal){
+  // // var minutes = Math.floor(time / 60); And to get the remaining seconds, multiply the full minutes with 60 and subtract from the total seconds: var seconds = time - minutes * 60; Now if you also want to get the full hours too, divide the number of total seconds by 3600 (60 minutes/hour.Sep 17, 2010
 
-// var secondsNum = parseInt(secondsVal, 10);
+  // var secondsNum = parseInt(secondsVal, 10);
 
-// var hours = secondsNum/3600 < 1 ? 00 : (secondsNum/3600);
-// console.log(hours);
+  // var hours = secondsNum/3600 < 1 ? 00 : (secondsNum/3600);
+  // console.log(hours);
 
-// var minutes = Math.floor(secondsNum/60);
-// console.log(minutes);
+  // var minutes = Math.floor(secondsNum/60);
+  // console.log(minutes);
 
-// var seconds = (seconds-minutes)*60 || 00;
-// console.log(seconds);
+  // var seconds = (seconds-minutes)*60 || 00;
+  // console.log(seconds);
 
-// return (`${hours}:${minutes}:${seconds}`); 
+  // return (`${hours}:${minutes}:${seconds}`); 
 
-// }
+  // }
 
-// tellMeTime(359999) // 00:01:00
+  // tellMeTime(359999) // 00:01:00
 
 
-// function nameIt(seconds) {
+  // function nameIt(seconds) {
 
-// let min = 0,
-//     hour = 0,
-//     sec = 0;
+  // let min = 0,
+  //     hour = 0,
+  //     sec = 0;
 
-// if(seconds){
-//   if(seconds>=60){
-//     min = Math.floor(seconds/60)
-//     sec = seconds%60
-//   }else {
-//     sec = seconds;
-//   }
-//   if(min>=60){
+  // if(seconds){
+  //   if(seconds>=60){
+  //     min = Math.floor(seconds/60)
+  //     sec = seconds%60
+  //   }else {
+  //     sec = seconds;
+  //   }
+  //   if(min>=60){
   //     hour = Math.floor(min/60)
-//     min = min-hour * 60
-//   }
-// }
-// return `${hour}:${min}:${sec}`
-// }
+  //     min = min-hour * 60
+  //   }
+  // }
+  // return `${hour}:${min}:${sec}`
+  // }
 
-// nameIt(5999);
+  // nameIt(5999);
+
+  function countGrade(scores) {
+    //coding here...
+    var S = scores.filter(function (x) { return x === 100 }).length;
+
+    var A = scores.filter(function (x) { return x < 100 && x >= 90 }).length;
+
+    var B = scores.filter(function (x) { return x < 90 && x >= 80 }).length;
