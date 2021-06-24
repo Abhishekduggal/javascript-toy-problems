@@ -13758,3 +13758,17 @@ function underToCamel(underName) {
 
 //   for(let i = 0; i < dupArr.length; i++){
 //     //console.log(dupArr[i]);
+
+
+//     for(let j = dupArr.length -1; j > i; j--){
+//       //console.log(dupArr[j]);
+//       if(dupArr[i] === dupArr[j]){
+//         dupArr.splice(j,1);
+//       }
+
+//     }
+//   };
+//   return dupArr;
+// }
+
+// removeDuplicates();
