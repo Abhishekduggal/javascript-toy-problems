@@ -13785,3 +13785,19 @@ function underToCamel(underName) {
 // // /*
 //   Use a higher order method to get the sum of all the order totals after adding in the sales tax
 // // */
+
+
+// console.log(ordersTotal)
+// //Code Here
+
+
+// function largeNumbers ({first, second, third}) {
+//   return Math.min(first,second,third);
+// };
+
+// largeNumbers({first: 10, second: 2, third: 90})//).toBe(2)
+// var obj = {
+//   lion: 3,
+//   tiger: 4,
+//   bear: 5
+// }
